@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wWk-bG-RRC">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="WAT-xe-3rT">
+            <objects>
+                <navigationController id="fFp-0n-j4p" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="YOj-p3-fkC">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wWk-bG-RRC" kind="relationship" relationship="rootViewController" id="He7-uk-bEC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceB-hL-f4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1231" y="184"/>
+        </scene>
+        <!--Privacy-->
+        <scene sceneID="Jn0-50-nhp">
+            <objects>
+                <viewController id="wWk-bG-RRC" customClass="EUKSettingsViewController" customModule="Euki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ef-s7-5Wd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A51-Zw-Pce">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContainerCellIdentifier" id="bfD-S8-ROK">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfD-S8-ROK" id="jGs-S8-Uqg">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wWk-bG-RRC" id="MYd-KI-qrb"/>
+                                    <outlet property="delegate" destination="wWk-bG-RRC" id="eze-I3-P4z"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a2n-Pb-dVJ"/>
+                        <color key="backgroundColor" name="GreenClear"/>
+                        <constraints>
+                            <constraint firstItem="A51-Zw-Pce" firstAttribute="leading" secondItem="a2n-Pb-dVJ" secondAttribute="leading" id="Ygx-5L-c2A"/>
+                            <constraint firstItem="a2n-Pb-dVJ" firstAttribute="trailing" secondItem="A51-Zw-Pce" secondAttribute="trailing" id="c2x-NU-ffA"/>
+                            <constraint firstItem="a2n-Pb-dVJ" firstAttribute="bottom" secondItem="A51-Zw-Pce" secondAttribute="bottom" id="mwj-1Z-6BZ"/>
+                            <constraint firstItem="A51-Zw-Pce" firstAttribute="top" secondItem="a2n-Pb-dVJ" secondAttribute="top" id="w8C-6s-cVn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Privacy" id="KUt-Fs-1UK"/>
+                    <connections>
+                        <outlet property="tableView" destination="A51-Zw-Pce" id="kqH-Td-9RH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8I-p7-2G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490.39999999999998" y="183.95802098950526"/>
+        </scene>
+        <!--Top Settings View Controller-->
+        <scene sceneID="pec-pX-ghG">
+            <objects>
+                <viewController storyboardIdentifier="TopSettingsViewController" id="Iho-EB-DBH" customClass="EUKTopSettingsViewController" customModule="Euki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KJh-wR-lZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-vM-u3A">
+                                <rect key="frame" x="0.0" y="59" width="375" height="1152.6666666666667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jsP-oM-xaS">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="544.66666666666663"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ1-iU-izD">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="238.66666666666666"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="40M-8Y-hzc">
+                                                        <rect key="frame" x="0.0" y="30" width="343" height="178.66666666666666"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged data " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxC-gb-2MI" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="oHj-Wy-w3V"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="logged_data_title"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdA-9l-5Vw" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="50" width="343" height="128.66666666666666"/>
+                                                                <string key="text">To protect your privacy, Euki gives you the option of deleting the data that you log in the calendar. This will help make sure your sensitive information will not be used against you.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="logged_data_message"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableLineSpacing" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="40M-8Y-hzc" firstAttribute="top" secondItem="eZ1-iU-izD" secondAttribute="top" constant="30" id="Fvj-nG-9sc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="40M-8Y-hzc" secondAttribute="trailing" id="Xwi-sg-4Yi"/>
+                                                    <constraint firstAttribute="bottom" secondItem="40M-8Y-hzc" secondAttribute="bottom" constant="30" id="etc-uI-5B7"/>
+                                                    <constraint firstItem="40M-8Y-hzc" firstAttribute="leading" secondItem="eZ1-iU-izD" secondAttribute="leading" id="qAY-d9-dOe"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYK-DF-qQ4">
+                                                <rect key="frame" x="0.0" y="238.66666666666669" width="343" height="1"/>
+                                                <color key="backgroundColor" name="eukiMain"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="xoR-6q-wcD"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-jL-aOe">
+                                                <rect key="frame" x="0.0" y="239.66666666666669" width="343" height="222"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QkJ-7N-CEr">
+                                                        <rect key="frame" x="0.0" y="30" width="343" height="162"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHs-yD-GKe">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="31"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set recurring data deletion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWq-TH-QcO" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="294" height="31"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                        <color key="textColor" name="eukiAccent"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="recurring_data_title"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGS-8T-s8N">
+                                                                        <rect key="frame" x="294" y="0.0" width="51" height="31"/>
+                                                                        <color key="onTintColor" name="eukiAccent"/>
+                                                                        <connections>
+                                                                            <action selector="recurringSwitchAction:" destination="Iho-EB-DBH" eventType="valueChanged" id="0Jd-d0-7sq"/>
+                                                                        </connections>
+                                                                    </switch>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Select how often you want Euki to automatically delete all of your logged data" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyf-dv-pDv" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="36" width="343" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="recurring_data_text"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableLineSpacing" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sq7-ws-TCk">
+                                                                <rect key="frame" x="0.0" y="65" width="343" height="97"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3b-6i-UyD">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="p68-Rr-Y25"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="weekly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teb-R8-tlB">
+                                                                        <rect key="frame" x="149.33333333333334" y="30" width="44.666666666666657" height="17"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" name="eukiAccent"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M14-8k-cr9" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                                                        <rect key="frame" x="0.0" y="57" width="343" height="40"/>
+                                                                        <color key="tintColor" name="eukiMain"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="Aej-8x-AoI"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="handleBorderWidth">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                                                <real key="value" value="4"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hideLabels" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableStep" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="selectedMaxValue">
+                                                                                <real key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="disableRange" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="minDistance">
+                                                                                <real key="value" value="0.0"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="handleColor">
+                                                                                <color key="value" name="eukiAccent"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBetweenHandles">
+                                                                                <color key="value" name="eukiAccent"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                                                <real key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                                                <real key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="M14-8k-cr9" secondAttribute="trailing" id="BYv-GL-TSo"/>
+                                                                    <constraint firstItem="M14-8k-cr9" firstAttribute="leading" secondItem="sq7-ws-TCk" secondAttribute="leading" id="RNh-qy-D42"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="QkJ-7N-CEr" secondAttribute="trailing" id="HRS-ZR-oT0"/>
+                                                    <constraint firstItem="QkJ-7N-CEr" firstAttribute="top" secondItem="OY2-jL-aOe" secondAttribute="top" constant="30" id="OkW-lj-cqA"/>
+                                                    <constraint firstItem="QkJ-7N-CEr" firstAttribute="leading" secondItem="OY2-jL-aOe" secondAttribute="leading" id="dG9-Tp-2dA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="QkJ-7N-CEr" secondAttribute="bottom" constant="30" id="hhS-m7-vGo"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ie0-JV-VTm">
+                                                <rect key="frame" x="0.0" y="461.66666666666663" width="343" height="1"/>
+                                                <color key="backgroundColor" name="eukiMain"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="gGw-bg-X9X"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9E-TB-BMR" customClass="EUKBaseButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="462.66666666666663" width="343" height="82"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="82" id="p3G-Qz-EcH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <state key="normal" title="Delete all data now">
+                                                    <color key="titleColor" name="eukiAccent"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="delete_all_data"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="deleteAllAction:" destination="Iho-EB-DBH" eventType="touchUpInside" id="Wow-B7-byL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-uG-h5T">
+                                        <rect key="frame" x="0.0" y="544.66666666666663" width="375" height="2"/>
+                                        <color key="backgroundColor" name="eukiMain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="ozD-4g-ewO"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WwG-Zr-oYF">
+                                        <rect key="frame" x="16" y="546.66666666666663" width="343" height="503.99999999999989"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hj-dz-fD2">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="200.33333333333334"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TOF-Fa-eao">
+                                                        <rect key="frame" x="0.0" y="30" width="343" height="140.33333333333334"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yn-85-Hnf" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="0xJ-Qy-khD"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="pin_title"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can set a PIN to keep Euki private, but please remember it. There's no way to recover your pin." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HR-AS-QED" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="49.999999999999993" width="343" height="90.333333333333314"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="pin_text"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableLineSpacing" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="TOF-Fa-eao" secondAttribute="trailing" id="Li0-fY-ohb"/>
+                                                    <constraint firstItem="TOF-Fa-eao" firstAttribute="leading" secondItem="8hj-dz-fD2" secondAttribute="leading" id="Nrz-a8-ALD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TOF-Fa-eao" secondAttribute="bottom" constant="30" id="etk-15-xGK"/>
+                                                    <constraint firstItem="TOF-Fa-eao" firstAttribute="top" secondItem="8hj-dz-fD2" secondAttribute="top" constant="30" id="lyA-ER-iuJ"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zLw-lM-on3">
+                                                <rect key="frame" x="0.0" y="200.33333333333337" width="343" height="83"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jV-NC-r52">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="1"/>
+                                                        <color key="backgroundColor" name="eukiMain"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="nVD-sB-laN"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d41-ZQ-LLQ" customClass="EUKBaseButton" customModule="Euki" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="1" width="343" height="82"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="82" id="2Qw-s8-Heq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <state key="normal" title="Set or Reset PIN">
+                                                            <color key="titleColor" name="eukiAccent"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="set_reset_pin"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="4KM-vv-Qrq" kind="presentation" modalPresentationStyle="fullScreen" id="RWZ-RI-v2e"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ku3-z6-gpW">
+                                                <rect key="frame" x="0.0" y="283.33333333333337" width="343" height="83"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="War-KQ-y4T">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="1"/>
+                                                        <color key="backgroundColor" name="eukiMain"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="Cxb-cn-x5x"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHZ-9o-UHO" customClass="EUKBaseButton" customModule="Euki" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="1" width="343" height="82"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="82" id="6b7-Zd-tfr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <state key="normal" title="Remote PIN">
+                                                            <color key="titleColor" name="eukiAccent"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="remove_pin"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="removePinAction:" destination="Iho-EB-DBH" eventType="touchUpInside" id="XFD-ud-hub"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JhL-M5-7j7">
+                                                <rect key="frame" x="0.0" y="366.33333333333337" width="343" height="1"/>
+                                                <color key="backgroundColor" name="eukiMain"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="dlg-Rj-7cq"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Apa-92-pEe">
+                                                <rect key="frame" x="0.0" y="367.33333333333337" width="343" height="136.66666666666663"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="XSn-De-ck5">
+                                                        <rect key="frame" x="0.0" y="30.000000000000007" width="343" height="76.666666666666686"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xer-Bp-vb4" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="76.666666666666671"/>
+                                                                <string key="text">We do not store any of your information in this app, in the cloud, or anywhere else. It is not tied to your email address or phone number. Only you have access to it.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="we_dont_store_info"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableLineSpacing" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="XSn-De-ck5" firstAttribute="top" secondItem="Apa-92-pEe" secondAttribute="top" constant="30" id="4rY-Pp-xYb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XSn-De-ck5" secondAttribute="bottom" constant="30" id="Lye-M1-Vax"/>
+                                                    <constraint firstItem="XSn-De-ck5" firstAttribute="leading" secondItem="Apa-92-pEe" secondAttribute="leading" id="PEK-RG-rQg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XSn-De-ck5" secondAttribute="trailing" id="etw-jW-o2t"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oS-Vn-Gzm">
+                                        <rect key="frame" x="0.0" y="1050.6666666666667" width="375" height="2"/>
+                                        <color key="backgroundColor" name="eukiMain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="5B2-QB-b1V"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOy-vZ-Ga8" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1052.6666666666667" width="375" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="7X2-IZ-RlW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" name="eukiMain"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="more_info"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="white"/>
+                                <constraints>
+                                    <constraint firstItem="jsP-oM-xaS" firstAttribute="leading" secondItem="9rT-vM-u3A" secondAttribute="leading" constant="16" id="1x2-dn-ah8"/>
+                                    <constraint firstItem="WwG-Zr-oYF" firstAttribute="leading" secondItem="9rT-vM-u3A" secondAttribute="leading" constant="16" id="8Un-OC-b9A"/>
+                                    <constraint firstAttribute="trailing" secondItem="9oS-Vn-Gzm" secondAttribute="trailing" id="JtE-HY-hhh"/>
+                                    <constraint firstAttribute="trailing" secondItem="WwG-Zr-oYF" secondAttribute="trailing" constant="16" id="TpH-Oj-XK6"/>
+                                    <constraint firstItem="9oS-Vn-Gzm" firstAttribute="leading" secondItem="9rT-vM-u3A" secondAttribute="leading" id="a7R-h5-gcL"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsP-oM-xaS" secondAttribute="trailing" constant="16" id="cvz-x4-fiJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ocJ-uG-h5T" secondAttribute="trailing" id="hvN-4k-uqW"/>
+                                    <constraint firstAttribute="trailing" secondItem="kOy-vZ-Ga8" secondAttribute="trailing" id="kpm-ve-wve"/>
+                                    <constraint firstItem="ocJ-uG-h5T" firstAttribute="top" secondItem="jsP-oM-xaS" secondAttribute="bottom" id="nEs-8c-v4z"/>
+                                    <constraint firstItem="kOy-vZ-Ga8" firstAttribute="leading" secondItem="9rT-vM-u3A" secondAttribute="leading" id="sUL-5Y-yXn"/>
+                                    <constraint firstItem="ocJ-uG-h5T" firstAttribute="leading" secondItem="9rT-vM-u3A" secondAttribute="leading" id="t9Y-7l-WYP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="033-he-zix"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9rT-vM-u3A" firstAttribute="top" secondItem="033-he-zix" secondAttribute="top" id="65a-CD-l32"/>
+                            <constraint firstAttribute="trailing" secondItem="9rT-vM-u3A" secondAttribute="trailing" id="ddH-uq-BCq"/>
+                            <constraint firstItem="9rT-vM-u3A" firstAttribute="leading" secondItem="KJh-wR-lZ6" secondAttribute="leading" id="vAS-29-xjt"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="mainStackView" destination="9rT-vM-u3A" id="7JO-HR-Q2f"/>
+                        <outlet property="recurringContainer" destination="sq7-ws-TCk" id="mi9-EP-3iU"/>
+                        <outlet property="recurringLabel" destination="teb-R8-tlB" id="ltA-n7-UUv"/>
+                        <outlet property="recurringRangeSlider" destination="M14-8k-cr9" id="cJk-Bl-2MC"/>
+                        <outlet property="recurringSwitch" destination="BGS-8T-s8N" id="AMl-0s-uZA"/>
+                        <outlet property="removePinContainerView" destination="Ku3-z6-gpW" id="Edu-KW-nVB"/>
+                        <outlet property="setPinButton" destination="d41-ZQ-LLQ" id="IcW-7x-u0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIi-p1-loa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226.71755725190837" y="183.80281690140845"/>
+        </scene>
+        <!--Set Pin Code View Controller-->
+        <scene sceneID="fVU-BU-IAG">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingScreen3" id="4KM-vv-Qrq" customClass="EUKSetPinCodeViewController" customModule="Euki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edb-Xa-HCG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Oef-CV-NEY">
+                                <rect key="frame" x="16" y="79" width="361" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noF-aN-nC7" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" name="eukiMain"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="enter_code"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kj9-7b-wMh">
+                                        <rect key="frame" x="0.0" y="54" width="361" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TS1-qQ-XoF" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="30"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="wrong_pass"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9Oa-CX-fq0"/>
+                                            <constraint firstItem="TS1-qQ-XoF" firstAttribute="top" secondItem="kj9-7b-wMh" secondAttribute="top" id="JNZ-dD-2lD"/>
+                                            <constraint firstAttribute="bottom" secondItem="TS1-qQ-XoF" secondAttribute="bottom" id="cSM-vi-A0G"/>
+                                            <constraint firstAttribute="trailing" secondItem="TS1-qQ-XoF" secondAttribute="trailing" id="jlU-nw-jVU"/>
+                                            <constraint firstItem="TS1-qQ-XoF" firstAttribute="leading" secondItem="kj9-7b-wMh" secondAttribute="leading" id="opr-BI-Qwf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vdY-Oa-V1T">
+                                <rect key="frame" x="76.666666666666686" y="183" width="240" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1UF-yW-gBS">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScL-Yj-WG4">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <color key="textColor" name="Purple"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view tag="200" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzQ-YT-7qR">
+                                                <rect key="frame" x="0.0" y="43" width="45" height="2"/>
+                                                <color key="backgroundColor" name="eukiAccent"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="fG3-GL-ORe"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="tzQ-YT-7qR" firstAttribute="leading" secondItem="1UF-yW-gBS" secondAttribute="leading" id="0CS-jY-kBs"/>
+                                            <constraint firstAttribute="height" constant="45" id="1bD-Sa-PxD"/>
+                                            <constraint firstItem="ScL-Yj-WG4" firstAttribute="top" secondItem="1UF-yW-gBS" secondAttribute="top" id="77M-bk-iIL"/>
+                                            <constraint firstItem="tzQ-YT-7qR" firstAttribute="top" secondItem="ScL-Yj-WG4" secondAttribute="bottom" id="87P-dW-jAb"/>
+                                            <constraint firstItem="ScL-Yj-WG4" firstAttribute="leading" secondItem="1UF-yW-gBS" secondAttribute="leading" id="9Rj-44-0fk"/>
+                                            <constraint firstAttribute="bottom" secondItem="tzQ-YT-7qR" secondAttribute="bottom" id="MaW-ct-PIL"/>
+                                            <constraint firstAttribute="width" constant="45" id="Mpe-6e-ZJZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="ScL-Yj-WG4" secondAttribute="trailing" id="SHD-us-ktV"/>
+                                            <constraint firstAttribute="trailing" secondItem="tzQ-YT-7qR" secondAttribute="trailing" id="SSr-sZ-5Jz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-zk-uEB">
+                                        <rect key="frame" x="64.999999999999986" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4C6-Dn-ItO">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <color key="textColor" name="Purple"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view tag="201" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFX-rK-fh6">
+                                                <rect key="frame" x="0.0" y="43" width="45" height="2"/>
+                                                <color key="backgroundColor" name="eukiAccent"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="acG-hv-n64"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hFX-rK-fh6" firstAttribute="top" secondItem="4C6-Dn-ItO" secondAttribute="bottom" id="4M5-nC-BLJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="hFX-rK-fh6" secondAttribute="bottom" id="9lb-Iq-PHj"/>
+                                            <constraint firstAttribute="trailing" secondItem="4C6-Dn-ItO" secondAttribute="trailing" id="Xdd-ph-kBJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="hFX-rK-fh6" secondAttribute="trailing" id="a4d-gm-XhA"/>
+                                            <constraint firstAttribute="height" constant="45" id="hoX-eS-HwN"/>
+                                            <constraint firstItem="hFX-rK-fh6" firstAttribute="leading" secondItem="PAa-zk-uEB" secondAttribute="leading" id="hpS-nR-gqs"/>
+                                            <constraint firstItem="4C6-Dn-ItO" firstAttribute="top" secondItem="PAa-zk-uEB" secondAttribute="top" id="jpl-rf-Svx"/>
+                                            <constraint firstItem="4C6-Dn-ItO" firstAttribute="leading" secondItem="PAa-zk-uEB" secondAttribute="leading" id="rOr-rE-PCb"/>
+                                            <constraint firstAttribute="width" constant="45" id="vJJ-AX-vNR"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkK-3J-UP7">
+                                        <rect key="frame" x="130" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBo-qV-FAu">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <color key="textColor" name="Purple"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view tag="202" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rvh-JH-SBg">
+                                                <rect key="frame" x="0.0" y="43" width="45" height="2"/>
+                                                <color key="backgroundColor" name="eukiAccent"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="NCB-Ih-NxV"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="RBo-qV-FAu" firstAttribute="leading" secondItem="zkK-3J-UP7" secondAttribute="leading" id="2qQ-Hl-SHm"/>
+                                            <constraint firstAttribute="height" constant="45" id="GHB-cq-g8R"/>
+                                            <constraint firstAttribute="width" constant="45" id="HaA-Qa-OCd"/>
+                                            <constraint firstItem="Rvh-JH-SBg" firstAttribute="top" secondItem="RBo-qV-FAu" secondAttribute="bottom" id="U1m-hz-GZL"/>
+                                            <constraint firstItem="Rvh-JH-SBg" firstAttribute="leading" secondItem="zkK-3J-UP7" secondAttribute="leading" id="WiR-Vi-dXU"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rvh-JH-SBg" secondAttribute="bottom" id="YUE-47-5Fr"/>
+                                            <constraint firstItem="RBo-qV-FAu" firstAttribute="top" secondItem="zkK-3J-UP7" secondAttribute="top" id="axo-GC-WDV"/>
+                                            <constraint firstAttribute="trailing" secondItem="RBo-qV-FAu" secondAttribute="trailing" id="qpc-IA-Zs8"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rvh-JH-SBg" secondAttribute="trailing" id="rWk-qi-8lv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hi-Gd-XGC">
+                                        <rect key="frame" x="195" y="0.0" width="45" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh0-9V-i8P">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <color key="textColor" name="Purple"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view tag="203" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ND9-pp-evZ">
+                                                <rect key="frame" x="0.0" y="43" width="45" height="2"/>
+                                                <color key="backgroundColor" name="eukiAccent"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="eek-T9-Np8"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ND9-pp-evZ" secondAttribute="bottom" id="APG-S2-ty6"/>
+                                            <constraint firstAttribute="width" constant="45" id="M5k-35-bI3"/>
+                                            <constraint firstAttribute="trailing" secondItem="dh0-9V-i8P" secondAttribute="trailing" id="YEw-q5-TmK"/>
+                                            <constraint firstItem="ND9-pp-evZ" firstAttribute="top" secondItem="dh0-9V-i8P" secondAttribute="bottom" id="dyr-VI-yNt"/>
+                                            <constraint firstAttribute="height" constant="45" id="isB-g8-RcM"/>
+                                            <constraint firstItem="dh0-9V-i8P" firstAttribute="top" secondItem="7hi-Gd-XGC" secondAttribute="top" id="mnL-Zo-rZA"/>
+                                            <constraint firstItem="ND9-pp-evZ" firstAttribute="leading" secondItem="7hi-Gd-XGC" secondAttribute="leading" id="rSa-r1-j28"/>
+                                            <constraint firstAttribute="trailing" secondItem="ND9-pp-evZ" secondAttribute="trailing" id="wo2-6X-e2a"/>
+                                            <constraint firstItem="dh0-9V-i8P" firstAttribute="leading" secondItem="7hi-Gd-XGC" secondAttribute="leading" id="zFY-D3-kwL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Xpz-sl-Ola"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DFk-Wm-6c4">
+                                <rect key="frame" x="72.666666666666686" y="377" width="248" height="315"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="tOd-hp-wTx">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkc-65-lQO" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="DjP-aF-pom"/>
+                                                    <constraint firstAttribute="height" constant="60" id="IbU-GG-kf0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="1"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="Zf2-eQ-ARr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqo-sh-i5f" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="93.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="5Fv-0G-Yb7"/>
+                                                    <constraint firstAttribute="width" constant="60" id="VcO-uF-pnj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="2"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="8x2-mW-u9Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNX-8p-4wf" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="188" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="0X6-IM-3wB"/>
+                                                    <constraint firstAttribute="height" constant="60" id="Zkd-nt-1du"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="sua-D1-10O"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="VDu-6H-CO9">
+                                        <rect key="frame" x="0.0" y="85" width="248" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Piw-V3-etJ" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="A4r-G4-KhH"/>
+                                                    <constraint firstAttribute="width" constant="60" id="TTt-br-AU7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="4"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="guT-RQ-G9v"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm5-rA-0zb" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="93.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Km3-jl-1nw"/>
+                                                    <constraint firstAttribute="width" constant="60" id="W9c-pU-vXJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="5"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="bz1-nt-apX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nty-GZ-aob" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="188" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="BLN-4M-ufw"/>
+                                                    <constraint firstAttribute="width" constant="60" id="kKg-EC-qUv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="6"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="v5S-lm-1J0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="8WP-N1-fRF">
+                                        <rect key="frame" x="0.0" y="170" width="248" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wze-ju-u18" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="FRc-RY-w0h"/>
+                                                    <constraint firstAttribute="width" constant="60" id="asE-Hz-xfN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="7"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="oCm-VZ-RyK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8n-BF-Z96" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="93.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="EhU-Tr-qc1"/>
+                                                    <constraint firstAttribute="width" constant="60" id="riD-fF-aIW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="8"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="ZYC-Lh-1r7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwX-QK-1UP" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="188" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="PK1-FE-SCP"/>
+                                                    <constraint firstAttribute="width" constant="60" id="zif-PS-uX0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="9"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="5zr-aT-Wda"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="M2I-HO-SdF">
+                                        <rect key="frame" x="0.0" y="255" width="248" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-CP-1TP">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="KQE-My-B29"/>
+                                                    <constraint firstAttribute="width" constant="60" id="vVq-4d-cBE"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1i-v8-UtE" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="93.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="jNR-Ud-zTE"/>
+                                                    <constraint firstAttribute="width" constant="60" id="k7j-8N-pKL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="AVc-Ln-NDF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AS-8k-8RY" customClass="EUKBorderedButton" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="188" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="UWp-70-4EW"/>
+                                                    <constraint firstAttribute="width" constant="60" id="s1C-7G-svt"/>
+                                                </constraints>
+                                                <color key="tintColor" name="eukiAccent"/>
+                                                <state key="normal" image="BtnBackKey"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                        <color key="value" name="GreenClear"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" name="eukiAccent"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="defaultFont" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardAction:" destination="4KM-vv-Qrq" eventType="touchUpInside" id="hdK-ZO-ZGs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI2-HK-mMj" customClass="EUKBlueButton" customModule="Euki" customModuleProvider="target">
+                                <rect key="frame" x="101.66666666666669" y="728" width="190" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="Ukr-GZ-nds"/>
+                                </constraints>
+                                <state key="normal" title="Let's Start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="next"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="next" destination="4KM-vv-Qrq" eventType="touchUpInside" id="8rQ-vx-mfH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KKP-DA-25V"/>
+                        <color key="backgroundColor" name="GreenClear"/>
+                        <constraints>
+                            <constraint firstItem="vdY-Oa-V1T" firstAttribute="centerX" secondItem="edb-Xa-HCG" secondAttribute="centerX" id="1D2-f8-ygk"/>
+                            <constraint firstItem="DFk-Wm-6c4" firstAttribute="centerX" secondItem="edb-Xa-HCG" secondAttribute="centerX" id="7ga-rq-kDM"/>
+                            <constraint firstItem="vdY-Oa-V1T" firstAttribute="top" secondItem="Oef-CV-NEY" secondAttribute="bottom" constant="20" id="C7N-DP-j8K"/>
+                            <constraint firstItem="jI2-HK-mMj" firstAttribute="top" secondItem="DFk-Wm-6c4" secondAttribute="bottom" constant="36" id="alS-qW-hdg"/>
+                            <constraint firstItem="Oef-CV-NEY" firstAttribute="leading" secondItem="KKP-DA-25V" secondAttribute="leading" constant="16" id="d2U-oX-kAW"/>
+                            <constraint firstItem="KKP-DA-25V" firstAttribute="bottom" secondItem="jI2-HK-mMj" secondAttribute="bottom" constant="50" id="epA-P8-blb"/>
+                            <constraint firstAttribute="trailing" secondItem="Oef-CV-NEY" secondAttribute="trailing" constant="16" id="exp-zX-ynD"/>
+                            <constraint firstItem="Oef-CV-NEY" firstAttribute="top" secondItem="KKP-DA-25V" secondAttribute="top" constant="20" id="hGy-iN-s0q"/>
+                            <constraint firstItem="jI2-HK-mMj" firstAttribute="centerX" secondItem="edb-Xa-HCG" secondAttribute="centerX" id="qV3-fi-coi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="jI2-HK-mMj" id="KKc-1r-JfY"/>
+                        <outlet property="errorLabel" destination="TS1-qQ-XoF" id="tBq-HV-rIv"/>
+                        <outlet property="titleLabel" destination="noF-aN-nC7" id="r9w-0Z-iMD"/>
+                        <outletCollection property="resizableStacksViews" destination="Oef-CV-NEY" collectionClass="NSMutableArray" id="N9r-l7-yV0"/>
+                        <outletCollection property="resizableStacksViews" destination="DFk-Wm-6c4" collectionClass="NSMutableArray" id="MzV-c3-PAe"/>
+                        <outletCollection property="resizableConstraints" destination="C7N-DP-j8K" collectionClass="NSMutableArray" id="avC-8b-Ij6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pE-WU-T75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="184"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="3AS-8k-8RY">
+            <size key="intrinsicContentSize" width="40" height="40"/>
+        </designable>
+        <designable name="M14-8k-cr9">
+            <size key="intrinsicContentSize" width="-1" height="65"/>
+        </designable>
+        <designable name="Nty-GZ-aob">
+            <size key="intrinsicContentSize" width="23" height="40"/>
+        </designable>
+        <designable name="Piw-V3-etJ">
+            <size key="intrinsicContentSize" width="23" height="40"/>
+        </designable>
+        <designable name="Qm5-rA-0zb">
+            <size key="intrinsicContentSize" width="22" height="40"/>
+        </designable>
+        <designable name="Rkc-65-lQO">
+            <size key="intrinsicContentSize" width="17" height="40"/>
+        </designable>
+        <designable name="ZNX-8p-4wf">
+            <size key="intrinsicContentSize" width="22" height="40"/>
+        </designable>
+        <designable name="fwX-QK-1UP">
+            <size key="intrinsicContentSize" width="23" height="40"/>
+        </designable>
+        <designable name="jI2-HK-mMj">
+            <size key="intrinsicContentSize" width="33" height="40"/>
+        </designable>
+        <designable name="o1i-v8-UtE">
+            <size key="intrinsicContentSize" width="23" height="40"/>
+        </designable>
+        <designable name="r8n-BF-Z96">
+            <size key="intrinsicContentSize" width="22" height="40"/>
+        </designable>
+        <designable name="wze-ju-u18">
+            <size key="intrinsicContentSize" width="21" height="40"/>
+        </designable>
+        <designable name="yqo-sh-i5f">
+            <size key="intrinsicContentSize" width="21" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="BtnBackKey" width="40" height="36"/>
+        <namedColor name="GreenClear">
+            <color red="0.95300000905990601" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Purple">
+            <color red="0.27099999785423279" green="0.20800000429153442" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukiAccent">
+            <color red="0.37999999523162842" green="0.31000000238418579" blue="0.76099997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukiMain">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

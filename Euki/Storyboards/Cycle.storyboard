@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vF8-yM-r1D">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="11w-VV-qhJ">
+            <objects>
+                <navigationController id="vF8-yM-r1D" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Abx-PH-95V">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="FXp-yL-JzD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7A-oW-MIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-654" y="4"/>
+        </scene>
+        <!--Cycle Tab View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="EUKCycleTabViewController" customModule="Euki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KYG-l3-bZ2">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0M-z2-2nF" customClass="EUKSegmentedView" customModule="Euki" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Zoy-gN-5v3"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="leftButtonlocalizedKey" value="day_summary"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="rightButtonlocalizedKey" value="cycle_summary"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="1Wy-xs-XlH"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cme-hE-WWN">
+                                        <rect key="frame" x="0.0" y="48" width="393" height="667"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqq-nF-e2q">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iy-PK-JRj" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="178" width="359" height="359"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="7ZH-jM-aza">
+                                                <rect key="frame" x="20" y="139.66666666666669" width="319" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay in sync with your cycle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Og6-mw-Luz" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" name="eukiMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="cycle_summary_tutorial_title"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When you've tracked a full cycle, your stats will show up here." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMH-sN-P6W" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="37" width="319" height="43"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" name="eukiMain"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="cycle_summary_tutorial_content"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="eukLightMint"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7ZH-jM-aza" secondAttribute="trailing" constant="20" id="JFT-Ze-fCN"/>
+                                            <constraint firstItem="7ZH-jM-aza" firstAttribute="centerY" secondItem="8iy-PK-JRj" secondAttribute="centerY" id="VKC-ZN-1Uf"/>
+                                            <constraint firstAttribute="width" secondItem="8iy-PK-JRj" secondAttribute="height" multiplier="1:1" id="VcR-iJ-BVy"/>
+                                            <constraint firstItem="7ZH-jM-aza" firstAttribute="leading" secondItem="8iy-PK-JRj" secondAttribute="leading" constant="20" id="ki2-fG-oa2"/>
+                                            <constraint firstItem="7ZH-jM-aza" firstAttribute="centerX" secondItem="8iy-PK-JRj" secondAttribute="centerX" id="zCJ-lM-BMF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="8iy-PK-JRj" firstAttribute="leading" secondItem="aqq-nF-e2q" secondAttribute="leading" constant="17" id="OmG-Yz-koh"/>
+                                    <constraint firstAttribute="trailing" secondItem="8iy-PK-JRj" secondAttribute="trailing" constant="17" id="Xdj-30-8M9"/>
+                                    <constraint firstItem="8iy-PK-JRj" firstAttribute="centerY" secondItem="aqq-nF-e2q" secondAttribute="centerY" id="syz-Ee-bYo"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Eqm-Kr-3l9" appends="YES" id="adD-8m-HTn"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="eukiBackground"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KYG-l3-bZ2" secondAttribute="bottom" id="B7c-9Z-A7x"/>
+                            <constraint firstItem="aqq-nF-e2q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="C0o-FD-rkE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KYG-l3-bZ2" secondAttribute="trailing" id="FTH-Ks-MKy"/>
+                            <constraint firstItem="KYG-l3-bZ2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HYG-1B-oga"/>
+                            <constraint firstItem="aqq-nF-e2q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Pmh-ip-pOy"/>
+                            <constraint firstItem="KYG-l3-bZ2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YPZ-MV-d7M"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aqq-nF-e2q" secondAttribute="bottom" id="cO6-yA-WfD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aqq-nF-e2q" secondAttribute="trailing" id="ztn-KE-hxr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Img-8A-noj">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="KK1-sn-92M">
+                            <rect key="frame" x="16" y="0.0" width="361" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="containerView" destination="cme-hE-WWN" id="Xgq-v0-Wfm"/>
+                        <outlet property="tutorialView" destination="aqq-nF-e2q" id="Hlc-k4-daZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Eqm-Kr-3l9">
+                    <connections>
+                        <action selector="hideTutorialView:" destination="Y6W-OH-hqX" id="cwV-yD-bTw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+        <!--Day Summary View Controller-->
+        <scene sceneID="9Rg-tG-CdN">
+            <objects>
+                <viewController storyboardIdentifier="EUKDaySummaryViewController" id="L5u-p6-dxn" customClass="EUKDaySummaryViewController" customModule="Euki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cyu-gf-Ypr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggz-6u-RWw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jtF-vO-pcS">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="L5u-p6-dxn" id="Sap-JN-man"/>
+                                    <outlet property="delegate" destination="L5u-p6-dxn" id="pg5-OW-OO7"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PGb-HV-Xgk"/>
+                        <color key="backgroundColor" name="eukiBackground"/>
+                        <constraints>
+                            <constraint firstItem="ggz-6u-RWw" firstAttribute="leading" secondItem="PGb-HV-Xgk" secondAttribute="leading" id="6pf-DT-RCc"/>
+                            <constraint firstItem="ggz-6u-RWw" firstAttribute="top" secondItem="PGb-HV-Xgk" secondAttribute="top" id="EGK-qT-1py"/>
+                            <constraint firstItem="PGb-HV-Xgk" firstAttribute="bottom" secondItem="ggz-6u-RWw" secondAttribute="bottom" id="Loh-wa-oSr"/>
+                            <constraint firstItem="PGb-HV-Xgk" firstAttribute="trailing" secondItem="ggz-6u-RWw" secondAttribute="trailing" id="OHB-x6-Dsq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ggz-6u-RWw" id="tB6-vw-MpO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cl5-jD-aaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890.83969465648852" y="3.5211267605633805"/>
+        </scene>
+        <!--Cycle Summary View Controller-->
+        <scene sceneID="iEr-Gv-Sdg">
+            <objects>
+                <viewController storyboardIdentifier="EUKCycleSummaryViewController" id="uGZ-0e-fGa" customClass="EUKCycleSummaryViewController" customModule="Euki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0oC-6x-aND">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8l8-DC-NjT">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="J97-R1-SMt">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="390"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UES-sQ-iYy">
+                                            <rect key="frame" x="16" y="30" width="361" height="273"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJn-SR-WLh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="81"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconCycleLength" translatesAutoresizingMaskIntoConstraints="NO" id="gFd-9A-2BX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="81"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="81" id="DJd-vu-JT1"/>
+                                                                <constraint firstAttribute="width" constant="80" id="ixq-uw-7Rz"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj5-kk-fYJ">
+                                                            <rect key="frame" x="24.333333333333336" y="26.666666666666668" width="31.333333333333336" height="33.666666666666657"/>
+                                                            <string key="text">-
+days</string>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                            <color key="textColor" name="eukiMain"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. cycle length" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A1-7X-h9P" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                            <rect key="frame" x="80" y="56.666666666666679" width="281" height="19.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" name="eukiMain"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="avg_cycle_length"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEW-Lj-Z3D">
+                                                            <rect key="frame" x="40" y="80" width="321" height="1"/>
+                                                            <color key="backgroundColor" name="eukiMain"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="79c-5h-6TC"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="gFd-9A-2BX" firstAttribute="top" secondItem="CJn-SR-WLh" secondAttribute="top" id="2rF-TZ-Fhg"/>
+                                                        <constraint firstItem="gFd-9A-2BX" firstAttribute="leading" secondItem="CJn-SR-WLh" secondAttribute="leading" id="6ax-Mj-iyg"/>
+                                                        <constraint firstItem="oEW-Lj-Z3D" firstAttribute="top" secondItem="2A1-7X-h9P" secondAttribute="bottom" constant="4" id="8Md-WO-gPX"/>
+                                                        <constraint firstItem="2A1-7X-h9P" firstAttribute="leading" secondItem="gFd-9A-2BX" secondAttribute="trailing" id="G72-f6-3Nw"/>
+                                                        <constraint firstItem="Cj5-kk-fYJ" firstAttribute="centerX" secondItem="gFd-9A-2BX" secondAttribute="centerX" id="Pvz-3r-VAN"/>
+                                                        <constraint firstItem="oEW-Lj-Z3D" firstAttribute="leading" secondItem="CJn-SR-WLh" secondAttribute="leading" constant="40" id="V9H-mC-UJW"/>
+                                                        <constraint firstItem="Cj5-kk-fYJ" firstAttribute="centerY" secondItem="gFd-9A-2BX" secondAttribute="centerY" constant="3" id="anl-u2-U6c"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gFd-9A-2BX" secondAttribute="bottom" id="dup-LQ-Qd0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2A1-7X-h9P" secondAttribute="trailing" id="eSL-0Z-S3C"/>
+                                                        <constraint firstAttribute="height" constant="81" id="sLH-fL-tTq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="oEW-Lj-Z3D" secondAttribute="trailing" id="v6L-Bl-rVz"/>
+                                                        <constraint firstAttribute="bottom" secondItem="oEW-Lj-Z3D" secondAttribute="bottom" id="xLy-nZ-6nP"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rc6-1d-6pU">
+                                                    <rect key="frame" x="0.0" y="96" width="361" height="81"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconCycleVariation" translatesAutoresizingMaskIntoConstraints="NO" id="LZR-14-7IZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="81"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="81" id="5cc-bR-gIS"/>
+                                                                <constraint firstAttribute="width" constant="80" id="t8y-yA-dlV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwm-O3-QKy">
+                                                            <rect key="frame" x="24.333333333333336" y="26.666666666666654" width="31.333333333333336" height="33.666666666666657"/>
+                                                            <string key="text">-
+days</string>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                            <color key="textColor" name="eukiMain"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cycle variation" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aL-hf-zhl" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                            <rect key="frame" x="80" y="56.666666666666664" width="281" height="19.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" name="eukiMain"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="cycle_variation"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEr-iF-GuW">
+                                                            <rect key="frame" x="40" y="80" width="321" height="1"/>
+                                                            <color key="backgroundColor" name="eukiMain"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="hbP-c9-j5q"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="81" id="2mR-BP-wbx"/>
+                                                        <constraint firstItem="KEr-iF-GuW" firstAttribute="top" secondItem="4aL-hf-zhl" secondAttribute="bottom" constant="4" id="3jj-hM-Adf"/>
+                                                        <constraint firstItem="LZR-14-7IZ" firstAttribute="top" secondItem="Rc6-1d-6pU" secondAttribute="top" id="6Y2-F3-jyB"/>
+                                                        <constraint firstItem="Kwm-O3-QKy" firstAttribute="centerY" secondItem="LZR-14-7IZ" secondAttribute="centerY" constant="3" id="BtT-j8-JtB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KEr-iF-GuW" secondAttribute="trailing" id="F58-LE-P8Q"/>
+                                                        <constraint firstItem="LZR-14-7IZ" firstAttribute="leading" secondItem="Rc6-1d-6pU" secondAttribute="leading" id="GKg-r2-geM"/>
+                                                        <constraint firstItem="4aL-hf-zhl" firstAttribute="leading" secondItem="LZR-14-7IZ" secondAttribute="trailing" id="RcL-MZ-7Fv"/>
+                                                        <constraint firstItem="Kwm-O3-QKy" firstAttribute="centerX" secondItem="LZR-14-7IZ" secondAttribute="centerX" id="VXj-G3-Xop"/>
+                                                        <constraint firstItem="KEr-iF-GuW" firstAttribute="leading" secondItem="Rc6-1d-6pU" secondAttribute="leading" constant="40" id="ldg-Ym-4tN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="LZR-14-7IZ" secondAttribute="bottom" id="m8a-qP-Xft"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KEr-iF-GuW" secondAttribute="bottom" id="qHO-Tt-NU1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4aL-hf-zhl" secondAttribute="trailing" id="w9K-eX-TYo"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tb-8H-OXW">
+                                                    <rect key="frame" x="0.0" y="192" width="361" height="81"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconCyclePeriodLength" translatesAutoresizingMaskIntoConstraints="NO" id="rP8-Rv-HtQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="81"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="81" id="xQ9-7X-ASq"/>
+                                                                <constraint firstAttribute="width" constant="80" id="yr6-eE-x06"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rx7-4K-xBE">
+                                                            <rect key="frame" x="24.333333333333336" y="26.666666666666654" width="31.333333333333336" height="33.666666666666657"/>
+                                                            <string key="text">-
+days</string>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                            <color key="textColor" name="eukiMain"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. period length" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNr-Z2-J5X" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                            <rect key="frame" x="80" y="56.666666666666693" width="281" height="19.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" name="eukiMain"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="avg_period_length"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pi3-zY-c0q">
+                                                            <rect key="frame" x="40" y="80" width="321" height="1"/>
+                                                            <color key="backgroundColor" name="eukiMain"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="Tfe-i6-VDL"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Pi3-zY-c0q" firstAttribute="leading" secondItem="0tb-8H-OXW" secondAttribute="leading" constant="40" id="3Dt-2P-X89"/>
+                                                        <constraint firstItem="rx7-4K-xBE" firstAttribute="centerX" secondItem="rP8-Rv-HtQ" secondAttribute="centerX" id="4kN-YY-lUI"/>
+                                                        <constraint firstAttribute="height" constant="81" id="7zY-ZT-VaN"/>
+                                                        <constraint firstItem="Pi3-zY-c0q" firstAttribute="top" secondItem="pNr-Z2-J5X" secondAttribute="bottom" constant="4" id="AgR-19-B6W"/>
+                                                        <constraint firstAttribute="trailing" secondItem="pNr-Z2-J5X" secondAttribute="trailing" id="QNa-RD-Kt2"/>
+                                                        <constraint firstItem="rx7-4K-xBE" firstAttribute="centerY" secondItem="rP8-Rv-HtQ" secondAttribute="centerY" constant="3" id="aC9-kL-yPK"/>
+                                                        <constraint firstItem="pNr-Z2-J5X" firstAttribute="leading" secondItem="rP8-Rv-HtQ" secondAttribute="trailing" id="e4L-zV-ICx"/>
+                                                        <constraint firstItem="rP8-Rv-HtQ" firstAttribute="top" secondItem="0tb-8H-OXW" secondAttribute="top" id="fqb-Ku-YMx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rP8-Rv-HtQ" secondAttribute="bottom" id="lfm-sR-JID"/>
+                                                        <constraint firstItem="rP8-Rv-HtQ" firstAttribute="leading" secondItem="0tb-8H-OXW" secondAttribute="leading" id="pw0-q6-sxv"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Pi3-zY-c0q" secondAttribute="bottom" id="qKr-m4-MhX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Pi3-zY-c0q" secondAttribute="trailing" id="yuv-ex-2D4"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAl-vp-rso">
+                                            <rect key="frame" x="15" y="380" width="363" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" name="eukiMain"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="UES-sQ-iYy" secondAttribute="trailing" constant="16" id="1hl-G8-x3K"/>
+                                        <constraint firstItem="UES-sQ-iYy" firstAttribute="top" secondItem="J97-R1-SMt" secondAttribute="top" constant="30" id="LDr-mH-W0E"/>
+                                        <constraint firstItem="HAl-vp-rso" firstAttribute="leading" secondItem="J97-R1-SMt" secondAttribute="leading" constant="15" id="gCP-Ra-jQs"/>
+                                        <constraint firstAttribute="bottom" secondItem="HAl-vp-rso" secondAttribute="bottom" constant="10" id="iq9-Zl-JBH"/>
+                                        <constraint firstAttribute="trailing" secondItem="HAl-vp-rso" secondAttribute="trailing" constant="15" id="uBg-iM-rhp"/>
+                                        <constraint firstItem="UES-sQ-iYy" firstAttribute="leading" secondItem="J97-R1-SMt" secondAttribute="leading" constant="16" id="zQ3-Uo-45I"/>
+                                    </constraints>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="uGZ-0e-fGa" id="d8N-F8-Prc"/>
+                                    <outlet property="delegate" destination="uGZ-0e-fGa" id="oBZ-Oc-IIG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gTj-Ne-H4T"/>
+                        <color key="backgroundColor" name="eukiBackground"/>
+                        <constraints>
+                            <constraint firstItem="8l8-DC-NjT" firstAttribute="leading" secondItem="gTj-Ne-H4T" secondAttribute="leading" id="1G5-gP-MHZ"/>
+                            <constraint firstItem="gTj-Ne-H4T" firstAttribute="trailing" secondItem="8l8-DC-NjT" secondAttribute="trailing" id="5Fk-Uo-Gjo"/>
+                            <constraint firstItem="8l8-DC-NjT" firstAttribute="top" secondItem="gTj-Ne-H4T" secondAttribute="top" id="Jtv-Tf-R6P"/>
+                            <constraint firstItem="gTj-Ne-H4T" firstAttribute="bottom" secondItem="8l8-DC-NjT" secondAttribute="bottom" id="ZLk-rI-l1N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentCycleDayLabel" destination="HAl-vp-rso" id="Npa-mc-OF3"/>
+                        <outlet property="cycleLengthLabel" destination="Cj5-kk-fYJ" id="x6G-rI-rf9"/>
+                        <outlet property="periodLengthLabel" destination="rx7-4K-xBE" id="AVD-Dl-Vrq"/>
+                        <outlet property="tableView" destination="8l8-DC-NjT" id="Afr-sh-z64"/>
+                        <outlet property="variationLabel" destination="Kwm-O3-QKy" id="cAM-3J-PVy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46n-li-lTk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="670"/>
+        </scene>
+        <!--Cycle Settings View Controller-->
+        <scene sceneID="nUG-kM-l4T">
+            <objects>
+                <viewController storyboardIdentifier="EUKCycleSettingsViewController" id="MZ8-DG-wSo" customClass="EUKCycleSettingsViewController" customModule="Euki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F85-h1-hIx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VK9-DS-Qnz">
+                                <rect key="frame" x="0.0" y="221" width="393" height="310"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91f-jr-FCD">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Adjust your cycle preferences" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-iW-k3F" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="0.0" width="361" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="eukiMain"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="cycle_settings_title"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Gdh-iW-k3F" firstAttribute="top" secondItem="91f-jr-FCD" secondAttribute="top" id="01M-PT-d9Z"/>
+                                            <constraint firstItem="Gdh-iW-k3F" firstAttribute="leading" secondItem="91f-jr-FCD" secondAttribute="leading" constant="16" id="Mg1-gA-iNk"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gdh-iW-k3F" secondAttribute="bottom" id="k2P-cP-Hl9"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gdh-iW-k3F" secondAttribute="trailing" constant="16" id="kcn-u8-nDV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tI-e1-fTg" userLabel="SV">
+                                        <rect key="frame" x="0.0" y="24" width="393" height="43"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="v4z-Vv-qAC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuG-2Z-0XF" userLabel="SV">
+                                        <rect key="frame" x="0.0" y="67" width="393" height="1"/>
+                                        <color key="backgroundColor" name="eukiMain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Hsm-wH-FNZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fF-IB-uFQ">
+                                        <rect key="frame" x="0.0" y="68" width="393" height="120"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fUJ-kg-OuN">
+                                                <rect key="frame" x="16" y="26.333333333333314" width="355" height="67.333333333333329"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EkE-RJ-lXP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="296" height="67.333333333333329"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track period" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEq-3O-VgC" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="296" height="19.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="cycle_settings_option_1_title"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Even if you don't track your period, you'll still have access to logged info (unless you delete your data in “privacy” tab)." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxi-X0-6qt" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24.333333333333371" width="296" height="43"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="cycle_settings_option_1_text"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-UD-4dL">
+                                                        <rect key="frame" x="306" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" name="eukiAccent"/>
+                                                        <connections>
+                                                            <action selector="switchChangedWithSender:" destination="MZ8-DG-wSo" eventType="valueChanged" id="6Gx-PH-jsf"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fUJ-kg-OuN" firstAttribute="centerY" secondItem="1fF-IB-uFQ" secondAttribute="centerY" id="WU4-ed-4T2"/>
+                                            <constraint firstAttribute="trailing" secondItem="fUJ-kg-OuN" secondAttribute="trailing" constant="22" id="ari-sW-2Iu"/>
+                                            <constraint firstAttribute="height" constant="120" id="coo-OR-ERD"/>
+                                            <constraint firstItem="fUJ-kg-OuN" firstAttribute="leading" secondItem="1fF-IB-uFQ" secondAttribute="leading" constant="16" id="vAK-Fw-3o8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBd-0m-O3S" userLabel="SV">
+                                        <rect key="frame" x="0.0" y="188" width="393" height="1"/>
+                                        <color key="backgroundColor" name="eukiMain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="cNA-OO-bBr"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVI-Bt-Mel">
+                                        <rect key="frame" x="0.0" y="189" width="393" height="120"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lIE-sO-dOj">
+                                                <rect key="frame" x="16" y="33.666666666666686" width="355" height="53"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AZN-rf-9cF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="296" height="53"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period prediction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1P-ax-vWh" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="296" height="19.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="cycle_settings_option_2_title"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know what to expect from your period—and when to expect it." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7s-ay-Vvj" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24.333333333333314" width="296" height="28.666666666666671"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="textColor" name="eukiMain"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="cycle_settings_option_2_text"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34f-Cb-s3n">
+                                                        <rect key="frame" x="306" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" name="eukiAccent"/>
+                                                        <connections>
+                                                            <action selector="switchChangedWithSender:" destination="MZ8-DG-wSo" eventType="valueChanged" id="uL3-FQ-0Gb"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="lIE-sO-dOj" firstAttribute="leading" secondItem="wVI-Bt-Mel" secondAttribute="leading" constant="16" id="4Gb-ou-orz"/>
+                                            <constraint firstAttribute="trailing" secondItem="lIE-sO-dOj" secondAttribute="trailing" constant="22" id="8iP-db-X6R"/>
+                                            <constraint firstAttribute="height" constant="120" id="Czu-kK-iHP"/>
+                                            <constraint firstItem="lIE-sO-dOj" firstAttribute="centerY" secondItem="wVI-Bt-Mel" secondAttribute="centerY" id="OeK-Yd-04q"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q25-48-4Rj" userLabel="SV">
+                                        <rect key="frame" x="0.0" y="309" width="393" height="1"/>
+                                        <color key="backgroundColor" name="eukiMain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Dfy-dF-tb2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s4-Za-5IK">
+                                <rect key="frame" x="0.0" y="59" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Vd2-JA-LPx"/>
+                                    <constraint firstAttribute="height" constant="40" id="aFT-Pw-71o"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="IconBack"/>
+                                <connections>
+                                    <action selector="backAction" destination="MZ8-DG-wSo" eventType="touchUpInside" id="9Ga-qh-w5A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ioa-qJ-CP1"/>
+                        <color key="backgroundColor" name="eukiBackground"/>
+                        <constraints>
+                            <constraint firstItem="3s4-Za-5IK" firstAttribute="top" secondItem="Ioa-qJ-CP1" secondAttribute="top" id="Hdi-Wk-wS0"/>
+                            <constraint firstItem="VK9-DS-Qnz" firstAttribute="centerY" secondItem="F85-h1-hIx" secondAttribute="centerY" constant="-50" id="JgD-0r-HXQ"/>
+                            <constraint firstItem="3s4-Za-5IK" firstAttribute="leading" secondItem="Ioa-qJ-CP1" secondAttribute="leading" id="Mcc-7m-jPC"/>
+                            <constraint firstItem="VK9-DS-Qnz" firstAttribute="leading" secondItem="Ioa-qJ-CP1" secondAttribute="leading" id="hdq-eD-h0N"/>
+                            <constraint firstItem="Ioa-qJ-CP1" firstAttribute="trailing" secondItem="VK9-DS-Qnz" secondAttribute="trailing" id="xIe-cf-VcK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uvP-hF-UgX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="IconBack" id="6Mt-Pm-PpE">
+                            <connections>
+                                <action selector="backAction" destination="MZ8-DG-wSo" id="USf-pQ-7qh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="periodPredictionSwitch" destination="34f-Cb-s3n" id="Xxi-6M-Mnx"/>
+                        <outlet property="trackPeriodSwitch" destination="rHa-UD-4dL" id="d2J-0B-ecP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWS-aV-Usf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="1356"/>
+        </scene>
+        <!--Cycle Days View Controller-->
+        <scene sceneID="gr2-A8-3Qt">
+            <objects>
+                <viewController storyboardIdentifier="EUKCycleDaysViewController" id="ySF-A7-c7M" customClass="EUKCycleDaysViewController" customModule="Euki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rrw-v9-9Tl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEX-Ee-xxh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hLa-zh-BHk" customClass="UPCarouselFlowLayout" customModule="UPCarouselFlowLayout">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="sideItemScale">
+                                            <real key="value" value="0.59999999999999998"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="sideItemAlpha">
+                                            <real key="value" value="0.20000000000000001"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ySF-A7-c7M" id="XBA-Kn-wm4"/>
+                                    <outlet property="delegate" destination="ySF-A7-c7M" id="zOS-lT-PBs"/>
+                                </connections>
+                            </collectionView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDm-d5-GD4">
+                                <rect key="frame" x="10" y="411" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jhf-34-xFp"/>
+                                    <constraint firstAttribute="width" constant="30" id="bP1-2Q-hdq"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="IconCycleArrowLeft"/>
+                                <connections>
+                                    <action selector="leftAction" destination="ySF-A7-c7M" eventType="touchUpInside" id="vDt-lD-DCB"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gai-z5-MJH">
+                                <rect key="frame" x="353" y="411" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BBb-s2-ZIo"/>
+                                    <constraint firstAttribute="width" constant="30" id="qJS-76-bLb"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="IconCycleArrowRight"/>
+                                <connections>
+                                    <action selector="rightAction" destination="ySF-A7-c7M" eventType="touchUpInside" id="YZc-Ly-TLU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JF6-j4-IaM"/>
+                        <color key="backgroundColor" name="eukiBackground"/>
+                        <constraints>
+                            <constraint firstItem="ZEX-Ee-xxh" firstAttribute="leading" secondItem="rrw-v9-9Tl" secondAttribute="leading" id="BPy-Z8-dPq"/>
+                            <constraint firstItem="tDm-d5-GD4" firstAttribute="centerY" secondItem="rrw-v9-9Tl" secondAttribute="centerY" id="Gbo-ab-lA8"/>
+                            <constraint firstItem="tDm-d5-GD4" firstAttribute="leading" secondItem="rrw-v9-9Tl" secondAttribute="leading" constant="10" id="I5b-KE-zFJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZEX-Ee-xxh" secondAttribute="trailing" id="Y5z-n6-u2W"/>
+                            <constraint firstAttribute="bottom" secondItem="ZEX-Ee-xxh" secondAttribute="bottom" id="b8F-nG-Brk"/>
+                            <constraint firstItem="gai-z5-MJH" firstAttribute="centerY" secondItem="rrw-v9-9Tl" secondAttribute="centerY" id="hA4-Wf-Y3A"/>
+                            <constraint firstAttribute="trailing" secondItem="gai-z5-MJH" secondAttribute="trailing" constant="10" id="n85-M2-QAy"/>
+                            <constraint firstItem="ZEX-Ee-xxh" firstAttribute="top" secondItem="rrw-v9-9Tl" secondAttribute="top" id="rI9-bo-Ozi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ZEX-Ee-xxh" id="dLs-Pr-M2O"/>
+                        <outlet property="leftButton" destination="tDm-d5-GD4" id="73G-Jc-XEG"/>
+                        <outlet property="rightButton" destination="gai-z5-MJH" id="FhK-eg-whT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubP-eh-zeO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603.8167938931297" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconBack" width="16" height="16"/>
+        <image name="IconCycleArrowLeft" width="16" height="16"/>
+        <image name="IconCycleArrowRight" width="16" height="16"/>
+        <image name="IconCycleLength" width="80" height="81.666664123535156"/>
+        <image name="IconCyclePeriodLength" width="81.333335876464844" height="83.333335876464844"/>
+        <image name="IconCycleVariation" width="81.333335876464844" height="83.333335876464844"/>
+        <namedColor name="eukLightMint">
+            <color red="0.70999997854232788" green="0.98000001907348633" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="eukiAccent">
+            <color red="0.37999999523162842" green="0.31000000238418579" blue="0.76099997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukiBackground">
+            <color red="0.95300000905990601" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukiMain">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

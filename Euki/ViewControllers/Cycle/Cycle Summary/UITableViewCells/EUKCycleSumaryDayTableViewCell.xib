@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EUKCycleSumaryDayTableViewCell" rowHeight="118" id="KGk-i7-Jjw" customClass="EUKCycleSumaryDayTableViewCell" customModule="Euki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="541" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="541" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rob-cC-jtX">
+                        <rect key="frame" x="16" y="29.000000000000004" width="509" height="60.333333333333343"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb9-PV-f7a">
+                                <rect key="frame" x="0.0" y="0.0" width="509" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="eukiMain"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh4-o7-aLB" userLabel="SV">
+                                <rect key="frame" x="134.66666666666666" y="17" width="239.99999999999997" height="8"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="lv9-vC-dzi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxE-eS-tGa">
+                                <rect key="frame" x="0.0" y="25" width="509" height="18"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0W-aW-w2n" customClass="EUKBorderedView" customModule="Euki" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="509" height="18"/>
+                                        <color key="backgroundColor" name="eukPrimaryLighter"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="eukPrimaryLighter"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i56-nI-okE" customClass="EUKBorderedView" customModule="Euki" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ini-gM-sge">
+                                                <rect key="frame" x="51" y="-0.6666666666666643" width="7.3333333333333357" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" name="white"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Bleeding"/>
+                                        <constraints>
+                                            <constraint firstItem="ini-gM-sge" firstAttribute="centerX" secondItem="i56-nI-okE" secondAttribute="centerX" id="9nR-W2-h74"/>
+                                            <constraint firstItem="ini-gM-sge" firstAttribute="centerY" secondItem="i56-nI-okE" secondAttribute="centerY" id="tKi-NN-qLR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="Bleeding"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ng4-1N-1mz" customClass="EUKBorderedView" customModule="Euki" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="4" width="10" height="10"/>
+                                        <color key="backgroundColor" red="0.27058823529411763" green="0.20784313725490194" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="dxD-Oo-aug"/>
+                                            <constraint firstAttribute="width" constant="10" id="yPq-x2-pTg"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ng4-1N-1mz" firstAttribute="leading" secondItem="kxE-eS-tGa" secondAttribute="leading" constant="200" id="CYM-cr-9NF"/>
+                                    <constraint firstItem="i56-nI-okE" firstAttribute="leading" secondItem="kxE-eS-tGa" secondAttribute="leading" id="DVz-yd-Ksw"/>
+                                    <constraint firstItem="i56-nI-okE" firstAttribute="top" secondItem="kxE-eS-tGa" secondAttribute="top" id="LcA-7N-aOx"/>
+                                    <constraint firstItem="A0W-aW-w2n" firstAttribute="top" secondItem="kxE-eS-tGa" secondAttribute="top" id="T5r-d7-cek"/>
+                                    <constraint firstAttribute="bottom" secondItem="A0W-aW-w2n" secondAttribute="bottom" id="WtY-XN-2Bu"/>
+                                    <constraint firstAttribute="trailing" secondItem="A0W-aW-w2n" secondAttribute="trailing" id="bOM-4o-mIB"/>
+                                    <constraint firstAttribute="trailing" secondItem="i56-nI-okE" secondAttribute="trailing" constant="400" id="dLb-ne-SMP"/>
+                                    <constraint firstItem="A0W-aW-w2n" firstAttribute="leading" secondItem="kxE-eS-tGa" secondAttribute="leading" id="fBx-HI-Y4u"/>
+                                    <constraint firstAttribute="bottom" secondItem="i56-nI-okE" secondAttribute="bottom" id="gvC-gD-frk"/>
+                                    <constraint firstItem="Ng4-1N-1mz" firstAttribute="centerY" secondItem="kxE-eS-tGa" secondAttribute="centerY" id="rRG-Wd-ZTg"/>
+                                    <constraint firstAttribute="height" constant="18" id="sqO-lI-ltd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noq-dI-K9O" userLabel="SV">
+                                <rect key="frame" x="134.66666666666666" y="43" width="239.99999999999997" height="3"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="pag-TC-H7E"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gge-Ec-tfi" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
+                                <rect key="frame" x="5" y="46" width="499" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="eukiMain"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="period"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Gge-Ec-tfi" firstAttribute="leading" secondItem="rob-cC-jtX" secondAttribute="leading" constant="5" id="Bgg-RN-Xh6"/>
+                            <constraint firstAttribute="trailing" secondItem="kxE-eS-tGa" secondAttribute="trailing" id="awQ-t5-xFb"/>
+                            <constraint firstAttribute="trailing" secondItem="Yb9-PV-f7a" secondAttribute="trailing" id="cFg-zL-Ptp"/>
+                            <constraint firstItem="kxE-eS-tGa" firstAttribute="leading" secondItem="rob-cC-jtX" secondAttribute="leading" id="qcq-A0-hd2"/>
+                            <constraint firstItem="Yb9-PV-f7a" firstAttribute="leading" secondItem="rob-cC-jtX" secondAttribute="leading" id="sNW-3l-iUb"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rob-cC-jtX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VNM-ts-GhQ"/>
+                    <constraint firstAttribute="trailing" secondItem="rob-cC-jtX" secondAttribute="trailing" constant="16" id="gdp-88-QmM"/>
+                    <constraint firstItem="rob-cC-jtX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xpo-YK-Hv8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bleedingLabel" destination="ini-gM-sge" id="8eJ-yC-Ron"/>
+                <outlet property="bleedingSizeTrailingConstraint" destination="dLb-ne-SMP" id="3AE-34-HaX"/>
+                <outlet property="currentDayIndicatorView" destination="Ng4-1N-1mz" id="eju-aA-e0x"/>
+                <outlet property="dayIndicatorLeadingConstraint" destination="CYM-cr-9NF" id="h9Q-rp-Wes"/>
+                <outlet property="periodSizeTrailingConstraint" destination="bOM-4o-mIB" id="Yqa-Eo-T1J"/>
+                <outlet property="rangeLabel" destination="Yb9-PV-f7a" id="uiQ-sd-mof"/>
+                <outlet property="slidersView" destination="kxE-eS-tGa" id="7s8-U7-Nva"/>
+            </connections>
+            <point key="canvasLocation" x="199.23664122137404" y="-19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="A0W-aW-w2n">
+            <size key="intrinsicContentSize" width="-1" height="40"/>
+        </designable>
+        <designable name="i56-nI-okE">
+            <size key="intrinsicContentSize" width="-1" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Bleeding">
+            <color red="0.76499998569488525" green="0.0" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukPrimaryLighter">
+            <color red="0.7803921568627451" green="0.72549019607843135" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukiMain">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

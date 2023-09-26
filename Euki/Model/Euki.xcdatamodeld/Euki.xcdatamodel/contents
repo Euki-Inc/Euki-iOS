@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EUKCalendarItem" representedClassName="EUKCalendarItem" syncable="YES" codeGenerationType="class">
+        <attribute name="appointments" optional="YES" attributeType="Transformable"/>
+        <attribute name="bleedingClotsCounter" optional="YES" attributeType="Transformable"/>
+        <attribute name="bleedingProductsCounter" optional="YES" attributeType="Transformable"/>
+        <attribute name="bleedingSize" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="body" optional="YES" attributeType="Transformable"/>
+        <attribute name="categories" optional="YES" attributeType="Transformable"/>
+        <attribute name="contraceptionDailyOther" optional="YES" attributeType="Transformable"/>
+        <attribute name="contraceptionImplant" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contraceptionIud" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contraceptionLongTermOther" optional="YES" attributeType="Transformable"/>
+        <attribute name="contraceptionPatch" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contraceptionPill" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="contraceptionRing" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="emotions" optional="YES" attributeType="Transformable"/>
+        <attribute name="includeCycleSummary" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="sexualOtherCounter" optional="YES" attributeType="Transformable"/>
+        <attribute name="sexualProtectionPregnancyCounter" optional="YES" attributeType="Transformable"/>
+        <attribute name="sexualProtectionSTICounter" optional="YES" attributeType="Transformable"/>
+        <attribute name="testPregnancy" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="testSTI" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+</model>
