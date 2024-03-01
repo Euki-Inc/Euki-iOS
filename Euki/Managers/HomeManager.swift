@@ -14,6 +14,7 @@ class HomeManager: NSObject {
     
     func requestMainItems() -> [ContentItem] {
         var items = [ContentItem]()
+        items.append(ContentItem(id: "menstruation", imageIcon: "IconMenstruation"))
         items.append(ContentItem(id: "abortion", imageIcon: "IconAbortion"))
         items.append(ContentItem(id: "contraception", imageIcon: "IconContraception"))
         items.append(ContentItem(id: "sexuality", imageIcon: "IconSexuality"))

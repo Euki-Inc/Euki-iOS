@@ -89,6 +89,17 @@ class EUKHomeViewController: EUKCommonTilesViewController {
     
     override func showContentItem(item: ContentItem) {
         switch item.id {
+            
+        case "menstruation":
+               ContentManager.sharedInstance.requestMenstruationOptions { [unowned self] (contentItem) in
+                   if let contentItem = contentItem {
+                       if let viewController = EUKAutoContentViewController.initViewController() {
+                           viewController.contentItem = contentItem
+                           self.navigationController?.pushViewController(viewController, animated: true)
+                       }
+                   }
+               }
+            
         case "abortion":
             if let abortionViewController = EUKAbortionViewController.initViewController() {
                 self.navigationController?.pushViewController(abortionViewController, animated: true)

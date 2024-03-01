@@ -92,8 +92,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setIQKeyboard(){
-        IQKeyboardManager.sharedManager().enable = true
-        IQKeyboardManager.sharedManager().enableAutoToolbar = true
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = true
     }
     
     func showMainViewController(){

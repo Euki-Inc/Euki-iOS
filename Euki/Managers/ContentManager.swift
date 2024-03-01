@@ -18,6 +18,7 @@ class ContentManager: NSObject {
     let MiscarriageJson = "miscarriage"
     let SexRelationshipsJson = "sex_relationships"
     let PregnancyOptionsJson = "pregnancy_options"
+    let menstruationOptionsJson = "menstruation_options"
     
     var abortionKnowledgeContentItem: ContentItem?
     var abortionWalkthroughContentItem: ContentItem?
@@ -26,8 +27,23 @@ class ContentManager: NSObject {
     var miscarriageContentItem: ContentItem?
     var sexRelationshipsContentItem: ContentItem?
     var pregnancyOptionsContentItem: ContentItem?
+    var menstruationContentItem: ContentItem?
     
     //MARK: - Public
+    
+    
+    func requestMenstruationOptions(responseHandler: @escaping (ContentItem?) -> Void) {
+        if let contentItem = self.menstruationContentItem {
+            responseHandler(contentItem)
+        } else{
+            DispatchQueue.global(qos: .background).async {
+                self.menstruationContentItem = self.createContentItem(fileName: self.menstruationOptionsJson)
+                DispatchQueue.main.async {
+                    responseHandler(self.abortionKnowledgeContentItem)
+                }
+            }
+        }
+    }
     
     func requestAbortionKnowledge(responseHandler: @escaping (ContentItem?) -> Void) {
         if let contentItem = self.abortionKnowledgeContentItem {
@@ -134,6 +150,12 @@ class ContentManager: NSObject {
     }
     
     func requestContentItem(id: String) -> ContentItem? {
+     
+        if self.menstruationContentItem == nil {
+               self.menstruationContentItem = self.createContentItem(fileName: self.menstruationOptionsJson)
+           }
+        
+        
         if self.abortionKnowledgeContentItem == nil {
             self.abortionKnowledgeContentItem = self.createContentItem(fileName: self.AbortionKnowledgeJson)
         }
@@ -278,9 +300,16 @@ class ContentManager: NSObject {
     }
     
     //MARK: - Global Search
-    
     func requestContentItem(searchText: String) -> [ContentItem] {
         var contentItems = [ContentItem]()
+        
+        if self.menstruationContentItem == nil {
+            self.menstruationContentItem = self.createContentItem(fileName: self.menstruationOptionsJson)
+        }
+        
+        if let menstruationContentItem = self.menstruationContentItem {
+            contentItems.append(contentsOf: self.searchContentItem(searchText: searchText, contentItem: menstruationContentItem))
+        }
         
         if self.abortionKnowledgeContentItem == nil {
             self.abortionKnowledgeContentItem = self.createContentItem(fileName: self.AbortionKnowledgeJson)

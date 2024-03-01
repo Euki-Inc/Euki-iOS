@@ -244,7 +244,7 @@ extension EUKBaseViewController: UITextViewDelegate {
             self.present(remindersViewConroller, animated: true, completion: nil)
             return false
         }
-        if URL.absoluteString == "resources" || URL.absoluteString == "sexuality_resources" {
+        if URL.absoluteString == "resources" || URL.absoluteString == "sexuality_resources" || URL.absoluteString == "contraception" || URL.absoluteString == "method_information"  || URL.absoluteString == "symptom_management" {
             if let item = ContentManager.sharedInstance.requestContentItem(id: URL.absoluteString) {
                 self.showContentItem(item: item)
             }
