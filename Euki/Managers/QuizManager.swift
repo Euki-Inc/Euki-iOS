@@ -109,4 +109,96 @@ class QuizManager: NSObject {
         let result = (hasAnswer ? "recommended_methods" : "no_recommended_methods").localized
         return (result, resultIndexes)
     }
+    
+    func requestMenstruationQuiz(responseHandler: @escaping (Quiz?) -> Void) {
+        let quiz = Quiz(instructions: "menstruation_quiz_instructions")
+
+        var question = Question(title: "id_prefer_to_get_menstrual_products")
+        question.options.append(("at_the_pharmacy", [2, 3, 4, 5, 7]))
+        question.options.append(("at_the_grocery_store", [1, 2, 3, 7]))
+        question.options.append(("at_the_gas_station", [2, 3, 7]))
+        question.options.append(("online", [1, 2, 3, 4, 5, 6, 7]))
+        question.options.append(("free_at_a_clinic", [2, 3, 7]))
+        quiz.questions.append(question)
+
+        question = Question(title: "id_prefer_to_pay")
+        question.options.append(("about_5_10_per_month", [2, 3, 7]))
+        question.options.append(("about_15_20_per_month", [5]))
+        question.options.append(("about_20_50_one_time", [1, 4, 6]))
+        quiz.questions.append(question)
+
+        question = Question(title: "id_like_a_product_i_can_swim_in")
+        question.options.append(("yes", [3, 4, 5]))
+        question.options.append(("no", [1, 2, 6, 7]))
+        quiz.questions.append(question)
+
+        question = Question(title: "i_want_a_product_that_i_only_have_to_change_every")
+        question.options.append(("two_four_hours", [1, 2, 3, 7]))
+        question.options.append(("four_eight_hours", [3, 6]))
+        question.options.append(("up_to_12_hours", [4, 5, 6]))
+        quiz.questions.append(question)
+
+        question = Question(title: "id_prefer_a_product_that_i_can")
+        question.options.append(("wear_outside_of_my_body", [1, 2, 6, 7]))
+        question.options.append(("insert_into_my_body", [3, 4, 5]))
+        quiz.questions.append(question)
+
+        responseHandler(quiz)
+    }
+    
+    
+    func resultMenstruation(quiz: Quiz) -> (String, [Int]) {
+        var hasAnswer = false
+        var contraceptionCounts = [Int: Int]()
+        for index in 1 ... 7 { // Change the limit to 7
+            contraceptionCounts[index] = 0
+        }
+        
+        for question in quiz.questions {
+            if let answerIndex = question.answerIndex {
+                for contraceptionIndex in question.options[answerIndex].1 {
+                    if let value = contraceptionCounts[contraceptionIndex] {
+                        contraceptionCounts[contraceptionIndex] = value + 1
+                        hasAnswer = true
+                    }
+                }
+            }
+        }
+        
+        var resultIndexes = [Int]()
+        
+        if hasAnswer {
+            while resultIndexes.count < 3 {
+                var currentMax = contraceptionCounts[0] ?? -1
+                var maxKey = 0
+                for key in contraceptionCounts.keys {
+                    let value = contraceptionCounts[key] ?? -1
+                    
+                    if currentMax < value {
+                        currentMax = value
+                        maxKey = key
+                    }
+                }
+                
+                if currentMax > 3 {
+                    for currentKey in contraceptionCounts.keys {
+                        if let value = contraceptionCounts[currentKey] {
+                            if value == currentMax {
+                                contraceptionCounts[currentKey] = -1
+                                resultIndexes.append(currentKey)
+                            }
+                        }
+                    }
+                } else {
+                    contraceptionCounts[maxKey] = -1
+                    resultIndexes.append(maxKey)
+                }
+            }
+        }
+        
+        let result = (hasAnswer ? "recommended_methods_menstruation" : "no_recommended_methods_menstruation").localized
+        return (result, resultIndexes)
+    }
+
+
 }

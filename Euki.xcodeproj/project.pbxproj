@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E077482B90AB070023BB30 /* menstruation_options.json in Resources */ = {isa = PBXBuildFile; fileRef = 02E077472B90AB070023BB30 /* menstruation_options.json */; };
+		02E0774A2B9220E40023BB30 /* MenstruationContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E077492B9220E40023BB30 /* MenstruationContentManager.swift */; };
+		02E0774C2B92231F0023BB30 /* QuizType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0774B2B92231F0023BB30 /* QuizType.swift */; };
+		2FB452E5C07D4E0E55BB62B4 /* Pods_Euki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B56CB39EAB3B2FDA1CBD4 /* Pods_Euki.framework */; };
 		7700221C20FE39FA005ED0E4 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7700221B20FE39FA005ED0E4 /* Quiz.storyboard */; };
 		7700221F20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7700221E20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift */; };
 		7700222120FE435B005ED0E4 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7700222020FE435B005ED0E4 /* Quiz.swift */; };
@@ -154,7 +158,6 @@
 		77ED361220DF147A00FC9006 /* Euki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77ED361020DF147A00FC9006 /* Euki.xcdatamodeld */; };
 		77ED361420DF2F0D00FC9006 /* UIColorInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED361320DF2F0D00FC9006 /* UIColorInputError.swift */; };
 		77F1554F217D282A00A8DCA5 /* ConstansManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1554E217D282A00A8DCA5 /* ConstansManager.swift */; };
-		C6B05A36CBE08F02E753BB56 /* Pods_Euki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0939AB8B89D2F01ED4186E /* Pods_Euki.framework */; };
 		F165D0BF2A3AB2C600C16D0B /* EUKNoActionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165D0BE2A3AB2C600C16D0B /* EUKNoActionTextField.swift */; };
 		F165D0C12A3B5FC800C16D0B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165D0C02A3B5FC800C16D0B /* CoreDataManager.swift */; };
 		F165D0C52A3D50F700C16D0B /* EUKCycleSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165D0C42A3D50F700C16D0B /* EUKCycleSummaryViewController.swift */; };
@@ -204,8 +207,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A0939AB8B89D2F01ED4186E /* Pods_Euki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47E8FD3F513D69C7AD6FE8A1 /* Pods-Euki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euki/Pods-Euki.debug.xcconfig"; sourceTree = "<group>"; };
+		02E077472B90AB070023BB30 /* menstruation_options.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menstruation_options.json; sourceTree = "<group>"; };
+		02E077492B9220E40023BB30 /* MenstruationContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstruationContentManager.swift; sourceTree = "<group>"; };
+		02E0774B2B92231F0023BB30 /* QuizType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizType.swift; sourceTree = "<group>"; };
 		7700221B20FE39FA005ED0E4 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		7700221E20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKBaseQuizViewController.swift; sourceTree = "<group>"; };
 		7700222020FE435B005ED0E4 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
@@ -356,7 +360,8 @@
 		77ED361120DF147A00FC9006 /* Euki.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Euki.xcdatamodel; sourceTree = "<group>"; };
 		77ED361320DF2F0D00FC9006 /* UIColorInputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorInputError.swift; sourceTree = "<group>"; };
 		77F1554E217D282A00A8DCA5 /* ConstansManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstansManager.swift; sourceTree = "<group>"; };
-		93CF8B49F2BA8D6EC3D463B9 /* Pods-Euki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euki.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euki/Pods-Euki.release.xcconfig"; sourceTree = "<group>"; };
+		932B56CB39EAB3B2FDA1CBD4 /* Pods_Euki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD82DAB3A5A61E1238D566E6 /* Pods-Euki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euki.release.xcconfig"; path = "Target Support Files/Pods-Euki/Pods-Euki.release.xcconfig"; sourceTree = "<group>"; };
 		F12C597623C6E93A00AB2C5E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F165D0BE2A3AB2C600C16D0B /* EUKNoActionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKNoActionTextField.swift; sourceTree = "<group>"; };
 		F165D0C02A3B5FC800C16D0B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -404,6 +409,7 @@
 		F1FE69C02A2590F800577103 /* EUKSegmentedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EUKSegmentedView.xib; sourceTree = "<group>"; };
 		F1FE69C22A27115F00577103 /* EUKNavItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKNavItemView.swift; sourceTree = "<group>"; };
 		F1FE69C42A27117000577103 /* EUKNavItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EUKNavItemView.xib; sourceTree = "<group>"; };
+		F49889937C1DECBC5B6D96A9 /* Pods-Euki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euki.debug.xcconfig"; path = "Target Support Files/Pods-Euki/Pods-Euki.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,20 +417,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6B05A36CBE08F02E753BB56 /* Pods_Euki.framework in Frameworks */,
+				2FB452E5C07D4E0E55BB62B4 /* Pods_Euki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65F3E5C82F8DBDAAC3D1E7ED /* Pods */ = {
+		11E8980D76717377E1C103A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				47E8FD3F513D69C7AD6FE8A1 /* Pods-Euki.debug.xcconfig */,
-				93CF8B49F2BA8D6EC3D463B9 /* Pods-Euki.release.xcconfig */,
+				F49889937C1DECBC5B6D96A9 /* Pods-Euki.debug.xcconfig */,
+				BD82DAB3A5A61E1238D566E6 /* Pods-Euki.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		28F7A6674A3BCE48A97FC757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932B56CB39EAB3B2FDA1CBD4 /* Pods_Euki.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7700221D20FE3A92005ED0E4 /* Quiz */ = {
@@ -552,8 +566,8 @@
 			children = (
 				77AB6A52205DF36700978CC6 /* Euki */,
 				77AB6A51205DF36700978CC6 /* Products */,
-				65F3E5C82F8DBDAAC3D1E7ED /* Pods */,
-				901E67C30E5CE81A5D3A7293 /* Frameworks */,
+				11E8980D76717377E1C103A3 /* Pods */,
+				28F7A6674A3BCE48A97FC757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -616,6 +630,7 @@
 			isa = PBXGroup;
 			children = (
 				772CE69E20C0CEAE007A9512 /* Constants.swift */,
+				02E0774B2B92231F0023BB30 /* QuizType.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -736,6 +751,7 @@
 				F1DCC4D328F1DD120093CDF5 /* EukiUserDefaults.swift */,
 				F18225F02A357D8000D2A210 /* CycleManager.swift */,
 				F165D0C02A3B5FC800C16D0B /* CoreDataManager.swift */,
+				02E077492B9220E40023BB30 /* MenstruationContentManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -787,6 +803,7 @@
 		77B4ED0F206DB94600F0565A /* Json */ = {
 			isa = PBXGroup;
 			children = (
+				02E077472B90AB070023BB30 /* menstruation_options.json */,
 				7703410920E198A90019D2A0 /* pregnancy_options.json */,
 				7703410720E1940C0019D2A0 /* sex_relationships.json */,
 				7703410520E18A630019D2A0 /* miscarriage.json */,
@@ -834,14 +851,6 @@
 				F1A0514D2903B37500B5C61D /* EUKFakeCodeViewController.swift */,
 			);
 			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		901E67C30E5CE81A5D3A7293 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2A0939AB8B89D2F01ED4186E /* Pods_Euki.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F165D0C22A3D50F700C16D0B /* Cycle Summary */ = {
@@ -926,11 +935,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77AB6A62205DF36700978CC6 /* Build configuration list for PBXNativeTarget "Euki" */;
 			buildPhases = (
-				C61FD8C121B732E5F546F1BA /* [CP] Check Pods Manifest.lock */,
+				8F6C39C0C47FE79601D76C85 /* [CP] Check Pods Manifest.lock */,
 				77AB6A4C205DF36700978CC6 /* Sources */,
 				77AB6A4D205DF36700978CC6 /* Frameworks */,
 				77AB6A4E205DF36700978CC6 /* Resources */,
-				A6EA1C7E81CC431DAB5CAF0A /* [CP] Embed Pods Frameworks */,
+				661E8694D69E7B2855FBC940 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -947,9 +956,10 @@
 		77AB6A48205DF36700978CC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = EUK;
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Ibis;
 				TargetAttributes = {
 					77AB6A4F205DF36700978CC6 = {
@@ -1012,6 +1022,7 @@
 				77ADE8C121B8DCEE00222818 /* EUKSetRemindersTableViewCell.xib in Resources */,
 				7703410820E1940C0019D2A0 /* sex_relationships.json in Resources */,
 				77AB6A7A2061D26300978CC6 /* Colors.xcassets in Resources */,
+				02E077482B90AB070023BB30 /* menstruation_options.json in Resources */,
 				F1C200692A293E1700B4F4AE /* Cycle.storyboard in Resources */,
 				77AB6A73205DF8F700978CC6 /* Assets.xcassets in Resources */,
 				777FABF4207A86DC0061E23F /* EUKTileFooterCollectionReusableView.xib in Resources */,
@@ -1030,7 +1041,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A6EA1C7E81CC431DAB5CAF0A /* [CP] Embed Pods Frameworks */ = {
+		661E8694D69E7B2855FBC940 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1066,16 +1077,20 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Euki/Pods-Euki-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C61FD8C121B732E5F546F1BA /* [CP] Check Pods Manifest.lock */ = {
+		8F6C39C0C47FE79601D76C85 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Euki-checkManifestLockResult.txt",
 			);
@@ -1105,6 +1120,7 @@
 				F1DCC4D428F1DD120093CDF5 /* EukiUserDefaults.swift in Sources */,
 				7771BBCF2207CC8C003B5A82 /* EUKAddAppointmentTableViewCell.swift in Sources */,
 				77B6474E20916DA1008081C6 /* UIView+Screenshot.swift in Sources */,
+				02E0774C2B92231F0023BB30 /* QuizType.swift in Sources */,
 				774655B421B6AF1800755299 /* EUKMedicalAbortionViewController.swift in Sources */,
 				77183FEC20D3394C00B80E44 /* EUKLogViewController.swift in Sources */,
 				77E2799221ACFBE800D44D51 /* EUKSelectableTableViewCell.swift in Sources */,
@@ -1173,6 +1189,7 @@
 				77B4ED15206EAB5A00F0565A /* EUKCommonExpandableViewController.swift in Sources */,
 				772CE6A320C0D0FE007A9512 /* Appointment.swift in Sources */,
 				7700221F20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift in Sources */,
+				02E0774A2B9220E40023BB30 /* MenstruationContentManager.swift in Sources */,
 				774458F320935CF3008125A5 /* SeparatorCollectionViewFlowLayout.swift in Sources */,
 				77E9060F218ABD1100CB3FBE /* HomeManager.swift in Sources */,
 				7700222320FE4369005ED0E4 /* Question.swift in Sources */,
@@ -1292,6 +1309,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1299,8 +1317,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1326,12 +1346,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1350,6 +1371,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1357,8 +1379,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1378,29 +1402,34 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		77AB6A63205DF36700978CC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47E8FD3F513D69C7AD6FE8A1 /* Pods-Euki.debug.xcconfig */;
+			baseConfigurationReference = F49889937C1DECBC5B6D96A9 /* Pods-Euki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20230626161900;
-				DEVELOPMENT_TEAM = VNH4GZ56WC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Euki/Support Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Euki;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.5.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.euki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1414,19 +1443,22 @@
 		};
 		77AB6A64205DF36700978CC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93CF8B49F2BA8D6EC3D463B9 /* Pods-Euki.release.xcconfig */;
+			baseConfigurationReference = BD82DAB3A5A61E1238D566E6 /* Pods-Euki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20230626161900;
-				DEVELOPMENT_TEAM = VNH4GZ56WC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Euki/Support Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Euki;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.5.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.euki;
 				PRODUCT_NAME = "$(TARGET_NAME)";

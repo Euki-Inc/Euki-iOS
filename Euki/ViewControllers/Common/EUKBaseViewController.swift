@@ -108,7 +108,11 @@ class EUKBaseViewController: UIViewController {
     func showContentItem(item: ContentItem) {
         switch item.id {
         case "compare_methods":
-            if let viewController = EUKBaseQuizViewController.initViewController() {
+            if let viewController = EUKBaseQuizViewController.initViewController(quizType: .contraception) {
+                self.present(viewController, animated: true, completion: nil)
+            }
+        case "product_quiz":
+            if let viewController = EUKBaseQuizViewController.initViewController(quizType: .menstruation) {
                 self.present(viewController, animated: true, completion: nil)
             }
         case "medical_abortion":
@@ -142,7 +146,9 @@ class EUKBaseViewController: UIViewController {
     func viewController(item: ContentItem, responseHandler: @escaping (UIViewController?) -> Void) {
         switch item.id {
         case "compare_methods":
-            responseHandler(EUKBaseQuizViewController.initViewController())
+            responseHandler(EUKBaseQuizViewController.initViewController(quizType: .contraception))
+        case "product_quiz":
+            responseHandler(EUKBaseQuizViewController.initViewController(quizType: .menstruation))
         case "medical_abortion":
             responseHandler(EUKMedicalAbortionViewController.initViewController())
         case "suction_or_vacuum":

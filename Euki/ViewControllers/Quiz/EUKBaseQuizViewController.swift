@@ -19,16 +19,18 @@ class EUKBaseQuizViewController: EUKBasePinCheckViewController {
     }
     
     @IBOutlet weak var questionsCollectionView: UICollectionView!
-    @IBOutlet weak var contraceptionCollectionView: UICollectionView!
+    @IBOutlet weak var quizCollectionView: UICollectionView!
     
     var quiz: Quiz?
     var currentQuestion: Question?
     var results: (String, [Int])?
+    var quizType: QuizType = .contraception
 
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("EUKBaseQuizViewController - View Did Load")
         self.setUIElements()
         self.requestQuiz()
     }
@@ -54,11 +56,30 @@ class EUKBaseQuizViewController: EUKBasePinCheckViewController {
     
     func updateUIElements() {
         self.questionsCollectionView.reloadData()
-        self.contraceptionCollectionView.reloadData()
+        self.quizCollectionView.reloadData()
     }
     
     func requestQuiz() {
+        switch quizType {
+        case .contraception:
+            requestContraceptionQuiz()
+        case .menstruation:
+            requestMenstruationQuiz()
+        }
+     
+    }
+    
+    func requestContraceptionQuiz(){
         QuizManager.sharedInstance.requestContraceptionQuiz { [unowned self] (quiz) in
+            if let quiz = quiz {
+                self.quiz = quiz
+                self.updateUIElements()
+            }
+        }
+    }
+    
+    func requestMenstruationQuiz(){
+        QuizManager.sharedInstance.requestMenstruationQuiz { [unowned self] (quiz) in
             if let quiz = quiz {
                 self.quiz = quiz
                 self.updateUIElements()
@@ -71,17 +92,24 @@ class EUKBaseQuizViewController: EUKBasePinCheckViewController {
             return
         }
         
-        self.results = QuizManager.sharedInstance.resultContraception(quiz: quiz)
-        self.contraceptionCollectionView.reloadData()
+        if quizType == .contraception {
+                self.results = QuizManager.sharedInstance.resultContraception(quiz: quiz)
+                self.quizCollectionView.reloadData()
+            } else {
+                self.results = QuizManager.sharedInstance.resultMenstruation(quiz: quiz)
+                self.quizCollectionView.reloadData()
+            }
     }
     
-    class func initViewController() -> UIViewController? {
-        if let viewController = UIStoryboard(name: "Quiz", bundle: Bundle.main).instantiateInitialViewController() {
-            return viewController
-        }
-        
-        return nil
-    }
+    class func initViewController(quizType: QuizType) -> UIViewController? {
+          let storyboard = UIStoryboard(name: "Quiz", bundle: Bundle.main)
+          if let viewController = storyboard.instantiateInitialViewController() as? EUKBaseQuizViewController {
+              viewController.quizType = quizType
+              return viewController
+          }
+
+          return nil
+      }
 }
 
 extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -90,10 +118,10 @@ extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == self.contraceptionCollectionView {
-            return 12
+        if collectionView == self.quizCollectionView {
+            return quizType == .contraception ? 12 : (quizType == .menstruation ? 7 : 0)
         }
-        
+
         if let quiz = self.quiz {
             return quiz.questions.count + 2
         }
@@ -101,7 +129,7 @@ extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == self.contraceptionCollectionView {
+        if collectionView == self.quizCollectionView {
             return self.configureContraceptionCell(collectionView: collectionView, cellForItemAt: indexPath)
         }
         
@@ -124,7 +152,7 @@ extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewSize = collectionView.bounds.size
-        if collectionView == self.contraceptionCollectionView {
+        if collectionView == self.quizCollectionView {
             return CGSize(width: collectionViewSize.width / 3, height: collectionViewSize.height / 4)
         }
         
@@ -137,6 +165,17 @@ extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewD
     func configureContraceptionCell(collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.CellIdentifier, for: indexPath)
         
+        var titleText: String?
+        var iconName: String?
+
+         if quizType == .contraception {
+             iconName = "IconContraception\(indexPath.row + 1)"
+             titleText = "contraception_\(indexPath.row + 1)"
+         } else if quizType == .menstruation {
+             iconName = "IconMenstruation\(indexPath.row + 1)"
+             titleText = "menstruation_\(indexPath.row + 1)"
+         }
+
         var alpha: CGFloat = 0.3
         if let currentQuestion = self.currentQuestion, let answerIndex = currentQuestion.answerIndex {
             if currentQuestion.options[answerIndex].1.contains(indexPath.row + 1) {
@@ -151,14 +190,14 @@ extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewD
         }
         
         if let button = cell.contentView.viewWithTag(CellTags.button.rawValue) as? UIButton {
-            button.setImage(UIImage(named: "IconContraception\(indexPath.row + 1)"), for: .normal)
+            button.setImage(UIImage(named: iconName ?? ""), for: .normal)
             button.imageView?.contentMode = .scaleAspectFit
             button.alpha = alpha
             button.superview?.tag = indexPath.row
             button.addTarget(self, action: #selector(EUKBaseQuizViewController.showMethod(button:)), for: .touchUpInside)
         }
         if let titleLabel = cell.contentView.viewWithTag(CellTags.title.rawValue) as? UILabel {
-            titleLabel.text = "contraception_\(indexPath.row + 1)".localized
+            titleLabel.text =  titleText?.localized
             titleLabel.alpha = alpha
         }
         
@@ -217,13 +256,13 @@ extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewD
             
             if index == 0 {
                 self.currentQuestion = nil
-                self.contraceptionCollectionView.reloadData()
+                self.quizCollectionView.reloadData()
             } else if index == self.collectionView(self.questionsCollectionView, numberOfItemsInSection: 0) - 1 {
                 self.currentQuestion = nil
                 self.showResults()
             } else {
                 self.currentQuestion = self.quiz?.questions[index - 1]
-                self.contraceptionCollectionView.reloadData()
+                self.quizCollectionView.reloadData()
             }
             
             if max == self.collectionView(self.questionsCollectionView, numberOfItemsInSection: 0) - 1 {
@@ -237,6 +276,6 @@ extension EUKBaseQuizViewController: EUKQuestionDelegate {
     func questionSelected(question: Question) {
         self.results = nil
         self.currentQuestion = question
-        self.contraceptionCollectionView.reloadData()
+        self.quizCollectionView.reloadData()
     }
 }
