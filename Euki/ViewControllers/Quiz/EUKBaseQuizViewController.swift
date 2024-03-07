@@ -103,13 +103,11 @@ class EUKBaseQuizViewController: EUKBasePinCheckViewController {
     
     class func initViewController(quizType: QuizType) -> UIViewController? {
           let storyboard = UIStoryboard(name: "Quiz", bundle: Bundle.main)
-          if let viewController = storyboard.instantiateInitialViewController() as? EUKBaseQuizViewController {
-              viewController.quizType = quizType
+          let viewController = storyboard.instantiateInitialViewController()
+                
               return viewController
-          }
-
-          return nil
-      }
+ 
+       }
 }
 
 extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

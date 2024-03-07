@@ -113,7 +113,10 @@ class EUKBaseViewController: UIViewController {
             }
         case "product_quiz":
             if let viewController = EUKBaseQuizViewController.initViewController(quizType: .menstruation) {
-                self.present(viewController, animated: true, completion: nil)
+                if let viewC = viewController.visibleViewController() as? EUKBaseQuizViewController {
+                    viewC.quizType = .menstruation
+                    self.present(viewController, animated: true, completion: nil)
+                }
             }
         case "medical_abortion":
             let viewController = EUKMedicalAbortionViewController.initViewController()
@@ -273,4 +276,16 @@ extension EUKBaseViewController: UITextViewDelegate {
         }
         return true
     }
+}
+
+
+
+extension UIViewController {
+    func visibleViewController() -> UIViewController? {
+        if let nav = self as? UINavigationController {
+            return nav.visibleViewController
+        }
+        return self
+    }
+    
 }
