@@ -144,21 +144,21 @@ class ConstansManager: NSObject {
     func image(for bleedingProducts: BleedingProducts) -> String {
         switch bleedingProducts {
         case .reusablePad:
-            return "iconMenstruation1"
+            return "IconMenstruation1"
         case .disposablePad:
-            return "iconMenstruation2"
+            return "IconMenstruation2"
         case .tampon:
-            return "iconMenstruation3"
+            return "IconMenstruation3"
         case .menstrualCup:
-            return "iconMenstruation4"
+            return "IconMenstruation4"
         case .menstrualDisc:
-            return "iconMenstruation5"
+            return "IconMenstruation5"
         case .periodUnderwear:
-            return "iconMenstruation6"
+            return "IconMenstruation6"
         case .liner:
-            return "iconMenstruation7"
+            return "IconMenstruation7"
         case .pad:
-           return "iconMenstruation1"
+           return "IconMenstruation1"
         }
     }
     
