@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1gD-xB-uo8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1gD-xB-uo8">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -31,7 +31,7 @@
             <objects>
                 <navigationController storyboardIdentifier="NavRemindersViewController" id="cHr-IG-R21" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zv9-VF-wIK">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -47,7 +47,7 @@
             <objects>
                 <navigationController id="UF1-Bt-TVT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UDW-re-Y3c">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -367,7 +367,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-fv-Cnq">
-                                <rect key="frame" x="31.666666666666657" y="59" width="330" height="669.33333333333337"/>
+                                <rect key="frame" x="31.666666666666657" y="59" width="330" height="809.33333333333337"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBh-em-7gR">
                                         <rect key="frame" x="0.0" y="0.0" width="330" height="30"/>
@@ -507,7 +507,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-ff-Mut">
-                                        <rect key="frame" x="0.0" y="389.33333333333326" width="330" height="280"/>
+                                        <rect key="frame" x="0.0" y="389.33333333333326" width="330" height="420"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-sL-q87">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="140"/>
@@ -519,7 +519,7 @@
                                                             <constraint firstAttribute="width" constant="88" id="whu-yc-DiZ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconBleedingPad"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="IconMenstruation1"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bleeding_produc_1"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="singleSelection" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
@@ -531,7 +531,7 @@
                                                             <constraint firstAttribute="width" constant="88" id="0jE-xu-cHA"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconBleedingLiner"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="IconMenstruation2"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bleeding_produc_2"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="singleSelection" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
@@ -543,7 +543,7 @@
                                                             <constraint firstAttribute="width" constant="88" id="Ye3-eT-ekU"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconBleedingTampon"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="IconMenstruation3"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bleeding_produc_3"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="singleSelection" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
@@ -563,7 +563,7 @@
                                                             <constraint firstAttribute="width" constant="88" id="Ycy-hg-zrp"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconBleedingMenstrualCup"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="IconMenstruation4"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bleeding_produc_4"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="singleSelection" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
@@ -575,21 +575,54 @@
                                                             <constraint firstAttribute="width" constant="88" id="R9V-DT-nMi"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconBleedingMenstrualUnderwear"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="IconMenstruation5"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bleeding_produc_5"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="singleSelection" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXl-cu-zex">
+                                                    <view tag="104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8Q-mJ-oZD" customClass="EUKSelectButton" customModule="Euki" customModuleProvider="target">
                                                         <rect key="frame" x="242" y="0.0" width="88" height="140"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="88" id="Sgi-dC-NlH"/>
+                                                            <constraint firstAttribute="width" constant="88" id="7ys-bc-bzh"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="IconMenstruation6"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bleeding_produc_6"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="singleSelection" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="140" id="SnD-1q-oze"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-Zn-daG">
+                                                <rect key="frame" x="0.0" y="280.00000000000006" width="330" height="140"/>
+                                                <subviews>
+                                                    <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-jk-xEd" customClass="EUKSelectButton" customModule="Euki" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="140"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="88" id="p75-SY-pF3"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="IconMenstruation7"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bleeding_produc_7"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="singleSelection" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n62-pb-JO4">
+                                                        <rect key="frame" x="120.99999999999999" y="0.0" width="0.0" height="140"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7D-yL-Alz">
+                                                        <rect key="frame" x="154" y="0.0" width="176" height="140"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="g7Q-tb-umZ"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
@@ -621,11 +654,13 @@
                         <outletCollection property="selectionButtons" destination="iR0-QK-m9B" collectionClass="NSMutableArray" id="n3U-9H-G7S"/>
                         <outletCollection property="clotsButtons" destination="XTA-7e-7Da" collectionClass="NSMutableArray" id="WQJ-uD-VkU"/>
                         <outletCollection property="clotsButtons" destination="99V-fM-9Ci" collectionClass="NSMutableArray" id="DYX-g8-fYT"/>
+                        <outletCollection property="productButtons" destination="V8Q-mJ-oZD" collectionClass="NSMutableArray" id="Ak3-EE-dYk"/>
+                        <outletCollection property="productButtons" destination="x8I-jk-xEd" collectionClass="NSMutableArray" id="tmF-Pu-KQO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etM-ZE-2Xl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="2489"/>
+            <point key="canvasLocation" x="240.45801526717557" y="2488.7323943661972"/>
         </scene>
         <!--Emotions View Controller-->
         <scene sceneID="G3r-cn-4xk">
@@ -2963,7 +2998,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5X0-4S-YWF">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="44" width="393" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewCellIdentifier" rowHeight="66" id="5LC-PW-gyI">
@@ -4059,7 +4094,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wnY-zk-x5T">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="44" width="393" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilterCellIdentifier" id="83h-bR-OD7">
@@ -4449,28 +4484,28 @@
     </scenes>
     <designables>
         <designable name="1lD-PL-fzt">
-            <size key="intrinsicContentSize" width="32" height="40"/>
+            <size key="intrinsicContentSize" width="32" height="27"/>
         </designable>
         <designable name="Ba6-ra-Va9">
-            <size key="intrinsicContentSize" width="63" height="40"/>
+            <size key="intrinsicContentSize" width="51" height="27"/>
         </designable>
         <designable name="I0E-bX-hZl">
-            <size key="intrinsicContentSize" width="94" height="40"/>
+            <size key="intrinsicContentSize" width="80" height="27"/>
         </designable>
         <designable name="Jsb-RH-g34">
-            <size key="intrinsicContentSize" width="105" height="40"/>
+            <size key="intrinsicContentSize" width="85" height="27"/>
         </designable>
         <designable name="cMd-IS-oT8">
-            <size key="intrinsicContentSize" width="119" height="40"/>
+            <size key="intrinsicContentSize" width="100" height="27"/>
         </designable>
         <designable name="ej9-QY-BKQ">
-            <size key="intrinsicContentSize" width="28" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="27"/>
         </designable>
         <designable name="sRv-7V-b8t">
-            <size key="intrinsicContentSize" width="132" height="40"/>
+            <size key="intrinsicContentSize" width="128" height="27"/>
         </designable>
         <designable name="zgB-ae-pVq">
-            <size key="intrinsicContentSize" width="94" height="40"/>
+            <size key="intrinsicContentSize" width="80" height="27"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -4522,6 +4557,13 @@
         <image name="IconContracetionSponge" width="80" height="80"/>
         <image name="IconEmotionsHorny" width="80" height="80"/>
         <image name="IconFilterOn" width="20" height="20"/>
+        <image name="IconMenstruation1" width="200" height="200"/>
+        <image name="IconMenstruation2" width="200" height="200"/>
+        <image name="IconMenstruation3" width="200" height="200"/>
+        <image name="IconMenstruation4" width="200" height="200"/>
+        <image name="IconMenstruation5" width="200" height="200"/>
+        <image name="IconMenstruation6" width="200" height="200"/>
+        <image name="IconMenstruation7" width="200" height="200"/>
         <image name="IconNoEntriesFuture" width="120" height="128"/>
         <image name="IconNoEntriesPast" width="120" height="120"/>
         <image name="IconPlus" width="20" height="20"/>
@@ -4529,11 +4571,6 @@
         <image name="IconTrackingInfo" width="20" height="20"/>
         <image name="IconTrackingInfoPressed" width="20" height="20"/>
         <image name="addTile" width="32" height="32"/>
-        <image name="iconBleedingLiner" width="80" height="80"/>
-        <image name="iconBleedingMenstrualCup" width="80" height="80"/>
-        <image name="iconBleedingMenstrualUnderwear" width="80" height="80"/>
-        <image name="iconBleedingPad" width="80" height="80"/>
-        <image name="iconBleedingTampon" width="80" height="80"/>
         <image name="iconEmotionsAngry" width="80" height="80"/>
         <image name="iconEmotionsCalm" width="80" height="80"/>
         <image name="iconEmotionsEnergetic" width="80" height="80"/>

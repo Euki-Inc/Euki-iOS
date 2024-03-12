@@ -20,6 +20,7 @@ class ContentItem: NSObject {
     var contentItems: [ContentItem]?
     var expandableItems: [ContentItem]?
     var selectableItems: [ContentItem]?
+    var swipePagerItems: [SwipePagerItem]?
     var selectableRowItems: [ContentItem]?
     var source: String?
     var links: [String: String]?
@@ -158,6 +159,17 @@ class ContentItem: NSObject {
             }
             self.boldStrings = boldStrings.isEmpty ? nil : boldStrings
         }
+        
+        if let swipePagerItemsJsonArray = json["swipe_pager_item"].array {
+                  var items = [SwipePagerItem]()
+                  for swipePagerItemJson in swipePagerItemsJsonArray {
+                      let pagerItem = SwipePagerItem(json: swipePagerItemJson)
+                      items.append(pagerItem)
+                  }
+                  if items.count > 0 {
+                      self.swipePagerItems = items
+                  }
+              }
     }
     
     func isDeeperLevel() -> Bool {

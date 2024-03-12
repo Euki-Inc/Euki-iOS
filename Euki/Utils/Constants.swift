@@ -25,7 +25,7 @@ enum BleedingClot: Int {
 
 enum BleedingProducts: Int {
     case pad = 0,
-    liner, tampon, menstrualCup, menstrualUnderwear
+    reusablePad, disposablePad, tampon, menstrualCup, menstrualDisc, periodUnderwear, liner
 }
 
 enum Emotions: Int {

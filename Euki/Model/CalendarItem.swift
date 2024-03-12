@@ -44,7 +44,7 @@ class CalendarItem: NSObject {
 		}
         
         self.bleedingProductsCounter = [Int]()
-        for _ in 1 ... 5 {
+        for _ in 1 ... 7 {
             self.bleedingProductsCounter.append(0)
         }
         

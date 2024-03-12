@@ -10,6 +10,7 @@
 		02E077482B90AB070023BB30 /* menstruation_options.json in Resources */ = {isa = PBXBuildFile; fileRef = 02E077472B90AB070023BB30 /* menstruation_options.json */; };
 		02E0774A2B9220E40023BB30 /* MenstruationContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E077492B9220E40023BB30 /* MenstruationContentManager.swift */; };
 		02E0774C2B92231F0023BB30 /* QuizType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0774B2B92231F0023BB30 /* QuizType.swift */; };
+		02E0774E2B9F21C70023BB30 /* SwipePagerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0774D2B9F21C70023BB30 /* SwipePagerItem.swift */; };
 		2FB452E5C07D4E0E55BB62B4 /* Pods_Euki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B56CB39EAB3B2FDA1CBD4 /* Pods_Euki.framework */; };
 		7700221C20FE39FA005ED0E4 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7700221B20FE39FA005ED0E4 /* Quiz.storyboard */; };
 		7700221F20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7700221E20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift */; };
@@ -210,6 +211,7 @@
 		02E077472B90AB070023BB30 /* menstruation_options.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menstruation_options.json; sourceTree = "<group>"; };
 		02E077492B9220E40023BB30 /* MenstruationContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstruationContentManager.swift; sourceTree = "<group>"; };
 		02E0774B2B92231F0023BB30 /* QuizType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizType.swift; sourceTree = "<group>"; };
+		02E0774D2B9F21C70023BB30 /* SwipePagerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipePagerItem.swift; sourceTree = "<group>"; };
 		7700221B20FE39FA005ED0E4 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		7700221E20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKBaseQuizViewController.swift; sourceTree = "<group>"; };
 		7700222020FE435B005ED0E4 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
@@ -653,6 +655,7 @@
 				F18225F52A35809E00D2A210 /* CycleDayItem.swift */,
 				F165D0CE2A3D5C7400C16D0B /* CyclePeriodItem.swift */,
 				F165D0D02A3D5D2900C16D0B /* CyclePeriodData.swift */,
+				02E0774D2B9F21C70023BB30 /* SwipePagerItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1242,6 +1245,7 @@
 				77040AF321BD7BCC002EC973 /* EUKFutureAppointmentViewController.swift in Sources */,
 				77AB5EE221F58D7600854554 /* EUKTermsOfUseViewController.swift in Sources */,
 				F165D0D12A3D5D2900C16D0B /* CyclePeriodData.swift in Sources */,
+				02E0774E2B9F21C70023BB30 /* SwipePagerItem.swift in Sources */,
 				77183FEE20D33ABD00B80E44 /* FilterItem.swift in Sources */,
 				F19409832992A8FA00F25770 /* EUKDayCollectionViewCell.swift in Sources */,
 				77AB6A54205DF36700978CC6 /* AppDelegate.swift in Sources */,

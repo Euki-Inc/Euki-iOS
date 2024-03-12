@@ -60,7 +60,7 @@ class EUKBleedingViewController: EUKBaseLogSectionViewController {
     var productsCount: [Int] {
         get {
             var countsArray = [Int]()
-            for index in 0 ... 4 {
+            for index in 0 ... 6 {
                 for button in self.productButtons {
                     if button.tag - MinButtonTag == index {
                         countsArray.append(button.count)
@@ -70,7 +70,7 @@ class EUKBleedingViewController: EUKBaseLogSectionViewController {
             return countsArray
         }
         set {
-            for index in 0 ... 4 {
+            for index in 0 ... 6 {
                 for button in self.productButtons {
                     if button.tag - MinButtonTag == index {
                         button.count = newValue[index]

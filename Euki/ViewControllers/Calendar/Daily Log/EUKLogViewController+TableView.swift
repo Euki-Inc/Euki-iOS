@@ -100,7 +100,7 @@ extension EUKLogViewController {
 		if section == self.indexSelected {
 			switch (filterItem.title) {
 			case "bleeding":
-				return self.bleedingViewController?.size != nil ? 670.0 : 620.0
+				return self.bleedingViewController?.size != nil ? 810.0 : 760.0
 			case "emotions":
 				return 420.0
 			case "body":

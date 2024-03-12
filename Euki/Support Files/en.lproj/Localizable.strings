@@ -113,11 +113,13 @@
 "bleeding_size_4" = "Heavy Flow";
 "bleeding_clots_1" = "Small clots";
 "bleeding_clots_2" = "Big clots";
-"bleeding_produc_1" = "Pad";
-"bleeding_produc_2" = "Liner";
+"bleeding_produc_1" = "Reusable pad";
+"bleeding_produc_2" = "Disposable pad";
 "bleeding_produc_3" = "Tampon";
 "bleeding_produc_4" = "Menstrual cup";
-"bleeding_produc_5" = "Menstrual underwear";
+"bleeding_produc_5" = "Menstrual disc";
+"bleeding_produc_6" = "Period underwear";
+"bleeding_produc_7" = "Liner";
 
 "emotions" = "Emotions";
 "emotions_1" = "Calm";
@@ -1105,7 +1107,7 @@
 "menstruation_faqs_answer_8" = "Ovulation occurs 14 days before your period. If you\'re not taking birth control, you can get pregnant five days before ovulation and up to two days after. Because many people\'s cycle varies in length, it can be hard to predict exactly when ovulation occurs. Predicting ovulation can therefore be unreliable as a form of contraception.";
 "menstruation_faqs_question_9" = "When to see a medical provider?";
 "menstruation_faqs_answer_9" = "You might consider seeing a medical provider if you haven\'t had a first period by age 15, haven\'t had a period in more than two months, are experiencing debilitating pain around the time of bleeding, or are bleeding for more than seven days straight and in a quantity that requires changing a tampon every hour.";
-"menstruation_resources_content" = "Finding affordable and free period products:\n- Alliance for Period Supplies\n- Good Rx\n\nAdditional information about how to use different period products:\n- Planned Parenthood\n\nVideos on what to expect on your period:\n - AMAZE";
+"menstruation_resources_content" = "Finding affordable and free period products:\n- Alliance for Period Supplies\n- Good Rx\n\nAdditional information about how to use different period products:\n- Planned Parenthood\n\nVideos on what to expect on your period:\n- AMAZE";
 "first_period_to_last_period_title" = "First period to last period";
 "first_period_to_last_period_content" = "The menstrual life cycle begins with your first period and ends with your last. Both experiences are incredibly common and normal, yet can be stressful and hard to experience alone. But you are not alone! Explore more about these experiences below.";
 "menarche" = "Menarche";

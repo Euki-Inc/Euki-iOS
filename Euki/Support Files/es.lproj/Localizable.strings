@@ -114,11 +114,13 @@
 "bleeding_size_4" = "Flujo severo";
 "bleeding_clots_1" = "Coágulos pequeños";
 "bleeding_clots_2" = "Coágulos grandes";
-"bleeding_produc_1" = "Toallitas higiénicas";
-"bleeding_produc_2" = "Protector de ropa interior";
+"bleeding_produc_1" = "Toallas higiénicas reutilizables";
+"bleeding_produc_2" = "Toallas higiénicas desechables";
 "bleeding_produc_3" = "Tampón";
 "bleeding_produc_4" = "Copa menstrual";
-"bleeding_produc_5" = "Ropa interior para menstruación";
+"bleeding_produc_5" = "Disco menstrual";
+"bleeding_produc_6" = "Ropa interior para el periodo";
+"bleeding_produc_7" = "Protectores diarios";
 
 "emotions" = "Emociones";
 "emotions_1" = "Calma";

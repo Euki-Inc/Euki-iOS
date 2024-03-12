@@ -1,23 +1,23 @@
 {
   "images" : [
     {
+      "filename" : "Period_underwear100p.png",
       "idiom" : "universal",
-      "filename" : "IconBleedingCup.png",
       "scale" : "1x"
     },
     {
+      "filename" : "Period_underwear100p@2x.png",
       "idiom" : "universal",
-      "filename" : "IconBleedingCup@2x.png",
       "scale" : "2x"
     },
     {
+      "filename" : "Period_underwear100p@3x.png",
       "idiom" : "universal",
-      "filename" : "IconBleedingCup@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }
