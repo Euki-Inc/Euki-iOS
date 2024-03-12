@@ -109,7 +109,7 @@ extension EUKLogViewController {
 				return 660.0
 			case "contraception":
 				if let indexSelected = self.contraceptionViewController?.indexSelected {
-					return indexSelected == 0 ? 800.0 : 890.0
+					return indexSelected == 0 ? 960.0 : 1050.0
 				}
 				return 168.0
 			case "test":
