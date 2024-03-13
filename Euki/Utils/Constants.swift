@@ -87,6 +87,10 @@ enum ContraceptionLongTermOther: Int {
     case injection = 0
 }
 
+enum ContraceptionShot: Int {
+    case shot = 0
+}
+
 enum TestSTI: Int {
     case positive = 0,
     negative

@@ -101,6 +101,10 @@ class ConstansManager: NSObject {
         return "icon_contraception_injection".localized
     }
     
+    func text(for contraception: ContraceptionShot) -> String {
+        return "shot_list".localized
+    }
+    
     func text(for test: TestPregnancy) -> String {
         return String(format: "test_pregnancy_%d", test.rawValue + 1).localized
     }
@@ -323,6 +327,13 @@ class ConstansManager: NSObject {
         switch contraception {
         case .injection:
             return "IconContraceptionInjection"
+        }
+    }
+    
+    func image(for contraception: ContraceptionShot) -> String {
+        switch contraception {
+        case .shot:
+            return "IconContraceptionShot"
         }
     }
     

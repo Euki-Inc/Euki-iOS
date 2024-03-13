@@ -177,6 +177,11 @@ class CycleManager: NSObject {
 		for contraception in calendarItem.contraceptionLongTermOther {
 			selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.text(for: contraception)))
 		}
+        
+        for contraception in calendarItem.contraceptionShot {
+            selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.text(for: contraception)))
+        }
+        
 		
 		//Test Items
 		

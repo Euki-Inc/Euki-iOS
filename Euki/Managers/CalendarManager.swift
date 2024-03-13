@@ -80,6 +80,9 @@ class CalendarManager: NSObject {
                 }
             }
         }
+        if let contraceptionRing = ContraceptionRing(rawValue: Int(eukCalendarItem.contraceptionRing)) {
+            calendarItem.contraceptionRing = contraceptionRing
+        }
         if let testSTI = TestSTI(rawValue: Int(eukCalendarItem.testSTI)) {
             calendarItem.testSTI = testSTI
         }

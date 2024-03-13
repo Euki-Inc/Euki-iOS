@@ -1333,7 +1333,7 @@
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="IconContraceptionShot"/>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="icon_contraception_injection"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="shot"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-Tz-1pd">
