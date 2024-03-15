@@ -101,4 +101,5 @@ class Constants {
     static let FontLineSpacingMultiplier: CGFloat = 1.4
 	static let DaysBleedingTrackingAlert: Int = 14
 	static let MinDaysBetweenPeriods: Int = 3
+    static let defaultReferenceScreenWidth: CGFloat = 375.0
 }

@@ -14,8 +14,11 @@ class ExpandableTableViewCell: UITableViewCell {
     @IBOutlet weak var bottomSeparatorView: UIView!
     @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var arrowImageView: UIImageView!
+    @IBOutlet weak var swipeView: UIView!
+
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
-    var heightConstraint: NSLayoutConstraint?
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

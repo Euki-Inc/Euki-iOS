@@ -134,6 +134,11 @@ extension UIColor {
 		return UIColor(red: 199.0 / 255.0, green: 185.0 / 255.0, blue: 1.0, alpha: 1.0)
 	}
     
+    @nonobjc class var eukDisdabledGrey: UIColor {
+        return UIColor(red: 210.0 / 255.0, green: 210.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0)
+    }
+
+    
     //MARK: - Calendar Colors
     
     class var eukAppointment: UIColor{

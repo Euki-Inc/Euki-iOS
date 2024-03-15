@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		02E0774A2B9220E40023BB30 /* MenstruationContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E077492B9220E40023BB30 /* MenstruationContentManager.swift */; };
 		02E0774C2B92231F0023BB30 /* QuizType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0774B2B92231F0023BB30 /* QuizType.swift */; };
 		02E0774E2B9F21C70023BB30 /* SwipePagerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0774D2B9F21C70023BB30 /* SwipePagerItem.swift */; };
+		1259D6DD2BA46F3200CE696B /* UIView+shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259D6DC2BA46F3200CE696B /* UIView+shadow.swift */; };
+		1259D6DF2BA4926600CE696B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259D6DE2BA4926600CE696B /* Helper.swift */; };
+		127F297E2BA39A01004CA88A /* EUKPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F297D2BA39A01004CA88A /* EUKPagerViewController.swift */; };
+		127F29802BA3B8F8004CA88A /* EUKCommonPagerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F297F2BA3B8F8004CA88A /* EUKCommonPagerContentViewController.swift */; };
 		2FB452E5C07D4E0E55BB62B4 /* Pods_Euki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B56CB39EAB3B2FDA1CBD4 /* Pods_Euki.framework */; };
 		7700221C20FE39FA005ED0E4 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7700221B20FE39FA005ED0E4 /* Quiz.storyboard */; };
 		7700221F20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7700221E20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift */; };
@@ -212,6 +216,10 @@
 		02E077492B9220E40023BB30 /* MenstruationContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstruationContentManager.swift; sourceTree = "<group>"; };
 		02E0774B2B92231F0023BB30 /* QuizType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizType.swift; sourceTree = "<group>"; };
 		02E0774D2B9F21C70023BB30 /* SwipePagerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipePagerItem.swift; sourceTree = "<group>"; };
+		1259D6DC2BA46F3200CE696B /* UIView+shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shadow.swift"; sourceTree = "<group>"; };
+		1259D6DE2BA4926600CE696B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		127F297D2BA39A01004CA88A /* EUKPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKPagerViewController.swift; sourceTree = "<group>"; };
+		127F297F2BA3B8F8004CA88A /* EUKCommonPagerContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKCommonPagerContentViewController.swift; sourceTree = "<group>"; };
 		7700221B20FE39FA005ED0E4 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		7700221E20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKBaseQuizViewController.swift; sourceTree = "<group>"; };
 		7700222020FE435B005ED0E4 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
@@ -633,6 +641,7 @@
 			children = (
 				772CE69E20C0CEAE007A9512 /* Constants.swift */,
 				02E0774B2B92231F0023BB30 /* QuizType.swift */,
+				1259D6DE2BA4926600CE696B /* Helper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -774,6 +783,7 @@
 				777FABF5207AD9610061E23F /* UIView+Shake.swift */,
 				777FABEF207A66550061E23F /* UIView+Borders.swift */,
 				77B6474D20916DA1008081C6 /* UIView+Screenshot.swift */,
+				1259D6DC2BA46F3200CE696B /* UIView+shadow.swift */,
 				77AB6A882061D38900978CC6 /* UIViewController+Base.swift */,
 				77AB6A872061D38900978CC6 /* UIViewControlller+Child.swift */,
 				77AB6A802061D38900978CC6 /* URL.swift */,
@@ -798,6 +808,8 @@
 				77B4ED0B206DB23500F0565A /* EUKAutoTopLevelViewController.swift */,
 				77B4ED0D206DB26800F0565A /* EUKAutoContentViewController.swift */,
 				77B4ED14206EAB5A00F0565A /* EUKCommonExpandableViewController.swift */,
+				127F297D2BA39A01004CA88A /* EUKPagerViewController.swift */,
+				127F297F2BA3B8F8004CA88A /* EUKCommonPagerContentViewController.swift */,
 				77EBB9CC207DBD6D00124199 /* EUKCommonPagerViewController.swift */,
 			);
 			path = Common;
@@ -1109,6 +1121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127F29802BA3B8F8004CA88A /* EUKCommonPagerContentViewController.swift in Sources */,
 				F1DF04CC23CAD21C0023DAA8 /* EUKTextField.swift in Sources */,
 				77AB6A76205F3FD300978CC6 /* EUKBaseViewController.swift in Sources */,
 				F1A0514E2903B37500B5C61D /* EUKFakeCodeViewController.swift in Sources */,
@@ -1180,6 +1193,7 @@
 				F1DCC4D628F25DCB0093CDF5 /* Bundle.swift in Sources */,
 				770D0B3A20C5F1B000B644D1 /* CalendarFilter.swift in Sources */,
 				77B4ED13206DB9B500F0565A /* ContentManager.swift in Sources */,
+				1259D6DD2BA46F3200CE696B /* UIView+shadow.swift in Sources */,
 				77A2792020D40FF000E3F4FC /* EUKNoteViewController.swift in Sources */,
 				77A2792420D6081700E3F4FC /* EUKBasePinCheckViewController.swift in Sources */,
 				7787DBED21F4FDD300F62532 /* EUKSetPinCodeViewController.swift in Sources */,
@@ -1193,6 +1207,8 @@
 				772CE6A320C0D0FE007A9512 /* Appointment.swift in Sources */,
 				7700221F20FE3A9E005ED0E4 /* EUKBaseQuizViewController.swift in Sources */,
 				02E0774A2B9220E40023BB30 /* MenstruationContentManager.swift in Sources */,
+				1259D6DF2BA4926600CE696B /* Helper.swift in Sources */,
+				127F297E2BA39A01004CA88A /* EUKPagerViewController.swift in Sources */,
 				774458F320935CF3008125A5 /* SeparatorCollectionViewFlowLayout.swift in Sources */,
 				77E9060F218ABD1100CB3FBE /* HomeManager.swift in Sources */,
 				7700222320FE4369005ED0E4 /* Question.swift in Sources */,
@@ -1425,7 +1441,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20230626161900;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8B4KTX4SKK;
 				INFOPLIST_FILE = "$(SRCROOT)/Euki/Support Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Euki;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
@@ -1435,7 +1451,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.5.7;
-				PRODUCT_BUNDLE_IDENTIFIER = com.euki;
+				PRODUCT_BUNDLE_IDENTIFIER = dhekra.euki.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Euki/Support Files/Euki-Bridging-Header.h";
@@ -1454,7 +1470,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20230626161900;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8B4KTX4SKK;
 				INFOPLIST_FILE = "$(SRCROOT)/Euki/Support Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Euki;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
@@ -1464,7 +1480,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.5.7;
-				PRODUCT_BUNDLE_IDENTIFIER = com.euki;
+				PRODUCT_BUNDLE_IDENTIFIER = dhekra.euki.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Euki/Support Files/Euki-Bridging-Header.h";

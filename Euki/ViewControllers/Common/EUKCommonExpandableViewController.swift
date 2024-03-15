@@ -105,7 +105,9 @@ extension EUKCommonExpandableViewController: UITableViewDelegate, UITableViewDat
             cell.bookmarkButton.isHidden = !item.isExpanded
             cell.bookmarkButton.tag = indexPath.row
             cell.arrowImageView.isHidden = item.isExpanded
-            
+           
+            self.configurePagerView(cell: cell, item: item)
+
             return cell
         }
         
@@ -127,5 +129,32 @@ extension EUKCommonExpandableViewController: UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         self.updateCells(row: indexPath.row)
+    }
+
+    func configurePagerView(cell:ExpandableTableViewCell,item: ExpandableItem ) {
+        
+        cell.swipeView.isHidden = !item.isExpanded
+
+        for view in cell.swipeView.subviews {
+            view.removeFromSuperview()
+        }
+
+        let items = item.contentItem.swipePagerItems
+        let viewController = EUKPagerViewController.initViewController() as? EUKPagerViewController
+        let containerView = cell.swipeView
+        
+        guard let items, let viewController, let containerView else {
+            cell.heightConstraint.constant = 0
+            return
+        }
+
+        if !items.isEmpty && item.isExpanded  {
+            viewController.swipePagerItems = item.contentItem.swipePagerItems ?? []
+            cell.heightConstraint.constant = getFormattedSize(645)
+            self.configureChildViewController(childController: viewController, onView: containerView)
+
+        } else {
+            cell.heightConstraint.constant = 0
+        }
     }
 }
