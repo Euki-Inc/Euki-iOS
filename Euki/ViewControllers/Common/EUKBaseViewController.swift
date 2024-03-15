@@ -252,7 +252,15 @@ extension EUKBaseViewController: UITextViewDelegate {
             self.present(remindersViewConroller, animated: true, completion: nil)
             return false
         }
-        if URL.absoluteString == "resources" || URL.absoluteString == "sexuality_resources" || URL.absoluteString == "contraception" || URL.absoluteString == "method_information"  || URL.absoluteString == "symptom_management" {
+        if URL.absoluteString == "product_quiz" {
+            if let viewController = EUKBaseQuizViewController.initViewController(quizType: .menstruation),
+               let visibleViewController = viewController.visibleViewController() as? EUKBaseQuizViewController {
+                visibleViewController.quizType = .menstruation
+                self.present(viewController, animated: true, completion: nil)
+            }
+        }
+        
+        if URL.absoluteString == "resources" || URL.absoluteString == "sexuality_resources" || URL.absoluteString == "contraception" || URL.absoluteString == "method_information"  || URL.absoluteString == "symptom_management" || URL.absoluteString == "menstrual_cycle_101" || URL.absoluteString == "menstruation_faqs" {
             if let item = ContentManager.sharedInstance.requestContentItem(id: URL.absoluteString) {
                 self.showContentItem(item: item)
             }
