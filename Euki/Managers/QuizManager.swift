@@ -150,7 +150,7 @@ class QuizManager: NSObject {
     func resultMenstruation(quiz: Quiz) -> (String, [Int]) {
         var hasAnswer = false
         var contraceptionCounts = [Int: Int]()
-        for index in 1 ... 7 { // Change the limit to 7
+        for index in 1 ... 7 {
             contraceptionCounts[index] = 0
         }
         
@@ -159,40 +159,32 @@ class QuizManager: NSObject {
                 for contraceptionIndex in question.options[answerIndex].1 {
                     if let value = contraceptionCounts[contraceptionIndex] {
                         contraceptionCounts[contraceptionIndex] = value + 1
-                        hasAnswer = true
                     }
                 }
+                hasAnswer = true
             }
         }
         
         var resultIndexes = [Int]()
         
         if hasAnswer {
+            var currentMax = 1 // Minimum value for currentMax
+            for value in contraceptionCounts.values {
+                if value > currentMax {
+                    currentMax = value
+                }
+            }
+            
             while resultIndexes.count < 3 {
-                var currentMax = contraceptionCounts[0] ?? -1
                 var maxKey = 0
                 for key in contraceptionCounts.keys {
-                    let value = contraceptionCounts[key] ?? -1
-                    
-                    if currentMax < value {
-                        currentMax = value
+                    if let value = contraceptionCounts[key], value == currentMax {
                         maxKey = key
+                        resultIndexes.append(maxKey)
+                        contraceptionCounts[key] = -1
                     }
                 }
-                
-                if currentMax > 3 {
-                    for currentKey in contraceptionCounts.keys {
-                        if let value = contraceptionCounts[currentKey] {
-                            if value == currentMax {
-                                contraceptionCounts[currentKey] = -1
-                                resultIndexes.append(currentKey)
-                            }
-                        }
-                    }
-                } else {
-                    contraceptionCounts[maxKey] = -1
-                    resultIndexes.append(maxKey)
-                }
+                currentMax -= 1
             }
         }
         

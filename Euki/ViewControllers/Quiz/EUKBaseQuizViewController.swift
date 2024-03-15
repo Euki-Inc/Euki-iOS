@@ -41,10 +41,17 @@ class EUKBaseQuizViewController: EUKBasePinCheckViewController {
         guard let index = button.superview?.tag else {
             return
         }
-        
-        if let contentItem = ContraceptionContentManager.sharedInstance.methodContentItem(index: index) {
-            self.pushContentItem(contentItem: contentItem)
+        switch quizType {
+        case .contraception:
+            if let contentItem = ContraceptionContentManager.sharedInstance.methodContentItem(index: index) {
+                self.pushContentItem(contentItem: contentItem)
+            }
+        case .menstruation:
+            if let contentItem = MenstruationContentManager.sharedInstance.methodContentItem(index: index) {
+                self.pushContentItem(contentItem: contentItem)
+            }
         }
+     
     }
     
     //MARK: - Private
@@ -104,9 +111,7 @@ class EUKBaseQuizViewController: EUKBasePinCheckViewController {
     class func initViewController(quizType: QuizType) -> UIViewController? {
           let storyboard = UIStoryboard(name: "Quiz", bundle: Bundle.main)
           let viewController = storyboard.instantiateInitialViewController()
-                
               return viewController
- 
        }
 }
 

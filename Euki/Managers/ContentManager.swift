@@ -155,6 +155,12 @@ class ContentManager: NSObject {
                self.menstruationContentItem = self.createContentItem(fileName: self.menstruationOptionsJson)
            }
         
+        if let menstruationContentItem = self.menstruationContentItem {
+            if let contentItem = self.searchContentItem(id: id, contentItem: menstruationContentItem) {
+                return contentItem
+            }
+        }
+        
         
         if self.abortionKnowledgeContentItem == nil {
             self.abortionKnowledgeContentItem = self.createContentItem(fileName: self.AbortionKnowledgeJson)

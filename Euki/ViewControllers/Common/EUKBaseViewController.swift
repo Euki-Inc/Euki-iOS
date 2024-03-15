@@ -112,11 +112,10 @@ class EUKBaseViewController: UIViewController {
                 self.present(viewController, animated: true, completion: nil)
             }
         case "product_quiz":
-            if let viewController = EUKBaseQuizViewController.initViewController(quizType: .menstruation) {
-                if let viewC = viewController.visibleViewController() as? EUKBaseQuizViewController {
-                    viewC.quizType = .menstruation
-                    self.present(viewController, animated: true, completion: nil)
-                }
+            if let viewController = EUKBaseQuizViewController.initViewController(quizType: .menstruation),
+               let visibleViewController = viewController.visibleViewController() as? EUKBaseQuizViewController {
+                visibleViewController.quizType = .menstruation
+                self.present(viewController, animated: true, completion: nil)
             }
         case "medical_abortion":
             let viewController = EUKMedicalAbortionViewController.initViewController()
