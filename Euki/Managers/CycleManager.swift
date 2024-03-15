@@ -183,9 +183,6 @@ class CycleManager: NSObject {
             selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.textList(for: contraception)))
         }
         
-    
-        
-		
 		//Test Items
 		
 		if let test = calendarItem.testSTI {

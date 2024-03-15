@@ -80,8 +80,8 @@ class CalendarManager: NSObject {
                 }
             }
         }
-        if let contraceptionRing = ContraceptionRing(rawValue: Int(eukCalendarItem.contraceptionRing)) {
-            calendarItem.contraceptionRing = contraceptionRing
+        if let contraceptionShot = ContraceptionShot(rawValue: Int(eukCalendarItem.contraceptionShot)) {
+            calendarItem.contraceptionShot = contraceptionShot
         }
         if let testSTI = TestSTI(rawValue: Int(eukCalendarItem.testSTI)) {
             calendarItem.testSTI = testSTI
@@ -287,6 +287,7 @@ class CalendarManager: NSObject {
         eukCalendarItem.contraceptionImplant = Int16(calendarItem.contraceptionImplant?.rawValue ?? -1)
         eukCalendarItem.contraceptionPatch = Int16(calendarItem.contraceptionPatch?.rawValue ?? -1)
         eukCalendarItem.contraceptionRing = Int16(calendarItem.contraceptionRing?.rawValue ?? -1)
+        eukCalendarItem.contraceptionShot = Int16(calendarItem.contraceptionShot?.rawValue ?? -1)
         eukCalendarItem.contraceptionLongTermOther = calendarItem.contraceptionLongTermOther.map({$0.rawValue}) as NSObject
         eukCalendarItem.testSTI = Int16(calendarItem.testSTI?.rawValue ?? -1)
         eukCalendarItem.testPregnancy = Int16(calendarItem.testPregnancy?.rawValue ?? -1)

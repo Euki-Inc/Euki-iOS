@@ -279,8 +279,8 @@ class EUKLogViewController: EUKBasePinCheckViewController {
 			calendarItem.contraceptionImplant = contraceptionViewController.contraceptionImplant
 			calendarItem.contraceptionPatch = contraceptionViewController.contraceptionPatch
 			calendarItem.contraceptionRing = contraceptionViewController.contraceptionRing
+            calendarItem.contraceptionShot = contraceptionViewController.contraceptionShot
             calendarItem.contraceptionLongTermOther = contraceptionViewController.contraceptionLongTermOthers
-			calendarItem.contraceptionShot = contraceptionViewController.contraceptionShot
 		}
 		if let testViewController = self.testViewController {
 			calendarItem.testSTI = testViewController.testSTI

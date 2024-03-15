@@ -196,6 +196,9 @@ class EUKDailyLogViewController: EUKBasePinCheckViewController {
                 if let contraception = calendarItem.contraceptionRing {
                     selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.textList(for: contraception)))
                 }
+                if let contraception = calendarItem.contraceptionShot {
+                    selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.textList(for: contraception)))
+                }
                 if let contraception = calendarItem.contraceptionPatch {
                     selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.textList(for: contraception)))
                 }

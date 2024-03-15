@@ -200,6 +200,8 @@
 "contraception_ring_1_list" = "Nuevo anillo";
 "contraception_ring_2_list" = "Anillo retirado";
 "icon_contraception_injection" = "Inyección";
+"shot_list" = "Inyección";
+
 
 "test" = "Prueba";
 "test_sti" = "Prueba de ITS";
