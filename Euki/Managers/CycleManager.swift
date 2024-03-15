@@ -165,6 +165,7 @@ class CycleManager: NSObject {
 		if let contraception = calendarItem.contraceptionRing {
 			selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.textList(for: contraception)))
 		}
+
 		if let contraception = calendarItem.contraceptionPatch {
 			selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.textList(for: contraception)))
 		}
@@ -177,7 +178,11 @@ class CycleManager: NSObject {
 		for contraception in calendarItem.contraceptionLongTermOther {
 			selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.text(for: contraception)))
 		}
-		
+        
+        if let contraception = calendarItem.contraceptionShot {
+            selectItems.append(SelectItem(imageName: ConstansManager.sharedInstance.image(for: contraception), title: ConstansManager.sharedInstance.textList(for: contraception)))
+        }
+        
 		//Test Items
 		
 		if let test = calendarItem.testSTI {

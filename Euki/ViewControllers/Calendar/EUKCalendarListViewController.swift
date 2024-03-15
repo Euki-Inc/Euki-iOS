@@ -68,7 +68,8 @@ class EUKCalendarListViewController: EUKBaseViewController {
                 (calendarFilter.emotionsOn && calendarItem.emotions.count > 0) ||
                 (calendarFilter.bodyOn && calendarItem.body.count > 0) ||
                 (calendarFilter.sexualActivityOn && calendarItem.hasSexualActivity()) ||
-                (calendarFilter.contraceptionOn && (calendarItem.contraceptionPill != nil || calendarItem.contraceptionDailyOther.count > 0 || calendarItem.contraceptionIud != nil || calendarItem.contraceptionImplant != nil || calendarItem.contraceptionPatch != nil || calendarItem.contraceptionRing != nil || calendarItem.contraceptionLongTermOther.count > 0)) ||
+                (calendarFilter.contraceptionOn && (calendarItem.contraceptionPill != nil || calendarItem.contraceptionDailyOther.count > 0 || calendarItem.contraceptionIud != nil || calendarItem.contraceptionImplant != nil || calendarItem.contraceptionPatch != nil || calendarItem.contraceptionRing != nil ||
+                    calendarItem.contraceptionShot != nil || calendarItem.contraceptionLongTermOther.count > 0)) ||
                 (calendarFilter.testOn && (calendarItem.testSTI != nil || calendarItem.testPregnancy != nil)) ||
                 (calendarFilter.appointmentOn && calendarItem.appointments.count > 0) ||
                 (calendarFilter.noteOn && calendarItem.note != nil) {
@@ -182,6 +183,10 @@ extension EUKCalendarListViewController: UITableViewDelegate, UITableViewDataSou
                 }
                 if let contraceptionRing = calendarItem.contraceptionRing {
                     contraceptionStrings.append("contraception_ring_\(contraceptionRing.rawValue + 1)_list".localized)
+                }
+                
+                if let contraceptionShot = calendarItem.contraceptionShot {
+                    contraceptionStrings.append("shot_list".localized)
                 }
                 for _ in calendarItem.contraceptionLongTermOther {
                     contraceptionStrings.append("icon_contraception_injection".localized)

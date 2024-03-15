@@ -24,7 +24,7 @@ class EUKContraceptionViewController: EUKBaseLogSectionViewController {
     @IBOutlet var patchButtons: [EUKSelectButton]!
     @IBOutlet var ringButtons: [EUKSelectButton]!
     @IBOutlet var otherLongTermButtons: [EUKSelectButton]!
-    
+    @IBOutlet var shotButtons: [EUKSelectButton]!
     weak var delegate: EUKContraceptionViewControllerDelegate?
     var indexSelected: Int?
     
@@ -88,6 +88,18 @@ class EUKContraceptionViewController: EUKBaseLogSectionViewController {
         }
         set {
             self.selectButton(index: newValue?.rawValue, buttons: self.patchButtons)
+        }
+    }
+    
+    var contraceptionShot: ContraceptionShot? {
+        get {
+            if let index = self.selectedIndex(buttons: self.shotButtons) {
+                return ContraceptionShot(rawValue: index)
+            }
+            return nil
+        }
+        set {
+            self.selectButton(index: newValue?.rawValue, buttons: self.shotButtons)
         }
     }
     
@@ -190,9 +202,14 @@ class EUKContraceptionViewController: EUKBaseLogSectionViewController {
             button.delegate = self
             button.borderColor = UIColor.eukIris
         }
+        self.shotButtons.forEach { (button) in
+            button.delegate = self
+            button.borderColor = UIColor.eukIris
+        }
         
         self.dailyMethodsButton.addBorders(edges: .top, color: UIColor.eukiMain, thickness: 0.5)
         self.longTermMethodsButton.addBorders(edges: .top, color: UIColor.eukiMain, thickness: 0.5)
+     
     }
     
     override func selectedChanged(button: EUKSelectButton) {
@@ -236,10 +253,18 @@ class EUKContraceptionViewController: EUKBaseLogSectionViewController {
             }
         }
         
+        if self.patchButtons.contains(button), button.isSelected {
+            for sizeButton in self.patchButtons {
+                if sizeButton != button {
+                    sizeButton.isSelected = false
+                }
+            }
+        }
+        
         self.sectionDelegate?.selectionUpdated()
     }
     
     override func hasData() -> Bool {
-		return self.contraceptionIUD != nil || self.contraceptionImplant != nil || self.contraceptionPill != nil || self.contraceptionRing != nil || self.contraceptionPatch != nil || self.contraceptionDailyOthers.count > 0 || self.contraceptionLongTermOthers.count > 0
+		return self.contraceptionIUD != nil || self.contraceptionImplant != nil || self.contraceptionPill != nil || self.contraceptionRing != nil || self.contraceptionPatch != nil || self.contraceptionDailyOthers.count > 0 || self.contraceptionLongTermOthers.count > 0 || self.contraceptionShot != nil
     }
 }
