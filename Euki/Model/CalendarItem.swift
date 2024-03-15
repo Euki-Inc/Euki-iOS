@@ -26,7 +26,7 @@ class CalendarItem: NSObject {
     var contraceptionPatch: ContraceptionPatch?
     var contraceptionRing: ContraceptionRing?
     var contraceptionLongTermOther: [ContraceptionLongTermOther]
-    var contraceptionShot: [ContraceptionShot]
+    var contraceptionShot: ContraceptionShot?
     var testSTI: TestSTI?
     var testPregnancy: TestPregnancy?
     var appointments: [Appointment]
@@ -67,7 +67,6 @@ class CalendarItem: NSObject {
 
         self.contraceptionDailyOther = [ContraceptionDailyOther]()
         self.contraceptionLongTermOther = [ContraceptionLongTermOther]()
-        self.contraceptionShot = [ContraceptionShot]()
         self.appointments = [Appointment]()
         self.categories = [FilterItem]()
     }
@@ -170,7 +169,7 @@ class CalendarItem: NSObject {
 	}
     
     func hasContraception() -> Bool {
-        return self.contraceptionPill != nil || self.contraceptionDailyOther.count > 0 || self.contraceptionIud != nil || self.contraceptionImplant != nil || self.contraceptionPatch != nil || self.contraceptionRing != nil || self.contraceptionLongTermOther.count > 0 || self.contraceptionShot.count > 0
+        return self.contraceptionPill != nil || self.contraceptionDailyOther.count > 0 || self.contraceptionIud != nil || self.contraceptionImplant != nil || self.contraceptionPatch != nil || self.contraceptionRing != nil || self.contraceptionLongTermOther.count > 0 || self.contraceptionShot != nil
     }
 	
 	func contraceptionCount() -> Int {
@@ -197,7 +196,7 @@ class CalendarItem: NSObject {
 		if !self.contraceptionLongTermOther.isEmpty {
 			count += 1
 		}
-        if !self.contraceptionShot.isEmpty {
+        if self.contraceptionShot != nil {
             count += 1
         }
 		return count

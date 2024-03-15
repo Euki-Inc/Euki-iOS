@@ -105,6 +105,10 @@ class ConstansManager: NSObject {
         return "shot_list".localized
     }
     
+    func textList(for contraception: ContraceptionShot) -> String {
+        return "shot_list".localized
+    }
+    
     func text(for test: TestPregnancy) -> String {
         return String(format: "test_pregnancy_%d", test.rawValue + 1).localized
     }

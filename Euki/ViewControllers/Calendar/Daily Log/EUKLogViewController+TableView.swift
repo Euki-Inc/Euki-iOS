@@ -307,7 +307,8 @@ extension EUKLogViewController {
 					contraceptionViewController.contraceptionImplant = self.calendarItem?.contraceptionImplant
 					contraceptionViewController.contraceptionPatch = self.calendarItem?.contraceptionPatch
 					contraceptionViewController.contraceptionRing = self.calendarItem?.contraceptionRing
-					contraceptionViewController.contraceptionLongTermOthers = self.calendarItem?.contraceptionLongTermOther ?? [ContraceptionLongTermOther]()
+                    contraceptionViewController.contraceptionLongTermOthers = self.calendarItem?.contraceptionLongTermOther ?? [ContraceptionLongTermOther]()
+                    contraceptionViewController.contraceptionShot = self.calendarItem?.contraceptionShot
 				}
 			}
 		case "test":

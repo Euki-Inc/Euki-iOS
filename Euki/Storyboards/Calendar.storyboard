@@ -836,7 +836,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BZq-HL-V2P">
-                                <rect key="frame" x="0.0" y="59" width="393" height="1224"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="1044.6666666666667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoN-ox-gM8" customClass="EUKBaseButton" customModule="Euki" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
@@ -1053,7 +1053,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SF0-r9-fgu">
-                                        <rect key="frame" x="31.666666666666657" y="168" width="330" height="1056"/>
+                                        <rect key="frame" x="31.666666666666657" y="167.99999999999994" width="330" height="876.66666666666652"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qye-Sx-c74">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="159.33333333333334"/>
@@ -1263,11 +1263,11 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O8p-O2-AQA">
-                                                <rect key="frame" x="0.0" y="717.33333333333337" width="330" height="159.33333333333337"/>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O8p-O2-AQA">
+                                                <rect key="frame" x="0.0" y="707.33333333333337" width="330" height="140"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlM-zg-nXY" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="19.333333333333332"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" name="eukiMain"/>
                                                         <nil key="highlightedColor"/>
@@ -1276,7 +1276,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="gR2-5l-I4k">
-                                                        <rect key="frame" x="0.0" y="19.333333333333258" width="330" height="140"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="140"/>
                                                         <subviews>
                                                             <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGB-xz-k4Z" customClass="EUKSelectButton" customModule="Euki" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="88" height="140"/>
@@ -1311,7 +1311,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lkY-75-koY">
-                                                <rect key="frame" x="0.0" y="896.66666666666674" width="330" height="159.33333333333326"/>
+                                                <rect key="frame" x="0.0" y="717.33333333333337" width="330" height="159.33333333333337"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjX-g8-sy1" customClass="EUKLabel" customModule="Euki" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="19.333333333333332"/>
@@ -1401,6 +1401,7 @@
                         <outletCollection property="ringButtons" destination="L88-GF-Ovr" collectionClass="NSMutableArray" id="0GA-oC-NcG"/>
                         <outletCollection property="ringButtons" destination="rW5-XY-zpL" collectionClass="NSMutableArray" id="S1d-10-l2T"/>
                         <outletCollection property="otherLongTermButtons" destination="dGB-xz-k4Z" collectionClass="NSMutableArray" id="KVC-hQ-FFD"/>
+                        <outletCollection property="shotButtons" destination="nMV-Qz-GiE" collectionClass="NSMutableArray" id="BH5-Jt-SeQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsJ-CI-bKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
