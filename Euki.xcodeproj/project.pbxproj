@@ -980,7 +980,6 @@
 					77AB6A4F205DF36700978CC6 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0930;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1441,7 +1440,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20230626161900;
-				DEVELOPMENT_TEAM = 8B4KTX4SKK;
+				DEVELOPMENT_TEAM = VNH4GZ56WC;
 				INFOPLIST_FILE = "$(SRCROOT)/Euki/Support Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Euki;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
@@ -1451,7 +1450,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.5.7;
-				PRODUCT_BUNDLE_IDENTIFIER = dhekra.euki.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.euki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Euki/Support Files/Euki-Bridging-Header.h";
@@ -1468,9 +1467,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 20230626161900;
-				DEVELOPMENT_TEAM = 8B4KTX4SKK;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VNH4GZ56WC;
 				INFOPLIST_FILE = "$(SRCROOT)/Euki/Support Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Euki;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
@@ -1480,9 +1481,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.5.7;
-				PRODUCT_BUNDLE_IDENTIFIER = dhekra.euki.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.euki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Euki (Appstore)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Euki/Support Files/Euki-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
