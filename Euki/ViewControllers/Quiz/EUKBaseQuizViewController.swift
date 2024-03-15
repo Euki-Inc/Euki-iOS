@@ -143,10 +143,21 @@ extension EUKBaseQuizViewController: UICollectionViewDelegate, UICollectionViewD
         if indexPath.row == 0 {
             return self.configureTextCell(collectionView: collectionView, cellForItemAt: indexPath, text: self.quiz?.instructions)
         } else if indexPath.row == (self.collectionView(collectionView, numberOfItemsInSection: 0)) - 1 {
-            if let quiz = self.quiz {
-                let result = QuizManager.sharedInstance.resultContraception(quiz: quiz)
-                return self.configureTextCell(collectionView: collectionView, cellForItemAt: indexPath, text: result.0)
+            switch quizType {
+            case .contraception:
+                if let quiz = self.quiz {
+                    let result = QuizManager.sharedInstance.resultContraception(quiz: quiz)
+                    return self.configureTextCell(collectionView: collectionView, cellForItemAt: indexPath, text: result.0)
+                }
+            case .menstruation:
+                
+                if let quiz = self.quiz {
+                    let result = QuizManager.sharedInstance.resultMenstruation(quiz: quiz)
+                    return self.configureTextCell(collectionView: collectionView, cellForItemAt: indexPath, text: result.0)
+                }
+                
             }
+          
         }
         
         let question = quiz.questions[indexPath.row - 1]
