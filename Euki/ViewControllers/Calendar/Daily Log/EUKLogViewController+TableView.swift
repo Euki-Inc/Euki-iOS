@@ -225,7 +225,7 @@ extension EUKLogViewController {
 				if shouldSetCalendarValues {
 					bleedingViewController.size = self.calendarItem?.bleedingSize
 					bleedingViewController.clotsCount = self.calendarItem?.bleedingClotsCounter ?? [0, 0]
-					bleedingViewController.productsCount = self.calendarItem?.bleedingProductsCounter ?? [0, 0, 0, 0, 0]
+					bleedingViewController.productsCount = self.calendarItem?.bleedingProductsCounter ?? [0, 0, 0, 0, 0,0, 0]
 				}
 				
 				let hasPeriod = self.bleedingViewController?.hasPeriod() ?? false
