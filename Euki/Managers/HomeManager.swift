@@ -63,6 +63,15 @@ class HomeManager: NSObject {
             }
         }
         
+        // Add the new home items to the usedItems
+        let allSavedItems = usedItems + notUsedItems
+        let newItemsToSave = Set(self.items).subtracting(allSavedItems)
+        if !newItemsToSave.isEmpty {
+            let updatedUsedItems = newItemsToSave + usedItems
+            LocalDataManager.sharedInstance.saveUsedItemsIds(ids: updatedUsedItems.compactMap({$0.id}))
+            usedItems = updatedUsedItems
+        }
+
         return (usedItems, notUsedItems)
     }
 }
