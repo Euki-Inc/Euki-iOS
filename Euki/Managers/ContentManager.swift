@@ -39,7 +39,7 @@ class ContentManager: NSObject {
             DispatchQueue.global(qos: .background).async {
                 self.menstruationContentItem = self.createContentItem(fileName: self.menstruationOptionsJson)
                 DispatchQueue.main.async {
-                    responseHandler(self.abortionKnowledgeContentItem)
+                    responseHandler(self.menstruationContentItem)
                 }
             }
         }
