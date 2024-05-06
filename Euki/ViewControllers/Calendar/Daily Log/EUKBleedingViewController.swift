@@ -70,9 +70,9 @@ class EUKBleedingViewController: EUKBaseLogSectionViewController {
             return countsArray
         }
         set {
-            for index in 0 ... 6 {
+            for index in newValue {
                 for button in self.productButtons {
-                    if button.tag - MinButtonTag == index {
+                    if button.tag - MinButtonTag == index && index < newValue.count {
                         button.count = newValue[index]
                     }
                 }
