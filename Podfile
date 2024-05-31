@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 inhibit_all_warnings!
 use_frameworks!
 
@@ -12,7 +12,7 @@ target 'Euki' do
   pod 'RangeSeekSlider'
   pod 'MaterialShowcase'
   pod 'CryptoSwift'
-    pod "UPCarouselFlowLayout"
+  pod "UPCarouselFlowLayout"
 end
 
 post_install do |installer|
