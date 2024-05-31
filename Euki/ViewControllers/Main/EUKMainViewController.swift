@@ -122,6 +122,7 @@ class EUKMainViewController: UIViewController {
         showcase.tag = index
 		
 		view.tintColor = UIColor.eukLightMint
+        showcase.targetHolderRadius = 35
 		showcase.setTargetView(view: view)
         showcase.delegate = self
         showcase.show(completion: nil)
