@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EUKSegmentedView">
+            <connections>
+                <outletCollection property="blurViews" destination="ufj-Pr-mW1" collectionClass="NSMutableArray" id="pqa-lT-vhR"/>
+                <outletCollection property="blurViews" destination="jCy-kV-MD1" collectionClass="NSMutableArray" id="lFj-Sf-BDp"/>
+                <outletCollection property="indicatorViews" destination="gim-4y-vA5" collectionClass="NSMutableArray" id="TKz-BF-f0A"/>
+                <outletCollection property="indicatorViews" destination="K5e-VE-AF7" collectionClass="NSMutableArray" id="Q1B-MF-Epj"/>
+                <outletCollection property="buttons" destination="h3E-3D-BdV" collectionClass="NSMutableArray" id="bfi-N8-ooX"/>
+                <outletCollection property="buttons" destination="iui-Ar-CLU" collectionClass="NSMutableArray" id="rRJ-Sf-3PT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9a-7i-aLO" customClass="EUKBorderedView" customModule="Euki" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDR-ue-qaN">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bm-TU-oJe">
+                                    <rect key="frame" x="0.0" y="0.0" width="196" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconPurpleBlur" translatesAutoresizingMaskIntoConstraints="NO" id="ufj-Pr-mW1">
+                                            <rect key="frame" x="21" y="-9.6666666666666643" width="154" height="69.333333333333329"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gim-4y-vA5">
+                                            <rect key="frame" x="0.0" y="47" width="196" height="3"/>
+                                            <color key="backgroundColor" name="eukiAccent"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="3" id="g9s-bG-Dg4"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3E-3D-BdV">
+                                            <rect key="frame" x="0.0" y="0.0" width="196" height="47"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                            <state key="normal" title="CALENDAR">
+                                                <color key="titleColor" name="eukiMain"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="ufj-Pr-mW1" firstAttribute="centerY" secondItem="2bm-TU-oJe" secondAttribute="centerY" id="9SF-Al-XH1"/>
+                                        <constraint firstAttribute="trailing" secondItem="h3E-3D-BdV" secondAttribute="trailing" id="GPQ-1h-QT4"/>
+                                        <constraint firstAttribute="trailing" secondItem="gim-4y-vA5" secondAttribute="trailing" id="H1m-HZ-Itn"/>
+                                        <constraint firstItem="ufj-Pr-mW1" firstAttribute="centerX" secondItem="2bm-TU-oJe" secondAttribute="centerX" id="Pbp-YV-07N"/>
+                                        <constraint firstAttribute="bottom" secondItem="gim-4y-vA5" secondAttribute="bottom" id="Tw9-7M-yKl"/>
+                                        <constraint firstItem="gim-4y-vA5" firstAttribute="top" secondItem="h3E-3D-BdV" secondAttribute="bottom" id="bID-do-UGa"/>
+                                        <constraint firstItem="h3E-3D-BdV" firstAttribute="leading" secondItem="2bm-TU-oJe" secondAttribute="leading" id="igC-jK-JuL"/>
+                                        <constraint firstItem="gim-4y-vA5" firstAttribute="leading" secondItem="2bm-TU-oJe" secondAttribute="leading" id="jhp-Nu-JT6"/>
+                                        <constraint firstItem="h3E-3D-BdV" firstAttribute="top" secondItem="2bm-TU-oJe" secondAttribute="top" id="l2o-fc-kvn"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTl-88-npV" userLabel="SV">
+                                    <rect key="frame" x="196" y="0.0" width="1" height="50"/>
+                                    <color key="backgroundColor" name="eukiMain"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="HZ3-np-Zlr"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="it3-px-bwp">
+                                    <rect key="frame" x="197" y="0.0" width="196" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconPurpleBlur" translatesAutoresizingMaskIntoConstraints="NO" id="jCy-kV-MD1">
+                                            <rect key="frame" x="21" y="-9.6666666666666643" width="154" height="69.333333333333329"/>
+                                        </imageView>
+                                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5e-VE-AF7">
+                                            <rect key="frame" x="0.0" y="47" width="196" height="3"/>
+                                            <color key="backgroundColor" name="eukiAccent"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="Vg0-HP-Noz"/>
+                                                <constraint firstAttribute="height" constant="3" id="gTE-0W-Cpf"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iui-Ar-CLU">
+                                            <rect key="frame" x="0.0" y="0.0" width="196" height="47"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                            <state key="normal" title="LIST">
+                                                <color key="titleColor" name="eukiMain"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="K5e-VE-AF7" firstAttribute="leading" secondItem="it3-px-bwp" secondAttribute="leading" id="2Os-me-FON"/>
+                                        <constraint firstItem="jCy-kV-MD1" firstAttribute="centerX" secondItem="it3-px-bwp" secondAttribute="centerX" id="3pn-Ba-9J4"/>
+                                        <constraint firstAttribute="trailing" secondItem="iui-Ar-CLU" secondAttribute="trailing" id="5c4-Iw-7Au"/>
+                                        <constraint firstItem="iui-Ar-CLU" firstAttribute="top" secondItem="it3-px-bwp" secondAttribute="top" id="TAy-SO-tH8"/>
+                                        <constraint firstAttribute="bottom" secondItem="K5e-VE-AF7" secondAttribute="bottom" id="Tdc-9v-Vyg"/>
+                                        <constraint firstItem="iui-Ar-CLU" firstAttribute="leading" secondItem="it3-px-bwp" secondAttribute="leading" id="Tq1-TP-mDj"/>
+                                        <constraint firstItem="K5e-VE-AF7" firstAttribute="top" secondItem="iui-Ar-CLU" secondAttribute="bottom" id="iyw-Jn-E7m"/>
+                                        <constraint firstAttribute="trailing" secondItem="K5e-VE-AF7" secondAttribute="trailing" id="v4F-FD-h3s"/>
+                                        <constraint firstItem="jCy-kV-MD1" firstAttribute="centerY" secondItem="it3-px-bwp" secondAttribute="centerY" id="wGj-mt-c4Q"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="it3-px-bwp" firstAttribute="width" secondItem="2bm-TU-oJe" secondAttribute="width" id="h64-uw-TVK"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cDR-ue-qaN" secondAttribute="bottom" id="N4b-5W-UA5"/>
+                        <constraint firstAttribute="trailing" secondItem="cDR-ue-qaN" secondAttribute="trailing" id="ZwT-Wk-gTT"/>
+                        <constraint firstItem="cDR-ue-qaN" firstAttribute="leading" secondItem="P9a-7i-aLO" secondAttribute="leading" id="aiu-5h-Q5V"/>
+                        <constraint firstItem="cDR-ue-qaN" firstAttribute="top" secondItem="P9a-7i-aLO" secondAttribute="top" id="id9-QV-gTM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="eukiMain"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="P9a-7i-aLO" secondAttribute="trailing" id="1aP-1C-LHV"/>
+                <constraint firstItem="P9a-7i-aLO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CWR-Lx-NOO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="P9a-7i-aLO" secondAttribute="bottom" id="aBt-Xl-ku2"/>
+                <constraint firstItem="P9a-7i-aLO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vWc-EF-xIn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="21"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="P9a-7i-aLO">
+            <size key="intrinsicContentSize" width="-1" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="IconPurpleBlur" width="154" height="69.333335876464844"/>
+        <namedColor name="eukiAccent">
+            <color red="0.37999999523162842" green="0.31000000238418579" blue="0.76099997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukiMain">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

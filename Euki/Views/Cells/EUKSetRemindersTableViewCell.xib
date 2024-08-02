@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SetRemindersCellIdenifier" rowHeight="27" id="KGk-i7-Jjw" customClass="EUKSetRemindersTableViewCell" customModule="Euki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zC-8D-Igm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDt-sP-raj" customClass="EUKBaseButton" customModule="Euki" customModuleProvider="target">
+                                <rect key="frame" x="103" y="16" width="114" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="SET REMINDERS">
+                                    <color key="titleColor" name="blueberry"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="set_reminders"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="GreenClear"/>
+                        <constraints>
+                            <constraint firstItem="bDt-sP-raj" firstAttribute="centerY" secondItem="4zC-8D-Igm" secondAttribute="centerY" id="9sK-or-QMR"/>
+                            <constraint firstItem="bDt-sP-raj" firstAttribute="centerX" secondItem="4zC-8D-Igm" secondAttribute="centerX" id="aDc-Ir-ywB"/>
+                            <constraint firstAttribute="height" constant="60" id="d8y-bp-JZv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4zC-8D-Igm" secondAttribute="trailing" id="Fvk-oZ-OGO"/>
+                    <constraint firstItem="4zC-8D-Igm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IQS-Kx-d6Z"/>
+                    <constraint firstItem="4zC-8D-Igm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QJG-UT-Kdg"/>
+                    <constraint firstAttribute="bottom" secondItem="4zC-8D-Igm" secondAttribute="bottom" id="yqM-ef-VEc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="setRemindersButton" destination="bDt-sP-raj" id="5jw-Qt-ZLs"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="160.11994002998503"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="GreenClear">
+            <color red="0.95300000905990601" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blueberry">
+            <color red="0.27099999785423279" green="0.20800000429153442" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

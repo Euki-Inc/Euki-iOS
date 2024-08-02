@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EUKDayCollectionViewCell" id="gTV-IL-0wX" customClass="EUKDayCollectionViewCell" customModule="Euki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="59" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="59" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sf8-LN-sKS">
+                        <rect key="frame" x="0.0" y="0.0" width="59" height="120"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconCalendarDayBlur" translatesAutoresizingMaskIntoConstraints="NO" id="prx-JE-tA0">
+                                <rect key="frame" x="-7.6666666666666643" y="7.6666666666666643" width="84.333333333333314" height="94"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hSW-eb-ROb">
+                                <rect key="frame" x="0.0" y="0.0" width="59" height="112.66666666666667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t45-90-jCa">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="TK0-9H-ilM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="eukiMain"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRN-aC-Eo0">
+                                        <rect key="frame" x="0.0" y="25" width="59" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJi-Fy-LLJ">
+                                                <rect key="frame" x="26" y="20.666666666666664" width="7.3333333333333357" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" name="eukiMain"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoH-h2-9qO">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zr1-NK-YkX">
+                                                <rect key="frame" x="0.0" y="41" width="59" height="18"/>
+                                                <color key="backgroundColor" name="Bleeding"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="X6J-0z-xer"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="zr1-NK-YkX" firstAttribute="leading" secondItem="DRN-aC-Eo0" secondAttribute="leading" id="2up-UE-0mC"/>
+                                            <constraint firstAttribute="bottom" secondItem="LoH-h2-9qO" secondAttribute="bottom" id="52i-tW-3fs"/>
+                                            <constraint firstItem="LoH-h2-9qO" firstAttribute="leading" secondItem="DRN-aC-Eo0" secondAttribute="leading" id="7Yt-SG-CAi"/>
+                                            <constraint firstAttribute="bottom" secondItem="zr1-NK-YkX" secondAttribute="bottom" id="LfR-QH-3c6"/>
+                                            <constraint firstItem="LoH-h2-9qO" firstAttribute="top" secondItem="DRN-aC-Eo0" secondAttribute="top" id="QCf-wm-leE"/>
+                                            <constraint firstItem="nJi-Fy-LLJ" firstAttribute="centerY" secondItem="DRN-aC-Eo0" secondAttribute="centerY" id="S0q-95-4Rf"/>
+                                            <constraint firstItem="nJi-Fy-LLJ" firstAttribute="centerX" secondItem="DRN-aC-Eo0" secondAttribute="centerX" id="WNt-og-eHG"/>
+                                            <constraint firstAttribute="trailing" secondItem="LoH-h2-9qO" secondAttribute="trailing" id="e4Z-0x-Qvq"/>
+                                            <constraint firstAttribute="width" secondItem="DRN-aC-Eo0" secondAttribute="height" multiplier="1:1" id="jHP-yj-nhS"/>
+                                            <constraint firstAttribute="width" secondItem="DRN-aC-Eo0" secondAttribute="height" multiplier="1:1" id="nyC-gT-3dX"/>
+                                            <constraint firstAttribute="trailing" secondItem="zr1-NK-YkX" secondAttribute="trailing" id="zJL-ak-4ke"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cub-HO-JjM">
+                                        <rect key="frame" x="0.0" y="84" width="59" height="2"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="Zar-gD-qPN"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QoE-1C-WQa">
+                                        <rect key="frame" x="2" y="86" width="55" height="26.666666666666671"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="EpK-vt-oRx">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="12.333333333333334"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hmx-21-5Lp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="12.333333333333334"/>
+                                                        <subviews>
+                                                            <view tag="200" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcq-XP-SM3" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="12.333333333333334"/>
+                                                                <color key="backgroundColor" red="0.81530672309999996" green="0.22310976530000001" blue="0.15595687010000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="zcq-XP-SM3" secondAttribute="height" multiplier="1:1" id="Q63-mP-gqT"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="zcq-XP-SM3" secondAttribute="bottom" id="Lu9-0j-gug"/>
+                                                            <constraint firstItem="zcq-XP-SM3" firstAttribute="leading" secondItem="Hmx-21-5Lp" secondAttribute="leading" id="PLa-r4-wqC"/>
+                                                            <constraint firstAttribute="trailing" secondItem="zcq-XP-SM3" secondAttribute="trailing" id="bQd-d6-sRt"/>
+                                                            <constraint firstItem="zcq-XP-SM3" firstAttribute="top" secondItem="Hmx-21-5Lp" secondAttribute="top" id="eFZ-cF-yLM"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcA-mQ-GPv">
+                                                        <rect key="frame" x="14.333333333333332" y="0.0" width="12.333333333333332" height="12.333333333333334"/>
+                                                        <subviews>
+                                                            <view tag="201" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCx-VR-ksT" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="12.333333333333334"/>
+                                                                <color key="backgroundColor" red="0.1450980392" green="0.60784313729999995" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="vCx-VR-ksT" secondAttribute="height" multiplier="1:1" id="glh-3v-Eru"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="vCx-VR-ksT" firstAttribute="leading" secondItem="wcA-mQ-GPv" secondAttribute="leading" id="Joq-mu-1tF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="vCx-VR-ksT" secondAttribute="trailing" id="Qo0-V4-8BK"/>
+                                                            <constraint firstItem="vCx-VR-ksT" firstAttribute="top" secondItem="wcA-mQ-GPv" secondAttribute="top" id="WtR-9I-JUV"/>
+                                                            <constraint firstAttribute="bottom" secondItem="vCx-VR-ksT" secondAttribute="bottom" id="qUg-tW-hAv"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjB-8f-5V8">
+                                                        <rect key="frame" x="28.666666666666671" y="0.0" width="12" height="12.333333333333334"/>
+                                                        <subviews>
+                                                            <view tag="202" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpN-8v-2VP" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12" height="12.333333333333334"/>
+                                                                <color key="backgroundColor" name="Purple"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="UpN-8v-2VP" secondAttribute="height" multiplier="1:1" id="HgK-x4-mNy"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="UpN-8v-2VP" firstAttribute="top" secondItem="GjB-8f-5V8" secondAttribute="top" id="XWN-tC-Mmt"/>
+                                                            <constraint firstAttribute="bottom" secondItem="UpN-8v-2VP" secondAttribute="bottom" id="lGW-gN-ktu"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UpN-8v-2VP" secondAttribute="trailing" id="m9v-bt-9aN"/>
+                                                            <constraint firstItem="UpN-8v-2VP" firstAttribute="leading" secondItem="GjB-8f-5V8" secondAttribute="leading" id="sop-Rq-P3G"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKt-Be-WnQ">
+                                                        <rect key="frame" x="42.666666666666664" y="0.0" width="12.333333333333336" height="12.333333333333334"/>
+                                                        <subviews>
+                                                            <view tag="203" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8w-gP-5hG" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="12.333333333333334"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="E8w-gP-5hG" secondAttribute="height" multiplier="1:1" id="qfa-ew-qPa"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="E8w-gP-5hG" secondAttribute="trailing" id="4tQ-8a-cVS"/>
+                                                            <constraint firstItem="E8w-gP-5hG" firstAttribute="top" secondItem="LKt-Be-WnQ" secondAttribute="top" id="JmP-UE-hkU"/>
+                                                            <constraint firstItem="E8w-gP-5hG" firstAttribute="leading" secondItem="LKt-Be-WnQ" secondAttribute="leading" id="Yyg-NB-ysz"/>
+                                                            <constraint firstAttribute="bottom" secondItem="E8w-gP-5hG" secondAttribute="bottom" id="sar-vi-TTg"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="FBU-hl-g9Z">
+                                                <rect key="frame" x="0.0" y="14.333333333333329" width="55" height="12.333333333333336"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0c-bA-RYt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="12.333333333333334"/>
+                                                        <subviews>
+                                                            <view tag="204" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIB-tz-i6c" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="12.333333333333334"/>
+                                                                <color key="backgroundColor" name="Green"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="oIB-tz-i6c" secondAttribute="height" multiplier="1:1" id="xez-jG-QxH"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="oIB-tz-i6c" secondAttribute="trailing" id="4Z0-yY-Fjm"/>
+                                                            <constraint firstAttribute="bottom" secondItem="oIB-tz-i6c" secondAttribute="bottom" id="5Fs-a5-IMw"/>
+                                                            <constraint firstItem="oIB-tz-i6c" firstAttribute="leading" secondItem="e0c-bA-RYt" secondAttribute="leading" id="g7y-tE-BwK"/>
+                                                            <constraint firstItem="oIB-tz-i6c" firstAttribute="top" secondItem="e0c-bA-RYt" secondAttribute="top" id="uTD-mn-fxw"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ie2-1k-GJp">
+                                                        <rect key="frame" x="14.333333333333332" y="0.0" width="12.333333333333332" height="12.333333333333334"/>
+                                                        <subviews>
+                                                            <view tag="205" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPG-H0-Po4" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="12.333333333333334"/>
+                                                                <color key="backgroundColor" name="PurpleClear"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="mPG-H0-Po4" secondAttribute="height" multiplier="1:1" id="LkQ-db-zXD"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="mPG-H0-Po4" firstAttribute="leading" secondItem="ie2-1k-GJp" secondAttribute="leading" id="06z-Sz-xEH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mPG-H0-Po4" secondAttribute="trailing" id="1f5-hO-EaZ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="mPG-H0-Po4" secondAttribute="bottom" id="931-22-NGv"/>
+                                                            <constraint firstItem="mPG-H0-Po4" firstAttribute="top" secondItem="ie2-1k-GJp" secondAttribute="top" id="VEt-uR-nUK"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Iu-ZU-xWc">
+                                                        <rect key="frame" x="28.666666666666671" y="0.0" width="12" height="12.333333333333334"/>
+                                                        <subviews>
+                                                            <view tag="206" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctw-pT-9bS" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12" height="12.333333333333334"/>
+                                                                <color key="backgroundColor" name="Coral"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="ctw-pT-9bS" secondAttribute="height" multiplier="1:1" id="Rp3-Gc-GZc"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="ctw-pT-9bS" secondAttribute="bottom" id="BYI-qm-qZK"/>
+                                                            <constraint firstItem="ctw-pT-9bS" firstAttribute="top" secondItem="4Iu-ZU-xWc" secondAttribute="top" id="J9t-Oc-hlH"/>
+                                                            <constraint firstItem="ctw-pT-9bS" firstAttribute="leading" secondItem="4Iu-ZU-xWc" secondAttribute="leading" id="fzK-2s-Q0G"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ctw-pT-9bS" secondAttribute="trailing" id="vkb-1Z-8z6"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmc-C0-gsa">
+                                                        <rect key="frame" x="42.666666666666664" y="0.0" width="12.333333333333336" height="12.333333333333334"/>
+                                                        <subviews>
+                                                            <view tag="207" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWx-bI-RGh" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="12.333333333333334" height="12.333333333333334"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="rWx-bI-RGh" secondAttribute="height" multiplier="1:1" id="2XX-pa-Ytr"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="rWx-bI-RGh" firstAttribute="leading" secondItem="hmc-C0-gsa" secondAttribute="leading" id="0OG-hF-64g"/>
+                                                            <constraint firstAttribute="bottom" secondItem="rWx-bI-RGh" secondAttribute="bottom" id="14A-Ip-Wna"/>
+                                                            <constraint firstAttribute="trailing" secondItem="rWx-bI-RGh" secondAttribute="trailing" id="6iW-Fg-sF8"/>
+                                                            <constraint firstItem="rWx-bI-RGh" firstAttribute="top" secondItem="hmc-C0-gsa" secondAttribute="top" id="nnu-Hd-e9k"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DRN-aC-Eo0" firstAttribute="leading" secondItem="hSW-eb-ROb" secondAttribute="leading" id="XHn-Qs-e1S"/>
+                                    <constraint firstAttribute="trailing" secondItem="t45-90-jCa" secondAttribute="trailing" id="dW4-QL-vxR"/>
+                                    <constraint firstItem="t45-90-jCa" firstAttribute="leading" secondItem="hSW-eb-ROb" secondAttribute="leading" id="gf6-Am-StS"/>
+                                    <constraint firstAttribute="trailing" secondItem="QoE-1C-WQa" secondAttribute="trailing" constant="2" id="hxd-3t-tbG"/>
+                                    <constraint firstItem="DRN-aC-Eo0" firstAttribute="width" secondItem="DRN-aC-Eo0" secondAttribute="height" multiplier="1:1" id="iIh-SD-CH3"/>
+                                    <constraint firstItem="QoE-1C-WQa" firstAttribute="leading" secondItem="hSW-eb-ROb" secondAttribute="leading" constant="2" id="y4I-wj-N9k"/>
+                                    <constraint firstAttribute="trailing" secondItem="DRN-aC-Eo0" secondAttribute="trailing" id="z95-mh-CBR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="prx-JE-tA0" firstAttribute="centerX" secondItem="DRN-aC-Eo0" secondAttribute="centerX" constant="5" id="K1W-1j-Cc9"/>
+                            <constraint firstItem="hSW-eb-ROb" firstAttribute="top" secondItem="sf8-LN-sKS" secondAttribute="top" id="VWM-ca-ZFQ"/>
+                            <constraint firstItem="hSW-eb-ROb" firstAttribute="leading" secondItem="sf8-LN-sKS" secondAttribute="leading" id="hXu-jZ-1JL"/>
+                            <constraint firstAttribute="trailing" secondItem="hSW-eb-ROb" secondAttribute="trailing" id="jXA-N9-7ah"/>
+                            <constraint firstItem="prx-JE-tA0" firstAttribute="centerY" secondItem="DRN-aC-Eo0" secondAttribute="centerY" id="z4C-T9-Mjr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="sf8-LN-sKS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TS1-3d-Iuc"/>
+                <constraint firstAttribute="trailing" secondItem="sf8-LN-sKS" secondAttribute="trailing" id="bae-EJ-DNA"/>
+                <constraint firstItem="sf8-LN-sKS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jk3-c2-yak"/>
+                <constraint firstAttribute="bottom" secondItem="sf8-LN-sKS" secondAttribute="bottom" id="ro6-Yu-UCu"/>
+            </constraints>
+            <connections>
+                <outlet property="actionButton" destination="LoH-h2-9qO" id="dQU-o3-ePn"/>
+                <outlet property="bleedingHeightConstraint" destination="X6J-0z-xer" id="A9x-bs-Qnh"/>
+                <outlet property="bleedingView" destination="zr1-NK-YkX" id="Tbd-wu-kEn"/>
+                <outlet property="blurView" destination="prx-JE-tA0" id="YnU-vO-ylI"/>
+                <outlet property="dayLabel" destination="nJi-Fy-LLJ" id="9mA-q8-i64"/>
+                <outlet property="dayView" destination="DRN-aC-Eo0" id="iAH-Gh-u2E"/>
+                <outlet property="titleLabel" destination="t45-90-jCa" id="Vob-m1-mNS"/>
+            </connections>
+            <point key="canvasLocation" x="138.1679389312977" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="IconCalendarDayBlur" width="84" height="94"/>
+        <namedColor name="Bleeding">
+            <color red="0.76499998569488525" green="0.0" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Coral">
+            <color red="1" green="0.51800000667572021" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.29399999976158142" green="0.48199999332427979" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Purple">
+            <color red="0.27099999785423279" green="0.20800000429153442" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PurpleClear">
+            <color red="0.92500001192092896" green="0.9179999828338623" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukiMain">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

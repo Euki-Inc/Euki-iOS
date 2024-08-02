@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EUKAppointmentView" customModule="Euki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15I-1n-XJy" customClass="TTTAttributedLabel">
+                    <rect key="frame" x="31" y="5" width="328" height="71"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" name="eukiMain"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="15I-1n-XJy" secondAttribute="trailing" constant="15" id="JPq-Zo-5y9"/>
+                <constraint firstItem="15I-1n-XJy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="31" id="T4A-MS-q3T"/>
+                <constraint firstItem="15I-1n-XJy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="VWn-Ek-lxa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="15I-1n-XJy" secondAttribute="bottom" constant="5" id="tcW-Nw-Ble"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="15I-1n-XJy" id="tH0-KT-5TR"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="-178.56071964017991"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="15I-1n-XJy">
+            <size key="intrinsicContentSize" width="38" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="eukiMain">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

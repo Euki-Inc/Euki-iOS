@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EUKSelectButton" customModule="Euki" customModuleProvider="target">
+            <connections>
+                <outlet property="borderContainerView" destination="beX-xd-TTb" id="iMs-FA-qx7"/>
+                <outlet property="button" destination="rJR-CC-HPR" id="K5w-Gh-vNa"/>
+                <outlet property="containerView" destination="cxF-8j-Vk5" id="0dA-3r-4up"/>
+                <outlet property="countContainerView" destination="x0Y-aG-ReU" id="d9M-5N-chr"/>
+                <outlet property="countLabel" destination="wxA-67-dhS" id="JVR-E0-9X7"/>
+                <outlet property="titleLabel" destination="ctE-Zp-nPc" id="TBq-Sp-L8m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CpI-Xz-6jh">
+                    <rect key="frame" x="-15" y="-2" width="171" height="128"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxF-8j-Vk5">
+                            <rect key="frame" x="41.5" y="0.0" width="88" height="88"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJR-CC-HPR">
+                                    <rect key="frame" x="2" y="0.0" width="86" height="88"/>
+                                    <gestureRecognizers/>
+                                    <state key="normal" image="IconBleedingLight"/>
+                                    <connections>
+                                        <action selector="tapped:" destination="-1" eventType="touchUpInside" id="MOP-An-Bzl"/>
+                                        <outletCollection property="gestureRecognizers" destination="yPh-nP-uYg" appends="YES" id="Kma-WH-r9O"/>
+                                    </connections>
+                                </button>
+                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beX-xd-TTb" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                                    <rect key="frame" x="2" y="2" width="84" height="84"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="88" id="1R7-Ue-vC1"/>
+                                <constraint firstItem="beX-xd-TTb" firstAttribute="top" secondItem="cxF-8j-Vk5" secondAttribute="top" constant="2" id="A0G-c3-zpN"/>
+                                <constraint firstItem="rJR-CC-HPR" firstAttribute="top" secondItem="cxF-8j-Vk5" secondAttribute="top" id="CoU-rH-HgB"/>
+                                <constraint firstItem="rJR-CC-HPR" firstAttribute="leading" secondItem="cxF-8j-Vk5" secondAttribute="leading" constant="2" id="HII-yE-kwl"/>
+                                <constraint firstAttribute="bottom" secondItem="beX-xd-TTb" secondAttribute="bottom" constant="2" id="J5B-05-Mcq"/>
+                                <constraint firstAttribute="width" constant="88" id="K4l-RA-Ua4"/>
+                                <constraint firstAttribute="trailing" secondItem="rJR-CC-HPR" secondAttribute="trailing" id="L28-3q-MhH"/>
+                                <constraint firstAttribute="bottom" secondItem="rJR-CC-HPR" secondAttribute="bottom" id="VQq-oc-wAN"/>
+                                <constraint firstAttribute="trailing" secondItem="beX-xd-TTb" secondAttribute="trailing" constant="2" id="bgA-ZU-hvM"/>
+                                <constraint firstItem="beX-xd-TTb" firstAttribute="leading" secondItem="cxF-8j-Vk5" secondAttribute="leading" constant="2" id="cnx-OH-QrW"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-Zp-nPc">
+                            <rect key="frame" x="0.0" y="93" width="171" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="q0w-fT-cPT"/>
+                            </constraints>
+                            <string key="text">Title
+Title2</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" name="blueberry"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ctE-Zp-nPc" secondAttribute="trailing" id="qOv-of-J7p"/>
+                        <constraint firstItem="ctE-Zp-nPc" firstAttribute="leading" secondItem="CpI-Xz-6jh" secondAttribute="leading" id="zUC-Be-hGc"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0Y-aG-ReU" customClass="EUKRoundedView" customModule="Euki" customModuleProvider="target">
+                    <rect key="frame" x="86.5" y="53" width="28" height="28"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxA-67-dhS">
+                            <rect key="frame" x="10.5" y="4.5" width="7.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="eukiAccent"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="MPM-gu-L6Z"/>
+                        <constraint firstItem="wxA-67-dhS" firstAttribute="centerY" secondItem="x0Y-aG-ReU" secondAttribute="centerY" id="cNJ-wH-sJO"/>
+                        <constraint firstItem="wxA-67-dhS" firstAttribute="centerX" secondItem="x0Y-aG-ReU" secondAttribute="centerX" id="ont-Pn-tio"/>
+                        <constraint firstAttribute="width" constant="28" id="rWO-Xp-c8n"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="CpI-Xz-6jh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0lB-xh-dRY"/>
+                <constraint firstItem="cxF-8j-Vk5" firstAttribute="bottom" secondItem="x0Y-aG-ReU" secondAttribute="bottom" constant="5" id="Ccj-05-7Wq"/>
+                <constraint firstItem="cxF-8j-Vk5" firstAttribute="trailing" secondItem="x0Y-aG-ReU" secondAttribute="trailing" id="WG9-Iq-4nx"/>
+                <constraint firstItem="CpI-Xz-6jh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="-15" id="Z6Y-BB-cE4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CpI-Xz-6jh" secondAttribute="trailing" constant="-15" id="nU1-F8-QJI"/>
+                <constraint firstItem="CpI-Xz-6jh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vuQ-Ga-Sm1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-181.5" y="-254"/>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="yPh-nP-uYg">
+            <connections>
+                <action selector="longPress:" destination="-1" id="H0q-Hk-LUE"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="IconBleedingLight" width="80" height="80"/>
+        <namedColor name="blueberry">
+            <color red="0.27099999785423279" green="0.20800000429153442" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eukiAccent">
+            <color red="0.37999999523162842" green="0.31000000238418579" blue="0.76099997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
