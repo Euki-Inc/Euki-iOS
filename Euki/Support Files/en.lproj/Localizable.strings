@@ -2400,3 +2400,73 @@ Your data is only yours, not ours.";
 "onboarding_4_title" = "The numbers 0000 display a fake screen, so use other numbers for your PIN. If anyone forces you to open Euki, enter 0000 to show the fake screen.";
 "are_they_safe" = "Are they safe?";
 "next" = "Next";
+
+
+//New Abortion and Privacy
+"Privacy_header" = "Privacy";
+"Delete your data_header" = "Delete your data";
+"Set frequent data deletion_copy" = "Select how often you want Euki to automatically delete your tracked data";
+"Set a PIN_copy 2" = "We do not store or collect any of your information. Data you track in the app is not tied to your email address or phone number, and only you have access to it.";
+"More information_header" = "More information";
+"Privacy best practices_dropdown" = "Privacy best practices";
+"Privacy best practices_header" = "Privacy best practices";
+"Privacy best practices_copy" = "When seeking reproductive health care, privacy is important. There is no legal requirement to share information about pregnancy loss with anyone, including health care providers. These best practices can help you understand how to protect your data and health as you search for care.";
+"Protect your private messages_dropdown" = "Protect your private messages";
+"Protect your private messages_copy" = "When you send texts via SMS, your phone company stores copies of those texts. These can be turned over to law enforcement if the phone company gets a warrant. They can also be used to influence the ads you see online. If other people have access to your phone, they might also demand to see your private messages. To keep your information private from your phone company and others in your life, you can do the following:\
+\
+Use end-to-end encrypted messaging apps like Signal that don’t store your data. \
+Consider using the disappearing messages feature on apps like Signal. \
+Set a password on your phone and a PIN for Euki if you haven’t already.";
+"Protect your internet search history_dropdown" = "Protect your internet search history";
+"Protect your internet search history_copy" = "We do not store any of your tracked data in the cloud or anywhere else. It is not tied to your email address or phone number. It exists only on your phone, and only you have access to it.";
+"Protect your payment history_dropdown" = "Protect your payment history";
+"Protect your payment history_copy" = "If you’re worried about reproductive health care services showing up on your bank statements or payment history, use these instead of credit cards:\
+\
+Cash \
+Pre-paid gift cards (Visa, Mastercard, etc.)";
+"Protect your location data and ad tracking_dropdown" = "Protect your location data and ad tracking";
+"Protect your location data and ad tracking_copy" = "Websites, apps, and social media can track your location and target you for ads related to pregnancy or abortion. \
+\
+To protect your privacy and avoid being tracked:\
+\
+Turn off location sharing on your devices\
+\
+Disable your mobile ad ID in your settings\
+\
+Use DuckDuckGo instead of Google to protect your browser activity and personal data\
+\
+Use Firefox Focus instead of your phone’s default browser to block third party trackers";
+"Resources_dropdown" = "Resources";
+"Resources_copy" = "For more detailed information about protecting your data privacy online, check out these resources:\
+\
+Digital Defense Fund\
+If/When/How’s Repro Legal Helpline at 844-868-2812\
+Electronic Frontier Foundation privacy guidance";
+"Med abortion_mife_miso_dropdown" = "Medication abortion with mifepristone and misoprostol";
+"Med abortion_miso_dropdown" = "Medication abortion with misoprostol";
+"counseling requirements_dropdown" = "Counseling requirements";
+"counseling requirements_copy" = "Many states require a pregnant person to attend a counseling session and wait for a specific amount of time (usually at least 24 hours) before receiving abortion care.\
+\
+Though state mandated, counseling requirements are not medically necessary and often include information about abortion that is incorrect or misleading.";
+"judicial bypass_dropdown" = "Judicial bypass/waiver";
+"judicial bypass_copy" = "In some states, people under a certain age (usually 18, but sometimes younger) can't get abortion care without involving a parent. For people who cannot or do not want to involve a parent, there is a court process where a judge can give you permission to have an abortion without involving a parent or legal guardian. This is called a judicial bypass/waiver.\
+\
+If you need support with a judicial bypass, contact the Repro Legal Helpline.";
+"legal risk_dropdown" = "Legal risk";
+"Legal risk_copy" = "Legal risk is an explanation of legal trouble someone might face, such as a criminal investigation or arrest. It does NOT mean someone will get into legal trouble and is just an explanation of what can happen.";
+"Parental involvement laws_dropdown" = "Parental involvement laws";
+"Parental involvement laws_copy" = "Some states require a young person to tell and/or get written permission from a parent or legal guardian to get an abortion.\
+\
+If/When/How can tell you what the parental involvement laws are in your state.";
+"waiting periods_dropdown" = "Waiting periods";
+"waiting periods_copy" = "Many states require a waiting period (typically at least 24 hours) between receiving counseling and having an abortion. These mandatory waiting periods may require a pregnant person to make multiple trips to their provider if the state requires in-person counseling (vs. virtual counseling).\
+\
+Counseling requirements and waiting periods are state mandated, and there is no medical reason to require them.";
+"shield laws_dropdown" = "Shield laws";
+"shield laws_copy" = "Several states have passed laws generally referred to as “shield laws,” which are intended to protect (or shield) abortion providers, supporters, and seekers within that state from legal actions put forward in other states. Shield laws only impact people when they are in the state with the shield law. \
+\
+For example, if someone in Texas ends their pregnancy using pills from a shield law provider in New York, only the person in New York (the provider) is protected by the shield law—not the person in Texas. \
+\
+To break it down: the law where you are physically located is almost always the law that applies to you.";
+"If/when/how" = "If/when/how";
+"Digital Defense Fund and If/When/How" = "Digital Defense Fund and If/When/How";

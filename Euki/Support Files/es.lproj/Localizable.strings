@@ -2387,3 +2387,72 @@ Su información es solo suya, no nuestra.";
 "onboarding_4_title" = "El código 0000 muestra una pantalla falsa, así que elige otro número como PIN. Si alguien te obliga a abrir Euki, introduce 0000 para mostrar la pantalla falsa";
 "are_they_safe" = "¿Son seguros?";
 "next" = "Siguiente";
+
+//New Abortion and Privacy
+"Privacy_header" = "Privacidad";
+"Delete your data_header" = "Borrar tus datos";
+"Set frequent data deletion_copy" = "Selecciona con qué frecuencia deseas que Euki elimine automáticamente los datos que han rastreado";
+"Set a PIN_copy 2" = "No almacenamos ni recopilamos ninguna de tu información. Los datos que rastreas en la aplicación no están vinculados a tu dirección de correo electrónico ni a tu número de teléfono, y solo tú tienes acceso a ellos.";
+"More information_header" = "Más información";
+"Privacy best practices_dropdown" = "Mejores prácticas de privacidad";
+"Privacy best practices_header" = "Mejores prácticas de privacidad";
+"Privacy best practices_copy" = "Cuando buscas atención de salud reproductiva, la privacidad es importante. No hay un requisito legal para compartir información sobre la pérdida del embarazo con nadie, incluidos los proveedores de salud. Estas mejores prácticas pueden ayudarte a entender cómo proteger tus datos y tu salud mientras buscas atención.";
+"Protect your private messages_dropdown" = "Proteger tus mensajes privados";
+"Protect your private messages_copy" = "Cuando envías mensajes de texto vía SMS, tu compañía telefónica almacena copias de esos textos. Estos pueden ser entregados a las fuerzas del orden si la compañía telefónica recibe una orden judicial. También pueden ser utilizados para influir en los anuncios que ves en línea. Si otras personas tienen acceso a tu teléfono, también podrían exigir ver tus mensajes privados. Para mantener tu información privada, tanto de tu compañía telefónica como de otras personas en tu vida, puedes hacer lo siguiente:\
+\
+Usa aplicaciones de mensajería cifrada de extremo a extremo, como Signal, que no almacenan tus datos.\
+Considera usar la función de mensajes que desaparecen en aplicaciones como Signal.\
+Configura una contraseña en tu teléfono y un PIN para Euki si aún no lo has hecho.";
+"Protect your internet search history_dropdown" = "Proteger tu historial de búsqueda";
+"Protect your internet search history_copy" = "No almacenamos ninguno de tus datos rastreados en la nube ni en ningún otro lugar. No están vinculados a tu dirección de correo electrónico ni a tu número de teléfono. Solo existen en tu teléfono, y solo tú tienes acceso a ellos.";
+"Protect your payment history_dropdown" = "Proteger tu historial de pagos";
+"Protect your payment history_copy" = "Si te preocupa que los servicios de salud reproductiva aparezcan en tus extractos bancarios o historial de pagos, utiliza estos en lugar de tarjetas de crédito:\
+\
+Efectivo\
+Tarjetas de regalo prepagadas (Visa, Mastercard, etc.)";
+"Protect your location data and ad tracking_dropdown" = "Proteger tus datos de ubicación y el rastreo de anuncios";
+"Protect your location data and ad tracking_copy" = "Los sitios web, las aplicaciones y las redes sociales pueden rastrear tu ubicación y dirigirte anuncios relacionados con el embarazo o el aborto.\
+\
+Para proteger tu privacidad:\
+\
+Desactiva el uso compartido de ubicación en tus dispositivos\
+\
+Desactiva tu ID de publicidad móvil en la configuración\
+\
+Usa DuckDuckGo en lugar de Google para proteger tu actividad de navegación y datos personales\
+\
+Usa Firefox Focus en lugar del navegador predeterminado de tu teléfono para bloquear rastreadores de terceros";
+"Resources_dropdown" = "Recursos";
+"Resources_copy" = "Para obtener información más detallada sobre cómo proteger tu privacidad de datos en línea, consulta estos recursos:\
+\
+Digital Defense Fund\
+Repro Legal Helpline de If/When/How al 844-868-2812\
+Guía de privacidad de la Electronic Frontier Foundation";
+"Med abortion_mife_miso_dropdown" = "Aborto con mifepristone y misoprostol";
+"Med abortion_miso_dropdown" = "Aborto con misoprostol";
+"counseling requirements_dropdown" = "Requisitos de consejería";
+"counseling requirements_copy" = "Muchos estados requieren que una persona embarazada asista a una sesión de consejería y espere una cantidad específica de tiempo (usualmente al menos 24 horas) antes de recibir atención para el aborto.\
+\
+Aunque están ordenados por el estado, los requisitos de consejería no son médicamente necesarios y a menudo incluyen información sobre el aborto que es incorrecta o engañosa.";
+"judicial bypass_dropdown" = "Excepción judicial";
+"judicial bypass_copy" = "En algunos estados, las personas menores de cierta edad (usualmente 18 años, pero a veces más jóvenes) no pueden recibir atención para el aborto sin involucrar a un padre o madre. Para las personas que no pueden o no quieren involucrar a un padre o madre, existe un proceso judicial en el que un juez puede otorgar permiso para tener un aborto sin involucrar a un padre, madre o tutor legal. Esto se llama una excepción judicial.\
+\
+Si necesitas apoyo con una excepción judicial, contacta a Repro Legal Helpline.";
+"legal risk_dropdown" = "Riesgo legal";
+"Legal risk_copy" = "El riesgo legal es una explicación de los problemas legales que alguien podría enfrentar, como una investigación criminal o arresto. NO significa que alguien se meterá en problemas legales, es solo una explicación de lo que puede suceder.";
+"Parental involvement laws_dropdown" = "Leyes de intervención de los padres";
+"Parental involvement laws_copy" = "Algunos estados requieren que una persona joven informe y/o obtenga el permiso por escrito de un padre, madre o tutor legal para poder abortar.\
+\
+If/When/How puede decirte cuáles son las leyes de intervención de los padres en tu estado.";
+"waiting periods_dropdown" = "Períodos de espera";
+"waiting periods_copy" = "Muchos estados requieren un período de espera (típicamente al menos 24 horas) entre recibir consejería y someterse a un aborto. Estos períodos de espera obligatorios pueden requerir que una persona embarazada haga múltiples viajes a su proveedor si el estado exige consejería en persona (en lugar de consejería virtual).\
+\
+Los requisitos de consejería y los períodos de espera están ordenados por el estado y no hay ninguna razón médica para requerirlos.";
+"shield laws_dropdown" = "Leyes de protección";
+"shield laws_copy" = "Varios estados han aprobado leyes comúnmente conocidas como 'leyes de protección', que están destinadas a proteger (o blindar) a los proveedores, apoyadores y solicitantes de abortos dentro de ese estado de acciones legales emprendidas en otros estados. Las leyes de protección solo afectan a las personas cuando están en el estado con la ley de protección.\
+\
+Por ejemplo, si alguien en Texas termina su embarazo usando pastillas de un proveedor con ley de protección en Nueva York, solo la persona en Nueva York (el proveedor) está protegida por la ley de protección, no la persona en Texas.\
+\
+Para desglosarlo: la ley del lugar donde te encuentras físicamente es casi siempre la ley que se aplica a ti.";
+"If/when/how" = "If/when/how";
+"Digital Defense Fund and If/When/How" = "Digital Defense Fund and If/When/How";

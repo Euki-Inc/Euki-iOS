@@ -140,6 +140,12 @@ class EUKBaseViewController: UIViewController {
             ContentManager.sharedInstance.requestPregnancyOptions { [unowned self] (contentItem) in
                 self.pushContentItem(contentItem: contentItem)
             }
+//        case "medication":
+//            let mifeMiso12 = AbortionContentManager.sharedInstance.abortionMifeMiso12(withExpandables: false)
+//            mifeMiso12.parent = item
+//            mifeMiso12.isExpandableChild = true
+//            item.expandableItems?.insert(mifeMiso12, at: 0)
+//            self.pushContentItem(contentItem: item)
         default:
             self.pushContentItem(contentItem: item)
         }
