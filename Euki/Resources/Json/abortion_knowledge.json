@@ -15,12 +15,6 @@
                     "source": "national_abortion_federation",
                     "expandable_items": [
                         {
-                            "id": "how_medication_work",
-                            "title": "medication_abortion_title",
-                            "content": "medication_abortion_content",
-                            "source": "national_abortion_federation"
-                        },
-                        {
                             "id": "what_pills_look_like",
                             "title": "what_pills_look_like_title",
                             "content": "what_pills_look_like_content",
@@ -56,18 +50,14 @@
                     "source": "national_abortion_federation",
                     "expandable_items": [
                         {
-                            "id": "suction_abortion_subheading_1",
-                            "content": "suction_abortion_content_1"
-                        },
-                        {
-                            "id": "suction_abortion_subheading_2",
-                            "content": "suction_abortion_content_2",
-                        },
-                        {
                             "id": "what_will_be_like",
                             "title": "what_to_expect_title",
-                            "content": "what_to_expect_content",
-                            "source": "national_abortion_federation"
+                            "content": "suction_abortion_what_to_expect_content",
+                            "source": "suction_abortion_what_to_expect_source",
+                            "bold_strings":[
+                                "suction_abortion_subheading_2",
+                                "suction_abortion_subheading_1"
+                            ]
                         },
                         {
                             "id": "suction_abortion_subheading_3",

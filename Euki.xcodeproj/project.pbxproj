@@ -163,6 +163,7 @@
 		77ED361220DF147A00FC9006 /* Euki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77ED361020DF147A00FC9006 /* Euki.xcdatamodeld */; };
 		77ED361420DF2F0D00FC9006 /* UIColorInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED361320DF2F0D00FC9006 /* UIColorInputError.swift */; };
 		77F1554F217D282A00A8DCA5 /* ConstansManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1554E217D282A00A8DCA5 /* ConstansManager.swift */; };
+		A21F90E42C77D6B500708087 /* UIView+ConstraintIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F90E32C77D6B500708087 /* UIView+ConstraintIdentifier.swift */; };
 		F165D0BF2A3AB2C600C16D0B /* EUKNoActionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165D0BE2A3AB2C600C16D0B /* EUKNoActionTextField.swift */; };
 		F165D0C12A3B5FC800C16D0B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165D0C02A3B5FC800C16D0B /* CoreDataManager.swift */; };
 		F165D0C52A3D50F700C16D0B /* EUKCycleSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165D0C42A3D50F700C16D0B /* EUKCycleSummaryViewController.swift */; };
@@ -371,6 +372,7 @@
 		77ED361320DF2F0D00FC9006 /* UIColorInputError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorInputError.swift; sourceTree = "<group>"; };
 		77F1554E217D282A00A8DCA5 /* ConstansManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstansManager.swift; sourceTree = "<group>"; };
 		932B56CB39EAB3B2FDA1CBD4 /* Pods_Euki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21F90E32C77D6B500708087 /* UIView+ConstraintIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintIdentifier.swift"; sourceTree = "<group>"; };
 		A25D863C2C120F2B00A53153 /* Euki + Shot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Euki + Shot.xcdatamodel"; sourceTree = "<group>"; };
 		BD82DAB3A5A61E1238D566E6 /* Pods-Euki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euki.release.xcconfig"; path = "Target Support Files/Pods-Euki/Pods-Euki.release.xcconfig"; sourceTree = "<group>"; };
 		F12C597623C6E93A00AB2C5E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -793,6 +795,7 @@
 				F1DCC4D728F52E8C0093CDF5 /* Array+Strings.swift */,
 				F18E1E45293B041600942356 /* URL+Validation.swift */,
 				F1DCC4D528F25DCB0093CDF5 /* Bundle.swift */,
+				A21F90E32C77D6B500708087 /* UIView+ConstraintIdentifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1209,6 +1212,7 @@
 				02E0774A2B9220E40023BB30 /* MenstruationContentManager.swift in Sources */,
 				1259D6DF2BA4926600CE696B /* Helper.swift in Sources */,
 				127F297E2BA39A01004CA88A /* EUKPagerViewController.swift in Sources */,
+				A21F90E42C77D6B500708087 /* UIView+ConstraintIdentifier.swift in Sources */,
 				774458F320935CF3008125A5 /* SeparatorCollectionViewFlowLayout.swift in Sources */,
 				77E9060F218ABD1100CB3FBE /* HomeManager.swift in Sources */,
 				7700222320FE4369005ED0E4 /* Question.swift in Sources */,
@@ -1440,7 +1444,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20240710223000;
+				CURRENT_PROJECT_VERSION = 20240822234000;
 				DEVELOPMENT_TEAM = 75737GQ248;
 				INFOPLIST_FILE = "$(SRCROOT)/Euki/Support Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Euki;
@@ -1450,7 +1454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.5;
+				MARKETING_VERSION = 1.6.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.euki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1469,7 +1473,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20240710223000;
+				CURRENT_PROJECT_VERSION = 20240822234000;
 				DEVELOPMENT_TEAM = 75737GQ248;
 				INFOPLIST_FILE = "$(SRCROOT)/Euki/Support Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Euki;
@@ -1479,7 +1483,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.5;
+				MARKETING_VERSION = 1.6.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.euki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

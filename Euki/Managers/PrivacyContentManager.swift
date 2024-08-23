@@ -52,13 +52,22 @@ class PrivacyContentManager: NSObject {
         privateMessages.id = "protect_private_messages"
         privateMessages.title = "Protect your private messages_dropdown"
         privateMessages.content = "Protect your private messages_copy"
-        privateMessages.links = ["Signal":"https://signal.org/download/"]
+        
         contentItem.expandableItems!.append(privateMessages)
         
         let internetSearch = ContentItem()
         internetSearch.id = "protect_internet_search"
         internetSearch.title = "Protect your internet search history_dropdown"
         internetSearch.content = "Protect your internet search history_copy"
+        internetSearch.links = [
+            "el nivel gratuito de ProtonVPN":"https://account.protonvpn.com/signup/account",
+            "el nivel gratuito limitado de Tunnelbear":"https://www.tunnelbear.com/pricing",
+            
+            "ProtonVPN’s free tier":"https://account.protonvpn.com/signup/account",
+            "Tunnelbear’s limited free tier":"https://www.tunnelbear.com/pricing",
+            
+            "DuckDuckGo":"https://duckduckgo.com",
+            "Firefox Focus":"https://apps.apple.com/us/app/apple-store/id1055677337?pt=373246&ct=firefox-browsers-mobile-focus&mt=8"]
         contentItem.expandableItems!.append(internetSearch)
         
         let paymentHistory = ContentItem()

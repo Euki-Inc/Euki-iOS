@@ -85,7 +85,7 @@ class AbortionContentManager: NSObject {
         return expandableItems
     }
     
-    func abortionSuctionVacuum() -> ContentItem {
+    func abortionSuctionVacuum(withExpandables: Bool = true) -> ContentItem {
         let contentItem = ContentItem()
         contentItem.isAbortionItem = true
         contentItem.id = "suction_or_vacuum"
@@ -110,12 +110,16 @@ class AbortionContentManager: NSObject {
             childItems.append(childItem)
         }
         contentItem.contentItems = childItems
-        contentItem.expandableItems = self.abortionSuctionExpandableItems(textFormat: "suction_or_vacuum_subheading_%d")
-        contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        
+        if withExpandables{
+            contentItem.expandableItems = self.abortionSuctionExpandableItems(textFormat: "suction_or_vacuum_subheading_%d")
+            contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        }
+        
         return contentItem
     }
     
-    func abortiondilationEvacuation() -> ContentItem {
+    func abortiondilationEvacuation(withExpandables: Bool = true) -> ContentItem {
         let contentItem = ContentItem()
         contentItem.isAbortionItem = true
         contentItem.id = "dilation_evacuation"
@@ -140,8 +144,12 @@ class AbortionContentManager: NSObject {
             childItems.append(childItem)
         }
         contentItem.contentItems = childItems
-        contentItem.expandableItems = self.abortionSuctionExpandableItems(textFormat: "dilation_evacuation_subheading_%d")
-        contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        
+        if withExpandables{
+            contentItem.expandableItems = self.abortionSuctionExpandableItems(textFormat: "dilation_evacuation_subheading_%d")
+            contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        }
+        
         return contentItem
     }
     

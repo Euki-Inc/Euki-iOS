@@ -2398,36 +2398,35 @@ Su información es solo suya, no nuestra.";
 "Privacy best practices_header" = "Mejores prácticas de privacidad";
 "Privacy best practices_copy" = "Cuando buscas atención de salud reproductiva, la privacidad es importante. No hay un requisito legal para compartir información sobre la pérdida del embarazo con nadie, incluidos los proveedores de salud. Estas mejores prácticas pueden ayudarte a entender cómo proteger tus datos y tu salud mientras buscas atención.";
 "Protect your private messages_dropdown" = "Proteger tus mensajes privados";
-"Protect your private messages_copy" = "Cuando envías mensajes de texto vía SMS, tu compañía telefónica almacena copias de esos textos. Estos pueden ser entregados a las fuerzas del orden si la compañía telefónica recibe una orden judicial. También pueden ser utilizados para influir en los anuncios que ves en línea. Si otras personas tienen acceso a tu teléfono, también podrían exigir ver tus mensajes privados. Para mantener tu información privada, tanto de tu compañía telefónica como de otras personas en tu vida, puedes hacer lo siguiente:\
+"Protect your private messages_copy" = "Cuando envías mensajes de texto vía SMS, tu compañía telefónica almacena copias de esos textos. Estos pueden ser entregados a las fuerzas del orden si la compañía telefónica recibe una orden judicial. También pueden ser utilizados para influir en los anuncios que ves en línea. Si otras personas tienen acceso a tu teléfono, también podrían exigir ver tus mensajes privados. Para mantener tu información privada, tanto de tu compañía telefónica como de otras personas en tu vida, puedes:\
 \
-Usa aplicaciones de mensajería cifrada de extremo a extremo, como Signal, que no almacenan tus datos.\
-Considera usar la función de mensajes que desaparecen en aplicaciones como Signal.\
-Configura una contraseña en tu teléfono y un PIN para Euki si aún no lo has hecho.";
+- Usar aplicaciones de mensajería cifrada de extremo a extremo, como Signal, que no almacenan tus datos.\
+- Considerar usar la función de mensajes que desaparecen en aplicaciones como Signal.\
+- Configurar una contraseña en tu teléfono y un PIN para Euki si aún no lo has hecho.";
 "Protect your internet search history_dropdown" = "Proteger tu historial de búsqueda";
-"Protect your internet search history_copy" = "No almacenamos ninguno de tus datos rastreados en la nube ni en ningún otro lugar. No están vinculados a tu dirección de correo electrónico ni a tu número de teléfono. Solo existen en tu teléfono, y solo tú tienes acceso a ellos.";
+"Protect your internet search history_copy" = "Cuando usas internet, tu proveedor de servicios de internet puede mantener un registro de los sitios web que visitas. (Pero, gracias al cifrado llamado HTTPS, no pueden ver lo que haces en esos sitios web). Si compartes un teléfono con miembros de tu familia, ellos pueden ver tus mensajes o el historial de navegación. Para proteger tu historial de búsqueda en internet, prueba los siguientes pasos:\
+\
+- Usa una Red Privada Virtual (VPN). Las VPNs redirigen tu tráfico de internet a través de sus servicios en lugar de los de tu proveedor de servicios de internet. Es importante elegir una VPN que no rastree lo que haces, comúnmente llamada una VPN sin registros. La mayoría de las VPN sin registros cuestan algunos dólares al mes, pero hay dos opciones gratuitas: el nivel gratuito de ProtonVPN y el nivel gratuito limitado de Tunnelbear.\
+- Navega en una ventana de incógnito o borra manualmente el historial de tu navegador. Excelentes opciones para proteger tu navegación de la publicidad y del almacenamiento de tus datos de búsqueda incluyen Firefox Focus y DuckDuckGo.";
 "Protect your payment history_dropdown" = "Proteger tu historial de pagos";
 "Protect your payment history_copy" = "Si te preocupa que los servicios de salud reproductiva aparezcan en tus extractos bancarios o historial de pagos, utiliza estos en lugar de tarjetas de crédito:\
 \
-Efectivo\
-Tarjetas de regalo prepagadas (Visa, Mastercard, etc.)";
+- Efectivo\
+- Tarjetas de regalo prepagadas (Visa, Mastercard, etc.)";
 "Protect your location data and ad tracking_dropdown" = "Proteger tus datos de ubicación y el rastreo de anuncios";
 "Protect your location data and ad tracking_copy" = "Los sitios web, las aplicaciones y las redes sociales pueden rastrear tu ubicación y dirigirte anuncios relacionados con el embarazo o el aborto.\
 \
 Para proteger tu privacidad:\
-\
-Desactiva el uso compartido de ubicación en tus dispositivos\
-\
-Desactiva tu ID de publicidad móvil en la configuración\
-\
-Usa DuckDuckGo en lugar de Google para proteger tu actividad de navegación y datos personales\
-\
-Usa Firefox Focus en lugar del navegador predeterminado de tu teléfono para bloquear rastreadores de terceros";
+- Desactiva el uso compartido de ubicación en tus dispositivos\
+- Desactiva tu ID de publicidad móvil en la configuración\
+- Usa DuckDuckGo en lugar de Google para proteger tu actividad de navegación y datos personales\
+- Usa Firefox Focus en lugar del navegador predeterminado de tu teléfono para bloquear rastreadores de terceros";
 "Resources_dropdown" = "Recursos";
 "Resources_copy" = "Para obtener información más detallada sobre cómo proteger tu privacidad de datos en línea, consulta estos recursos:\
 \
-Digital Defense Fund\
-Repro Legal Helpline de If/When/How al 844-868-2812\
-Guía de privacidad de la Electronic Frontier Foundation";
+- Digital Defense Fund\
+- Repro Legal Helpline de If/When/How al 844-868-2812\
+- Guía de privacidad de la Electronic Frontier Foundation";
 "Med abortion_mife_miso_dropdown" = "Aborto con mifepristone y misoprostol";
 "Med abortion_miso_dropdown" = "Aborto con misoprostol";
 "counseling requirements_dropdown" = "Requisitos de consejería";
@@ -2456,3 +2455,25 @@ Por ejemplo, si alguien en Texas termina su embarazo usando pastillas de un prov
 Para desglosarlo: la ley del lugar donde te encuentras físicamente es casi siempre la ley que se aplica a ti.";
 "If/when/how" = "If/when/how";
 "Digital Defense Fund and If/When/How" = "Digital Defense Fund and If/When/How";
+"suction_abortion_what_to_expect_content" = "Aspiración por succión o aspiración por vacío\
+El aborto aspirado manual es uno de los tipos de aborto procesal más comunes, y se usa normalmente hasta la semana 14-16 de embarazo. \
+\
+A menudo se utilizan analgésicos antes del aborto para ayudar con los cólicos, y un/a proveedor/a de atención médica puede utilizar medicamentos para ayudar a dilatar el cuello del útero. También se puede usar anestesia local o general para ayudar a controlar el dolor. \
+\
+Durante un aborto aspirado manual, un/a proveedor/a de atención médica usará un dispositivo o máquina succionadora para retirar el embarazo del útero. Estas prácticas abortivas son generalmente seguras y efectivas, y tan sólo se demoran unos minutos.\
+\
+Si tienes alguna duda acerca del procedimiento abortivo, no tengas reparos en preguntar al proveedor/a de atención médica. Están ahí para responder a cualquier pregunta que tengas.\
+\
+Dilatación y evacuación (DyE)\
+La dilatación y evacuación (DyE) es otro tipo de aborto procesal que normalmente se efectúa después de la semana 14 de embarazo. Este procedimiento puede requerir más de una visita a la clínica, y es en general una práctica abortiva muy segura y efectiva que se practica en todo el mundo.\
+\
+Dependiendo del número de semanas de embarazo, el/la proveedor/a de atención médica puede introducir dilatadores osmóticos (palillos dilatadores) uno o dos días antes de comenzar el procedimiento, para ayudar a que el cuello del útero se abra. Puede que recibas también medicamentos o anestesia para ayudarte a aliviar el dolor.\
+\
+Si recibes anestesia general, el/la proveedor/a de atención médica puede pedirte que no comas nada antes del procedimiento. Si tienes dudas acerca de esto, pregúntales cómo puedes prepararte.\
+\
+Durante un aborto aspirado manual, un/a proveedor/a de atención médica usará un dispositivo o máquina succionadora para retirar el embarazo del útero. Estas son prácticas abortivas generalmente seguras y efectivas, y normalmente se demoran entre 20 y 30 minutos.\
+\
+Si tienes alguna duda acerca del procedimiento abortivo, no tengas reparos en preguntar al proveedor de atención médica. Están ahí para responder a cualquier pregunta que tengas.";
+"suction_abortion_what_to_expect_source" = "Planned Parenthood Federation of America y Federación Nacional del Aborto";
+"mife_miso" = "Mifepristone and misoprostol";
+"miso" = "Misoprostol";

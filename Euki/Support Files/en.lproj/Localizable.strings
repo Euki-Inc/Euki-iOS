@@ -2412,36 +2412,35 @@ Your data is only yours, not ours.";
 "Privacy best practices_header" = "Privacy best practices";
 "Privacy best practices_copy" = "When seeking reproductive health care, privacy is important. There is no legal requirement to share information about pregnancy loss with anyone, including health care providers. These best practices can help you understand how to protect your data and health as you search for care.";
 "Protect your private messages_dropdown" = "Protect your private messages";
-"Protect your private messages_copy" = "When you send texts via SMS, your phone company stores copies of those texts. These can be turned over to law enforcement if the phone company gets a warrant. They can also be used to influence the ads you see online. If other people have access to your phone, they might also demand to see your private messages. To keep your information private from your phone company and others in your life, you can do the following:\
+"Protect your private messages_copy" = "When you send texts via SMS, your phone company stores copies of those texts. These can be turned over to law enforcement if the phone company gets a warrant. They can also be used to influence the ads you see online. If other people have access to your phone, they might also demand to see your private messages. To keep your information private from your phone company and others in your life, you can:\
 \
-Use end-to-end encrypted messaging apps like Signal that don’t store your data. \
-Consider using the disappearing messages feature on apps like Signal. \
-Set a password on your phone and a PIN for Euki if you haven’t already.";
+- Use end-to-end encrypted messaging apps like Signal that don’t store your data. \
+- Consider using the disappearing messages feature on apps like Signal. \
+- Set a password on your phone and a PIN for Euki if you haven’t already.";
 "Protect your internet search history_dropdown" = "Protect your internet search history";
-"Protect your internet search history_copy" = "We do not store any of your tracked data in the cloud or anywhere else. It is not tied to your email address or phone number. It exists only on your phone, and only you have access to it.";
+"Protect your internet search history_copy" = "When you use the internet, your internet service provider can keep records of the websites you visit. (However, thanks to encryption called HTTPS, they can’t see what you do on those websites.) If you share a phone with family members, they may see your messages or browsing history. To protect your internet search history, try these steps:\
+\
+- Use a Virtual Private Network (VPN). VPNs route your internet traffic through their services instead of your internet service providers. It’s important to choose a VPN that doesn’t keep track of what you’re doing—this is known as a no-logs VPN. Most no-logs VPNs cost a few dollars a month, but there are two free options: ProtonVPN’s free tier, and Tunnelbear’s limited free tier.\
+- Browse in an incognito window or manually clear your browser history. Great options that protect your browsing from unwanted ads and prevent the saving of your search data include Firefox Focus and DuckDuckGo.";
 "Protect your payment history_dropdown" = "Protect your payment history";
 "Protect your payment history_copy" = "If you’re worried about reproductive health care services showing up on your bank statements or payment history, use these instead of credit cards:\
 \
-Cash \
-Pre-paid gift cards (Visa, Mastercard, etc.)";
+- Cash \
+- Pre-paid gift cards (Visa, Mastercard, etc.)";
 "Protect your location data and ad tracking_dropdown" = "Protect your location data and ad tracking";
 "Protect your location data and ad tracking_copy" = "Websites, apps, and social media can track your location and target you for ads related to pregnancy or abortion. \
 \
 To protect your privacy and avoid being tracked:\
-\
-Turn off location sharing on your devices\
-\
-Disable your mobile ad ID in your settings\
-\
-Use DuckDuckGo instead of Google to protect your browser activity and personal data\
-\
-Use Firefox Focus instead of your phone’s default browser to block third party trackers";
+- Turn off location sharing on your devices\
+- Disable your mobile ad ID in your settings\
+- Use DuckDuckGo instead of Google to protect your browser activity and personal data\
+- Use Firefox Focus instead of your phone’s default browser to block third party trackers";
 "Resources_dropdown" = "Resources";
 "Resources_copy" = "For more detailed information about protecting your data privacy online, check out these resources:\
 \
-Digital Defense Fund\
-If/When/How’s Repro Legal Helpline at 844-868-2812\
-Electronic Frontier Foundation privacy guidance";
+- Digital Defense Fund\
+- If/When/How’s Repro Legal Helpline at 844-868-2812\
+- Electronic Frontier Foundation privacy guidance";
 "Med abortion_mife_miso_dropdown" = "Medication abortion with mifepristone and misoprostol";
 "Med abortion_miso_dropdown" = "Medication abortion with misoprostol";
 "counseling requirements_dropdown" = "Counseling requirements";
@@ -2470,3 +2469,25 @@ For example, if someone in Texas ends their pregnancy using pills from a shield 
 To break it down: the law where you are physically located is almost always the law that applies to you.";
 "If/when/how" = "If/when/how";
 "Digital Defense Fund and If/When/How" = "Digital Defense Fund and If/When/How";
+"suction_abortion_what_to_expect_content" = "Suction or vacuum aspiration\
+Suction abortion is one of the most common types of procedural abortion, and is generally used until about 14-16 weeks of pregnancy.\
+\
+Before the abortion, pain medication is often used to help with cramping, and a health care provider might use medication to help the cervix open. Local or general anesthesia can also be used to help manage pain.\
+\
+During a suction abortion, a health care provider will use a small suction device or machine to remove a pregnancy from the uterus. These are generally safe and effective abortion procedures that usually take just a few minutes.\
+\
+If you have questions about the abortion procedure, don't be afraid to ask the health care provider. They are there to answer any questions you have.\
+\
+Dilation and evacuation (D&E)\
+Dilation and Evacuation (D&E) is another kind of procedural abortion that is commonly used at 14 weeks of pregnancy or more. This procedure might require more than one visit to the clinic, and is a generally very safe and effective abortion procedure practiced all over the world.\
+\
+Depending on the number of weeks of the pregnancy, a health care provider might insert dilator sticks one or two days before the procedure to help open the cervix. You may also receive medication or anesthesia to help manage any pain.\
+\
+If you get general anesthesia, the health care provider may ask you not to eat anything before the procedure. If you have questions about this, ask them how you can prepare.\
+\
+During a D&E abortion, a health care provider may use medical instruments and a suction device to remove the pregnancy from the uterus. These are generally very safe and effective abortion procedures that usually take between 20-30 minutes.\
+\
+If you have questions about the abortion procedure, don't be afraid to ask the medical provider. They are there to answer any questions you have.";
+"suction_abortion_what_to_expect_source" = "Planned Parenthood Federation of America & National Abortion Federation";
+"mife_miso" = "Mifepristone and misoprostol";
+"miso" = "Misoprostol";
