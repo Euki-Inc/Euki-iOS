@@ -37,7 +37,9 @@
                             "source": "women_on_web",
                             "links": {
                                 "The Miscarriage and Abortion hotline": "https://www.mahotline.org/",
-                                "Repro Legal Hotline": "https://www.reprolegalhelpline.org/sma-contact-the-helpline/"
+                                "Repro Legal Hotline": "https://www.reprolegalhelpline.org/sma-contact-the-helpline/",
+                                "línea directa de abortos espontáneos": "https://www.mahotline.org/",
+                                "línea directa de Repro Legal": "https://www.reprolegalhelpline.org/sma-contact-the-helpline/"
                             }
                         }
                     ]
@@ -66,10 +68,12 @@
                                 "National Abortion Federation": "https://prochoice.org/think-you're-pregnant/find-a-provider/",
                                 "Later Abortion Initiative": "https://www.laterabortion.org/",
                                 "many reasons people seek abortions": "https://laterabortion.org/sites/default/files/lai_who_needs.pdf",
-                                "abortion funds": "https://abortionfunds.org/"
+                                "abortion funds": "https://abortionfunds.org/",
+                                "muchas razones por las que algunas personas solicitan servicios de aborto": "https://laterabortion.org/sites/default/files/lai_who_needs.pdf",
                             },
                             "unique_links": {
-                                "Abortions after 12 weeks": "https://laterabortion.org/sites/default/files/lai_procedure_revised.pdf"
+                                "Abortions after 12 weeks": "https://laterabortion.org/sites/default/files/lai_procedure_revised.pdf",
+                                "Los abortos después de la semana 12": "https://laterabortion.org/sites/default/files/lai_procedure_revised.pdf"
                             }
                         }
                     ]
@@ -282,7 +286,9 @@
                     "content": "post_abortion_content_1",
                     "links": {
                         "Miscarriage and Abortion Hotline": "https://www.mahotline.org/",
-                        "Repro Legal Hotline": "https://www.reprolegalhelpline.org/"
+                        "Repro Legal Hotline": "https://www.reprolegalhelpline.org/",
+                        "línea directa de abortos espontáneos": "https://www.mahotline.org/",
+                        "línea directa de Repro Legal": "https://www.reprolegalhelpline.org/sma-contact-the-helpline/"
                     }
                 },
                 {

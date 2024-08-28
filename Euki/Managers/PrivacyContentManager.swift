@@ -87,7 +87,7 @@ class PrivacyContentManager: NSObject {
         resources.id = "privacy_best_practices_resources"
         resources.title = "Resources_dropdown"
         resources.content = "Resources_copy"
-        resources.links = ["Digital Defense Fund":"https://digitaldefensefund.org/ddf-guides/abortion-privacy", "If/When/How’s Repro Legal Helpline":"https://ifwhenhow.org", "Electronic Frontier Foundation privacy guidance":"https://www.eff.org/issues/privacy"]
+        resources.links = ["Digital Defense Fund":"https://digitaldefensefund.org/ddf-guides/abortion-privacy", "If/When/How’s Repro Legal Helpline":"https://ifwhenhow.org", "Electronic Frontier Foundation privacy guidance":"https://www.eff.org/issues/privacy", "Repro Legal Helpline de If/When/How":"https://ifwhenhow.org", "Guía de privacidad de la Electronic Frontier Foundation": "https://www.eff.org/issues/privacy"]
         contentItem.expandableItems!.append(resources)
         
         return contentItem
