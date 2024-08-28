@@ -2407,9 +2407,6 @@ If you have any questions about the abortion procedure, don’t be afraid to ask
 Source: Planned Parenthood Federation of America & National Abortion Federation";
 "Tracked data_copy" = "Euki makes it easy to delete your tracked data, which protects your privacy and ensures sensitive health information can’t be used against you.";
 "Set a PIN_copy" = "You can set a PIN as an extra layer of security, but make sure to remember it. We don’t have access to your data, so there’s no way to recover a lost PIN.";
-
-
-//New Abortion and Privacy
 "Privacy_header" = "Privacy";
 "Delete your data_header" = "Delete your data";
 "Set frequent data deletion_copy" = "Select how often you want Euki to automatically delete your tracked data";
@@ -2498,3 +2495,5 @@ If you have questions about the abortion procedure, don't be afraid to ask the m
 "suction_abortion_what_to_expect_source" = "Planned Parenthood Federation of America & National Abortion Federation";
 "mife_miso" = "Mifepristone and misoprostol";
 "miso" = "Misoprostol";
+"logged_data_message" = "To protect your privacy, Euki gives you the option of deleting the data that you log in the calendar. This will help make sure your sensitive information will not be used against you.";
+"pin_text" = "You can set a PIN to keep Euki private, but please remember it. There's no way to recover your PIN.";

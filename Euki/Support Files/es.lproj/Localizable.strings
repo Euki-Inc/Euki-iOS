@@ -2381,10 +2381,6 @@ Si tienes alguna duda acerca del procedimiento abortivo, no tengas reparos en pr
 Fuente: Federación Nacional del Aborto";
 "Tracked data_copy" = "Euki facilita la eliminación de tus datos rastreados, lo que protege tu privacidad y asegura que la información de salud sensible no pueda ser utilizada en tu contra.";
 "Set a PIN_copy" = "Puedes establecer un PIN como una capa adicional de seguridad, pero asegúrate de recordarlo. No tenemos acceso a tus datos, por lo que no hay forma de recuperar un PIN perdido.";
-
-
-
-//New Abortion and Privacy
 "Privacy_header" = "Privacidad";
 "Delete your data_header" = "Borrar tus datos";
 "Set frequent data deletion_copy" = "Selecciona con qué frecuencia deseas que Euki elimine automáticamente los datos que han rastreado";
@@ -2473,3 +2469,5 @@ Si tienes alguna duda acerca del procedimiento abortivo, no tengas reparos en pr
 "suction_abortion_what_to_expect_source" = "Planned Parenthood Federation of America y Federación Nacional del Aborto";
 "mife_miso" = "Mifepristona y misoprostol";
 "miso" = "Misoprostol solo";
+"logged_data_message" = "Para proteger tu privacidad, Euki te da la opción de borrar los datos introducidos en el calendario. Esto ayudará a cerciorarte de que ninguna información sensible sea utilizada en tu contra.";
+"pin_text" = "Puedes establecer un PIN para mantener la privacidad de Euki, pero por favor no lo olvides. No existe manera de recuperar el PIN.";
