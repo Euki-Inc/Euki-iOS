@@ -44,6 +44,8 @@ class EUKLogViewController: EUKBasePinCheckViewController {
     
     var date: Date?
     var calendarItem: CalendarItem?
+    var expandFilterItem: FilterItem?
+    var expandSelectItem: SelectItem?
     
     var appointments = [Appointment]()
     var appointmentSelectedIndex = -1
@@ -155,6 +157,10 @@ class EUKLogViewController: EUKBasePinCheckViewController {
         
         CalendarManager.sharedInstance.calendarItem(dateSearch: date) { (calendarItem) in
             self.calendarItem = calendarItem
+            
+            if let expandCategoyName = self.expandFilterItem?.title, let indexSelected = self.items.firstIndex(where: {$0.title == expandCategoyName}){
+                self.indexSelected = indexSelected
+            }
             
             if let appointments = self.calendarItem?.appointments {
                 self.appointments.removeAll()
@@ -317,10 +323,12 @@ class EUKLogViewController: EUKBasePinCheckViewController {
     
     //MARK: - Public
     
-	class func initLogViewController(date: Date?, calendarItem: CalendarItem?) -> UIViewController? {
+    class func initLogViewController(date: Date?, calendarItem: CalendarItem?, expandFilterItem: FilterItem? = nil, expandSelectItem: SelectItem? = nil) -> UIViewController? {
         if let logViewContoller = UIStoryboard(name: "Calendar", bundle: Bundle.main).instantiateViewController(withIdentifier: "LogViewControlller") as? EUKLogViewController {
             logViewContoller.date = date
             logViewContoller.calendarItem = calendarItem
+            logViewContoller.expandFilterItem = expandFilterItem
+            logViewContoller.expandSelectItem = expandSelectItem
             return logViewContoller
         }
         

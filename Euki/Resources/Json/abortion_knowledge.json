@@ -70,6 +70,8 @@
                                 "many reasons people seek abortions": "https://laterabortion.org/sites/default/files/lai_who_needs.pdf",
                                 "abortion funds": "https://abortionfunds.org/",
                                 "muchas razones por las que algunas personas solicitan servicios de aborto": "https://laterabortion.org/sites/default/files/lai_who_needs.pdf",
+                                "Federación Nacional del Aborto": "https://prochoice.org/think-you're-pregnant/find-a-provider/",
+                                "fondos para abortos": "https://abortionfunds.org/"
                             },
                             "unique_links": {
                                 "Abortions after 12 weeks": "https://laterabortion.org/sites/default/files/lai_procedure_revised.pdf",
@@ -195,21 +197,24 @@
             "title": "abortion_stories_title",
             "content": "abortion_stories_content",
             "links": {
-                "online": "https://www.wetestify.org/stories"
+                "online": "https://www.wetestify.org/stories",
+                "internet": "https://www.wetestify.org/stories"
             },
             "expandable_items": [
                 {
                     "id": "abortion_story_1_title",
                     "content": "abortion_story_1_content",
                     "links": {
-                        "Aimee's": "https://www.wetestify.org/storytellers/aimee"
+                        "Aimee's": "https://www.wetestify.org/storytellers/aimee",
+                        "Aimee.": "https://www.wetestify.org/storytellers/aimee"
                     }
                 },
                 {
                     "id": "abortion_story_2_title",
                     "content": "abortion_story_2_content",
                     "links": {
-                        "Jack's": "https://www.wetestify.org/storytellers/jack-quemi"
+                        "Jack's": "https://www.wetestify.org/storytellers/jack-quemi",
+                        "Jack.": "https://www.wetestify.org/storytellers/jack-quemi"
                     }
                 },
                 {
@@ -257,7 +262,9 @@
                     "content": "payment_content_1",
                     "links": {
                         "abortion fund": "https://abortionfunds.org/",
-                        "abortion funds": "https://abortionfunds.org/"
+                        "abortion funds": "https://abortionfunds.org/",
+                        "fondo para abortos": "https://abortionfunds.org/",
+                        "fondos de aborto": "https://abortionfunds.org/"
                     }
                 },
                 {
@@ -265,14 +272,16 @@
                     "content": "payment_content_2",
                     "links": {
                         "National Abortion Federation": "https://prochoice.org/patients/naf-hotline/",
-                        "National Network of Abortion Funds": "https://abortionfunds.org/need-abortion/"
+                        "National Network of Abortion Funds": "https://abortionfunds.org/need-abortion/",
+                        "La Red Nacional de Fondos de Aborto": "https://abortionfunds.org/need-abortion/"
                     }
                 },
                 {
                     "id": "payment_subheading_3",
                     "content": "payment_content_3",
                     "links": {
-                        "National Network of Abortion Funds": "https://abortionfunds.org/medicaid/"
+                        "National Network of Abortion Funds": "https://abortionfunds.org/medicaid/",
+                        "La Red Nacional de Fondos de Aborto": "https://abortionfunds.org/need-abortion/"
                     }
                 }
             ]
@@ -295,7 +304,8 @@
                     "id": "post_abortion_subheading_2",
                     "content": "post_abortion_content_2",
                     "links": {
-                        "Reading stories": "https://www.wetestify.org/stories"
+                        "Reading stories": "https://www.wetestify.org/stories",
+                        "Leer historias": "https://www.wetestify.org/stories"
                     }
                 },
                 {
@@ -332,9 +342,10 @@
             "content": "abortion_laws_content",
             "links": {
                 "Center for Reproductive Rights": "https://reproductiverights.org/maps/abortion-laws-by-state/",
+                "Pregnancy Justice": "https://www.nationaladvocatesforpregnantwomen.org/",
                 "Repro Legal Hotline": "https://www.reprolegalhelpline.org/",
                 "Repro Legal Defense Fund": "https://reprolegaldefensefund.org/",
-                "Pregnancy Justice": "https://www.nationaladvocatesforpregnantwomen.org/"
+                "línea directa de Repro Legal": "https://www.reprolegalhelpline.org/"
             },
             "source": "If/when/how",
             "expandable_items": [
@@ -480,8 +491,8 @@
                         "You Are Not Alone": "https://www.catholicsforchoice.org/wp-content/uploads/2015/04/2015_YouAreNotAlone.pdf",
                         "All-Options Talkline": "https://www.all-options.org/find-support/talkline/",
                         "this list of post-abortion support referrals": "https://static1.squarespace.com/static/599c9a3d6f4ca3531892d817/t/5a22df5a652deacb4188ced5/1512234843738/OurJustice_Post-Abortion+Support+Resources.pdf",
+                        "lista de referencias de apoyo post-aborto": "https://static1.squarespace.com/static/599c9a3d6f4ca3531892d817/t/5a22df5a652deacb4188ced5/1512234843738/OurJustice_Post-Abortion+Support+Resources.pdf",
                         "Ideas for self-care after an abortion": "https://exhaleprovoice.org/self-care",
-                        "this list of post-abortion support referrals.": "https://static1.squarespace.com/static/599c9a3d6f4ca3531892d817/t/5a22df5a652deacb4188ced5/1512234843738/OurJustice_Post-Abortion+Support+Resources.pdf",
                         "Our Justice": "https://www.ourjustice.net/community-resources"
                     }
                 }

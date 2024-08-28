@@ -107,9 +107,9 @@ class EUKDailyLogViewController: EUKBasePinCheckViewController {
         }
     }
     
-    func createCollectionItems() {
-        guard let calendarItem = self.calendarItem else {
-            return
+    static func createCollectionItems(calendarItem: CalendarItem?) -> [(FilterItem, Any)]?{
+        guard let calendarItem = calendarItem else {
+            return nil
         }
         
         var items = [(FilterItem, Any)]()
@@ -265,9 +265,7 @@ class EUKDailyLogViewController: EUKBasePinCheckViewController {
             }
         }
         
-        self.items.removeAll()
-        self.items.append(contentsOf: items)
-        self.colletionView.reloadData()
+        return items
     }
     
     func setUIElements() {
@@ -303,7 +301,13 @@ class EUKDailyLogViewController: EUKBasePinCheckViewController {
             self.noEntriesPastView.isHidden = true
             self.noEntriesFutureView.isHidden = true
             self.collectionViewContainerView.isHidden = false
-            self.createCollectionItems()
+            
+            if let newItems = EUKDailyLogViewController.createCollectionItems(calendarItem: self.calendarItem){
+                self.items.removeAll()
+                self.items.append(contentsOf: newItems)
+                self.colletionView.reloadData()
+            }
+            
             self.futureActionsContainerView.isHidden = !isFutureDate
         }
     }
@@ -427,6 +431,9 @@ extension EUKDailyLogViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.editAction(collectionView)
+        let filterItem = self.items[indexPath.section]
+        if let selectItemsArray = filterItem.1 as? [SelectItem], let selectItem = selectItemsArray.first ,let viewController = EUKTrackViewController.initViewController(date: self.date, calendarItem: self.calendarItem, expandFilterItem: filterItem.0, expandSelectItem: selectItem) {
+            self.present(viewController, animated: true, completion: nil)
+        }
     }
 }

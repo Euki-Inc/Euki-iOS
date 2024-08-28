@@ -120,6 +120,23 @@ extension EUKDaySummaryViewController: UICollectionViewDelegate, UICollectionVie
 		
 		return self.setupItemCell(collectionView, cellForItemAt: indexPath)
 	}
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section != 0 && !self.items.isEmpty {
+            let selectItem = self.items[indexPath.row]
+            if let filterItems = EUKDailyLogViewController.createCollectionItems(calendarItem: self.cycleDayItem?.calendarItem), let filterItem = filterItems.first(where: {
+                if let selectItems = $0.1 as? [SelectItem], let foundSelectItem = selectItems.first(where: {$0.title == selectItem.title}){
+                    return true
+                }
+                
+                return false
+            }) {
+                if let viewController = EUKTrackViewController.initViewController(date: self.cycleDayItem?.date, calendarItem: self.cycleDayItem?.calendarItem, expandFilterItem: filterItem.0, expandSelectItem: selectItem) {
+                    self.present(viewController, animated: true, completion: nil)
+                }
+            }
+        }
+    }
 	
 	func setupCycleDaysCell(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EUKCycleDaysCollectionViewCell.CellIdentifier, for: indexPath) as? EUKCycleDaysCollectionViewCell else {

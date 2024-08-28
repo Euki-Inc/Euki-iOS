@@ -7,14 +7,14 @@
 "error" = "Error";
 "ok" = "Ok";
 "skip" = "Saltar";
-"go" = "Entrar";
+"go" = "Ingresar";
 "none" = "Ninguno";
 "change_name" = "Cambiar nombre";
 "name" = "Nombre";
 "add" = "Agregar";
 "i_agree" = "Acepto";
 "nice" = "¡Vale!";
-"no_pin" = "Acceder sin Pin";
+"no_pin" = "Acceder sin PIN";
 "filter" = "Filtro";
 "wrong_pass" = "PIN incorrecto. Inténtalo de nuevo.";
 "or" = "o";
@@ -52,14 +52,14 @@
 "tap_for" = "Productos usados";
 "existent_appointment" = "Cita existente";
 "no_log_title" = "¿Necesitas retroceder?";
-"no_log_message" = "Parece que aún no has hecho ningún seguimiento. ¡No te preocupes! Puedes comenzar a hacer el seguimiento ahora.";
+"no_log_message" = "Parece que aún no has hecho ningún seguimiento.";
 "daily_log" = "Registro diario";
 "show_results" = "Mostrar resultados";
 "repeat_format" = "Repetir cada %d días";
 "days" = "Días";
 "reminder_all_fields" = "Complete todos los campos para crear el recordatorio";
 "appointment_all_fields" = "Complete todos los campos para guardar la cita";
-"log_now" = "HAZ EL SEGUIMIENTO AHORA";
+"log_now" = "HAZ SEGUIMIENTO AHORA";
 "set_reminder" = "Establecer un recordatorio";
 "set_appointment" = "Establecer una cita";
 "edit_appointments" = "Editar cita";
@@ -108,7 +108,7 @@
 "body_11" = "Dolor severo";
 "body_12" = "Dolor de estómago";
 "body_12_break" = "Dolor de estómago";
-"body_13" = "Sensibilidad en los pechos";
+"body_13" = "Sensibilidad en el pecho";
 "body_14" = "Ovulación";
 "sexual_activity" = "Actividad sexual";
 "protection_sti" = "Protección contra Infecciones de Transmisión Sexual";
@@ -183,133 +183,119 @@
 "bleeding_info" = "Las personas sangran por diferentes razones. Si estás sangrando fuera de tu período, aún puedes hacer un seguimiento, pero no lo incluyas en el resumen de tu ciclo. De esa manera, Euki puede predecir tu período con mayor precisión.";
 "bleeding_track_cycle_info" = "Incluir en resumen de ciclo";
 "onboarding_pin_confirmation_text" = "";
-"onboarding_terms_of_service" = "Condiciones de Servicio\
+"onboarding_terms_of_service" = "<b>Condiciones de Servicio</b>\
+Vigente desde: junio de 2024\
 \
-Fecha de entrada en vigor: abril 2024\
+<b>¡Bienvenide!</b>\
 \
-¡Bienvenida!\
+Hemos redactado estas Condiciones de Servicio (a los que llamamos las \"Condiciones\") para que conozcas las reglas que rigen nuestra relación. Hemos hecho nuestro mejor esfuerzo para eliminar el lenguaje jurídico de las Condiciones, pero hay lugares donde estas Condiciones pueden seguir leyéndose como un contrato tradicional. Hay una buena razón para eso: estas Condiciones, de hecho, forman un contrato entre tú y Euki, Inc. (\"nosotros\"), así que por favor léelas detenidamente.\
 \
-Hemos elaborado estas Condiciones de Servicio (que llamaremos “Condiciones”) para que conozcas las reglas que rigen nuestra relación contigo. Hemos procurado evitar la jerga legal en nuestras Condiciones, aunque en algunas partes estas Condiciones tendrán un lenguaje parecido al de un contrato tradicional.    Hay una buena razón para ello: estas Condiciones son en realidad un contrato entre tú y Euki, Inc. (“nosotras”), así que por favor léelas con detenimiento. \
+Al usar la aplicación Euki (a la que llamamos la \"App\") o cualquiera de nuestros otros productos o servicios disponibles a través de la App (nos referimos a estos simplemente como los \"Servicios\"), aceptas las Condiciones. Por supuesto, si no estás de acuerdo con ellas, entonces no uses los Servicios. Te animamos a revisar periódicamente estas Condiciones, ya que podemos actualizarlos de vez en cuando. Y tu uso de los Servicios después de cualquier actualización confirma tu acuerdo para seguir esas Condiciones actualizados.\
 \
-Al usar la aplicación Euki (que llamaremos la “Aplicación”) o cualquiera de nuestros productos o servicios disponibles a través de la Aplicación, estás aceptando estas Condiciones.  Por supuesto, si no las aceptas, no utilices nuestros Servicios.   Te animamos a revisar periódicamente estas Condiciones, ya que podrán ser actualizadas de vez en cuando.  Cuando utilizas los Servicios después de una actualización, estás confirmando que aceptas cumplir con las Condiciones actualizadas.\
+AVISO DE ARBITRAJE: ESTAS CONDICIONES CONTIENEN UNA CLÁUSULA DE ARBITRAJE QUE APARECE MÁS ADELANTE. EXCEPTO POR CIERTOS TIPOS DE DISPUTAS MENCIONADAS EN ESA CLÁUSULA DE ARBITRAJE, TÚ Y EUKI, INC. ACORDAN QUE LAS DISPUTAS DERIVADAS DE LOS SERVICIOS SE RESUELVAN MEDIANTE ARBITRAJE VINCULANTE OBLIGATORIO, Y TÚ Y EUKI, INC. RENUNCIAN A CUALQUIER DERECHO A PARTICIPAR EN UNA DEMANDA COLECTIVA O EN UN ARBITRAJE COLECTIVO.\
 \
-NOTIFICACIÓN DE ARBITRAJE: ESTAS CONDICIONES INCLUYEN UN POCO MÁS ADELANTE UNA CLÁUSULA DE ARBITRAJE. CON LA EXCEPCIÓN DE CIERTO TIPO DE CONFLICTOS QUE SE MENCIONAN EN LA CLÁUSULA DE ARBITRAJE, TANTO TÚ COMO EUKI, INC. ACEPTAN QUE CUALQUIER CONFLICTO DERIVADO DE LOS SERVICIOS SERÁ RESUELTO MEDIANTE UN ARBITRAJE VINCULANTE OBLIGATORIO, Y TANTO TÚ COMO EUKI, INC. RENUNCIAN A CUALQUIER DERECHO DE PARTICIPAR EN UNA DEMANDA JUDICIAL DE CLASE O UN ARBITRAJE DE CLASE.  \
+<b>1.    Tu Promesa para Nosotros</b>\
+Dependemos de las siguientes declaraciones tuyas, así que por favor lee estas condiciones detenidamente. Al usar los Servicios, declaras que: \
 \
-1. Tu Compromiso con Nosotras\
+• Utilizarás los Servicios únicamente para tu uso personal y solo donde lo permita la ley aplicable. \
+• Cualquier información que envíes a través de los Servicios es veraz y precisa. \
+• No cargarás virus u otros códigos maliciosos ni comprometerás la seguridad de los Servicios. \
+• Cumplirás con estas Condiciones y con todas las leyes, normas y regulaciones aplicables. \
+• Eres capaz de celebrar un acuerdo legalmente vinculante, y estas Condiciones son vinculantes y ejecutables contra ti.\
 \
-Confiamos en las declaraciones que haces a continuación, así que por favor lee las Condiciones con detenimiento.  Al utilizar estos Servicios, aceptas que:\
+En resumen, no puedes utilizar los Servicios de formas no autorizadas por estas Condiciones. Tampoco puedes ayudar a otros a hacerlo.\
 \
-•    Utilizarás estos Servicios exclusivamente para un uso personal y únicamente cuando esté permitido por las leyes vigentes.\
+<b>2.    La App Es Una Herramienta Secundaria de Recordatorio</b>\
+La App es un sistema de recordatorio de respaldo que puedes personalizar para tomar tus medicamentos. No es, y no debes depender de ella como tu herramienta principal para determinar si y cuándo tomar medicamentos ni como un sustituto del consejo médico. La App podría no funcionar como se espera. \
 \
-•    Cualquier información que proveas a través de estos Servicios es veraz y precisa. \
+Específicamente, la App no funcionará correctamente si tu dispositivo está dañado o apagado, si el software de la App no está habilitado o si algún hardware o software en tu dispositivo impide que la App funcione como se pretende. La App y la utilidad de cualquiera de sus alertas o notificaciones dependen de la información que ingreses en la App. Eres responsable de asegurarte de que el medicamento correcto se tome en los tiempos y dosis adecuados. Al usar la App, asumes toda la responsabilidad por tu uso de los Servicios.\
 \
-•    No cargarás virus ni ningún otro software o código malicioso, ni pondrás en riesgo de ninguna manera la seguridad de estos Servicios.\
+<b>3.    Contenido; Sin Consejo Médico</b>\
+La información, recomendaciones, texto, gráficos, software y otros materiales (a los que nos referimos como \"Contenido\") están disponibles a través de la App. No garantizamos ni somos responsables de la precisión, integridad o actualidad de ningún Contenido. Todo el Contenido se proporciona únicamente con fines informativos.\
 \
-•    Cumplirás con estas Condiciones y todas las leyes, reglas y reglamentos vigentes.\
+EUKI, INC. NO OFRECE CONSEJOS MÉDICOS, DE SALUD, DIAGNÓSTICOS, TRATAMIENTOS O SERVICIOS SIMILARES A TRAVÉS DE LA APP O EL CONTENIDO. \
 \
-•    Estás capacitada para suscribir un acuerdo legal vinculante, y estas Condiciones son vinculantes y pueden ser ejecutables en tu contra.\
+Ningún Contenido es, ni debe considerarse, o utilizarse como un sustituto de consejo, cuidado, diagnóstico o tratamiento médico.\
 \
-En resumen, no usarás estos Servicios de maneras que no estén autorizadas por estas Condiciones.  Tampoco ayudarás a nadie a hacerlo.\
+Euki, Inc. no recomienda, prescribe, dispensa ni repone recetas o medicamentos. La provisión de información sobre o la habilitación del sistema de recordatorio con respecto a cualquier medicamento o producto no es una recomendación ni respaldo por parte de Euki, Inc. o la App para dicho medicamento o producto. No podemos, ni lo hacemos, asumir responsabilidad por tu dependencia de cualquier Contenido proporcionado por nosotros a través de tu uso de la App. Siempre busca el consejo de tu médico u otro proveedor de salud calificado con cualquier pregunta que puedas tener sobre la salud personal, condiciones médicas, o medicamentos, y antes de comenzar o suspender cualquier tratamiento, medicamento o curso de tratamiento. Nunca ignores, evites o demores en obtener consejo médico de tu médico u otro proveedor de salud calificado, incluyendo como resultado de cualquier Contenido u otra información que recibas o hayas obtenido a través del uso de la App. Si tienes o sospechas que tienes un problema o condición médica, por favor contacta a un profesional de salud calificado inmediatamente. Si estás experimentando una emergencia médica, por favor llama inmediatamente para obtener ayuda médica de emergencia. Nos representas (y dicha representación se considerará hecha cada vez que uses la App) que no estás utilizando la App, los Servicios o el Contenido con el propósito de buscar consejo, cuidado, atención o tratamiento médico. Cualquier dependencia de los Servicios, el Contenido o cualquier material o información en la App es bajo tu propio riesgo, y Euki, Inc. específicamente se exime de toda responsabilidad por cualquier responsabilidad, pérdida o riesgo, personal o de otro tipo, que se incurra como consecuencia, directa o indirectamente, del uso o aplicación de cualquiera de los anteriores.\
 \
-2.  Esta Aplicación es una Herramienta Secundaria de Recordatorios.\
+<b>4. Propiedad del Contenido y Derechos que te Otorgamos</b>\
+La App y todo el Contenido en y accesible a través de la App, incluyendo, sin limitación, la marca registrada y el logotipo de Euki, Inc., la marca registrada y el logotipo de Euki, y todos los diseños, textos, gráficos, imágenes y la selección y disposición de estos (colectivamente, los “Materiales de la App”) son propiedad exclusiva de Euki, Inc. o de sus licenciantes y están protegidos por leyes de derechos de autor de EE.UU. e internacionales. \
 \
-Esta Aplicación es un sistema de recordatorios de apoyo que puedes personalizar para tomar tus medicamentos. No es ni debería servir como una herramienta principal para determinar si tienes que tomar un medicamento ni cuándo tomarlo, ni es un sustituto a las recomendaciones médicas.   Puede que esta Aplicación no funcione como está previsto.   Específicamente, esta Aplicación puede no funcionar adecuadamente si tu dispositivo esta roto o apagado, si el software de la Aplicación no está activado o si cualquier hardware o software en tu dispositivo impide que la Aplicación funcione como está previsto.  Esta Aplicación, y la utilidad de cualquier de sus alertas o notificaciones, dependen de la información que introduzcas en la Aplicación.  Eres responsable de asegurarte de que tomas la medicación correcta en el momento adecuado y en las dosis adecuadas.  Al usar esta Aplicación, asumes plena responsabilidad del uso que hagas de estos Servicios.\
+Se te otorga una licencia limitada y no sublicenciable para acceder y usar la App únicamente para los fines indicados en estas Condiciones. Esta licencia tiene el único propósito de permitirte usar personalmente los Servicios de la manera permitida por estas Condiciones.\
 \
-3.  Contenido; No Constituye Asesoramiento Médico\
+No puedes copiar, modificar, distribuir, vender o alquilar ninguna parte de los Materiales de la App o nuestros Servicios, ni puedes descompilar o intentar extraer el código fuente subyacente de la App, a menos que las leyes prohíban estas restricciones o tengas nuestro permiso por escrito para hacerlo.\
 \
-Ponemos a tu disposición información, recomendaciones, textos, gráficos, software y otros materiales (a los que nos referiremos como el “Contenido”) a través de la Aplicación.  No garantizamos ni nos hacemos responsables de que ningún Contenido sea exacto, íntegro u oportuno.  Todos los Contenidos se ofrecen únicamente con fines informativos.   \
+<b>5. El Contenido de Otros</b>\
+Gran parte del Contenido en o accesible a través de la App (incluyendo a través de enlaces a sitios web) puede ser producido o propiedad de terceros. Dichos datos y Contenido son de responsabilidad exclusiva de la persona u organización que los proporcionó o creó. Aunque nos reservamos el derecho de revisar o eliminar cualquier contenido que aparezca en los Servicios, no podemos —y no asumimos— la responsabilidad por cualquier contenido que otros proporcionen a través de o que sea accesible a través de los Servicios.\
 \
-EUKI, INC. NO OFRECE ASESORAMIENTO MÉDICO O DE SALUD, DIAGNÓSTICOS, TRATAMIENTOS O SERVICIOS MÉDICOS SIMILARES A TRAVÉS DE LA APLICACIÓN O SUS CONTENIDOS.  Ningún Contenido debe ser considerado, o usado como sustituto de asesoramiento, cuidado, diagnóstico o tratamiento médico.  \
+Si usas un servicio, función o funcionalidad que es operado por un tercero y que está disponible a través de nuestros Servicios (incluidos los Servicios que podamos ofrecer conjuntamente con el tercero), las condiciones de cada parte regirán la relación respectiva de la parte contigo. Euki, Inc. no es responsable ni se hace responsable de las condiciones de un tercero ni de las acciones tomadas bajo las condiciones de un tercero.\
 \
-Euki, Inc. no hace recomendaciones, prescribe, dispensa ni renueva prescripciones ni medicamentos.  La entrega de información sobre medicamentos o productos, o la activación del sistema de recordatorios en relación con medicamentos o productos, no constituye una recomendación ni un respaldo de tales medicamentos o productos por parte de Euki, Inc. o la Aplicación.  No podemos tomar responsabilidad -ni nos responsabilizamos- por la confianza que deposites en ninguno de los Contenidos proporcionados por nosotras al utilizar esta Aplicación. \
+<b>6. Privacidad</b>\
+Tu privacidad nos importa. Puedes aprender cómo manejamos tu información cuando usas nuestros Servicios leyendo nuestra Política de Privacidad, disponible en Euki. Te animamos a que revises cuidadosamente la Política de Privacidad.\
 \
-Busca siempre asesoría médica o de otro(a) proveedor(a) de servicios de salud cualificado(a) para resolver cualquier duda que puedas tener sobre tu salud personal, enfermedades, drogas o medicamentos, y hazlo siempre antes de comenzar o interrumpir cualquier tratamiento, droga o medicamento.  Nunca ignores, evites o pospongas obtener asesoría médica o de otro(a) proveedor(a) de servicios de salud cualificado(a), incluyendo la asesoría derivada de los Contenidos u otra información que hayas recibido u obtenido a través del uso de esta Aplicación.     Si tienes, o sospechas que puedas tener, un problema médico o enfermedad, por favor contacta inmediatamente a un(a) profesional cualificado(a) de atención en salud.  Si tienes una urgencia médica, por favor pide inmediatamente ayuda médica de urgencia.  Al aceptar estas condiciones declaras (y tal declaración se hará valedera cada vez que utilices la Aplicación), que no estás utilizando la Aplicación, los Servicios o los Contenidos con el propósito de buscar asesoría médica, cuidados, atención o tratamiento médicos.  La confianza que deposites en los Servicios, Contenidos o cualquier material o información de la Aplicación, es tu propia responsabilidad, y Euki, Inc. específicamente renuncia a cualquier responsabilidad sobre cualquier pérdida o riesgo que, directa o indirectamente, se derive del uso o la aplicación de cualquiera de los elementos anteriormente citados.    \
+Nos esforzamos mucho por mantener nuestros Servicios como un lugar seguro para todos los usuarios. Pero no podemos garantizarlo. Una de las opciones que proporcionamos para la seguridad es la capacidad de crear un área restringida configurando un código de acceso, en forma de PIN. Esto es similar a la opción de bloqueo del dispositivo que puedes estar usando en tu dispositivo móvil; al configurar un código de acceso, haces que sea menos probable que otra persona que obtenga tu dispositivo pueda ver lo que guardaste en el área restringida de la App. SI PIERDES O OLVIDAS TU PIN, O SI INGRESAS EL INCORRECTO DEMASIADAS VECES, PERDERÁS EL ACCESO A CUALQUIER CONTENIDO QUE HAYAS GUARDADO EN LA APP.\
 \
-4. Propiedad de los Contenidos y Derechos que te Concedemos\
+<b>7. Renuncias</b>\
+El uso de la App es bajo tu propio riesgo. Debes consultar con proveedores de atención médica calificados y tomar tus decisiones médicas basadas en su consejo. Euki, Inc. no puede y no acepta ninguna responsabilidad con respecto a cualquier actividad que puedas emprender al usar la App.\
 \
-La Aplicación, y todos los Contenidos en la Aplicación y accesibles mediante la misma, sin ninguna limitación, la marca Euki, Inc. y su logo, la marca Euki y su logo, y todos los diseños, textos, gráficos, imágenes y la selección y disposición de los mismos (colectivamente, los “Materiales de la Aplicación”) son propiedad exclusiva de Euki, Inc. o sus otorgantes y están protegidos por las leyes de propiedad intelectual de los EE.UU. e internacionales.    Se te otorga una licencia limitada y no susceptible de cesión para acceder y utilizar la Aplicación únicamente para los fines que se especifican en estas Condiciones.  Esta licencia sólo sirve con el fin de permitirte el uso personal de los Servicios en la manera que estas Condiciones permiten.  \
+NI EUKI, INC. NI SUS LICENCIANTES HACEN NINGUNA DECLARACIÓN O GARANTÍA EN RELACIÓN CON LA APP. CUALQUIER ACCIÓN QUE TOMES BASADA EN EL CONTENIDO, NOTIFICACIONES Y DEMÁS PROPORCIONADOS POR LA APP SE TOMA BAJO TU PROPIO RIESGO Y SIN RESPONSABILIDAD PARA EUKI, INC. O SUS LICENCIANTES. SIEMPRE DEBES VERIFICAR CUALQUIER INFORMACIÓN PROPORCIONADA A TRAVÉS DE LA APP PARA GARANTIZAR SU EXACTITUD. EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, LA APP SE PROPORCIONA \"TAL CUAL\" Y \"SEGÚN DISPONIBILIDAD\". NI EUKI, INC. NI SUS LICENCIANTES HACEN NINGUNA DECLARACIÓN O GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, SOBRE LA OPERACIÓN DE LA APP O CUALQUIER CONTENIDO O SERVICIO. EN LA MEDIDA MÁXIMA PERMITIDA POR LA LEY APLICABLE, EUKI, INC. Y SUS LICENCIANTES RENUNCIAN A TODAS LAS GARANTÍAS, EXPRESAS O IMPLÍCITAS, INCLUYENDO, PERO SIN LIMITARSE A, GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, NO INFRACCIÓN DE LOS DERECHOS DE TERCEROS Y ADECUACIÓN PARA UN PROPÓSITO PARTICULAR, Y CUALQUIER GARANTÍA IMPLÍCITA O ESTATUTARIA (I) CON RESPECTO A LA SEGURIDAD, EXACTITUD, CONFIABILIDAD, OPORTUNIDAD Y DESEMPEÑO DE LA APP; O (II) QUE LA APP ESTARÁ LIBRE DE ERRORES O QUE CUALQUIER ERROR SERÁ CORREGIDO; O (III) CON RESPECTO AL DESEMPEÑO O EXACTITUD, CALIDAD, ACTUALIDAD, COMPLETITUD O UTILIDAD DE CUALQUIER INFORMACIÓN O CONTENIDO PROPORCIONADO POR O A TRAVÉS DE LA APP. NINGUNA COMUNICACIÓN, INFORMACIÓN O CONSEJO DADO POR NOSOTROS O CUALQUIER REPRESENTANTE, YA SEA ESCRITO U ORAL, CREARÁ NINGUNA GARANTÍA. SI DECIDES CONFIAR EN DICHA INFORMACIÓN, LO HACES BAJO TU PROPIO RIESGO. ALGUNOS ESTADOS O JURISDICCIONES NO PERMITEN LA EXCLUSIÓN DE CIERTAS GARANTÍAS. EN CONSECUENCIA, ALGUNAS DE LAS EXCLUSIONES ANTERIORES PUEDEN NO APLICAR A TI. ESTA RENUNCIA CONSTITUYE UNA PARTE ESENCIAL DE ESTAS CONDICIONES.\
 \
-No podrás copiar, modificar, distribuir, vender o alquilar ninguna parte de los Materiales de esta Aplicación ni nuestros Servicios, ni podrás realizar ingeniería inversa ni tratar de extraer el código fuente de la Aplicación, excepto cuando las leyes prohiban estas restricciones o cuando tengas permiso expreso por escrito para hacerlo.\
+LA INFORMACIÓN DE SALUD DEBE SER INTEGRADA POR LOS PROVEEDORES DE ATENCIÓN MÉDICA EN EL REGISTRO CLÍNICO GENERAL DE LAS PERSONAS BAJO SU SUPERVISIÓN Y CORRELACIONADA CON OTROS DATOS CLÍNICOS SEGÚN LO REQUIERAN LOS ESTÁNDARES PROFESIONALES EN LA DISCIPLINA DEL PROVEEDOR DE ATENCIÓN MÉDICA. EL USO DE DATOS ACCEDIDOS MEDIANTE LA APP, ASÍ COMO LAS DECISIONES DE TRATAMIENTO BASADAS EN DICHA INFORMACIÓN, SON RESPONSABILIDAD EXCLUSIVA DEL PROVEEDOR DE ATENCIÓN MÉDICA, Y NI EUKI, INC. NI SUS LICENCIANTES ASUMEN NINGUNA RESPONSABILIDAD AL RESPECTO.\
 \
-5. Contenidos de Terceros\
+Además, no asumimos ninguna responsabilidad por ningún error, omisión, interrupción, eliminación, defecto, retraso en la operación o transmisión, o falla de la línea de comunicación. En la medida en que no podamos, como cuestión de ley aplicable, renunciar a cualquier garantía implícita o limitar responsabilidades, el alcance y la duración de dicha garantía y el alcance de nuestra (o de nuestros licenciantes) responsabilidad será el mínimo permitido bajo dicha ley aplicable.\
 \
-Buena parte de los Contenidos de esta Aplicación, o accesibles mediante la misma (incluyendo los enlaces a sitios web), pueden haber sido producidos por o ser propiedad de terceros.  La responsabilidad de tal información y Contenidos recae exclusivamente sobre la persona u organización que la haya proporcionado o creado.  Aunque nos reservamos el derecho de revisar o retirar cualquier contenido que aparezca en los Servicios, no podemos hacernos responsables -ni nos responsabilizamos- por ningún contenido proporcionado por terceros que se ofrezca o sea accesible a través de estos Servicios. \
+<b>8. Cargos por Datos y Teléfonos Móviles</b>\
+Eres responsable de cualquier cargo móvil que puedas incurrir al usar nuestros Servicios, incluidos los cargos por datos. Si no estás seguro de cuáles pueden ser esos cargos, deberías consultar a tu proveedor de servicios antes de usar los Servicios.\
 \
-Si utilizas un servicio, elemento o funcionalidad que esté operado por un tercero y que esté disponible a través de nuestros Servicios (incluyendo Servicios que podamos estar ofreciendo conjuntamente con un tercero), tu relación con cada una de las partes se regirá por las condiciones establecidas por la parte correspondiente.   Euki, Inc. no asume ninguna responsabilidad por las condiciones establecidas por terceros ni las acciones tomadas por terceros en virtud de dichas condiciones.\
+<b>9. Modificaciones; Terminación</b>\
+Nos reservamos el derecho de modificar la App o los Servicios en cualquier momento, sin previo aviso. También podemos enmendar estas Condiciones de forma prospectiva de vez en cuando. Si lo hacemos, publicaremos las Condiciones enmendados en nuestro sitio web o aplicaciones móviles. Aceptas que tu uso continuo de la App constituye tu acuerdo con las Condiciones enmendadas. Si no estás de acuerdo con cualquier Condición enmendada que publiquemos, debes cancelar tu cuenta y dejar de usar la App y los Servicios. Excepto como se establece anteriormente, estas Condiciones solo pueden ser enmendadas o modificadas mediante un escrito expreso firmado por Euki, Inc.\
 \
-6. Privacidad\
+Puedes terminar tu acuerdo con estas Condiciones en cualquier momento y por cualquier razón eliminando tu cuenta.\
 \
-Tu privacidad es importante para nosotras. Te invitamos a conocer cómo manejamos tu información cuando utlizas nuestros Servicios leyendo nuestra Política de Privacidad, la cual está disponible en Euki. Te animamos a mirar con detenimiento nuestra Política de Privacidad.\
+Euki, Inc. también puede terminar nuestro acuerdo bajo estas Condiciones en cualquier momento, por cualquier razón y sin previo aviso. Eso significa que podemos dejar de proporcionarte cualquier Servicio, o imponer nuevos límites o adicionales a tu capacidad para usar nuestros Servicios.\
 \
-Nos esforzamos mucho para que nuestros Servicios sean un espacio seguro para todo(a)s nuestro(a)s usuario(a)s, y así se mantengan.  Pero no podemos garantizarlo.  Una de las opciones que ofrecemos para proteger tu privacidad es la posibilidad de crear un área de acceso restringido a través de la configuración de una clave en forma de número PIN. Esto se asemeja a la opción de bloqueo de dispositivo que quizás ya estés usando en tu dispositivo móvil. Al configurar una clave, haces que disminuya la probabilidad de que otra persona que tome tu dispositivo pueda ver los datos que has guardado en el área restringida de tu Aplicación. SI PIERDES U OLVIDAS TU PIN, O SI INTRODUCES TU PIN DE MANERA ERRADA DEMASIADAS VECES, PERDERÁS EL ACCESO A CUALQUIER CONTENIDO QUE HAYAS GUARDADO EN LA APLICACIÓN.\
+Las secciones 2-5, 7, y 9-14 de las Condiciones, cualquier obligación acumulada y los recursos bajo estos, y cualquier otra disposición que por su naturaleza razonablemente deba sobrevivir, sobrevivirán la terminación o expiración de estas Condiciones.\
 \
-7.  Descargo de Responsabilidad\
+<b>10. Indemnización</b>\
+Aceptas, en la medida permitida por la ley, indemnizar, defender y mantener indemne a Euki, Inc., sus licenciatarios, y a nuestros respectivos afiliados, directores, funcionarios, accionistas, miembros, empleados, licenciatarios, licenciatarios y agentes, de y contra cualquier y todas las quejas, cargos, reclamaciones, daños, pérdidas, costos, responsabilidades y gastos (incluidos los honorarios de abogados) debidos a, que surjan de, o se relacionen de cualquier manera con: (a) tu acceso o uso de la App o los Servicios; (b) tu violación de cualquier ley, regla o regulación; o (c) tu incumplimiento de estas Condiciones.\
 \
-El uso de la Aplicación es por cuenta y riesgo del (la) usuario(a). Debes consultar con un(a) proveedor(a) de servicios de salud cualificado(a) y debes tomar cualquier decisión médica basándote en sus recomendaciones.  Euki, Inc. no puede asumir ni asume ninguna responsabilidad por cualquier actividad tuya derivada del uso de la Aplicación. \
+<b>11. Limitación de Responsabilidad</b>\
+EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, EN NINGÚN CASO EUKI, INC., SUS LICENCIANTES, O NUESTROS RESPECTIVOS AFILIADOS, DIRECTORES, FUNCIONARIOS, ACCIONISTAS, MIEMBROS, EMPLEADOS, LICENCIANTES, LICENCIATARIOS O AGENTES SERÁN RESPONSABLES POR DAÑOS DIRECTOS, ESPECIALES, INDIRECTOS O CONSECUENTES, (INCLUYENDO DAÑOS POR PÉRDIDA DE NEGOCIOS, PÉRDIDA DE INGRESOS, PÉRDIDA DE DATOS O PÉRDIDA DE USO), YA SEA QUE SE BASEN EN CONTRATO, AGRAVIO (INCLUYENDO NEGLIGENCIA), O DE OTRO MODO, QUE SURJAN DE O ESTÉN RELACIONADOS CON ESTAS CONDICIONES, LA APP, LOS MATERIALES DE LA APP O LOS SERVICIOS, INCLUSO SI HEMOS SIDO INFORMADOS O DEBERÍAMOS HABER SABIDO DE LA POSIBILIDAD DE TALES DAÑOS. EN LA MEDIDA PERMITIDA POR LA LEY APLICABLE, NUESTRA RESPONSABILIDAD MÁXIMA Y LA DE CADA UNO DE NUESTROS LICENCIANTES HACIA TI POR CUALQUIER DAÑO QUE SURJA O ESTÉ RELACIONADO CON ESTAS CONDICIONES, LA APP, LOS MATERIALES DE LA APP O LOS SERVICIOS, YA SEA QUE SE BASEN EN CONTRATO, AGRAVIO (INCLUYENDO NEGLIGENCIA) U OTRO, SE LIMITARÁ A LAS CANTIDADES PAGADAS POR TI A NOSOTROS POR LOS SERVICIOS EN EL AÑO ANTERIOR (O, SI ERES UN USUARIO NO PAGANTE, A LA CANTIDAD DE $100).\
 \
-NI EUKI, INC. NI NINGUNO DE SUS OTORGANTES DE LICENCIA DECLARA NADA NI OFRECE NINGUNA GARANTÍA EN LO QUE RESPECTA A LA APLICACIÓN.    CUALQUIER ACCIÓN QUE REALICES BASÁNDOTE EN LOS CONTENIDOS, NOTIFICACIONES O CUALQUIER OTRO ELEMENTO PROPORCIONADO POR LA APLICACIÓN, LO HACES POR TU PROPIA CUENTA Y RIESGO Y SIN HACER RECAER NINGUNA RESPONSABILIDAD SOBRE EUKI, INC. NI NINGUNO DE SUS OTORGANTES DE LICENCIAS.  SIEMPRE DEBES CORROBORAR CUALQUIER INFORMACIÓN PROPORCIONADA POR LA APLICACIÓN, CON EL FIN DE VERIFICAR SU EXACTITUD.   HASTA DONDE LO PERMITA LA LEGISLACIÓN VIGENTE, ESTA APLICACIÓN SE PROPORCIONA “TAL Y COMO ESTÁ” Y “SEGÚN DISPONIBILIDAD”.   NI EUKI, INC. NI NINGUNO DE SUS OTORGANTES DE LICENCIAS DECLARA NI GARANTIZA NADA EN LO QUE RESPECTA AL FUNCIONAMIENTO DE LA  APLICACIÓN O CUALQUIERA DE SUS CONTENIDOS O SERVICIOS.  HASTA DONDE LO PERMITA LA LEGISLACIÓN VIGENTE, EUKI, INC. Y SUS OTORGANTES DE LICENCIAS RECHAZAN CUALQUIER GARANTÍA, EXPLÍCITA O IMPLÍCITA, INCLUYENDO, PERO SIN LIMITARSE A, LAS GARANTÍAS IMPLÍCITAS DE COMERCIALIZACIÓN, DE NO INCUMPLIMIENTO DE DERECHOS DE TERCEROS Y DE ADECUACIÓN PARA UN FIN PARTICULAR, Y CUALQUIER GARANTÍA IMPLÍCITA O REGLAMENTARIA (I) EN RELACIÓN CON LA SEGURIDAD, EXACTITUD, FIABILIDAD, CARÁCTER OPORTUNO O DESEMPEÑO DE LA APLICACIÓN; O (II) DE QUE LA APLICACIÓN ESTÉ LIBRE DE ERRORES O QUE CUALQUIER ERROR SEA CORREGIDO; O (III) EN RELACIÓN CON EL DESEMPEÑO DE, O EXACTITUD, CALIDAD, ACTUALIDAD, COMPLETUD O UTILIDAD DE CUALQUIER INFORMACIÓN O CONTENIDO PROPORCIONADO POR O A TRAVÉS DE LA APLICACIÓN.  NINGUNA COMUNICACIÓN, INFORMACIÓN O CONSEJO DADO POR NOSOTRAS O CUALQUIERA DE NUESTROS REPRESENTANTES, YA SEA POR ESCRITO O VERBALMENTE, GENERARÁ NINGÚN TIPO DE GARANTÍA.  ASUMES TODO RIESGO DERIVADO DE CONFIAR EN DICHA INFORMACIÓN.  ALGUNOS ESTADOS Y JURISDICCIONES NO PERMITEN LA EXCLUSIÓN DE CIERTAS GARANTÍAS. CONFORME A ESTO, ALGUNAS DE LAS EXCLUSIONES ANTERIORES PUEDEN NO SER APLICABLES EN TU CASO.  ESTE DESCARGO DE RESPONSABILIDAD CONSTITUYE UNA PARTE ESENCIAL DE ESTAS CONDICIONES.\
- \
-CUALQUIER INFORMACIÓN SOBRE LA SALUD DE UNA PERSONA DEBE SER INTEGRADA POR LOS PROVEEDORES DE SERVICIOS DE SALUD AL HISTORIAL MÉDICO GENERAL DE LA PERSONA, BAJO SU SUPERVISIÓN. ESTA INFORMACIÓN DEBE SER CORRELACIONADA CON OTROS DATOS CLÍNICOS SEGÚN LO REQUIERAN LAS NORMAS PROFESIONALES DE LA DISCIPLINA EN QUE SE DESEMPEÑE EL PROVEEDOR DE SERVICIOS DE SALUD.  EL USO DE DATOS A LOS QUE HAYAS TENIDO ACCESO A TRAVÉS DE LA APLICACIÓN, ASÍ COMO LAS DECISIONES SOBRE TRATAMIENTO BASADAS EN DICHA INFORMACIÓN, SON RESPONSABILIDAD EXCLUSIVA DEL PROVEEDOR DE SERVICIOS DE SALUD, Y NI EUKI, INC. NI SUS OTORGANTES DE LICENCIAS ASUMEN NINGUNA RESPONSABILIDAD EN RELACIÓN CON LOS USOS MENCIONADOS.\
+ALGUNAS JURISDICCIONES NO PERMITEN LA LIMITACIÓN O EXCLUSIÓN DE GARANTÍAS O DE RESPONSABILIDAD POR CIERTOS TIPOS DE DAÑOS, POR LO QUE ALGUNAS DE LAS LIMITACIONES O EXCLUSIONES ANTERIORES PUEDEN NO APLICARSE A TI.\
 \
-Además, no asumimos ninguna responsabilidad por error, omisión, interrupción, eliminación, defecto, retraso en la ejecución o transmisión, ni fallas en los canales de comunicación.  En la medida en que no podamos, en razón del derecho aplicable, descargar ninguna garantía o limitar responsabilidades, el alcance y duración de tal garantía y el alcance de nuestra responsabilidad (o de nuestros otorgantes de licencias) serán los mínimos permitidos por el derecho aplicable en cuestión.\
+Cualquier reclamación que surja en relación con tu uso de la App debe presentarse dentro de un (1) año a partir de la fecha del evento que dio lugar a dicha reclamación. Los recursos bajo estas Condiciones son exclusivos y se limitan a los expresamente provistos en estas Condiciones, incluso si el recurso aplicable bajo estas Condiciones no cumple con su propósito esencial.\
 \
-8. Costos de Datos y Teléfonos Móviles\
+<b>12. Arbitraje</b>\
+LEE ATENTAMENTE LOS SIGUIENTES PÁRRAFOS, YA QUE REQUIEREN QUE ACEPTES RESOLVER MUCHAS DISPUTAS QUE SURJAN DE LOS SERVICIOS A TRAVÉS DE UN ARBITRAJE OBLIGATORIO.\
 \
-Te harás responsable de cualquier gasto en telefonía móvil en el que incurras como consecuencia del uso de nuestros servicios, incluidos los gastos por uso de datos.  Si no sabes con certeza cuáles podrían ser tales gastos, consúltalo con tu proveedor de telefonía móvil antes de utilizar nuestros Servicios.\
+Intentaremos resolver disputas con los usuarios de manera satisfactoria. Sin embargo, si surge un asunto que no se pueda resolver de manera rápida entre tú y nosotros, aceptas que cualquier disputa que surja de o esté relacionada con la App, los Servicios o estas Condiciones (incluida la validez y el alcance del acuerdo de arbitraje y cualquier disputa con otros usuarios de la App o los Servicios) podrá resolverse mediante un arbitraje final y vinculante administrado por la American Arbitration Association (“AAA”) bajo la Ley Federal de Arbitraje.\
 \
-9. Modificaciones; Rescisión del acuerdo\
+Todas las disputas que surjan se resolverán mediante arbitraje como se describe anteriormente, con excepciones limitadas. Estas excepciones (colectivamente “Excepciones de Arbitraje”) describen reclamaciones que pueden resolverse opcionalmente en un tribunal de jurisdicción competente. La lista completa y exhaustiva de Excepciones de Arbitraje incluye: i. A nuestra exclusiva opción, cualquier reclamación de infracción de patente, marca registrada, derechos de autor o apropiación indebida de secretos comerciales; ii. A opción de cualquiera de las partes, cualquier reclamación individual que surja de o esté relacionada con nuestro manejo de tus datos de acuerdo con nuestra política de privacidad y la ley aplicable; y iii. A opción de cualquiera de las partes, cualquier reclamación individual presentada en un tribunal de reclamos menores.\
 \
-Nos reservamos el derecho a modificar la Aplicación o los Servicios en cualquier momento, sin necesidad de notificarte.  También puede que de vez en cuando modifiquemos las Condiciones de forma prospectiva.  En ese caso, publicaremos las Condiciones modificadas en nuestra página web o nuestras aplicaciones móviles.  Aceptas que al continuar utilizando la Aplicación aceptas las Condiciones modificadas.  Si no aceptas las Condiciones modificadas que publiquemos, debes cerrar tu cuenta y dejar de usar la Aplicación y los Servicios.  Salvo en lo estipulado anteriormente, estas Condiciones únicamente pueden ser modificadas o enmendadas expresamente mediante un escrito firmado por Euki, Inc..\
+En cualquier caso, no aceptamos ninguna jurisdicción personal que de otro modo no esté presente. Cualquier pregunta sobre la validez y el alcance de las Excepciones de Arbitraje podrá ser decidida por un árbitro o por un tribunal de jurisdicción competente. Si hay desacuerdo sobre la validez y el alcance de las Excepciones de Arbitraje, la decisión del árbitro será definitiva.\
 \
-Puedes rescindir tu acuerdo con estas Condiciones, en cualquier momento y por cualquier razón, eliminando tu cuenta. \
+Cualquier disputa resuelta mediante arbitraje se llevará a cabo ante un único árbitro de acuerdo con las Reglas y Procedimientos aplicables establecidos por la AAA (para información sobre la AAA y sus reglas, consulta adr.org). Aceptas que el arbitraje se realice en Oakland, CA, a menos que la AAA o el árbitro determinen que la sede en dicha ciudad es desproporcionadamente gravosa, en cuyo caso la AAA o el árbitro seleccionarán una sede que no sea desproporcionadamente gravosa para ambas partes. Aceptas que, si la AAA no está disponible o se niega a administrar el arbitraje, y las partes no llegan a un acuerdo sobre un sustituto, un administrador o árbitro sustituto será designado por el tribunal. El árbitro puede dictar una resolución anticipada o sumaria de algunos o todos los problemas, después de que las partes hayan tenido la oportunidad razonable de hacer presentaciones sobre estos temas.\
 \
-Euki, Inc. también puede rescindir nuestro acuerdo en virtud de estas Condiciones en cualquier momento, por cualquier razón, y sin necesidad de preaviso.  Esto significa que puede que en algún momento dejemos de proporcionarte estos Servicios, o impongamos límites nuevos o adicionales a tu capacidad de utilizar nuestros Servicios. \
+Aceptas que cualquier arbitraje no permitirá reclamaciones en base a una acción colectiva, masiva, representativa o de fiscal general privado. Además, aceptas que ninguna reclamación de otras partes podrá ser consolidada con tus reclamaciones o las nuestras en el arbitraje sin el consentimiento tanto tuyo como nuestro. RENUNCIAS A TUS DERECHOS DE QUE TU CASO SEA DECIDIDO POR UN JURADO Y A PARTICIPAR EN UNA ACCIÓN COLECTIVA, MASIVA, REPRESENTATIVA, DE FISCAL GENERAL PRIVADO O CONSOLIDADA EN NUESTRA CONTRA.\
 \
-Las secciones 2-5, 7, y 9-14 de las Condiciones, cualquier obligación o compensación devengada mencionada a continuación, y cualquier otra disposición que por su naturaleza debiera razonablemente persistir, persistirá tras la rescisión o expiración de estas Condiciones. \
+Si alguna parte de esta cláusula de Arbitraje se considera inválida como cuestión de derecho, se separará y las partes restantes de esta sección seguirán en vigor, con la excepción de que si el párrafo anterior se considera inválido, entonces toda esta sección se considerará inválida y la cláusula de arbitraje será nula.\
 \
-10. Indemnización\
+<b>13. Ley Aplicable y Jurisdicción</b>\
+Tú y nosotros acordamos que todas las disputas u otros asuntos que surjan de o estén relacionados con estas Condiciones, o el uso o funcionamiento de la App o los Servicios, se regirán por las leyes sustantivas del Estado de California, EE.UU., sin tener en cuenta los principios de conflictos de leyes de dicho estado o cualquier otra jurisdicción que aplicaría otra ley. Se excluye la Convención de las Naciones Unidas sobre Contratos de Compraventa Internacional de Mercaderías.\
 \
-Aceptas, en la medida que lo permita la ley, indemnizar, defender y liberar de responsabilidad a Euki, Inc., sus otorgantes de licencias, y nuestros respectivos afiliados, directores, directivos, accionistas, miembros, empleados, otorgantes de licencias, titulares de licencias y agentes, en relación con cualquier reclamo, cargo, demanda, daño, pérdida, costo, obligación y gasto (incluidos los honorarios de abogados), debidos a, derivados de, o relacionados de cualquier manera con: (a) tu acceso a o uso de la Aplicación o los Servicios; (b) la infracción por tu parte de cualquier ley, regla o reglamento; o (c) el incumplimiento por tu parte de estas Condiciones.\
+Con respecto a cualquier Excepción de Arbitraje (como se define arriba) que no esté sujeta a arbitraje obligatorio bajo la disposición anterior, por la presente consientes en la jurisdicción no exclusiva y el lugar en cualquier tribunal federal o estatal ubicado dentro del Estado de California, EE.UU., con respecto a cualquier demanda, reclamación o causa de acción que surja de o esté relacionada con la App, los Servicios o estas Condiciones, y no presentarás ninguna demanda, reclamación o causa de acción excepto en un tribunal ubicado dentro del Estado de California, EE.UU.\
 \
-11. Limitación de Responsabilidad\
+<b>14. Condiciones Finales</b>\
+• Estas Condiciones (junto con cualquier condición adicional aplicable a los Servicios específicos que uses) constituyen el acuerdo completo entre tú y Euki, Inc., y reemplazan cualquier acuerdo previo. \
+• Estas Condiciones no crean ni otorgan ningún derecho de beneficiario de terceros, excepto que los licenciantes de Euki, Inc. son un beneficiario de terceros previsto por estas Condiciones. \
+• Si no hacemos cumplir una disposición de estas Condiciones, no se considerará una renuncia. \
+• Nos reservamos todos los derechos no expresamente concedidos a ti. \
+• No podrás transferir ninguno de tus derechos u obligaciones bajo estas Condiciones sin nuestro consentimiento. \
+• Si alguna disposición de estas Condiciones se considera no aplicable, esa disposición se separará de estas Condiciones y no afectará la validez y aplicabilidad de las disposiciones restantes.\
 \
-HASTA DONDE LO PERMITA LA LEGISLACIÓN VIGENTE, Y BAJO NINGUNA CIRCUNSTANCIA, EUKI, INC., SUS OTORGANTES DE LICENCIAS, O SUS RESPECTIVOS AFILIADOS, DIRECTORES, DIRECTIVOS, ACCIONISTAS, MIEMBROS, EMPLEADOS, OTORGANTES DE LICENCIAS, TITULARES DE LICENCIAS O AGENTES, SERÁN RESPONSABLES DE NINGÚN DAÑO DIRECTO, ESPECIAL, INDIRECTO O CONSECUENTE, (INCLUIDOS DAÑOS POR PÉRDIDA DE NEGOCIOS, PÉRDIDA DE INGRESOS, PÉRDIDA DE DATOS, O PÉRDIDA DE USO), YA SEA POR CONTRATO, EN AGRAVIO (INCLUIDAS NEGLIGENCIAS), O QUE DE OTRA MANERA SURJAN DE, O ESTÉN RELACIONADOS CON, ESTAS CONDICIONES, LA APLICACIÓN, LOS MATERIALES DE LA APLICACIÓN O LOS SERVICIOS, INCLUSO SI HEMOS SIDO INFORMADOS O DEBERÍAMOS HABER ESTADO AL TANTO DE LA POSIBILIDAD DE TALES DAÑOS. EN LA MEDIDA EN QUE LA LEGISLACIÓN VIGENTE LO PERMITA, LA RESPONSABILIDAD MÁXIMA TOTAL NUESTRA Y DE CADA UNO DE NUESTROS OTORGANTES DE LICENCIAS PARA CONTIGO POR CUALQUIER DAÑO RELACIONADO CON, ESTAS CONDICIONES, LA APLICACIÓN, LOS MATERIALES DE LA APLICACIÓN O LOS SERVICIOS, YA SEA POR CONTRATO, EN AGRAVIO (INCLUIDAS NEGLIGENCIAS), O DE OTRA FORMA, ESTARÁ LIMITADA A LAS CANTIDADES PAGADAS POR TI POR EL USO DE LOS SERVICIOS EN EL AÑO ANTERIOR (O, SI ERES UN USUARIO QUE NO PAGÓ NINGUNA CUOTA, A LA CANTIDAD DE $100).\
-\
-ALGUNAS JURISDICCIONES NO PERMITEN LA LIMITACIÓN O EXCLUSIÓN DE GARANTÍAS O RESPONSABILIDADES PARA CIERTOS TIPOS DE DAÑOS, DE MANERA QUE ALGUNAS DE LAS LIMITACIONES O EXCLUSIONES ANTERIORES PUEDEN NO APLICARSE A TU CASO.\
-\
-Cualquier reclamación que surja en relación con tu uso de la Aplicación debe ser hecha en el plazo máximo de un (1) año a partir de la circunstancia que dio lugar a dicha reclamación.     Las compensaciones bajo estas Condiciones son exclusivas, y están limitadas a aquellas expresamente estipuladas en estas Condiciones, incluso si la compensación aplicable bajo estas Condiciones no cumple con su propósito esencial.\
-\
-12. Arbitraje\
-\
-POR FAVOR LEE LOS SIGUIENTES PÁRRAFOS CON DETENIMIENTO PORQUE TE EXIGEN QUE ACEPTES RESOLVER CUALQUIER DISPUTA QUE SURJA DE LOS SERVICIOS POR MEDIO DE UN ARBITRAJE VINCULANTE.\
-\
-Intentaremos resolver cualquier disputa con lo(a)s usuario(a)s de manera que queden satisfechos. Sin embargo, si una cuestión surge que no podamos resolver con prontitud entre tú y nosotras, aceptas que cualquier disputa que surja o esté relacionada con la Aplicación, los Servicios o estas Condiciones (incluyendo la validez y el alcance del acuerdo de arbitraje y cualquier disputa con otro(a)s usuario(a)s de la Aplicación o los Servicios) deberá ser resuelto por medio de un arbitraje vinculante y final administrado por la American Arbitration Association (“AAA”) bajo la Ley de Arbitraje Federal, que será conducido ante un único árbitro de conformidad con el Reglamento de la AAA (para más información sobre la AAA y su reglamento, visita adr.org). Aceptas que el arbitraje será llevado a cabo en Oakland, California, a menos que la AAA o el árbitro determinen que un lugar en dicha ciudad es excesivamente oneroso, en cuyo caso la AAA o el árbitro eligirán un lugar que no sea excesivamente oneroso ni para ti ni para nosotras.  Aceptas que, si la AAA no estuviera disponible o declina la tarea de administrar el arbitraje, y las partes no logran llegar a un acuerdo sobre un sustituto, entonces un juez designará un administrador o árbitro substituto. El árbitro podrá determinar una resolución temprana o disposición sumaria sobre algunos o todos los asuntos, una vez que las partes hayan tenido oportunidad razonable de presentar documentos sobre estos asuntos.   A nuestra discrección, esta cláusula no se aplicará a las demandas de patente, marca o infracción de la propiedad intelectual, o por apropiación indebida de secretos comerciales (colectivamente, “reclamaciones de propiedad intelectual”).  Adicionalmente, tanto tú como nosotras podremos elegir llevar una demanda individual a una corte de reclamos menores, pero por la presente no aceptamos ninguna jurisdicción personal que de otra forma no tuviera autoridad. \
-\
-Aceptas que ningún arbitraje permitirá demandas colectivas, masivas, representantivas o a través de un abogado que entable demandas consideradas de interés público.  También aceptas que ninguna demanda de otras partes se combinará con tus o nuestras demandas en el arbitraje sin el consentimiento tanto tuyo como nuestro.  RENUNCIAS A TU DERECHO DE QUE TU CASO SEA DECIDIDO POR UN JURADO Y A PARTICIPAR EN UNA ACCIÓN EN NUESTRA CONTRA QUE SEA DE CLASE, COLECTIVA, REPRESENTATIVA, CONSOLIDADA O A TRAVÉS DE UN ABOGADO QUE ENTABLE DEMANDAS CONSIDERADAS DE INTERÉS PÚBLICO.  \
-\
-Si cualquier parte de esta cláusula de Arbitraje se ve con posterioridad invalidada por ley, entonces será excluida y las partes restantes de esa sección seguirán teniendo validez, exceptuando el caso en el que el párrafo que preceda sea invalidado, entonces la sección entera será invalidada y la cláusula de arbitraje será considerada nula.  \
-\
-13. Ley Aplicable y Jurisdicción\
-\
-Tanto tú como nosotras aceptamos que cualquier disputa u otro asunto que surja de, o esté relacionado con estas Condiciones, o con el uso o funcionamiento de la Aplicación o de los Servicios, estará regido por las leyes de la Estado de California, EE.UU, sin atender a conflictos de principios de ley de su jurisdicción o de otra jurisdicción que harían que otra ley se aplicara.  Por la presente se declina cualquier responsabilidad frente a la Convención de las Naciones Unidas sobre los Contratos de Compraventa Internacional de Mercaderías.\
-\
-En lo que respecta a cualquier reclamación de propiedad intelectual (tal y como fue definida anteriormente) que no esté sujeta a arbitraje mediante la cláusula anterior, por la presente aceptas la jurisdicción no exclusiva con sede en cualquier juzgado federal o estatal localizado dentro de la Estado de California, EE.UU., en relación con cualquier demanda, reclamo o causa que surja de, o esté relacionada con la Aplicación, los Servicios o estas Condiciones, y no llevarás dicha demanda, reclamo o causa a un juzgado que no esté localizado dentro de la Estado de California, EE.UU. \
-\
-14. Condiciones Finales\
-\
-•    Estas Condiciones (junto con cualquier condición adicional aplicable a los Servicios específicos que utilices) constituyen el acuerdo completo entre tú y Euki, Inc., y sustituye cualquier acuerdo anterior.\
-\
-•    Estas Condiciones no crean ni confieren ningún derecho de terceros beneficiarios, exceptuando a los otorgantes de licencias de Euki, Inc. que son un tercero beneficiario según lo previsto en estas Condiciones.\
-\
-•    Si no exigimos disposición alguna en estas Condiciones, esto no constituirá una renuncia a tal disposición.\
-\
-•    Nos reservamos todos los derechos que no te hayan sido expresamente otorgados.\
-\
-•    No podrás transferir ningún derecho ni obligación bajo estas Condiciones sin nuestro consentimiento.\
-\
-•    Si cualquier cláusula de estas Condiciones resulta inejecutable, entonces esa cláusula será excluida de estas Condiciones y eso no afectará la validez o ejecutabilidad de las cláusulas restantes.\
-\
-Contáctanos\
+<b>Contáctanos</b>\
 \
 Euki, Inc. acoge con beneplácito comentarios, preguntas, preocupaciones o sugerencias. Por favor envíanos cualquier comentario a través del correo electrónico eukiapp@protonmail.com.";
 "onboarding_1_text" = "Euki es una aplicación inclusiva para el seguimiento de la menstruación que prioriza tu privacidad y mantiene tus datos seguros.";
@@ -346,8 +332,8 @@ Si decides que ya no quieres un PIN, puedes cambiar tus ajustes de privacidad m�
 "privacy" = "Privacidad";
 "source_format" = "Fuente: %@";
 "knowledge_base" = "Información";
-"walk_me_through_the_process" = "Guía paso a paso";
-"knowledge_base_title" = "Información sobre el aborto";
+"walk_me_through_the_process" = "Encontrar atención ahora";
+"knowledge_base_title" = "Infórmate";
 "knowledge_base_content" = "El aborto es un procedimiento que interrumpe el embarazo, y es una parte normal y común en la vida cotidiana de las personas. Todo tipo de personas puede abortar – personas de cualquier raza, etnia, nivel de ingresos, religión, género y clase social. \
 \
 Hay madres que abortan, personas religiosas que abortan, personas transgénero que abortan, personas negras, blancas y de todas las razas que abortan. El aborto nos atañe a muchas personas en algún momento de nuestras vidas. \
@@ -369,27 +355,27 @@ Fuente: Guttmacher Institute";
 Si decides abortar, tienes dos opciones:";
 "medication" = "Medicamentos";
 "surgical" = "Quirúrgico";
-"medication_abortion_101_title" = "Fundamentos del Aborto con Medicamentos";
-"medication_abortion_101_content" = "El aborto con medicamentos se conoce normalmente como “aborto con pastillas.” Consiste en combinar dos medicamentos (mifepristona y misoprostol), o en tomar misoprostol sólo. Los medicamentos generalmente son seguros y provocan un proceso similar a un aborto espontáneo. A pesar de los esfuerzos legales para impugnar la aprobación de la FDA de larga data de la mifepristona, la mifepristona es un método seguro y eficaz para interrumpir el embarazo, y sigue estando disponible. \
+"medication_abortion_101_title" = "Aborto con medicación";
+"medication_abortion_101_content" = "El aborto con medicación se conoce normalmente como “aborto con pastillas.” Consiste en combinar dos medicamentos (mifepristona y misoprostol), o en tomar misoprostol sólo. Los medicamentos generalmente son seguros y provocan un proceso similar a un aborto espontáneo. A pesar de los esfuerzos legales para impugnar la aprobación de la FDA de larga data de la mifepristona, la mifepristona es un método seguro y eficaz para interrumpir el embarazo, y sigue estando disponible. \
 \
-Las personas pueden hacerse un aborto con medicamentos con la supervisión de un médico, ya sea en persona en una clínica o a través de telesalud. Las personas también pueden autoadministrarse de forma segura sus propios abortos sin supervisión clínica comprando y tomando los medicamentos por su cuenta. \
+Las personas pueden hacerse un aborto con medicación con la supervisión de un médico, ya sea en persona en una clínica o a través de telesalud. Las personas también pueden autoadministrarse de forma segura sus propios abortos sin supervisión clínica comprando y tomando los medicamentos por su cuenta. \
 \
 La mifepristona generalmente se ingiere, y el misoprostol se disuelve bajo la lengua. Alternativamente, a veces el misoprostol se coloca entre la mejilla y las encías (“uso bucal”). \
 \
-El aborto con medicamentos tiene una alta tasa de éxito en las primeras 10-12 semanas de embarazo (un 95-98%). La mayoría de las clínicas en los EEUU ofrecen aborto con medicamentos hasta la semana 7-10 de embarazo. \
+El aborto con medicación tiene una alta tasa de éxito en las primeras 10-12 semanas de embarazo (un 95-98%). La mayoría de las clínicas en los EEUU ofrecen aborto con medicación hasta la semana 7-10 de embarazo. \
 \
 Cuando se toman los dos medicamentos, el sangrado normalmente empieza máximo 24 horas a partir de la toma del segundo medicamento. Los analgésicos de venta libre y las almohadillas térmicas pueden ayudar con los dolores. \
 \
-El aborto con medicamentos no es lo mismo que el anticonceptivo de emergencia. El anticonceptivo de emergencia evita el embarazo, mientras que el aborto con medicamentos interrumpe el embarazo. \
+El aborto con medicación no es lo mismo que el anticonceptivo de emergencia. El anticonceptivo de emergencia evita el embarazo, mientras que el aborto con medicación interrumpe el embarazo. \
 \
 Todo procedimiento médico siempre conlleva riesgos. En caso de duda o si tienes alguna pregunta consulta con un/a proveedor/a de atención médica cualificado.";
-"how_medication_work" = "¿Cómo funciona el Aborto con Medicamentos?";
+"how_medication_work" = "¿Cómo funciona el Aborto con medicación?";
 "what_should_know_before_pills" = "Aborto paso a paso";
 "what_pills_look_like" = "¿Qué aspecto tienen las pastillas?";
 "what_will_be_like" = "¿Cómo será?";
 "when_seek_medical_help" = "¿Cuándo buscar ayuda médica?";
 "national_abortion_federation" = "Federación Nacional del Aborto";
-"medication_abortion_title" = "El proceso de aborto con medicamentos";
+"medication_abortion_title" = "El proceso de aborto con medicación";
 "medication_abortion_content" = "Si decides abortar con medicamentos, esto probablemente implicará tomar las pastillas en una clínica o en casa, y expulsar el embarazo en casa. Es importante tener acceso a un retrete.\
 \
 Las personas que abortan con medicamentos encuentran útil tener al alguien que les preste apoyo, trayendo su comida favorita, calentando una almohadilla térmica, y recordándoles que son fuertes y serán capaces de superar esto.\
@@ -407,7 +393,7 @@ Los cólicos pueden variar enormemente de una persona a otra. Para muchas person
 \
 Fuente: Federación Nacional del Aborto";
 "when_seek_care_title" = "¿Cuándo buscar ayuda médica?";
-"when_seek_care_content" = "El aborto con medicamentos es en general seguro y raramente presenta complicaciones. Aún así, es importante saber cuándo buscar ayuda médica. Estas son algunas señales de alerta: \
+"when_seek_care_content" = "El aborto con medicación es en general seguro y raramente presenta complicaciones. Aún así, es importante saber cuándo buscar ayuda médica. Estas son algunas señales de alerta: \
 \
 - Sangrado prolongado (el sangrado continúa durante más de tres semanas)\
 - Dolor insoportable que no puede tratarse con remedios en casa como analgésicos de venta libre, una almohadilla térmica o masajes\
@@ -419,34 +405,14 @@ Fuente: Federación Nacional del Aborto";
 Si te preocupan los efectos secundarios, se recomienda que llames a una clínica de confianza o que busques atención médica. La línea directa de abortos espontáneos y abortos (1-833-246-2632) también está disponible por teléfono o por mensaje de texto de 8 a.m. a 11 p.m. en cualquier lugar de Estados Unidos.  Si se trata de una urgencia médica, llama al 9-1-1. Independientemente de cómo o dónde se produzca el aborto, es importante recordar que todas las personas tienen siempre  derecho a compartir o no información con un proveedor de atención médica — incluyendo información sobre si han tenido un aborto o no. Algunas personas pueden sentirse más cómodas diciendo que tuvieron un aborto espontáneo. Puedes ponerte en contacto con la línea directa de Repro Legal (844-868-2812) para cualquier pregunta legal sobre el aborto. \
 \
 Fuente: Women on Web";
-"suction_abortion_title" = "Aborto Procesal";
-"suction_abortion_content" = "El aborto procesal, a veces llamado aborto por aspiración o por succión, se realiza a menudo en un consultorio médico o clínica por un proveedor de atención médica que utiliza instrumentos para retirar un embarazo del útero. En general es un procedimiento seguro, que tiene una alta tasa de éxito (alrededor de un 99%), y que toma unos 5-15 minutos en completarse. En una clínica se puede aplicar anestesia local o sedación para el manejo del dolor.\
+"suction_abortion_title" = "Aborto en clínica";
+"suction_abortion_content" = "El aborto en clínica, a veces llamado aborto por aspiración o por succión, se realiza a menudo en un consultorio médico o clínica por un proveedor de atención médica que utiliza instrumentos para retirar un embarazo del útero. En general es un procedimiento seguro, que tiene una alta tasa de éxito (alrededor de un 99%), y que toma unos 5-15 minutos en completarse. En una clínica se puede aplicar anestesia local o sedación para el manejo del dolor.\
 \
 Las clínicas normalmente proporcionan abortos procesales entre la semana 5 y 24 de embarazo. Puede que algunas clínicas no estén en condición de realizar abortos por aspiración más allá de un número concreto de semanas debido a las leyes vigentes en su estado.\
 \
 Todo procedimiento médico siempre conlleva riesgos. En caso de duda o si tienes alguna pregunta consulta con un proveedor de atención médica.";
 "suction_abortion_subheading_1" = "Aspiración por succión o aspiración por vacío";
-"suction_abortion_content_1" = "El aborto aspirado manual es uno de los tipos de aborto procesal más comunes, y se usa normalmente hasta la semana 14-16 de embarazo. \
-\
-A menudo se utilizan analgésicos antes del aborto para ayudar con los cólicos, y un/a proveedor/a de atención médica puede utilizar medicamentos para ayudar a dilatar el cuello del útero. También se puede usar anestesia local o general para ayudar a controlar el dolor. \
-\
-Durante un aborto aspirado manual, un/a proveedor/a de atención médica usará un dispositivo o máquina succionadora para retirar el embarazo del útero. Estas prácticas abortivas son generalmente seguras y efectivas, y tan sólo se demoran unos minutos.\
-\
-Si tienes alguna duda acerca del procedimiento abortivo, no tengas reparos en preguntar al proveedor/a de atención médica. Están ahí para responder a cualquier pregunta que tengas.\
-\
-Fuente: Planned Parenthood Federation of America";
 "suction_abortion_subheading_2" = "Dilatación y evacuación (DyE)";
-"suction_abortion_content_2" = "La dilatación y evacuación (DyE) es otro tipo de aborto procesal que normalmente se efectúa después de la semana 14 de embarazo. Este procedimiento puede requerir más de una visita a la clínica, y es en general una práctica abortiva muy segura y efectiva que se practica en todo el mundo.\
-\
-Dependiendo del número de semanas de embarazo, el/la proveedor/a de atención médica puede introducir dilatadores osmóticos (palillos dilatadores) uno o dos días antes de comenzar el procedimiento, para ayudar a que el cuello del útero se abra. Puede que recibas también medicamentos o anestesia para ayudarte a aliviar el dolor.\
-\
-Si recibes anestesia general, el/la proveedor/a de atención médica puede pedirte que no comas nada antes del procedimiento. Si tienes dudas acerca de esto, pregúntales cómo puedes prepararte.\
-\
-Durante un aborto aspirado manual, un/a proveedor/a de atención médica usará un dispositivo o máquina succionadora para retirar el embarazo del útero. Estas son prácticas abortivas generalmente seguras y efectivas, y normalmente se demoran entre 20 y 30 minutos.\
-\
-Si tienes alguna duda acerca del procedimiento abortivo, no tengas reparos en preguntar al proveedor de atención médica. Están ahí para responder a cualquier pregunta que tengas.\
-\
-Fuente: Federación Nacional del Aborto";
 "suction_abortion_subheading_3" = "Aborto después de la semana 12";
 "suction_abortion_content_3" = "Hay muchas razones por las que algunas personas solicitan servicios de aborto a esta altura de embarazo, incluyendo retrasos en obtener atención médica, cambios de opinión, cambios en las circunstancias vitales, o descubrimiento de anomalías fetales. No hay ninguna razón equivocada para necesitar un aborto independientemente de a qué altura de embarazo llegue.\
 \
@@ -466,7 +432,7 @@ Fuentes: Ibis Reproductive Health, Advancing New Standards in Reproductive Healt
 "abortion_faqs_subheading_1" = "¿Qué tan seguro es el aborto?";
 "abortion_faqs_content_1" = "El aborto es en general un procedimiento médico muy seguro. Investigaciones muestran que el aborto es más seguro que el parto, e incluso más seguro que sacarse una muela o recibir una inyección de penicilina.";
 "abortion_faqs_subheading_2" = "¿Cómo decidir que tipo de aborto es el más adecuado para mí?";
-"abortion_faqs_content_2" = "Algunas personas prefieren el aborto con medicamentos mientras otras prefieren el procesal. Para aquellas personas que prefieran la comodidad del hogar y estén embarazadas de menos de 12 semanas, el aborto con medicamentos puede ser el más apropiado. Para aquellas personas que quieran que el aborto se realice más rápidamente y bajo la supervisión de un/a profesional médico cualificado/a, el aborto procesal puede ser lo más apropiado. \
+"abortion_faqs_content_2" = "Algunas personas prefieren el aborto con medicación mientras otras prefieren el procesal. Para aquellas personas que prefieran la comodidad del hogar y estén embarazadas de menos de 12 semanas, el aborto con medicación puede ser el más apropiado. Para aquellas personas que quieran que el aborto se realice más rápidamente y bajo la supervisión de un/a profesional médico cualificado/a, el aborto en clínica puede ser lo más apropiado. \
 \
 A veces hay otros factores, como el coste, las semanas de embarazo, la disponibilidad de servicios o las leyes sobre el aborto en el lugar de residencia, que pueden limitar las opciones.";
 "abortion_faqs_subheading_3" = "¿Hace el aborto que sea más difícil tener hijos en un futuro?";
@@ -557,11 +523,11 @@ Si no tienes seguridad, llama a una de las clínicas listadas en una de estos si
 - I Need an A";
 "telehealth_popup_info" = "Telesalud (a veces llamada \"telemedicina\") es donde las personas utilizan la tecnología (un teléfono, una computadora, una tableta, etc.) para conectarse con un proveedor que prescribirá píldoras abortivas.";
 "telehealth_title" = "Telesalud";
-"telehealth_content" = "Si acudes en persona a una clínica para realizarte un aborto con medicamentos, es posible que te pidan que te conectes por teléfono o por video con un proveedor que no se encuentra en esa clínica. En ese caso, el/la proveedor/a de atención médica evalúa si cumples los requisitos para el aborto con medicamentos revisando tu historial médico y cualquier prueba diagnóstica (como una ecografía), igual que si estuviera en la sala contigo. Si cumples los requisitos, el proveedor de atención médica y el personal de la clínica te darán instrucciones sobre cómo tomar las píldoras abortivas. \
+"telehealth_content" = "Si acudes en persona a una clínica para realizarte un aborto con medicación, es posible que te pidan que te conectes por teléfono o por video con un proveedor que no se encuentra en esa clínica. En ese caso, el/la proveedor/a de atención médica evalúa si cumples los requisitos para el aborto con medicación revisando tu historial médico y cualquier prueba diagnóstica (como una ecografía), igual que si estuviera en la sala contigo. Si cumples los requisitos, el proveedor de atención médica y el personal de la clínica te darán instrucciones sobre cómo tomar las píldoras abortivas. \
 \
-En otros casos, una visita de telesalud significa que no tendrás que acudir a una clínica para recibir las píldoras abortivas. En lugar de ello, te conectas con el proveedor por teléfono o por video en el lugar que elijas (por ejemplo, en tu casa, en el automóvil, etc.). Algunos proveedores te pedirán que te hagas una ecografía u otras pruebas médicas antes de reunirte con ellos. Durante la visita, el proveedor confirmará tu elegibilidad para el aborto con medicamentos y luego te dirá cómo obtener las píldoras abortivas. Cada proveedor tiene una forma diferente de entregar las píldoras; puede que debas recogerlas en una clínica, en una farmacia o que te las envíen a tu casa por correo a través de una farmacia en línea. \
+En otros casos, una visita de telesalud significa que no tendrás que acudir a una clínica para recibir las píldoras abortivas. En lugar de ello, te conectas con el proveedor por teléfono o por video en el lugar que elijas (por ejemplo, en tu casa, en el automóvil, etc.). Algunos proveedores te pedirán que te hagas una ecografía u otras pruebas médicas antes de reunirte con ellos. Durante la visita, el proveedor confirmará tu elegibilidad para el aborto con medicación y luego te dirá cómo obtener las píldoras abortivas. Cada proveedor tiene una forma diferente de entregar las píldoras; puede que debas recogerlas en una clínica, en una farmacia o que te las envíen a tu casa por correo a través de una farmacia en línea. \
 \
-La telesalud para el aborto con medicamentos es segura y eficaz, y la mayoría de las personas que la utilizan están conformes y la recomendarían a otras mujeres que necesiten abortar. Sin embargo, es importante que tengas en cuenta tus preferencias personales a la hora de buscar opciones para abortar. Si haces una cita con una clínica, siempre es conveniente confirmar con el lugar si el proveedor te atenderá en persona o a distancia. Independientemente de si te reúnes con el proveedor en persona o a través de telesalud, tienes derecho a una consulta privada en la que recibas toda la información que necesites para tomar una decisión informada sobre tu atención. \
+La telesalud para el aborto con medicación es segura y eficaz, y la mayoría de las personas que la utilizan están conformes y la recomendarían a otras mujeres que necesiten abortar. Sin embargo, es importante que tengas en cuenta tus preferencias personales a la hora de buscar opciones para abortar. Si haces una cita con una clínica, siempre es conveniente confirmar con el lugar si el proveedor te atenderá en persona o a distancia. Independientemente de si te reúnes con el proveedor en persona o a través de telesalud, tienes derecho a una consulta privada en la que recibas toda la información que necesites para tomar una decisión informada sobre tu atención. \
 \
 Fuente: The Guttmacher Institute y The Kaiser Family Foundation";
 "self_managed_abortion_title" = "Aborto autoadministrado";
@@ -569,7 +535,7 @@ Fuente: The Guttmacher Institute y The Kaiser Family Foundation";
 \
 La autoadministración es una opción que existe para las personas que no pueden, o eligen no buscar atención en un entorno clínico. Puede permitir que las personas decidan si, cuándo y cómo interrumpir un embarazo utilizando métodos seguros y efectivos a pesar de las diversas barreras para la atención del aborto. Otras razones por las que las personas podrían querer autoadministrarse incluyen la privacidad, la comodidad, un mayor control de la experiencia, el lugar y el momento del aborto. \
 \
-Un método cada vez más común de autoadministración es a través del aborto con medicamentos. La evidencia muestra que con información precisa, el aborto autoadministrado con medicamentos es una opción segura y eficaz para interrumpir el embarazo. Dada la amplia evidencia que respalda la seguridad y la eficacia del aborto autoadministrado con medicamentos, los riesgos para las personas que autoadministran sus abortos son puramente legales, no médicos. Si tiene preguntas o inquietudes legales específicas sobre la autoadministración, comunícate con la línea directa de Repro Legal.\
+Un método cada vez más común de autoadministración es a través del aborto con medicación. La evidencia muestra que con información precisa, el aborto autoadministrado con medicación es una opción segura y eficaz para interrumpir el embarazo. Dada la amplia evidencia que respalda la seguridad y la eficacia del aborto autoadministrado con medicamentos, los riesgos para las personas que autoadministran sus abortos son puramente legales, no médicos. Si tiene preguntas o inquietudes legales específicas sobre la autoadministración, comunícate con la línea directa de Repro Legal.\
 \
 Continúa leyendo sobre la autoadministración del aborto en Aborto en nuestros propios términos.\
 \
@@ -613,7 +579,7 @@ We Testify es una organización dedicada al liderazgo y la representación de pe
 \
 Shout Your Abortion se basa en la creencia de que las historias sobre aborto son tan únicas como nuestras huellas dactilares. Comparten historias sobre aborto escritas y en vídeo en su sitio web.";
 "payment_subheading_1" = "Costo medio";
-"payment_content_1" = "En los EE.UU., el costo medio de un aborto en el primer trimestre (hasta 12 semanas) varía dependiendo del tipo de aborto. El costo medio de un aborto procesal es de $549, y el costo medio de un aborto con medicamentos es de $551. Estos costos varían de clínica a clínica y de estado a estado. \
+"payment_content_1" = "En los EE.UU., el costo medio de un aborto en el primer trimestre (hasta 12 semanas) varía dependiendo del tipo de aborto. El costo medio de un aborto en clínica es de $549, y el costo medio de un aborto con medicación es de $551. Estos costos varían de clínica a clínica y de estado a estado. \
 \
 Los costos del aborto después de las 12 semanas suelen aumentar por cada semana de embarazo. Los costos del aborto después de las 12 semanas pueden variar mucho, de varios cientos a varios miles de dólares. Algunos seguros médicos cubren los costos del aborto, y también hay unos grupos llamados fondos de aborto que pueden ayudar a cubrir los gastos.\
 \
@@ -641,17 +607,17 @@ Si crees que cumples los requisitos para Medicaid, pregunta en la clínica si Me
 \
 Fuente: La Red Nacional de Fondos de Aborto";
 "post_abortion_subheading_1" = "¿Ha sido exitoso mi aborto?";
-"post_abortion_content_1" = "Aborto con medicamentos:\
+"post_abortion_content_1" = "Aborto con medicación:\
 \
-La mayoría de las personas saben cuándo un aborto con medicamentos ha sido realizado con éxito porque los síntomas del embarazo comienzan a desaparecer en pocos días, y han visto como tejido del embarazado ha sido expulsado. \
+La mayoría de las personas saben cuándo un aborto con medicación ha sido realizado con éxito porque los síntomas del embarazo comienzan a desaparecer en pocos días, y han visto como tejido del embarazado ha sido expulsado. \
 \
-Es importante asegurarse de que el aborto fue exitoso. Algunas personas se hacen una prueba de embarazo tres semanas después del aborto, y otras personas se hacen una ecografía o van a una clínica para un chequeo después del aborto con medicamentos.\
+Es importante asegurarse de que el aborto fue exitoso. Algunas personas se hacen una prueba de embarazo tres semanas después del aborto, y otras personas se hacen una ecografía o van a una clínica para un chequeo después del aborto con medicación.\
 \
 Si te preocupa que el aborto pueda no haber sido completo, se recomienda que llames a una clínica, o busques atención médica. La línea directa de abortos espontáneos y abortos (1-833-246-2632) también está disponible por teléfono o por mensaje de texto de 8 a.m. a 11 p.m. en cualquier lugar de Estados Unidos. Si se trata de una urgencia médica, llama al 9-1-1. Independientemente de cómo o dónde se produzca el aborto, es importante recordar que todas las personas tienen siempre derecho a compartir o no información con un proveedor de atención médica — incluyendo información sobre si han tenido un aborto o no. Algunas personas pueden sentirse más cómodas diciendo que tuvieron un aborto espontáneo. Puedes ponerte en contacto con la línea directa de Repro Legal (844-868-2812) para cualquier pregunta legal sobre el aborto.\
 \
-Aborto procesal:\
+Aborto en clínica:\
 \
-Para aquellas personas que tuvieron un aborto procesal en una clínica y estén preocupadas sobre si su aborto fue completo, es una buena idea contactar con la clínica para confirmar y preguntar sobre cualquier preocupación. \
+Para aquellas personas que tuvieron un aborto en clínica y estén preocupadas sobre si su aborto fue completo, es una buena idea contactar con la clínica para confirmar y preguntar sobre cualquier preocupación. \
 \
 Fuente: Women Help Women";
 "post_abortion_subheading_2" = "Cuidado emocional";
@@ -686,8 +652,8 @@ Decide qué partes de tu historia quieres compartir, y con quién las quieres co
 Todos los sentimientos que tengas acerca de tu aborto son válidos, incluso si entran en conflicto unos con otros. Si deseas explorar esos sentimientos antes de compartir tu historia, está bien. Si te preocupa como responderá la gente a tus sentimientos, háblalos con calma con alguien que ames y en quién confíes.\
 \
 Ten preparado un plan de apoyo. La gente puede responder con amor y respeto o, dado el estigma que rodea el aborto, puede responder con palabras desagradables. Asegúrate de tener a alguien a quién puedas pedir apoyo en caso de necesitarlo. Si no te agrada como la gente está respondiendo a tu historia, pide apoyo y tómate un tiempo para cuidarte.";
-"post_abortion_subheading_5" = "Cuidados post-aborto: Aborto procesal";
-"post_abortion_content_5" = "Un aborto procesal es algo así como una cirugía menor, y es importante que las personas que se lo realicen se cuiden mucho después. Los síntomas del embarazo probablemente desaparezcan entre las 24 y las 28 horas posteriores. \
+"post_abortion_subheading_5" = "Cuidados post-aborto: Aborto en clínica";
+"post_abortion_content_5" = "Un aborto en clínica es algo así como una cirugía menor, y es importante que las personas que se lo realicen se cuiden mucho después. Los síntomas del embarazo probablemente desaparezcan entre las 24 y las 28 horas posteriores. \
 \
 Hacerse una prueba de embarazo en las primeras semanas después de un aborto no necesariamente confirma que el aborto haya sido exitoso, ya que las hormonas del embarazo pueden tomar hasta 6 semanas después del aborto en desaparecer, y hasta ese momento las pruebas seguirán dando positivo.  \
 \
@@ -696,8 +662,8 @@ Los sangrados y los cólicos pueden parar poco después del aborto, para volver 
 Para aquellas personas que presenten fiebre, sangrado intenso, cólicos severos, o no les llegue el periodo en 8 semanas, es recomendable llamar a la clínica o buscar atención médica. Para más información sobre cuidados post-aborto o resolver cualquier duda, es buena idea llamar a la clínica. \
 \
 Fuente: Federación Nacional del Aborto";
-"post_abortion_subheading_6" = "Cuidados post-aborto: aborto con medicamentos:";
-"post_abortion_content_6" = "Puede ser útil disponer de un amigo/a o familiar cerca durante el proceso de aborto con medicamentos para proporcionar cuidados similares a los que recibiría una persona con una enfermedad leve.\
+"post_abortion_subheading_6" = "Cuidados post-aborto: aborto con medicación";
+"post_abortion_content_6" = "Puede ser útil disponer de un amigo/a o familiar cerca durante el proceso de aborto con medicación para proporcionar cuidados similares a los que recibiría una persona con una enfermedad leve.\
 \
 Tras tomar los medicamentos, no es raro tener malestar estomacal. Para minimizar las náuseas, los vómitos o la diarrea, se recomienda en general tomar comidas ligeras, evitar comidas grasientas o muy especiadas, y beber mucho líquido.\
 \
@@ -709,7 +675,9 @@ Fuente: Federación Nacional del Aborto";
 \
 Los estados de Estados Unidos han aprobado muchas leyes que limitan si una persona puede abortar y cuándo y en qué circunstancias. Para conocer las leyes de tu estado, puedes consultar este mapa del Center for Reproductive Rights.\
 \
-Hay defensores que luchan por los derechos de todas las personas embarazadas a acceder a la atención que necesitan. Si tú o alguien que conoces tienen preguntas legales o necesitan ayuda legal, pueden contactarse con Pregnancy Justice o con la línea directa de Repro Legal (844-868-2812). Repro Legal Defense Fund también cubre la fianza y financia defensas sólidas para las personas que son investigadas, detenidas o procesadas por aborto autogestionado.";
+Hay defensores que luchan por los derechos de todas las personas embarazadas a acceder a la atención que necesitan. Si tú o alguien que conoces tienen preguntas legales o necesitan ayuda legal, pueden contactarse con Pregnancy Justice o con la línea directa de Repro Legal (844-868-2812). Repro Legal Defense Fund también cubre la fianza y financia defensas sólidas para las personas que son investigadas, detenidas o procesadas por abortos autogestionados.\
+\
+A veces, el lenguaje médico y legal puede parecer abrumador. A continuación, se presentan algunas definiciones de palabras y frases que quizás no hayas visto antes. Comprender lo que significa cada una de ellas puede ayudarte a navegar tu propia experiencia de atención médica.";
 "resources_title" = "Recursos";
 "resources_description" = "Hay muchas organizaciones dedicadas a proteger y ampliar el acceso al aborto. Las organizaciones a continuación son algunos de los numerosos grupos que pueden proporcionarte información sobre el aborto.";
 "resources_subheading_1" = "Apoyo interactivo";
@@ -794,15 +762,15 @@ Hay madres que abortan, personas religiosas que abortan, personas transgénero q
 \
 Sean cuales sean tus circunstancias, tienes derecho a una atención para el aborto segura y compasiva. Si tienes preguntas sobre el aborto, Euki está aquí para ayudar.";
 "guttmacher_institute" = "Guttmacher Institute";
-"medical_abortion" = "Aborto con Medicamentos";
-"surgical_abortion" = "Aborto Procesal";
-"medical_abortion_content" = "Hay distintas maneras de tomar las pastillas para un aborto con medicamentos dependiendo de los medicamentos disponibles, y lo avanzado del embarazo.\
+"medical_abortion" = "Aborto con medicación";
+"surgical_abortion" = "Aborto en clínica";
+"medical_abortion_content" = "Hay distintas maneras de tomar las pastillas para un aborto con medicación dependiendo de los medicamentos disponibles, y lo avanzado del embarazo.\
 \
 La Organización Mundial de la Salud (OMS) recomienda una pastilla llamada mifepristona, seguida de una pastilla llamada misoprostol. El misoprostol solo también puede utilizarse de forma segura y eficaz. La OMS recomienda tres maneras distintas de tomar misoprostol: bajo la lengua, entre la mejilla y las encías, o vaginalmente. \
 \
 Para aquellas personas que reciban los medicamentos de una clínica, es importante saber que las instrucciones de la clínica sobre cómo y cuándo tomar los medicamentos pueden ser ligeramente diferentes a las instrucciones que ves aquí, y eso es normal. Es importante que sigas las instrucciones que la clínica te ha proporcionado. \
 \
-Algunas personas pueden recibir atención para el aborto con medicamentos y acceder a las píldoras mediante telesalud desde una clínica. También hay servicios de telesalud en línea en los que se puede conectar con un proveedor a distancia para someterse a un aborto con medicamentos.  \
+Algunas personas pueden recibir atención para el aborto con medicación y acceder a las píldoras mediante telesalud desde una clínica. También hay servicios de telesalud en línea en los que se puede conectar con un proveedor a distancia para someterse a un aborto con medicación.  \
 \
 Todo procedimiento médico siempre conlleva riesgos. En caso de duda o si tienes alguna pregunta consulta con un proveedor de atención médica cualificado.";
 "world_health_organization" = "Organización Mundial de la Salud";
@@ -836,14 +804,14 @@ La razón es que a menudo es difícil averiguar con exactitud la fecha de la con
 Los cólicos pueden variar enormemente de una persona a otra. Para muchas personas, los cólicos pueden ser dolorosos, aunque tienden a disminuir tras la expulsión del embarazo. Analgésicos, una almohadilla térmica, reposo o un masaje pueden ser de ayuda. También es normal experimentar náuseas, vómitos, diarrea y debilidad. Si estos síntomas duran más de 24 horas tras la toma del misoprostol, se recomienda llamar a la clínica que proporcionó los medicamentos o buscar asistencia médica.\
 \
 Fuente: Federación Nacional del Aborto";
-"abortion_subheading_2_content" = "La mayoría de las personas saben cuándo un aborto con medicamentos ha sido realizado con éxito porque los síntomas del embarazo empiezan a desaparecer a los pocos días, y han visto como el tejido del embarazo ha sido expulsado. \
+"abortion_subheading_2_content" = "La mayoría de las personas saben cuándo un aborto con medicación ha sido realizado con éxito porque los síntomas del embarazo empiezan a desaparecer a los pocos días, y han visto como el tejido del embarazo ha sido expulsado. \
 \
-Es importante asegurarse de que el aborto fue exitoso. Algunas personas se hacen una prueba de embarazo tres semanas después del aborto, y otras personas deciden hacerse una ecografía o volver a una clínica para un chequeo después del aborto con medicamentos. \
+Es importante asegurarse de que el aborto fue exitoso. Algunas personas se hacen una prueba de embarazo tres semanas después del aborto, y otras personas deciden hacerse una ecografía o volver a una clínica para un chequeo después del aborto con medicación. \
 \
 Si te preocupa que el aborto pueda no haber sido completo, se recomienda que llames a una clínica de confianza o que busques atención médica. La línea directa de abortos espontáneos y abortos (1-833-246-2632) también está disponible por teléfono o por mensaje de texto de 8 a.m. a 11 p.m. en cualquier lugar de Estados Unidos. Si se trata de una urgencia médica, llama al 9-1-1. Independientemente de cómo o dónde se produzca el aborto, es importante recordar que todas las personas tienen siempre  derecho a compartir o no información con un proveedor de atención médica – incluyendo información sobre si han tenido un aborto o no. Algunas personas pueden sentirse más cómodas diciendo que tuvieron un aborto espontáneo. Puedes ponerte en contacto con la línea directa de Repro Legal (844-868-2812) para cualquier pregunta legal sobre el aborto.\
 \
 Fuente: Women Help Women";
-"abortion_subheading_3_content" = "El aborto con medicamentos es seguro y raramente presenta complicaciones. Aún así, es importante saber cuándo buscar atención médica. Estos son algunos síntomas sobre los cuales estar alerta: \
+"abortion_subheading_3_content" = "El aborto con medicación es seguro y raramente presenta complicaciones. Aún así, es importante saber cuándo buscar atención médica. Estos son algunos síntomas sobre los cuales estar alerta: \
 \
 - Sangrado prolongado (el sangrado continúa durante más de tres semanas)\
 - Dolor insoportable que no puede tratarse con remedios en casa como analgésicos de venta libre, una almohadilla térmica o masajes\
@@ -855,7 +823,7 @@ Fuente: Women Help Women";
 Si te preocupan los efectos secundarios, se recomienda que llames a una clínica de confianza o que busques atención médica. La línea directa de abortos espontáneos y abortos (1-833-246-2632) también está disponible por teléfono o por mensaje de texto de 8 a. m. a 11 p. m. en cualquier lugar de Estados Unidos.  Si se trata de una urgencia médica, llama al 9-1-1. Independientemente de cómo o dónde se produzca el aborto, es importante recordar que todas las personas tienen siempre  derecho a compartir o no información con un proveedor de atención médica – incluyendo información sobre si han tenido un aborto o no. Algunas personas pueden sentirse más cómodas diciendo que tuvieron un aborto espontáneo. Puedes ponerte en contacto con la línea directa de Repro Legal (844-868-2812) para cualquier pregunta legal sobre el aborto.\
 \
 Fuente: Women on Web";
-"abortion_subheading_4_content" = "Puede ser útil tener de un amigo/a o familiar cerca durante el proceso de aborto con medicamentos para proporcionar cuidados similares a los que recibiría una persona con una enfermedad leve.\
+"abortion_subheading_4_content" = "Puede ser útil tener de un amigo/a o familiar cerca durante el proceso de aborto con medicación para proporcionar cuidados similares a los que recibiría una persona con una enfermedad leve.\
 \
 Tras tomar los medicamentos, no es raro tener malestar estomacal. Para minimizar las náuseas, los vómitos o la diarrea, se recomienda en general tomar comidas ligeras, evitar comidas grasientas o muy especiadas, y beber mucho líquido.\
 \
@@ -890,7 +858,7 @@ Fuente: All-Options";
 "mife_miso_12_subheading_3" = "Señales de alerta y cuándo buscar atención médica";
 "mife_miso_12_subheading_4" = "Atención médica post-aborto";
 "mife_miso_12_subheading_5" = "Cuidado emocional post-aborto";
-"surgical_abortion_content" = "El aborto procesal, a veces llamado aborto por aspiración o por succión, se realiza a menudo en un consultorio médico o clínica por un proveedor de atención médica que utiliza instrumentos para retirar un embarazo del útero. En general es un procedimiento seguro, que tiene una alta tasa de éxito (alrededor de un 99%), y que toma unos 5-15 minutos en completarse. En una clínica se puede aplicar anestesia local o sedación para el manejo del dolor.\
+"surgical_abortion_content" = "El aborto en clínica, a veces llamado aborto por aspiración o por succión, se realiza a menudo en un consultorio médico o clínica por un proveedor de atención médica que utiliza instrumentos para retirar un embarazo del útero. En general es un procedimiento seguro, que tiene una alta tasa de éxito (alrededor de un 99%), y que toma unos 5-15 minutos en completarse. En una clínica se puede aplicar anestesia local o sedación para el manejo del dolor.\
 \
 Las clínicas normalmente proporcionan abortos procesales entre la semana 5 y 24 de embarazo. Puede que algunas clínicas no estén en condición de realizar abortos por aspiración más allá de un número concreto de semanas debido a las leyes vigentes en su estado.\
 \
@@ -904,7 +872,7 @@ Todo procedimiento médico siempre conlleva riesgos. En caso de duda o si tienes
 Fuente: Our Bodies, Ourselves";
 "suction_or_vacuum_subheading_1" = "Atención médica post-aborto";
 "suction_or_vacuum_subheading_2" = "Cuidado emocional post-aborto";
-"abortion_medical_aftercare" = "Un aborto procesal es un poco como una cirugía menor, y es importante que las personas que se lo realicen se cuiden mucho después. Los síntomas del embarazo probablemente desaparezcan entre las 24 y las 28 horas posteriores.\
+"abortion_medical_aftercare" = "Un aborto en clínica es un poco como una cirugía menor, y es importante que las personas que se lo realicen se cuiden mucho después. Los síntomas del embarazo probablemente desaparezcan entre las 24 y las 28 horas posteriores.\
 \
 Hacerse una prueba de embarazo en las primeras semanas después de un aborto no ayudará a confirmar que el aborto fue exitoso, ya que las hormonas del embarazo pueden tomar hasta 6 semanas después del aborto en desaparecer. Hasta ese momento, las pruebas seguirán dando positivo.\
 \
@@ -1930,16 +1898,14 @@ Hotline: 1-800-656-4673\
 - National Domestic Violence Hotline: 1-800-799-SAFE (7233)\
 - All-Options Talkline: 1-888-493-0092";
 "logged_data_title" = "Datos introducidos";
-"logged_data_message" = "Para proteger tu privacidad, Euki te da la opción de borrar los datos introducidos en el calendario. Esto ayudará a cerciorarte de que ninguna información sensible sea utilizada en tu contra.";
-"recurring_data_title" = "Establece un borrado automático de datos frecuente";
+"recurring_data_title" = "Establecer eliminación frecuente de tus datos";
 "recurring_data_text" = "Selecciona con qué frecuencia quieres que Euki borre automáticamente todos los datos introducidos";
-"delete_all_data" = "Borrar todos los datos ahora";
-"pin_title" = "PIN";
-"pin_text" = "Puedes establecer un PIN para mantener la privacidad de Euki, pero por favor no lo olvides. No existe manera de recuperar el PIN.";
-"set_pin" = "Configurar Pin";
+"delete_all_data" = "Borrar tus datos ahora";
+"pin_title" = "Establecer un PIN";
+"set_pin" = "Establecer PIN";
 "reset_pin" = "Restablecer PIN";
 "remove_pin" = "Eliminar PIN";
-"we_dont_store_info" = "No guardamos ninguna información tuya en esta aplicación, en la nube o en cualquier otro lugar. No está conectada con tu dirección de correo electrónico o tu número de teléfono. Sólo tú tienes acceso.";
+"we_dont_store_info" = "No almacenamos ni recopilamos ninguna de tu información. Los datos que rastreas en la aplicación no están vinculados a tu dirección de correo electrónico ni a tu número de teléfono, y solo tú tienes acceso a ellos.";
 "more_info" = "Más información";
 "privacy_faq" = "Preguntas frecuentes sobre privacidad";
 "privacy_statement" = "Declaración de privacidad";
@@ -2022,7 +1988,7 @@ Si tienes cualquier pregunta, comentario, petición o preocupación relacionada 
 "tabbar_tutorial_title_1" = "Controla tu salud";
 "tabbar_tutorial_content_1" = "Sigue los patrones de tu ciclo y establece recordatorios para los medicamentos.";
 "tabbar_tutorial_title_2" = "Haz el seguimiento de lo que pasa en tu cuerpo";
-"tabbar_tutorial_content_2" = "Registra el sangrado, los anticonceptivos, tus emociones y más.";
+"tabbar_tutorial_content_2" = "Haz seguimiento del sangrado, los anticonceptivos, tus emociones y más.";
 "tabbar_tutorial_title_3" = "Encuentra la información que necesitas";
 "tabbar_tutorial_content_3" = "Explora temas como el aborto, ITS y aborto espontáneo.";
 "tabbar_tutorial_title_4" = "Actualiza la configuración de privacidad";
@@ -2067,7 +2033,7 @@ día";
 "see_past_cycles" = "ver ciclos pasados";
 "cycle_settings_title" = "Ajusta tus preferencias de ciclo";
 "cycle_settings_option_1_title" = "Haz el seguimiento de tu menstruación";
-"cycle_settings_option_1_text" = "Incluso si no realizas un seguimiento de tu menstruación, aún tendrás acceso a la información registrada (a menos que elimines tus datos en la pestaña \"Privacidad\").";
+"cycle_settings_option_1_text" = "Incluso si no realizas un seguimiento de tu menstruación, aún tendrás acceso a la información registrada (a menos que elimines tus datos en la sección de Privacidad).";
 "cycle_settings_option_2_title" = "Predicción de la menstruación";
 "cycle_settings_option_2_text" = "Sabrás qué esperar de tu menstruación y cuándo esperarla.";
 "delete_period" = "¿Borrar este ciclo?";
@@ -2381,12 +2347,42 @@ Euki utiliza el lenguaje más utilizado por proveedores de atención médica, pe
 "option_1_day" = "1 día";
 "option_2_day" = "2 días";
 "option_3_day" = "3 días";
-"onboarding_pin_confirmation" = "PIN es ahora su única forma de ingresar!\
-Asegúrese de recordarlo, porque solo con el podrás ingresar.\
-Su información es solo suya, no nuestra.";
+"onboarding_pin_confirmation" = "Tu PIN es ahora la única forma de ingresar.\
+\
+¡Asegúrate de recordarlo, porque solo tú lo conoces!";
 "onboarding_4_title" = "El código 0000 muestra una pantalla falsa, así que elige otro número como PIN. Si alguien te obliga a abrir Euki, introduce 0000 para mostrar la pantalla falsa";
 "are_they_safe" = "¿Son seguros?";
 "next" = "Siguiente";
+"app_name" = "Euki";
+"error_message_title" = "Ocurrió un error";
+"loading" = "Cargando...";
+"save" = "Guardar";
+"dimsiss" = "Ocultar";
+"go_to_daily_log" = "Ver info registrada";
+"quiz" = "Encuesta";
+"procedural_abortion_what will it be like_new combined" = "<b>Aborto por aspiración</b>\
+El aborto por aspiración es uno de los tipos más comunes de aborto en clínica, y generalmente se utiliza hasta aproximadamente las 14-16 semanas de embarazo.\
+\
+Antes del aborto, se suele utilizar medicación para el dolor para ayudar con los cólicos, y un proveedor de atención médica podría usar medicamentos para ayudar a abrir el cuello uterino. También se puede utilizar anestesia local o general para manejar el dolor.\
+\
+Durante un aborto por aspiración, un proveedor de atención médica utilizará un pequeño dispositivo o máquina de succión para remover el embarazo del útero. Estos procedimientos son generalmente seguros y efectivos, y suelen durar solo unos pocos minutos.\
+\
+<b> Dilatación y evacuación</b>\
+La dilatación y evacuación (DyE) es otro tipo de aborto en clínica que normalmente se efectúa después de la semana 14 de embarazo. Este procedimiento puede requerir más de una visita a la clínica, y es en general una práctica abortiva muy segura y efectiva que se practica en todo el mundo.\
+\
+Dependiendo del número de semanas de embarazo, el/la proveedor/a de atención médica puede introducir dilatadores osmóticos (palillos dilatadores) uno o dos días antes de comenzar el procedimiento, para ayudar a que el cuello del útero se abra. Puede que recibas también medicamentos o anestesia para ayudarte a aliviar el dolor.\
+\
+Si recibes anestesia general, el/la proveedor/a de atención médica puede pedirte que no comas nada antes del procedimiento. Si tienes dudas acerca de esto, pregúntales cómo puedes prepararte.\
+\
+Durante un aborto aspirado manual, un/a proveedor/a de atención médica usará un dispositivo o máquina de succión para retirar el embarazo del útero. Estas son prácticas abortivas generalmente seguras y efectivas, y normalmente se demoran entre 20 y 30 minutos.\
+\
+Si tienes alguna duda acerca del procedimiento abortivo, no tengas reparos en preguntar al proveedor de atención médica. Están ahí para responder a cualquier pregunta que tengas.\
+\
+Fuente: Federación Nacional del Aborto";
+"Tracked data_copy" = "Euki facilita la eliminación de tus datos rastreados, lo que protege tu privacidad y asegura que la información de salud sensible no pueda ser utilizada en tu contra.";
+"Set a PIN_copy" = "Puedes establecer un PIN como una capa adicional de seguridad, pero asegúrate de recordarlo. No tenemos acceso a tus datos, por lo que no hay forma de recuperar un PIN perdido.";
+
+
 
 //New Abortion and Privacy
 "Privacy_header" = "Privacidad";
@@ -2454,7 +2450,7 @@ Por ejemplo, si alguien en Texas termina su embarazo usando pastillas de un prov
 \
 Para desglosarlo: la ley del lugar donde te encuentras físicamente es casi siempre la ley que se aplica a ti.";
 "If/when/how" = "If/when/how";
-"Digital Defense Fund and If/When/How" = "Digital Defense Fund and If/When/How";
+"Digital Defense Fund and If/When/How" = "Digital Defense Fund y If/When/How";
 "suction_abortion_what_to_expect_content" = "Aspiración por succión o aspiración por vacío\
 El aborto aspirado manual es uno de los tipos de aborto procesal más comunes, y se usa normalmente hasta la semana 14-16 de embarazo. \
 \
