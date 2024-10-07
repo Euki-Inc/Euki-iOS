@@ -16,7 +16,7 @@
 "nice" = "Nice";
 "no_pin" = "Not now";
 "filter" = "Filter";
-"wrong_pass" = "That PIN's not quite right—try again";
+"wrong_pass" = "Wrong PIN. Try again.";
 "or" = "or";
 "today" = "Today";
 "continue" = "Continue";
@@ -45,14 +45,14 @@
 "what_would" = "What would you like to do?";
 "appointments_stay" = "Appointments stay in your calendar like events, reminders let you know about things like taking pills.";
 "whats_up" = "What's up?";
-"log_appointment" = "Log today’s appointment";
+"log_appointment" = "Add appointment";
 "daily_m" = "Daily methods";
 "long_m" = "Longer-term methods";
 "other" = "Other";
 "tap_for" = "Products used";
 "existent_appointment" = "Existent Appointment";
 "no_log_title" = "Need to backtrack?";
-"no_log_message" = "Looks like you haven't tracked anything yet. Don't worry! You can start tracking now.";
+"no_log_message" = "Looks like you haven't tracked anything yet!";
 "daily_log" = "Track";
 "show_results" = "Show results";
 "repeat_format" = "Repeat every %d days";
@@ -109,7 +109,7 @@
 "body_12" = "Stomachache";
 "body_12_break" = "Stomach-\
 ache";
-"body_13" = "Tender breasts";
+"body_13" = "Tender chest";
 "body_14" = "Ovulation";
 "sexual_activity" = "Sexual activity";
 "protection_sti" = "Protection from STIs";
@@ -184,81 +184,75 @@ ache";
 "bleeding_info" = "People bleed for different reasons. If you're bleeding outside your period, you can still track it—just don't include it in your cycle summary. That way Euki can predict your period more accurately.";
 "bleeding_track_cycle_info" = "Include in cycle summary";
 "onboarding_pin_confirmation_text" = "If you decide you no longer want a PIN, you can change your privacy settings later.";
-"onboarding_terms_of_service" = "Terms of Service\
+"onboarding_terms_of_service" = "<b>Terms of Service</b>\
+Effective: June 2024\
 \
-Effective: April 2024\
-\
-Welcome!\
+<b>Welcome!</b>\
 \
 We’ve drafted these Terms of Service (which we call the “Terms”) so you’ll know the rules that govern our relationship. We have tried our best to strip the legalese from the Terms, but there are places where these Terms may still read like a traditional contract. There’s a good reason for that: these Terms do indeed form a contract between you and Euki, Inc. (“us” or “we”), so please read them carefully.\
 \
 By using the Euki app (which we call the “App”) or any of our other products or services that are available through the App (we refer to these simply as the “Services”), you agree to the Terms.  Of course, if you don’t agree with them, then don’t use the Services.  We encourage you to periodically review these Terms, as we may update them from time to time.  And your use of the Services after any such update confirms your agreement to follow those updated Terms.\
 \
-ARBITRATION NOTICE: THESE TERMS CONTAIN AN ARBITRATION CLAUSE A LITTLE LATER ON. EXCEPT FOR CERTAIN TYPES OF DISPUTES MENTIONED IN THAT ARBITRATION CLAUSE, YOU AND EUKI, INC. AGREE THAT DISPUTES ARISING OUT OF THE SERVICES WILL BE RESOLVED BY MANDATORY BINDING ARBITRATION, AND YOU AND EUKI, INC.  WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS-ACTION LAWSUIT OR CLASS-WIDE ARBITRATION.  \
+ARBITRATION NOTICE: THESE TERMS CONTAIN AN ARBITRATION CLAUSE A LITTLE LATER ON. EXCEPT FOR CERTAIN TYPES OF DISPUTES MENTIONED IN THAT ARBITRATION CLAUSE, YOU AND EUKI, INC. AGREE THAT DISPUTES ARISING OUT OF THE SERVICES WILL BE RESOLVED BY MANDATORY BINDING ARBITRATION, AND YOU AND EUKI, INC. WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS-ACTION LAWSUIT OR CLASS-WIDE ARBITRATION.  \
 \
-1. Your Promise to Us\
+<b>1. Your Promise to Us</b>\
 \
 We are relying on your below statements, so please read these terms carefully.  By using the Services, you state that:\
-\
 •    You will use the Services solely for your personal use and only where permitted by applicable law.\
-\
 •    Any information you submit via the Services is truthful and accurate.\
-\
 •    You will not upload viruses or other malicious code or otherwise compromise the security of the Services.\
-\
 •    You will comply with these Terms and all applicable laws, rules, and regulations.\
-\
 •    You are capable of entering into a legally binding agreement, and these Terms are binding and enforceable against you.\
 \
 In short, you may not use the Services in ways that are not authorized by these Terms.  Nor may you help anyone else in doing so.\
 \
-2.  The App Is A Secondary Reminder Tool\
+<b>2.  The App Is A Secondary Reminder Tool</b>\
 \
 The App is a backup reminder system that you can personalize for taking your medications. It is not and you should not rely on it as your primary tool for determining whether and when to take medication or as a substitute for medical advice.   The App might not function as intended.  Specifically, the App will not function properly if your device is broken or powered off, if the App software is not enabled or if any hardware or software on your device prevents the App from operating as intended.  The App, and the utility of any of its alerts or notifications, depends on information that you input into the App.  You are responsible for ensuring that the correct medication is taken at the proper times and in the proper dosages.  By using the App, you assume full responsibility for your use of the Services.\
 \
-3.  Content; No Medical Advice \
+<b>3.  Content; No Medical Advice</b>\
 \
 Information, recommendations, text, graphics, software, and other materials (which we refer to as “Content”) is made available by us through the App.  We do not guarantee and are not responsible for the accuracy, completeness, or timeliness of any Content.  All Content is provided for informational purposes only.   \
 \
-Euki, Inc. is not engaged in rendering medical, health, DIAGNOSTIC, treatment or similar healthcare advice or services via the app or content.  No Content is or should be considered, or used as a substitute for, medical advice, care, diagnosis or treatment.  \
+EUKI, INC. IS NOT ENGAGED IN RENDERING MEDICAL, HEALTH, DIAGNOSTIC, TREATMENT OR SIMILAR HEALTHCARE ADVICE OR SERVICES VIA THE APP OR CONTENT.  No Content is or should be considered, or used as a substitute for, medical advice, care, diagnosis or treatment. \
 \
-Euki, Inc. does not recommend, prescribe, dispense, or refill prescriptions or medications.  The provision of information about or the enablement of the reminder system with respect to any drug or product is not a recommendation or endorsement by Euki, Inc. or the App for such drug or product.  We cannot – and do not – take responsibility for your reliance on any Content provided by us through your use of the App. \
+Euki, Inc. does not recommend, prescribe, dispense, or refill prescriptions or medications.  The provision of information about or the enablement of the reminder system with respect to any drug or product is not a recommendation or endorsement by Euki, Inc. or the App for such drug or product.  We cannot—and do not—take responsibility for your reliance on any Content provided by us through your use of the App. \
 \
 Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding personal health, medical conditions, or drugs or medications and before commencing or discontinuing any course of treatment, drug, or medication.  Never disregard, avoid, or delay in obtaining medical advice from your doctor or other qualified healthcare provider, including as a result of any Content or other information you receive or obtained through the use of the App.  If you have or suspect that you have a medical problem or condition, please contact a qualified health care professional immediately.  If you are experiencing a medical emergency, please immediately call for emergency medical help.  You represent to us (which representation shall be deemed to be made each time you use the App) that you are not using the App, the Services or the Content for the purpose of seeking medical advice, care, attention or treatment.  Any reliance on the Services, the Content or any material or information on the App is at your own risk, and Euki, Inc. specifically disclaims all responsibility for any liability, loss or risk, personal or otherwise, that is incurred as a consequence, directly or indirectly, of the use or application of any of the foregoing.\
 \
-4. Content Ownership and Rights We Grant You\
+<b>4. Content Ownership and Rights We Grant You</b>\
 \
-The App and all Content on and accessible through the App, including, without limitation, the Euki, Inc. trademark and logo, the Euki trademark and logo, and all designs, text, graphics, pictures, and the selection and arrangement thereof (collectively, the “App Materials”) are the proprietary property of Euki, Inc. or its licensors and are protected by U.S. and international copyright laws.   You are granted a limited, non-sublicensable license to access and use the App solely for the purposes outlined in these Terms.  This license for the sole purpose of letting you personally use the Services in a way that these Terms allow.  \
+The App and all Content on and accessible through the App, including, without limitation, the Euki, Inc. trademark and logo, the Euki trademark and logo, and all designs, text, graphics, pictures, and the selection and arrangement thereof (collectively, the “App Materials”) are the proprietary property of Euki, Inc. or its licensors and are protected by U.S. and international copyright laws. You are granted a limited, non-sublicensable license to access and use the App solely for the purposes outlined in these Terms.  This license for the sole purpose of letting you personally use the Services in a way that these Terms allow.  \
 \
 You may not copy, modify, distribute, sell, or lease any part of the App Materials or our Services, nor may you reverse engineer or attempt to extract the source code underlying the App, unless laws prohibit these restrictions or you have our written permission to do so.\
 \
-5. The Content of Others\
+<b>5. The Content of Others</b>\
 \
 Much of the Content on or accessible through the App (including via website links) may be produced or owned by third parties.  Such data and Content is the sole responsibility of the person or organization that provided or created it.  Although we reserve the right to review or remove any content that appears on the Services, we cannot—and do not—take responsibility for any content that others provide through or that is accessible through the Services. \
 \
-If you use a service, feature, or functionality that is operated by a third party and made available through our Services (including Services we may jointly offer with the third party), each party’s terms will govern the respective party’s relationship with you.  Euki, Inc. is not responsible or liable for a third party’s terms or actions taken under the third party’s terms.\
+If you use a service, feature, or functionality that is operated by a third party and made available through our Services (including Services we may jointly offer with the third party), each party’s terms will govern the respective party’s relationship with you.  Euki Inc. is not responsible or liable for a third party’s terms or actions taken under the third party’s terms.\
 \
-6. Privacy\
+<b>6. Privacy</b>\
 \
 Your privacy matters to us. You can learn how we handle your information when you use our Services by reading our Privacy Policy, available in Euki. We encourage you to give the Privacy Policy a careful look.\
 \
-We try hard to keep our Services a safe place for all users.  But we can’t guarantee it.  One of the options we provide for security is the ability to create a restricted area by setting a passcode, in the form of a PIN. This is similar to the device-lock option you may be using on your mobile device; by setting a passcode, you make it less likely that another person who gets a hold of your device will be able to see what you saved to the restricted area of the App. IF YOU LOSE OR FORGET YOUR PIN, OR IF YOU ENTER THE WRONG ONE TOO MANY TIMES, YOU WILL LOSE ACCESS TO ANY CONTENT YOU SAVED IN THE APP.\
+We try hard to keep our Services a safe place for all users. But we can’t guarantee it. One of the options we provide for security is the ability to create a restricted area by setting a passcode, in the form of a PIN. This is similar to the device-lock option you may be using on your mobile device; by setting a passcode, you make it less likely that another person who gets ahold of your device will be able to see what you saved to the restricted area of the App. IF YOU LOSE OR FORGET YOUR PIN, OR IF YOU ENTER THE WRONG ONE TOO MANY TIMES, YOU WILL LOSE ACCESS TO ANY CONTENT YOU SAVED IN THE APP.\
 \
-7. Disclaimers\
+<b>7. Disclaimers</b>\
 \
-Your use of the App is at your own risk. You must consult with qualified healthcare providers and make your medical decisions based on their advice.  Euki, Inc. cannot and does not accept any liability in respect of any activities that you may undertake through using the App.\
+Your use of the App is at your own risk. You must consult with qualified healthcare providers and make your medical decisions based on their advice. Euki, Inc. cannot and does not accept any liability in respect of any activities that you may undertake through using the App.\
 \
 NEITHER EUKI, INC. NOR ITS LICENSORS MAKES ANY REPRESENTATIONS OR WARRANTIES WHATSOEVER IN RESPECT OF THE APP.   ANY ACTIONS YOU TAKE BASED ON CONTENT, NOTIFICATIONS, AND OTHERWISE PROVIDED BY THE APP ARE TAKEN AT YOUR SOLE RISK AND WITHOUT LIABILITY TO EUKI, INC. OR ITS LICENSORS.  YOU SHOULD ALWAYS CHECK ANY INFORMATION PROVIDED THROUGH THE APP TO ENSURE ITS ACCURACY.   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP IS PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS.  NEITHER EUKI, INC. NOR ITS LICENSORS MAKES ANY REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THE APP OR ANY CONTENT OR SERVICES. TO THE FULL EXTENT PERMISSIBLE BY APPLICABLE LAW, EUKI, INC. AND ITS LICENSORS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT OF THIRD PARTIES’ RIGHTS AND FITNESS FOR A PARTICULAR PURPOSE, AND ANY IMPLIED OR STATUTORY WARRANTIES (I) REGARDING THE SECURITY, ACCURACY, RELIABILITY, TIMELINESS, AND PERFORMANCE OF THE APP; OR (II) THAT THE APP WILL BE ERROR-FREE OR THAT ANY ERRORS WILL BE CORRECTED; OR (III) REGARDING THE PERFORMANCE OF OR ACCURACY, QUALITY, CURRENCY, COMPLETENESS, OR USEFULNESS OF ANY INFORMATION OR CONTENT PROVIDED BY OR THROUGH THE APP.  NO COMMUNICATION, INFORMATION, OR ADVICE GIVEN BY US OR ANY REPRESENTATIVE, WHETHER WRITTEN OR ORAL, WILL CREATE ANY WARRANTY.  IF YOU CHOOSE TO RELY ON SUCH INFORMATION, YOU DO SO AT YOUR OWN RISK.  SOME STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES. ACCORDINGLY, SOME OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.  THIS DISCLAIMER CONSTITUTES AN ESSENTIAL PART OF THESE TERMS.\
- \
+\
 HEALTH INFORMATION MUST BE INTEGRATED BY HEALTHCARE PROVIDERS INTO THE GENERAL CLINICAL RECORD FOR INDIVIDUALS UNDER THEIR SUPERVISION AND CORRELATED WITH OTHER CLINICAL DATA AS REQUIRED BY PROFESSIONAL STANDARDS IN THE HEALTHCARE PROVIDER’S DISCIPLINE.  USE OF DATA ACCESSED BY MEANS OF THE APP, AS WELL AS TREATMENT DECISIONS BASED ON SUCH INFORMATION, ARE THE SOLE RESPONSIBILITY OF THE HEALTHCARE PROVIDER, AND NEITHER EUKI, INC. NOR ITS LICENSORS ASSUMES ANY LIABILITY IN RESPECT THEREOF.\
 \
 In addition, we assume no responsibility for any error, omission, interruption, deletion, defect, delay in operation or transmission, or communications line failure.  To the extent that we may not, as a matter of applicable law, disclaim any implied warranty or limit liabilities, the scope and duration of such warranty and the extent of our (or our licensors’) liability will be the minimum permitted under such applicable law.\
 \
-8. Data Charges and Mobile Phones\
+<b>8. Data Charges and Mobile Phones</b>\
 \
 You are responsible for any mobile charges that you may incur in connection with using our Services, including data charges. If you’re unsure what those charges may be, you should ask your service provider before using the Services.\
 \
-9. Modifications; Termination\
+<b>9. Modifications; Termination</b>\
 \
 We reserve the right to modify the App or the Services at any time, without notice to you.  We may also from time to time amend these Terms prospectively.  If we do so, we will post the amended Terms on our website or mobile applications.  You agree that your continued use of the App constitutes your agreement to the amended Terms.  If you do not agree to any amended Terms that we publish, you must terminate your account and cease using the App and the Services.  Except as set forth above, these Terms may be amended or modified only by an express writing signed by Euki, Inc..\
 \
@@ -268,11 +262,11 @@ Euki, Inc. may also terminate our agreement under these Terms at any time, for a
 \
 Sections 2-5, 7, and 9-14 of the Terms, any accrued obligations and remedies hereunder, and any other provisions that by their nature should reasonably survive, shall survive the termination or expiration of these Terms.\
 \
-10. Indemnity\
+<b>10. Indemnity</b>\
 \
-You agree, to the extent permitted by law, to indemnify, defend, and hold harmless Euki, Inc., its licensors, and our respective affiliates, directors, officers, stockholders, members, employees, licensors, licensees, and agents, from and against any and all complaints, charges, claims, damages, losses, costs, liabilities, and expenses (including attorneys’ fees) due to, arising out of, or relating in any way to: (a) your access to or use of the App or the Services; (b) your violation of any law, rule or regulation; or (c) your breach of these Terms.\
+You agree, to the extent permitted by law, to indemnify, defend, and hold harmless Euki, Inc., its licensors, and our respective affiliates, directors, officers, stockholders, members, employees, licensors, licensees, and agents, from and against any and all complaints, charges, claims, damages, losses, costs, liabilities, and expenses (including attorneys’ fees) due to, arising out of, or relating in any way to: (a) your access to or use of the App or the Services; (b) your violation of any law, rule or regulation; or (c) your breach of these Terms. \
 \
-11. Limitation of Liability\
+<b>11. Limitation of Liability</b>\
 \
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL EUKI, INC., ITS LICENSORS, OR OUR RESPECTIVE AFFILIATES, DIRECTORS, OFFICERS, STOCKHOLDERS, MEMBERS, EMPLOYEES, LICENSORS, LICENSEES OR AGENTS BE LIABLE FOR ANY DIRECT, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, (INCLUDING DAMAGES FOR LOSS OF BUSINESS, LOSS OF REVENUE, LOSS OF DATA, OR LOSS OF USE), WHETHER BASED ON CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE ARISING FROM OR RELATING TO THESE TERMS, THE APP, THE APP MATERIALS OR THE SERVICES, EVEN IF WE HAVE BEEN INFORMED OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES  TO THE EXTENT PERMITTED BY APPLICABLE LAW, OUR AND EACH OF OUR LICENSOR’S MAXIMUM AGGREGATE LIABILITY TO YOU FOR ANY DAMAGES ARISING FROM OR RELATING TO THESE TERMS, THE APP, THE APP MATERIALS OR THE SERVICES, WHETHER BASED ON CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, SHALL BE LIMITED TO THE AMOUNTS PAID BY YOU TO US FOR THE SERVICES IN THE PRIOR YEAR (OR, IF YOU ARE A NON-FEE PAYING USER, TO THE AMOUNT OF $100).\
 \
@@ -280,39 +274,43 @@ SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OR EXCLUSION OF WARRANTIES OR OF 
 \
 Any claims arising in connection with your use of the App must be brought within one (1) year of the date of the event giving rise to such claim.  Remedies under these Terms are exclusive and are limited to those expressly provided for in these Terms, even if the applicable remedy under these Terms fails of its essential purpose.\
 \
-12. Arbitration\
+<b>12. Arbitration</b>\
 \
-PLEASE READ THE FOLLOWING PARAGRAPHS CAREFULLY BECAUSE THEY REQUIRE YOU TO AGREE TO RESOLVE ALL DISPUTES ARISING OUT OF THE SERVICES THROUGH BINDING ARBITRATION.\
+PLEASE READ THE FOLLOWING PARAGRAPHS CAREFULLY BECAUSE THEY REQUIRE YOU TO AGREE TO RESOLVE MANY DISPUTES ARISING OUT OF THE SERVICES THROUGH BINDING ARBITRATION.\
 \
-We will attempt to resolve disputes with users to their satisfaction. If, however, a matter arises that cannot be resolved promptly between you and us, you agree that any disputes arising out of or relating to the App, the Services or these Terms (including the validity and scope of the agreement to arbitrate and any disputes with other users of the App or the Services) shall be resolved exclusively by final and binding arbitration administered by the American Arbitration Association (“AAA”) under the Federal Arbitration Act, and shall be conducted before a single arbitrator pursuant to the applicable Rules and Procedures established by the AAA (for information on the AAA and its rules, see adr.org). You agree that the arbitration shall be held in Oakland, CA, unless the AAA or the arbitrator shall determine that venue in such city is unreasonably burdensome, in which case the AAA or the arbitrator shall select a venue that is not unreasonably burdensome to both you and us.  You agree that, if the AAA shall be unavailable or decline to administer the arbitration, and the parties do not agree on a substitute, a substitute administrator or arbitrator shall be appointed by the court. The arbitrator may render early or summary disposition of some or all issues, after the parties have had a reasonable opportunity to make submissions on these issues.  At our option, this provision shall not apply to claims of patent, trademark, or copyright infringement or misappropriation of trade secrets (collectively, “IP Claims”).  In addition, you or we may elect to bring an individual claim in a small claims court, but we do not hereby agree to any personal jurisdiction that is otherwise lacking.\
+We will attempt to resolve disputes with users to their satisfaction. If, however, a matter arises that cannot be resolved promptly between you and us, you agree that any disputes arising out of or relating to the App, the Services or these Terms (including the validity and scope of the agreement to arbitrate and any disputes with other users of the App or the Services) may be resolved by final and binding arbitration administered by the American Arbitration Association (“AAA”) under the Federal Arbitration Act.\
 \
-You agree that any arbitration shall not permit claims on a class, mass, representative, or private attorney general basis.  You further agree that no claims of other parties may be consolidated with your or our claims in the arbitration without both your and our consent.  YOU ARE WAIVING YOUR RIGHTS TO HAVE YOUR CASE DECIDED BY A JURY AND TO PARTICIPATE IN A CLASS, MASS, REPRESENTATIVE, PRIVATE ATTORNEY GENERAL, OR CONSOLIDATED ACTION AGAINST US.  \
+All disputes that arise shall be resolved through arbitration as described above with limited exceptions. These exceptions (collectively “Arbitration Exceptions”) describe claims that may optionally be resolved in a court of competent jurisdiction. The complete and exhaustive list of Arbitration Exceptions include:\
+i.    At our sole option, any claims of patent, trademark, copyright infringement, or misappropriation of trade secrets;\
+ii.    At the option of either party, any individual claim arising out of or otherwise related to our handling of your data in accordance with our privacy policy and applicable law; and\
+iii.    At the option of either party, any individual claim brought in small claims court.\
+\
+In any case, we do not hereby agree to any personal jurisdiction that is otherwise lacking. Any question as to the validity and scope of Arbitration Exceptions may be decided by an arbitrator or by a court of competent jurisdiction. If there is disagreement as to the validity and scope of Arbitration Exceptions, the decision of the arbitrator shall be final.\
+\
+Any disputes resolved through arbitration shall be conducted before a single arbitrator pursuant to the applicable Rules and Procedures established by the AAA (for information on the AAA and its rules, see adr.org). You agree that the arbitration shall be held in Oakland, CA, unless the AAA or the arbitrator shall determine that venue in such city is unreasonably burdensome, in which case the AAA or the arbitrator shall select a venue that is not unreasonably burdensome to both you and us.  You agree that, if the AAA shall be unavailable or decline to administer the arbitration, and the parties do not agree on a substitute, a substitute administrator or arbitrator shall be appointed by the court. The arbitrator may render early or summary disposition of some or all issues, after the parties have had a reasonable opportunity to make submissions on these issues.\
+\
+You agree that any arbitration shall not permit claims on a class, mass, representative, or private attorney general basis. You further agree that no claims of other parties may be consolidated with your or our claims in the arbitration without both your and our consent. YOU ARE WAIVING YOUR RIGHTS TO HAVE YOUR CASE DECIDED BY A JURY AND TO PARTICIPATE IN A CLASS, MASS, REPRESENTATIVE, PRIVATE ATTORNEY GENERAL, OR CONSOLIDATED ACTION AGAINST US.  \
 \
 If any part of this Arbitration clause is later deemed invalid as a matter of law, then it shall be severed and the remaining portions of this section shall remain in effect, with the exception that if the preceding paragraph is deemed invalid, then this entire section shall be deemed invalid and the arbitration clause shall be void.\
 \
-13. Governing Law and Jurisdiction\
+<b>13. Governing Law and Jurisdiction</b>\
 \
 You and we each agree that all disputes or other matters arising from or relating to these Terms, or the use or operation of the App or the Services, will be governed by the substantive laws of the State of California, U.S.A., without regard to its or any other jurisdiction’s conflicts of laws principles that would apply another law.  The United Nations Convention for the International Sale of Goods is hereby disclaimed.\
 \
-With respect to any IP Claims (as defined above) that are not subject to arbitration under the above provision, you hereby consent to non-exclusive jurisdiction and venue in any federal or state court located within the State of California, U.S.A., with respect to any suit, claim or cause of action arising from or relating to the App, the Services or these Terms, and you shall not bring any such suit, claim or cause of action except in a court located within the State of California, U.S.A. \
-14. Final Terms\
+With respect to any Arbitration Exceptions (as defined above) that are not subject to mandatory arbitration under the above provision, you hereby consent to non-exclusive jurisdiction and venue in any federal or state court located within the State of California, U.S.A., with respect to any suit, claim or cause of action arising from or relating to the App, the Services or these Terms, and you shall not bring any such suit, claim or cause of action except in a court located within the State of California, U.S.A. \
+\
+<b>14. Final Terms</b>\
 \
 •    These Terms (together with any additional terms applicable to specific Services you use) make up the entire agreement between you and Euki, Inc., and supersede any prior agreements.\
-\
-•    These Terms do not create or confer any third-party beneficiary rights, except that Euki, Inc.’s licensors are an intended third party beneficiary of these Terms.\
-\
+•    These Terms do not create or confer any third-party beneficiary rights, except that Euki, Inc.’s licensors are an intended third party beneficiary of these Terms. \
 •    If we do not enforce a provision in these Terms, it will not be considered a waiver.\
-\
 •    We reserve all rights not expressly granted to you.\
-\
 •    You may not transfer any of your rights or obligations under these Terms without our consent.\
-\
 •    If any provision of these Terms is found unenforceable, then that provision will be severed from these Terms and not affect the validity and enforceability of any remaining provisions.\
 \
-Contact Us\
+<b>Contact</b>\
 \
-Euki, Inc. welcomes comments, questions, concerns, or suggestions. Please send us feedback by emailing eukiapp@protonmail.com.\
-";
+Euki, Inc. welcomes comments, questions, concerns, or suggestions. Please send any feedback to us via email at eukiapp@protonmail.com.";
 "onboarding_1_text" = "Euki is an inclusive period tracking app that prioritizes your privacy and keeps your data secure.";
 "onboarding_2_title" = "Euki gives you access to sexual and reproductive health info, plus tools to track what goes on in your body.";
 "onboarding_2_text" = "Euki is an informational tool for your personal use and is not a substitute for medical advice. Euki does not provide medical advice or recommend any medications.\
@@ -347,8 +345,8 @@ If you decide you no longer want a PIN, you can change your privacy settings lat
 "privacy" = "Privacy";
 "source_format" = "Source: %@";
 "knowledge_base" = "Information";
-"walk_me_through_the_process" = "Walk through";
-"knowledge_base_title" = "Abortion Information";
+"walk_me_through_the_process" = "Find care now";
+"knowledge_base_title" = "Get the facts";
 "knowledge_base_content" = "Abortion is a procedure that ends a pregnancy, and it is a normal, common part of people's everyday lives. All kinds of people have abortions — people of every race, ethnicity, income level, religion, gender, and class. \
 \
 Moms have abortions, religious people have abortions, transgender people have abortions, Black, brown, white, and multiracial people have abortions. Abortion touches many of us at some point in our lives. \
@@ -420,34 +418,14 @@ Source: National Abortion Federation";
 For any concerns about side effects, it's recommended to call a trusted clinic or seek medical care. The Miscarriage and Abortion hotline (1-833-246-2632), is also available by phone or text 8am-11pm anywhere in the US.  If it is a medical emergency, call 9-1-1. No matter how or where an abortion happened, everyone always has the right to share or not to share any information with a health care provider—including information about whether they have had an abortion. Some people might feel more comfortable saying that they had a miscarriage. You can contact the Repro Legal Hotline (844-868-2812) for any legal questions about abortion.\
 \
 Source: Women on Web";
-"suction_abortion_title" = "Procedural Abortion";
+"suction_abortion_title" = "Procedural abortion";
 "suction_abortion_content" = "Procedural abortion, sometimes called suction or aspiration abortion, is often done in a medical office or clinic by a health care provider who uses instruments to remove a pregnancy from the uterus. It is generally a very safe procedure, has a high success rate (about 99%), and takes about 5-15 minutes to complete. In a clinic, local anesthesia or sedation can be used for pain management.\
 \
 Clinics typically provide surgical abortions between 5 weeks to 24 weeks of pregnancy. Some clinics may not be able to provide abortions past a certain number of weeks based on laws in their state.\
 \
 There are always risks with any medical procedure. Consult a qualified health care provider with any concerns or questions.";
 "suction_abortion_subheading_1" = "Suction or vacuum aspiration";
-"suction_abortion_content_1" = "Suction abortion is one of the most common types of procedural abortion, and is generally used until about 14-16 weeks of pregnancy.\
-\
-Before the abortion, pain medication is often used to help with cramping, and a health care provider might use medication to help the cervix open. Local or general anesthesia can also be used to help manage pain.\
-\
-During a suction abortion, a health care provider will use a small suction device or machine to remove a pregnancy from the uterus. These are generally safe and effective abortion procedures that usually take just a few minutes.\
-\
-If you have questions about the abortion procedure, don't be afraid to ask the health care provider. They are there to answer any questions you have.\
-\
-Source: Planned Parenthood Federation of America";
 "suction_abortion_subheading_2" = "Dilation and evacuation (D&E)";
-"suction_abortion_content_2" = "Dilation and Evacuation (D&E) is another kind of procedural abortion that is commonly used at 14 weeks of pregnancy or more. This procedure might require more than one visit to the clinic, and is a generally very safe and effective abortion procedure practiced all over the world.\
-\
-Depending on the number of weeks of the pregnancy, a health care provider might insert dilator sticks one or two days before the procedure to help open the cervix. You may also receive medication or anesthesia to help manage any pain.\
-\
-If you get general anesthesia, the health care provider may ask you not to eat anything before the procedure. If you have questions about this, ask them how you can prepare.\
-\
-During a D&E abortion, a health care provider may use medical instruments and a suction device to remove the pregnancy from the uterus. These are generally very safe and effective abortion procedures that usually take between 20-30 minutes.\
-\
-If you have questions about the abortion procedure, don't be afraid to ask the medical provider. They are there to answer any questions you have.\
-\
-Source: National Abortion Federation";
 "suction_abortion_subheading_3" = "Abortion after 12 weeks";
 "suction_abortion_content_3" = "There are many reasons people seek abortions at this point in pregnancy, including delays getting care, changing their mind, changing life circumstances, and finding out about a fetal anomaly. There is no wrong reason for needing an abortion, no matter at what point anyone is in pregnancy.\
 \
@@ -708,7 +686,9 @@ Source: National Abortion Federation";
 \
 States across the US have passed many laws limiting whether, when, and under what circumstances a person may obtain an abortion. To find out about the laws in your state, you can look at this map from the Center for Reproductive Rights.\
 \
-There are advocates fighting for the rights of all pregnant people to access the care they need. If you or someone you know have legal questions or need legal help, contact Pregnancy Justice or the Repro Legal Hotline (844-868-2812). The Repro Legal Defense Fund also covers bail and funds strong defenses for people who are investigated, arrested, or prosecuted for self-managed abortion.";
+There are advocates fighting for the rights of all pregnant people to access the care they need. If you or someone you know have legal questions or need legal help, contact Pregnancy Justice or the Repro Legal Hotline (844-868-2812). The Repro Legal Defense Fund also covers bail and funds strong defenses for people who are investigated, arrested, or prosecuted for self-managed abortions.\
+\
+Sometimes medical and legal language can feel unfamiliar and overwhelming. Below are some definitions for some words and phrases you may not have seen before. Understanding what each of these means can help you navigate your own health care experience.";
 "resources_title" = "Resources";
 "resources_description" = "There are so many organizations dedicating to protecting and expanding access to abortion. The organizations below are some of the many groups across the US that can provide you with information about abortion.";
 "resources_subheading_1" = "Interactive support";
@@ -794,7 +774,7 @@ Moms have abortions, religious people have abortions, transgender people have ab
 No matter your circumstance, you have a right to safe, compassionate abortion care. If you have questions about abortion, Euki is here to help.";
 "guttmacher_institute" = "Guttmacher Institute";
 "medical_abortion" = "Medication abortion";
-"surgical_abortion" = "Procedural Abortion";
+"surgical_abortion" = "Procedural abortion";
 "medical_abortion_content" = "There are different ways to take the pills for medication abortion depending on the medications available, and how far along the pregnancy is.\
 \
 The World Health Organization (WHO) recommends a pill called mifepristone followed by a pill called misoprostol. Misoprostol alone can also be used safely and effectively. The WHO recommends three different ways of taking misoprostol: under the tongue, between the cheek and gums, or vaginally. \
@@ -819,7 +799,7 @@ Still unsure?  Women Help Women or Women on Waves have more information.";
 "women_help_women" = "Women Help Women";
 "women_on_waves" = "Women on Waves";
 "misoprostol_12_weeks" = "Misoprostol up to 12 weeks";
-"misoprostol_12_text_1" = "This is the World Health Organization and National Abortion Federation's recommended protocol.";
+"misoprostol_12_text_1" = "This is the World Health Organization and National Abortion Federation's recommended protocol, up to 12 weeks gestation.";
 "misoprostol_12_text_2" = "800 mcg (4 tablets) of misoprostol are placed either under the tongue, between the cheek and gums, or inserted vaginally.";
 "misoprostol_12_text_3" = "Wait 30 minutes for the pills to dissolve. The remains can then be swallowed.";
 "misoprostol_12_text_4" = "This can be repeated every 3 hours for up to 3 doses.";
@@ -879,7 +859,7 @@ The All-Options Talkline is a free phone hotline that provides support to people
 \
 Source: All-Options";
 "mife_miso_12_weeks" = "Mifepristone and misoprostol up to 12 weeks";
-"mife_miso_12_text_1" = "This is the World Health Organization's recommended protocol.";
+"mife_miso_12_text_1" = "This is the World Health Organization's recommended protocol, up to 12 weeks gestation.";
 "mife_miso_12_text_2" = "200mg of mifepristone taken orally (swallowed). This is usually one pill.";
 "mife_miso_12_text_3" = "Waiting about 24 hours but no more than 48 hours before taking misoprostol is recommended.";
 "mife_miso_12_text_4" = "800 mcg (4 tablets) of misoprostol are placed either under the tongue, between the cheek and gums, or inserted vaginally.";
@@ -1886,11 +1866,13 @@ The Sylvia Rivera Law Project works to guarantee that all people are free to sel
 The Transgender Law Center is the largest national trans-led organization in the US. They provide legal services and have a ton of resources on their website, such as information about being trans at work, navigating the healthcare system, and more.\
 \
 There are many other transgender rights organizations, including the National Center for Transgender Equality, Trans Life Line, Trans Student Educational Resources, the Trans Women of Color Collective, and the Taskforce.";
-"pregnancy_options_content" = "If you're pregnant and not sure what you want to do, Euki is here to provide you with helpful information on all of your options.\
+"pregnancy_options_content" = "If your period is late and you think you might be pregnant, the first step is to take a pregnancy test. You can find these at most grocery stores and pharmacies. They cost about $3 and are 99% accurate when used correctly.\
+\
+If you're pregnant and not sure what you want to do, Euki is here to provide you with helpful information on all of your options.\
 \
 People make different decisions when faced with a pregnancy, and everyone deserves to have access and support for whatever option they choose. Any decision you make about a pregnancy should be your decision.\
 \
-If someone in your life is trying to influence or force you into carrying the pregnancy to term, making an adoption plan, or having an abortion, that’s not okay. If you are afraid for your safety, or your partner is harming you in any way, call the Rape Abuse & Incest National Network (RAINN) Hotline at 1-800-656-4673.\
+If someone in your life is trying to influence or force you into carrying the pregnancy to term, making an adoption plan, or having an abortion, that's called coercion—and it’s not okay. If you are afraid for your safety, or your partner is harming you in any way, call the Rape Abuse & Incest National Network (RAINN) Hotline at 1-800-656-4673.\
 \
 To learn more about pregnancy options, click below.";
 "pregnancy_parenting" = "Parenting";
@@ -1938,24 +1920,22 @@ Everyone deserves to be able to make their own decision about pregnancy. If you 
 Hotline: 1-800-656-4673\
 - National Domestic Violence Hotline: 1-800-799-SAFE (7233)\
 - All-Options Talkline: 1-888-493-0092";
-"logged_data_title" = "Logged data";
-"logged_data_message" = "To protect your privacy, Euki gives you the option of deleting the data that you log in the calendar. This will help make sure your sensitive information will not be used against you.";
+"logged_data_title" = "Tracked data";
 "recurring_data_title" = "Set frequent data deletion";
-"recurring_data_text" = "Select how often you want Euki to automatically delete all of your logged data";
+"recurring_data_text" = "Select how often you want Euki to automatically delete all of your tracked data";
 "delete_all_data" = "Delete all data now";
-"pin_title" = "PIN";
-"pin_text" = "You can set a PIN to keep Euki private, but please remember it. There's no way to recover your PIN.";
+"pin_title" = "Set a PIN";
 "set_pin" = "Set PIN";
 "reset_pin" = "Reset PIN";
 "remove_pin" = "Remove PIN";
-"we_dont_store_info" = "We do not store any of your information in this app, in the cloud, or anywhere else. It is not tied to your email address or phone number. Only you have access to it.";
+"we_dont_store_info" = "We do not store or collect any of your information. Data you track in the app is not tied to your email address or phone number, and only you have access to it.";
 "more_info" = "More Information";
 "privacy_faq" = "Privacy FAQ";
 "privacy_statement" = "Privacy statement";
 "weekly_2" = "Every two weeks";
 "monthly_3" = "Every 3 months";
 "yearly" = "Yearly";
-"confirm_delete_all_now" = "Are you sure that you want to delete all the data you logged? This includes everything in the calendar and reminders. This cannot be undone.";
+"confirm_delete_all_now" = "Are you sure that you want to delete all the data you tracked? This includes everything in the calendar and reminders. This cannot be undone.";
 "confirm_remove_pin" = "You are removing PIN protection to your app’s content.";
 "onboarding_set_pin_title" = "The numbers 1111 display a fake screen, so use other numbers for your PIN. If anyone forces you to open Euki, enter 1111 to show the fake screen.";
 "set_new_pin" = "Now, please set a new PIN";
@@ -2032,13 +2012,13 @@ If you have any questions, comments, requests, or concerns related to this Polic
 "tabbar_tutorial_title_1" = "Stay on top of your health";
 "tabbar_tutorial_content_1" = "Follow your cycle's patterns and set medication reminders.";
 "tabbar_tutorial_title_2" = "Track what's going on in your body";
-"tabbar_tutorial_content_2" = "Log bleeding, contraception, emotions and more.";
+"tabbar_tutorial_content_2" = "Track bleeding, contraception, emotions, and more.";
 "tabbar_tutorial_title_3" = "Find the info you need";
 "tabbar_tutorial_content_3" = "Explore topics like abortion, STIs and miscarriage.";
 "tabbar_tutorial_title_4" = "Update privacy settings";
 "tabbar_tutorial_content_4" = "Learn how Euki keeps your data secure.";
 "calendar_tutorial_title" = "Keep track of your health events";
-"calendar_tutorial_content" = "Set reminders, log appointments and see what goes on in your body day to day.";
+"calendar_tutorial_content" = "Set reminders, add appointments, and track changes in your body day to day.";
 "cycle_settings_tutorial_title" = "Adjust cycle settings";
 "cycle_settings_tutorial_content" = "Customize your preferences.";
 "cycle_summary_tutorial_title" = "Stay in sync with your cycle";
@@ -2078,7 +2058,7 @@ day";
 "see_past_cycles" = "see past cycles";
 "cycle_settings_title" = "Adjust your cycle preferences";
 "cycle_settings_option_1_title" = "Track period";
-"cycle_settings_option_1_text" = "Even if you don't track your period, you'll still have access to logged info (unless you delete your data in the \"Privacy\" tab).";
+"cycle_settings_option_1_text" = "Even if you don't track your period, you'll still have access to other tracked activity (unless you delete your data in the Privacy tab).";
 "cycle_settings_option_2_title" = "Period prediction";
 "cycle_settings_option_2_text" = "Know what to expect from your period—and when to expect it.";
 "delete_period" = "Delete this period?";
@@ -2393,10 +2373,127 @@ Euki uses the language most commonly used by health care providers, but there ar
 "option_1_day" = "1 day";
 "option_2_day" = "2 days";
 "option_3_day" = "3 days";
-"onboarding_pin_confirmation" = "PIN is now your only way to log in!\
+"onboarding_pin_confirmation" = "Your PIN is now the only way to log in.\
 \
-Make sure you’ll remember it, because only you can access it now.\
-Your data is only yours, not ours.";
+Only you know your PIN, so make sure to remember it!";
 "onboarding_4_title" = "The numbers 0000 display a fake screen, so use other numbers for your PIN. If anyone forces you to open Euki, enter 0000 to show the fake screen.";
 "are_they_safe" = "Are they safe?";
 "next" = "Next";
+"app_name" = "Euki";
+"error_message_title" = "There was an error";
+"loading" = "Loading...";
+"save" = "Save";
+"dimsiss" = "Dismiss";
+"go_to_daily_log" = "See tracked info";
+"quiz" = "Quiz";
+"procedural_abortion_what will it be like_new combined" = "<b>Suction or vacuum aspiration</b>\
+Suction abortion is one of the most common types of procedural abortions and is generally used until about 14-16 weeks of pregnancy.\
+\
+Before the abortion, pain medication is often used to help with cramping, and a health care provider might use medication to help the cervix open. Local or general anesthesia can also be used to help manage pain.\
+\
+During a suction abortion, a health care provider will use a small suction device or machine to remove the pregnancy from the uterus. These are generally safe and effective abortion procedures that usually take just a few minutes. \
+\
+<b>Dilation and evacuation (D&E)</b>\
+Dilation and evacuation (D&E) is another kind of procedural abortion that is commonly used at 14 weeks of pregnancy or more. This procedure might require more than one visit to the clinic, and is generally a very safe and effective abortion procedure practiced all over the world. \
+\
+Depending on the number of weeks of the pregnancy, a health care provider might insert dilator sticks one or two days before the procedure to help open the cervix. You may also receive medication or anesthesia to help manage any pain. \
+\
+If you get general anesthesia, the health care provider may ask you not to eat anything before the procedure. If you have any questions about this, ask them how you can prepare. \
+\
+During the D&E abortion, a health care provider may use medical instruments and a suction device to remove the pregnancy from the uterus. These are generally very safe and effective abortion procedures that usually take between 20-30 minutes. \
+\
+If you have any questions about the abortion procedure, don’t be afraid to ask the health care provider. They are there to answer any questions you have.\
+\
+Source: Planned Parenthood Federation of America & National Abortion Federation";
+"Tracked data_copy" = "Euki makes it easy to delete your tracked data, which protects your privacy and ensures sensitive health information can’t be used against you.";
+"Set a PIN_copy" = "You can set a PIN as an extra layer of security, but make sure to remember it. We don’t have access to your data, so there’s no way to recover a lost PIN.";
+"Privacy_header" = "Privacy";
+"Delete your data_header" = "Delete your data";
+"Set frequent data deletion_copy" = "Select how often you want Euki to automatically delete your tracked data";
+"Set a PIN_copy 2" = "We do not store or collect any of your information. Data you track in the app is not tied to your email address or phone number, and only you have access to it.";
+"More information_header" = "More information";
+"Privacy best practices_dropdown" = "Privacy best practices";
+"Privacy best practices_header" = "Privacy best practices";
+"Privacy best practices_copy" = "When seeking reproductive health care, privacy is important. There is no legal requirement to share information about pregnancy loss with anyone, including health care providers. These best practices can help you understand how to protect your data and health as you search for care.";
+"Protect your private messages_dropdown" = "Protect your private messages";
+"Protect your private messages_copy" = "When you send texts via SMS, your phone company stores copies of those texts. These can be turned over to law enforcement if the phone company gets a warrant. They can also be used to influence the ads you see online. If other people have access to your phone, they might also demand to see your private messages. To keep your information private from your phone company and others in your life, you can:\
+\
+- Use end-to-end encrypted messaging apps like Signal that don’t store your data. \
+- Consider using the disappearing messages feature on apps like Signal. \
+- Set a password on your phone and a PIN for Euki if you haven’t already.";
+"Protect your internet search history_dropdown" = "Protect your internet search history";
+"Protect your internet search history_copy" = "When you use the internet, your internet service provider can keep records of the websites you visit. (However, thanks to encryption called HTTPS, they can’t see what you do on those websites.) If you share a phone with family members, they may see your messages or browsing history. To protect your internet search history, try these steps:\
+\
+- Use a Virtual Private Network (VPN). VPNs route your internet traffic through their services instead of your internet service providers. It’s important to choose a VPN that doesn’t keep track of what you’re doing—this is known as a no-logs VPN. Most no-logs VPNs cost a few dollars a month, but there are two free options: ProtonVPN’s free tier, and Tunnelbear’s limited free tier.\
+- Browse in an incognito window or manually clear your browser history. Great options that protect your browsing from unwanted ads and prevent your search data from being saved include Firefox Focus and DuckDuckGo.";
+"Protect your payment history_dropdown" = "Protect your payment history";
+"Protect your payment history_copy" = "If you’re worried about reproductive health care services showing up on your bank statements or payment history, use these instead of credit cards:\
+\
+- Cash \
+- Pre-paid gift cards (Visa, Mastercard, etc.)";
+"Protect your location data and ad tracking_dropdown" = "Protect your location data and ad tracking";
+"Protect your location data and ad tracking_copy" = "Websites, apps, and social media can track your location and target you for ads related to pregnancy or abortion. \
+\
+To protect your privacy and avoid being tracked:\
+- Turn off location sharing on your devices\
+- Disable your mobile ad ID in your settings\
+- Use DuckDuckGo instead of Google to protect your browser activity and personal data\
+- Use Firefox Focus instead of your phone’s default browser to block third party trackers";
+"Resources_dropdown" = "Resources";
+"Resources_copy" = "For more detailed information about protecting your data privacy online, check out these resources:\
+\
+- Digital Defense Fund\
+- If/When/How’s Repro Legal Helpline at 844-868-2812\
+- Electronic Frontier Foundation privacy guidance";
+"Med abortion_mife_miso_dropdown" = "Medication abortion with mifepristone and misoprostol";
+"Med abortion_miso_dropdown" = "Medication abortion with misoprostol";
+"counseling requirements_dropdown" = "Counseling requirements";
+"counseling requirements_copy" = "Many states require a pregnant person to attend a counseling session and wait for a specific amount of time (usually at least 24 hours) before receiving abortion care.\
+\
+Though state mandated, counseling requirements are not medically necessary and often include information about abortion that is incorrect or misleading.";
+"judicial bypass_dropdown" = "Judicial bypass/waiver";
+"judicial bypass_copy" = "In some states, people under a certain age (usually 18, but sometimes younger) can't get abortion care without involving a parent. For people who cannot or do not want to involve a parent, there is a court process where a judge can give you permission to have an abortion without involving a parent or legal guardian. This is called a judicial bypass/waiver.\
+\
+If you need support with a judicial bypass, contact the Repro Legal Helpline.";
+"legal risk_dropdown" = "Legal risk";
+"Legal risk_copy" = "Legal risk is an explanation of legal trouble someone might face, such as a criminal investigation or arrest. It does NOT mean someone will get into legal trouble and is just an explanation of what can happen.";
+"Parental involvement laws_dropdown" = "Parental involvement laws";
+"Parental involvement laws_copy" = "Some states require a young person to tell and/or get written permission from a parent or legal guardian to get an abortion.\
+\
+If/When/How can tell you what the parental involvement laws are in your state.";
+"waiting periods_dropdown" = "Waiting periods";
+"waiting periods_copy" = "Many states require a waiting period (typically at least 24 hours) between receiving counseling and having an abortion. These mandatory waiting periods may require a pregnant person to make multiple trips to their provider if the state requires in-person counseling (vs. virtual counseling).\
+\
+Counseling requirements and waiting periods are state mandated, and there is no medical reason to require them.";
+"shield laws_dropdown" = "Shield laws";
+"shield laws_copy" = "Several states have passed laws generally referred to as “shield laws,” which are intended to protect (or shield) abortion providers, supporters, and seekers within that state from legal actions put forward in other states. Shield laws only impact people when they are in the state with the shield law. \
+\
+For example, if someone in Texas ends their pregnancy using pills from a shield law provider in New York, only the person in New York (the provider) is protected by the shield law—not the person in Texas. \
+\
+To break it down: the law where you are physically located is almost always the law that applies to you.";
+"If/when/how" = "If/when/how";
+"Digital Defense Fund and If/When/How" = "Digital Defense Fund and If/When/How";
+"suction_abortion_what_to_expect_content" = "Suction or vacuum aspiration\
+Suction abortion is one of the most common types of procedural abortion, and is generally used until about 14-16 weeks of pregnancy.\
+\
+Before the abortion, pain medication is often used to help with cramping, and a health care provider might use medication to help the cervix open. Local or general anesthesia can also be used to help manage pain.\
+\
+During a suction abortion, a health care provider will use a small suction device or machine to remove a pregnancy from the uterus. These are generally safe and effective abortion procedures that usually take just a few minutes.\
+\
+If you have questions about the abortion procedure, don't be afraid to ask the health care provider. They are there to answer any questions you have.\
+\
+Dilation and evacuation (D&E)\
+Dilation and Evacuation (D&E) is another kind of procedural abortion that is commonly used at 14 weeks of pregnancy or more. This procedure might require more than one visit to the clinic, and is a generally very safe and effective abortion procedure practiced all over the world.\
+\
+Depending on the number of weeks of the pregnancy, a health care provider might insert dilator sticks one or two days before the procedure to help open the cervix. You may also receive medication or anesthesia to help manage any pain.\
+\
+If you get general anesthesia, the health care provider may ask you not to eat anything before the procedure. If you have questions about this, ask them how you can prepare.\
+\
+During a D&E abortion, a health care provider may use medical instruments and a suction device to remove the pregnancy from the uterus. These are generally very safe and effective abortion procedures that usually take between 20-30 minutes.\
+\
+If you have questions about the abortion procedure, don't be afraid to ask the medical provider. They are there to answer any questions you have.";
+"suction_abortion_what_to_expect_source" = "Planned Parenthood Federation of America & National Abortion Federation";
+"mife_miso" = "Mifepristone and misoprostol";
+"miso" = "Misoprostol";
+"logged_data_message" = "To protect your privacy, Euki gives you the option of deleting the data that you log in the calendar. This will help make sure your sensitive information will not be used against you.";
+"pin_text" = "You can set a PIN to keep Euki private, but please remember it. There's no way to recover your PIN.";

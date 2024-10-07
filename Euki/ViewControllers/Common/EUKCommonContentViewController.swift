@@ -128,7 +128,7 @@ class EUKCommonContentViewController: EUKCommonExpandableViewController {
         self.tableView.estimatedRowHeight = 50.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.title = (contentItem.title ?? contentItem.id).localized
-        self.expandableSection = 1
+        self.expandableSection = 2
     }
     
     override func showBookmarkButton() {
@@ -175,17 +175,18 @@ extension EUKCommonContentViewController {
             return 1
         }
         
-        if let contentItem = self.contentItem, section == 2 {
+        if let contentItem = self.contentItem, section == 1 {
             var count = CGFloat(contentItem.selectableItems?.count ?? 0) / 2.0
             count.round(.up)
             return Int(count)
         }
         
-        if section == 3 {
-            return contentItem?.selectableRowItems?.count ?? 0
+        if section == 2{
+            return super.tableView(tableView, numberOfRowsInSection: section)
         }
-        
-        return super.tableView(tableView, numberOfRowsInSection: section)
+                
+        //section 3
+        return contentItem?.selectableRowItems?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -252,13 +253,23 @@ extension EUKCommonContentViewController {
             return cell
         }
         
-        if indexPath.section == 2 {
+        if indexPath.section == 1 {
             guard let contentItem = self.contentItem, let selectableItems = contentItem.selectableItems else {
                 return UITableViewCell()
             }
             
             let cell = tableView.dequeueReusableCell(withIdentifier: self.OptionsCellIdentifier, for: indexPath)
             let index = indexPath.row * 2
+            
+            if contentItem.expandableItems?.count ?? 0 > 0{
+                if let top = cell.contentView.constraintWith(identifier: "top"){
+                    top.constant = 24
+                }
+                
+                if let bottom = cell.contentView.constraintWith(identifier: "bottom"){
+                    bottom.constant = 24
+                }
+            }
             
             if let option1View = cell.contentView.viewWithTag(OptionCellTags.option1View.rawValue) {
                 self.configView(view: option1View, contentItem: selectableItems[index], index: index)
@@ -328,7 +339,7 @@ extension EUKCommonContentViewController {
             tableView.deselectRow(at: indexPath, animated: true)
             return
         }
-        if indexPath.section == 2 {
+        if indexPath.section == 1 {
             return
         }
         if indexPath.section == 3 {

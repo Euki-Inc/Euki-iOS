@@ -45,7 +45,7 @@ extension EUKSettingsViewController: UITableViewDelegate, UITableViewDataSource 
             return 1
         }
         
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,8 +67,13 @@ extension EUKSettingsViewController: UITableViewDelegate, UITableViewDataSource 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: self.SelectableCellIdentifier, for: indexPath) as? EUKSelectableTableViewCell else {
             return UITableViewCell()
         }
-        
-        cell.titleLabel.text = indexPath.row == 0 ? "privacy_faq".localized : "privacy_statement".localized
+        if indexPath.row == 0{
+            cell.titleLabel.text = "privacy_faq".localized
+        }else if indexPath.row == 1{
+            cell.titleLabel.text = "Privacy best practices_dropdown".localized
+        }else{
+            cell.titleLabel.text = "privacy_statement".localized
+        }
         
         return cell
     }
@@ -102,6 +107,8 @@ extension EUKSettingsViewController: UITableViewDelegate, UITableViewDataSource 
         if indexPath.section == 1 {
             if indexPath.row == 0 {
                 self.pushContentItem(contentItem: PrivacyContentManager.sharedInstance.privacyFAQS())
+            } else if indexPath.row == 1 {
+                self.pushContentItem(contentItem: PrivacyContentManager.sharedInstance.privacyBestPractices())
             } else {
                 self.pushContentItem(contentItem: PrivacyContentManager.sharedInstance.privacyStatement())
             }

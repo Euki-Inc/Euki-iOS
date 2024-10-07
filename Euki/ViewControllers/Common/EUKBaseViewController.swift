@@ -121,13 +121,13 @@ class EUKBaseViewController: UIViewController {
             let viewController = EUKMedicalAbortionViewController.initViewController()
             self.navigationController?.pushViewController(viewController, animated: true)
         case "suction_or_vacuum":
-            let contentItem = AbortionContentManager.sharedInstance.abortionSuctionVacuum()
+            let contentItem = AbortionContentManager.sharedInstance.abortionSuctionVacuum(withExpandables: item.parent?.id != "surgical")
             if let viewController = EUKAbortionInfoViewController.initViewController() {
                 viewController.contentItem = contentItem
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
         case "dilation_evacuation":
-            let contentItem = AbortionContentManager.sharedInstance.abortiondilationEvacuation()
+            let contentItem = AbortionContentManager.sharedInstance.abortiondilationEvacuation(withExpandables: item.parent?.id != "surgical")
             if let viewController = EUKAbortionInfoViewController.initViewController() {
                 viewController.contentItem = contentItem
                 self.navigationController?.pushViewController(viewController, animated: true)
@@ -140,8 +140,46 @@ class EUKBaseViewController: UIViewController {
             ContentManager.sharedInstance.requestPregnancyOptions { [unowned self] (contentItem) in
                 self.pushContentItem(contentItem: contentItem)
             }
-        default:
+        case "medication":
+            if item.selectableItems == nil {
+                let mifeMiso = AbortionContentManager.sharedInstance.abortionMifeMiso12(withExpandables: false)
+                mifeMiso.title = "mife_miso"
+                mifeMiso.parent = item
+                mifeMiso.imageIcon = "ButtonMisoMifePadding"
+                let miso = AbortionContentManager.sharedInstance.abortionMiso12(withExpandables: false)
+                miso.title = "miso"
+                miso.parent = item
+                miso.imageIcon = "ButtonMisoprostolPadding"
+                item.selectableItems = [mifeMiso, miso]
+            }
+            
             self.pushContentItem(contentItem: item)
+        case "surgical":
+            if item.selectableItems == nil {
+                let abortion = AbortionContentManager.sharedInstance.abortionSuctionVacuum(withExpandables: false)
+                abortion.parent = item
+                abortion.imageIcon = "IconAbortionSuctionAspiration"
+                let dilatation = AbortionContentManager.sharedInstance.abortiondilationEvacuation(withExpandables: false)
+                dilatation.parent = item
+                dilatation.imageIcon = "IconAbortionDilation"
+                item.selectableItems = [abortion, dilatation]
+            }
+            
+            self.pushContentItem(contentItem: item)
+        default:
+            if item.isAbortionItem{
+                self.pushAbortionContentItem(contentItem: item)
+            }else{
+                self.pushContentItem(contentItem: item)
+            }
+            
+        }
+    }
+    
+    func pushAbortionContentItem(contentItem: ContentItem?) {
+        if let viewController = EUKAbortionInfoViewController.initViewController(), let contentItem = contentItem {
+            viewController.contentItem = contentItem
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     

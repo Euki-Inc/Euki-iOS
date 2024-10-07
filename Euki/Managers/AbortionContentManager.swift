@@ -17,7 +17,7 @@ class AbortionContentManager: NSObject {
         "Repro Legal Hotline": "https://www.reprolegalhelpline.org/"
     ]
     
-    func abortionMifeMiso12() -> ContentItem {
+    func abortionMifeMiso12(withExpandables: Bool = true) -> ContentItem {
         let contentItem = ContentItem()
         contentItem.isAbortionItem = true
         contentItem.id = "mife_miso_12_weeks"
@@ -36,12 +36,15 @@ class AbortionContentManager: NSObject {
             childItems.append(childItem)
         }
         contentItem.contentItems = childItems
-        contentItem.expandableItems = self.abortionPillsExpandableItems(textFormat: "mife_miso_12_subheading_%d", contentFormat: "abortion_subheading_%d_content")
-        contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        if withExpandables{
+            contentItem.expandableItems = self.abortionPillsExpandableItems(textFormat: "mife_miso_12_subheading_%d", contentFormat: "abortion_subheading_%d_content")
+            contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        }
+        
         return contentItem
     }
     
-    func abortionMiso12() -> ContentItem {
+    func abortionMiso12(withExpandables: Bool = true) -> ContentItem {
         let contentItem = ContentItem()
         contentItem.isAbortionItem = true
         contentItem.id = "misoprostol_12_weeks"
@@ -60,8 +63,10 @@ class AbortionContentManager: NSObject {
             childItems.append(childItem)
         }
         contentItem.contentItems = childItems
-        contentItem.expandableItems = self.abortionPillsExpandableItems(textFormat: "misoprostol_12_subheading_%d", contentFormat: "abortion_subheading_%d_content")
-        contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        if withExpandables{
+            contentItem.expandableItems = self.abortionPillsExpandableItems(textFormat: "misoprostol_12_subheading_%d", contentFormat: "abortion_subheading_%d_content")
+            contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        }
         
         return contentItem
     }
@@ -80,7 +85,7 @@ class AbortionContentManager: NSObject {
         return expandableItems
     }
     
-    func abortionSuctionVacuum() -> ContentItem {
+    func abortionSuctionVacuum(withExpandables: Bool = true) -> ContentItem {
         let contentItem = ContentItem()
         contentItem.isAbortionItem = true
         contentItem.id = "suction_or_vacuum"
@@ -105,12 +110,16 @@ class AbortionContentManager: NSObject {
             childItems.append(childItem)
         }
         contentItem.contentItems = childItems
-        contentItem.expandableItems = self.abortionSuctionExpandableItems(textFormat: "suction_or_vacuum_subheading_%d")
-        contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        
+        if withExpandables{
+            contentItem.expandableItems = self.abortionSuctionExpandableItems(textFormat: "suction_or_vacuum_subheading_%d")
+            contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        }
+        
         return contentItem
     }
     
-    func abortiondilationEvacuation() -> ContentItem {
+    func abortiondilationEvacuation(withExpandables: Bool = true) -> ContentItem {
         let contentItem = ContentItem()
         contentItem.isAbortionItem = true
         contentItem.id = "dilation_evacuation"
@@ -135,8 +144,12 @@ class AbortionContentManager: NSObject {
             childItems.append(childItem)
         }
         contentItem.contentItems = childItems
-        contentItem.expandableItems = self.abortionSuctionExpandableItems(textFormat: "dilation_evacuation_subheading_%d")
-        contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        
+        if withExpandables{
+            contentItem.expandableItems = self.abortionSuctionExpandableItems(textFormat: "dilation_evacuation_subheading_%d")
+            contentItem.expandableItems?.forEach({$0.parent = contentItem})
+        }
+        
         return contentItem
     }
     
