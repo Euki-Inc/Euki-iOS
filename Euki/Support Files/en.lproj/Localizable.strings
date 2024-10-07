@@ -799,7 +799,7 @@ Still unsure?  Women Help Women or Women on Waves have more information.";
 "women_help_women" = "Women Help Women";
 "women_on_waves" = "Women on Waves";
 "misoprostol_12_weeks" = "Misoprostol up to 12 weeks";
-"misoprostol_12_text_1" = "This is the World Health Organization and National Abortion Federation's recommended protocol.";
+"misoprostol_12_text_1" = "This is the World Health Organization and National Abortion Federation's recommended protocol, up to 12 weeks gestation.";
 "misoprostol_12_text_2" = "800 mcg (4 tablets) of misoprostol are placed either under the tongue, between the cheek and gums, or inserted vaginally.";
 "misoprostol_12_text_3" = "Wait 30 minutes for the pills to dissolve. The remains can then be swallowed.";
 "misoprostol_12_text_4" = "This can be repeated every 3 hours for up to 3 doses.";
@@ -859,7 +859,7 @@ The All-Options Talkline is a free phone hotline that provides support to people
 \
 Source: All-Options";
 "mife_miso_12_weeks" = "Mifepristone and misoprostol up to 12 weeks";
-"mife_miso_12_text_1" = "This is the World Health Organization's recommended protocol.";
+"mife_miso_12_text_1" = "This is the World Health Organization's recommended protocol, up to 12 weeks gestation.";
 "mife_miso_12_text_2" = "200mg of mifepristone taken orally (swallowed). This is usually one pill.";
 "mife_miso_12_text_3" = "Waiting about 24 hours but no more than 48 hours before taking misoprostol is recommended.";
 "mife_miso_12_text_4" = "800 mcg (4 tablets) of misoprostol are placed either under the tongue, between the cheek and gums, or inserted vaginally.";

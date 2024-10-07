@@ -788,7 +788,7 @@ La razón es que a menudo es difícil averiguar con exactitud la fecha de la con
 "women_help_women" = "Women Help Women";
 "women_on_waves" = "Women on Waves";
 "misoprostol_12_weeks" = "Misoprostol hasta la semana 12";
-"misoprostol_12_text_1" = "Este es el protocolo recomendado por la Organización Mundial de la Salud";
+"misoprostol_12_text_1" = "Este es el protocolo recomendado por la Organización Mundial de la Salud, hasta 12 semanas de gestación.";
 "misoprostol_12_text_2" = "Se colocan 800 mcg (4 pastillas) de misoprostol debajo de la lengua o entre la mejilla y las encías.";
 "misoprostol_12_text_3" = "Deja que se disuelvan durante 30 minutos . Los restos pueden ser tragados.";
 "misoprostol_12_text_4" = "Esto se debe repetir cada 3 horas hasta un total de 3 dosis.";
@@ -846,7 +846,7 @@ All-Options Talkline es una línea de asistencia telefónica que proporciona apo
 \
 Fuente: All-Options";
 "mife_miso_12_weeks" = "La mifepristona y el misoprostol hasta la semana 12";
-"mife_miso_12_text_1" = "Este es el protocolo recomendado por la Organización Mundial de la Salud";
+"mife_miso_12_text_1" = "Este es el protocolo recomendado por la Organización Mundial de la Salud, hasta 12 semanas de gestación.";
 "mife_miso_12_text_2" = "200 mg de mifepristona tomada oralmente (tragada). Esto normalmente supone una pastilla.";
 "mife_miso_12_text_3" = "Se recomienda esperar unas 24 horas y no más de 48 horas antes de tomar el misoprostol.";
 "mife_miso_12_text_4" = "Se colocan 800 mcg (4 mcg) de misoprostol debajo de la lengua o entre la mejilla y las encías.";
