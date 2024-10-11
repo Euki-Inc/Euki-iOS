@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -494,9 +494,9 @@ assadas</string>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="vZc-M5-wH1" firstAttribute="top" secondItem="Lpp-gg-G8w" secondAttribute="top" id="2F6-xE-x5U"/>
+                                                <constraint firstItem="vZc-M5-wH1" firstAttribute="top" secondItem="Lpp-gg-G8w" secondAttribute="top" identifier="top" id="2F6-xE-x5U"/>
                                                 <constraint firstItem="vZc-M5-wH1" firstAttribute="leading" secondItem="Lpp-gg-G8w" secondAttribute="leading" id="Kyt-YT-0wT"/>
-                                                <constraint firstAttribute="bottom" secondItem="vZc-M5-wH1" secondAttribute="bottom" id="aEN-fC-Wqn"/>
+                                                <constraint firstAttribute="bottom" secondItem="vZc-M5-wH1" secondAttribute="bottom" identifier="bottom" id="aEN-fC-Wqn"/>
                                                 <constraint firstAttribute="trailing" secondItem="vZc-M5-wH1" secondAttribute="trailing" id="xxn-fx-rR4"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -655,10 +655,10 @@ assadas</string>
     </scenes>
     <designables>
         <designable name="5uc-ub-hn4">
-            <size key="intrinsicContentSize" width="3" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="RnY-TW-98T">
-            <size key="intrinsicContentSize" width="3" height="40"/>
+            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
     </designables>
     <resources>

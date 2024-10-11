@@ -18,6 +18,8 @@ class EUKTrackViewController: EUKBaseViewController {
     
     var date: Date?
     var calendarItem: CalendarItem?
+    var expandFilterItem: FilterItem?
+    var expandSelectItem: SelectItem?
     
     //MARK: - Lifecycle
     
@@ -54,11 +56,13 @@ class EUKTrackViewController: EUKBaseViewController {
 
     //MARK: - Public
     
-    class func initViewController(date: Date?, calendarItem: CalendarItem?) -> UIViewController? {
+    class func initViewController(date: Date?, calendarItem: CalendarItem?, expandFilterItem: FilterItem? = nil, expandSelectItem: SelectItem? = nil) -> UIViewController? {
         if let navViewController = UIStoryboard(name: "Calendar", bundle: Bundle.main).instantiateViewController(withIdentifier: "NavTrackViewControlller") as? UINavigationController, let logViewContoller = navViewController.viewControllers[0] as? EUKTrackViewController {
             navViewController.modalPresentationStyle = .fullScreen
             logViewContoller.date = date
             logViewContoller.calendarItem = calendarItem
+            logViewContoller.expandFilterItem = expandFilterItem
+            logViewContoller.expandSelectItem = expandSelectItem
             return navViewController
         }
         
@@ -85,7 +89,7 @@ extension EUKTrackViewController: EUKWeekCalendarViewControllerDelegate {
         self.dailyLogViewController?.removeFromParent()
         
         if Date().daysDiff(date: date) < 0 || Calendar.current.isDateInToday(date) {
-			if let viewController = EUKLogViewController.initLogViewController(date: date, calendarItem: calendarItem) as? EUKLogViewController {
+            if let viewController = EUKLogViewController.initLogViewController(date: date, calendarItem: calendarItem, expandFilterItem: expandFilterItem, expandSelectItem: expandSelectItem) as? EUKLogViewController {
 				viewController.delegate = self
                 self.logViewController = viewController
                 self.configureChildViewController(childController: viewController, onView: self.containerView)

@@ -10,6 +10,7 @@ import UIKit
 
 class EUKCommonExpandableViewController: EUKBasePinCheckViewController {
     let ExpandableCellIdentifier = "ExpandableCellIdentifier"
+    let ExpandableContentCellIdentifier = "ExpandableContentCellIdentifier"
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var frontImageView: UIImageView!
@@ -17,7 +18,7 @@ class EUKCommonExpandableViewController: EUKBasePinCheckViewController {
     var navTitle: String?
     var prefix: String?
     var count: Int = 0
-    var expandableSection = 0
+    var expandableSection = 2
     var items = [ExpandableItem]()
     var cellHeightsDictionary:[IndexPath: CGFloat] = [:]
     
@@ -72,6 +73,7 @@ class EUKCommonExpandableViewController: EUKBasePinCheckViewController {
             }
             index = index + 1
         }
+        self.tableView.performBatchUpdates(nil)
         self.tableView.reloadRows(at: indexPathArray, with: .fade)
         self.tableView.scrollToRow(at: IndexPath(row: row, section: self.expandableSection), at: .top, animated: true)
     }
@@ -105,17 +107,23 @@ extension EUKCommonExpandableViewController: UITableViewDelegate, UITableViewDat
             cell.bookmarkButton.isHidden = !item.isExpanded
             cell.bookmarkButton.tag = indexPath.row
             cell.arrowImageView.isHidden = item.isExpanded
-           
-            self.configurePagerView(cell: cell, item: item)
+            
+            if item.contentItem.contentItems?.count ?? 0 > 0{
+                self.configureContentItemsView(cell: cell, item: item, indexPath: indexPath)
+            }else{
+                self.configurePagerView(cell: cell, item: item)
+            }
 
             return cell
         }
+        
         
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        self.cellHeightsDictionary[indexPath] = cell.frame.size.height
+        tableView.invalidateIntrinsicContentSize()
+        tableView.layoutIfNeeded()
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -131,7 +139,7 @@ extension EUKCommonExpandableViewController: UITableViewDelegate, UITableViewDat
         self.updateCells(row: indexPath.row)
     }
 
-    func configurePagerView(cell:ExpandableTableViewCell,item: ExpandableItem ) {
+    func configurePagerView(cell:ExpandableTableViewCell, item: ExpandableItem ) {
         
         cell.swipeView.isHidden = !item.isExpanded
 
@@ -153,6 +161,33 @@ extension EUKCommonExpandableViewController: UITableViewDelegate, UITableViewDat
             cell.heightConstraint.constant = getFormattedSize(645)
             self.configureChildViewController(childController: viewController, onView: containerView)
 
+        } else {
+            cell.heightConstraint.constant = 0
+        }
+    }
+    
+    func configureContentItemsView(cell:ExpandableTableViewCell, item: ExpandableItem, indexPath: IndexPath ) {
+        
+        cell.swipeView.isHidden = !item.isExpanded
+
+        for view in cell.swipeView.subviews {
+            view.removeFromSuperview()
+        }
+
+        let items = item.contentItem.contentItems
+        let viewController = EUKAbortionInfoViewController.initViewController()
+        let containerView = cell.swipeView
+        
+        guard let items, let viewController, let containerView else {
+            cell.heightConstraint.constant = 0
+            return
+        }
+
+        if !items.isEmpty && item.isExpanded  {
+            viewController.contentItem = item.contentItem
+            cell.heightConstraint.constant = self.cellHeightsDictionary[indexPath] ?? getFormattedSize(645)
+            
+            self.configureChildViewController(childController: viewController, onView: containerView)
         } else {
             cell.heightConstraint.constant = 0
         }
