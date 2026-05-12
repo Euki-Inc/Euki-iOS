@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PrimaryColor</key>
+	<string>#E10098</string>
+	<key>PrimaryColorName</key>
+	<string>Piña Pink</string>
+	<key>SecondaryColor</key>
+	<string>#8E44AD</string>
+	<key>SecondaryColorName</key>
+	<string>Purple</string>
+	<key>AccentColor</key>
+	<string>#FFD600</string>
+	<key>AccentColorName</key>
+	<string>Sunshine Yellow</string>
+	<key>TealColor</key>
+	<string>#00BFB3</string>
+	<key>TealColorName</key>
+	<string>Aqua Spiral</string>
+	<key>WhiteColor</key>
+	<string>#FFFFFF</string>
+	<key>LightGrayColor</key>
+	<string>#F5F5F5</string>
+	<key>GrayColor</key>
+	<string>#CCCCCC</string>
+	<key>DarkGrayColor</key>
+	<string>#666666</string>
+	<key>BlackColor</key>
+	<string>#1A1A1A</string>
+	<key>GradientPrimaryStart</key>
+	<string>#E10098</string>
+	<key>GradientPrimaryEnd</key>
+	<string>#8E44AD</string>
+	<key>GradientSunsetStart</key>
+	<string>#FFD600</string>
+	<key>GradientSunsetEnd</key>
+	<string>#E10098</string>
+	<key>GradientOceanStart</key>
+	<string>#00BFB3</string>
+	<key>GradientOceanEnd</key>
+	<string>#8E44AD</string>
+</dict>
+</plist>

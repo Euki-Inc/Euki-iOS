@@ -1,0 +1,63 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "name": "la-pina-web-preview",
+  "projectId": "prj_xNTaU2ujfJ8TM4UJPZ72RPPTsLEh",
+  "framework": "nextjs",
+  "buildCommand": "cd apps/web-preview && npm install && npm run build",
+  "outputDirectory": "apps/web-preview/.next",
+  "installCommand": "cd apps/web-preview && npm install",
+  "devCommand": "cd apps/web-preview && npm run dev",
+  "regions": ["iad1"],
+  "env": {
+    "NEXT_PUBLIC_BASE_URL": "https://lapina.vercel.app",
+    "NODE_ENV": "production",
+    "NEXT_PUBLIC_ENABLE_ANALYTICS": "false",
+    "NEXT_PUBLIC_ENABLE_CRASH_REPORTING": "false",
+    "NEXT_PUBLIC_SUPABASE_ENABLED": "false",
+    "NEXT_PUBLIC_AUTH_ENABLED": "false",
+    "NEXT_PUBLIC_STRIPE_ENABLED": "false"
+  },
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_BASE_URL": "https://lapina.vercel.app",
+      "NODE_ENV": "production"
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "common": {
+    "app_name": "La Piña",
+    "ok": "Aceptar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "skip": "Omitir",
+    "done": "Listo",
+    "close": "Cerrar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "warning": "Advertencia",
+    "info": "Información",
+    "retry": "Reintentar",
+    "settings": "Configuración",
+    "search": "Buscar",
+    "no_data": "Sin datos",
+    "try_again": "Intenta de nuevo"
+  },
+
+  "navigation": {
+    "home": "Inicio",
+    "cycle": "Ciclo",
+    "symptoms": "Síntomas",
+    "pregnancy": "Embarazo",
+    "blog": "Blog",
+    "insights": "Datos",
+    "settings": "Configuración"
+  },
+
+  "home": {
+    "title": "Bienvenida",
+    "greeting": "Hola, {{name}}",
+    "cycle_status": "Estado del ciclo",
+    "days_until_period": "Días para tu período",
+    "today": "Hoy",
+    "phase": "Fase",
+    "next_event": "Próximo evento",
+    "fertility_window": "Ventana de fertilidad",
+    "mood_today": "¿Cómo te sientes hoy?",
+    "quick_add": "Agregar rápidamente",
+    "view_more": "Ver más"
+  },
+
+  "cycle": {
+    "title": "Mi Ciclo",
+    "log_period": "Registrar período",
+    "log_symptoms": "Registrar síntomas",
+    "cycle_length": "Duración del ciclo",
+    "period_length": "Duración del período",
+    "next_period": "Próximo período",
+    "last_period": "Último período",
+    "phases": {
+      "menstrual": "Menstrual",
+      "follicular": "Folicular",
+      "ovulation": "Ovulación",
+      "luteal": "Lútea"
+    },
+    "phase_descriptions": {
+      "menstrual": "Período de sangrado",
+      "follicular": "Energía y renovación",
+      "ovulation": "Pico de fertilidad",
+      "luteal": "Reflexión e introspección"
+    },
+    "fertility_status": "Estado de fertilidad",
+    "fertile": "Fértil",
+    "not_fertile": "No fértil",
+    "highly_fertile": "Muy fértil"
+  },
+
+  "symptoms": {
+    "title": "Síntomas",
+    "add_symptom": "Agregar síntoma",
+    "select_symptoms": "Selecciona tus síntomas",
+    "symptom_severity": "Severidad",
+    "symptom_notes": "Notas sobre síntomas",
+    "common_symptoms": "Síntomas comunes",
+    "log_history": "Historial de registros",
+    "severity": {
+      "mild": "Leve",
+      "moderate": "Moderado",
+      "severe": "Severo"
+    },
+    "symptom_types": {
+      "cramps": "Cólicos",
+      "bloating": "Hinchazón",
+      "breast_tenderness": "Sensibilidad en los senos",
+      "headache": "Dolor de cabeza",
+      "fatigue": "Fatiga",
+      "mood_swings": "Cambios de humor",
+      "acne": "Acné",
+      "back_pain": "Dolor de espalda",
+      "nausea": "Náuseas",
+      "other": "Otro"
+    }
+  },
+
+  "pregnancy": {
+    "title": "Embarazo",
+    "start_tracking": "Comenzar seguimiento",
+    "weeks_pregnant": "Semanas de embarazo",
+    "due_date": "Fecha de parto estimada",
+    "fetal_development": "Desarrollo fetal",
+    "wellness_tips": "Consejos de bienestar",
+    "appointments": "Citas médicas",
+    "weight_tracking": "Control de peso",
+    "symptoms": "Síntomas del embarazo",
+    "edit_due_date": "Editar fecha de parto",
+    "not_pregnant": "No estás en seguimiento de embarazo",
+    "start_tracking_pregnancy": "Comienza a rastrear tu embarazo"
+  },
+
+  "blog": {
+    "title": "Blog",
+    "search_articles": "Buscar artículos",
+    "featured": "Destacados",
+    "latest": "Últimas publicaciones",
+    "categories": {
+      "wellness": "Bienestar",
+      "nutrition": "Nutrición",
+      "exercise": "Ejercicio",
+      "mental_health": "Salud Mental",
+      "reproduction": "Reproducción",
+      "pregnancy": "Embarazo"
+    },
+    "read_more": "Leer más",
+    "reading_time": "Tiempo de lectura: {{minutes}} min"
+  },
+
+  "insights": {
+    "title": "Mis Datos",
+    "cycle_insights": "Información del ciclo",
+    "patterns": "Patrones",
+    "predictions": "Predicciones",
+    "health_overview": "Resumen de salud",
+    "symptom_trends": "Tendencias de síntomas",
+    "mood_trends": "Tendencias de humor",
+    "export_data": "Exportar datos",
+    "view_analysis": "Ver análisis"
+  },
+
+  "settings": {
+    "title": "Configuración",
+    "profile": "Perfil",
+    "notifications": "Notificaciones",
+    "privacy": "Privacidad",
+    "language": "Idioma",
+    "about": "Acerca de",
+    "help": "Ayuda",
+    "contact_support": "Contactar soporte",
+    "logout": "Cerrar sesión",
+    "delete_account": "Eliminar cuenta",
+    "notification_settings": "Configuración de notificaciones",
+    "period_reminder": "Recordatorio de período",
+    "ovulation_reminder": "Recordatorio de ovulación",
+    "symptom_reminder": "Recordatorio de síntomas",
+    "daily_tips": "Consejos diarios",
+    "tips_time": "Hora de consejos",
+    "privacy_policy": "Política de privacidad",
+    "terms_of_service": "Términos de servicio"
+  },
+
+  "auth": {
+    "sign_in": "Iniciar sesión",
+    "sign_up": "Registrarse",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirm_password": "Confirmar contraseña",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "reset_password": "Restablecer contraseña",
+    "create_account": "Crear cuenta",
+    "welcome_back": "Bienvenida de vuelta",
+    "invalid_email": "Correo electrónico no válido",
+    "password_too_short": "La contraseña debe tener al menos 8 caracteres",
+    "passwords_dont_match": "Las contraseñas no coinciden",
+    "account_created": "Cuenta creada exitosamente",
+    "sign_in_error": "Error al iniciar sesión"
+  },
+
+  "errors": {
+    "network_error": "Error de conexión. Verifica tu internet.",
+    "server_error": "Error del servidor. Por favor intenta más tarde.",
+    "not_found": "No encontrado",
+    "unauthorized": "No autorizado",
+    "validation_error": "Error de validación",
+    "something_went_wrong": "Algo salió mal. Por favor intenta de nuevo."
+  },
+
+  "months": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre"
+  },
+
+  "days": {
+    "monday": "Lunes",
+    "tuesday": "Martes",
+    "wednesday": "Miércoles",
+    "thursday": "Jueves",
+    "friday": "Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "colors": {
+    "primary": {
+      "hex": "#E10098",
+      "name": "Piña Pink",
+      "usage": "Primary actions, headers, active states"
+    },
+    "secondary": {
+      "hex": "#8E44AD",
+      "name": "Purple",
+      "usage": "Secondary actions, accents"
+    },
+    "accent": {
+      "hex": "#FFD600",
+      "name": "Sunshine Yellow",
+      "usage": "Highlights, warnings, premium badges"
+    },
+    "teal": {
+      "hex": "#00BFB3",
+      "name": "Aqua Spiral",
+      "usage": "Fertility indicators, success states"
+    },
+    "neutrals": {
+      "white": "#FFFFFF",
+      "lightGray": "#F5F5F5",
+      "gray": "#CCCCCC",
+      "darkGray": "#666666",
+      "black": "#1A1A1A"
+    }
+  },
+  "gradients": {
+    "primary": {
+      "type": "linear",
+      "colors": ["#E10098", "#8E44AD"],
+      "angle": 135
+    },
+    "sunset": {
+      "type": "linear",
+      "colors": ["#FFD600", "#E10098"],
+      "angle": 90
+    },
+    "ocean": {
+      "type": "linear",
+      "colors": ["#00BFB3", "#8E44AD"],
+      "angle": 180
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "Rounded Sans-Serif",
+      "ios": "SF Rounded",
+      "web": "Inter, system-ui, sans-serif",
+      "fallback": "Arial, sans-serif"
+    },
+    "sizes": {
+      "h1": 32,
+      "h2": 24,
+      "h3": 20,
+      "body": 16,
+      "small": 14,
+      "tiny": 12
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    }
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "xxl": 48
+  },
+  "borderRadius": {
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "full": 9999
+  },
+  "shadows": {
+    "soft": "0px 4px 16px rgba(0, 0, 0, 0.08)",
+    "medium": "0px 8px 24px rgba(0, 0, 0, 0.12)",
+    "heavy": "0px 12px 32px rgba(0, 0, 0, 0.16)"
+  },
+  "animations": {
+    "spiral": {
+      "type": "rotation",
+      "duration": "2s",
+      "easing": "ease-in-out"
+    },
+    "bubble": {
+      "type": "scale",
+      "duration": "0.3s",
+      "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+    }
+  },
+  "iconStyle": {
+    "type": "rounded",
+    "strokeWidth": 2,
+    "size": {
+      "sm": 16,
+      "md": 24,
+      "lg": 32
+    }
+  }
+}

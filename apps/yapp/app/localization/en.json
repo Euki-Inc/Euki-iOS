@@ -1,0 +1,218 @@
+{
+  "common": {
+    "app_name": "La Piña",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "skip": "Skip",
+    "done": "Done",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information",
+    "retry": "Retry",
+    "settings": "Settings",
+    "search": "Search",
+    "no_data": "No data",
+    "try_again": "Try again"
+  },
+
+  "navigation": {
+    "home": "Home",
+    "cycle": "Cycle",
+    "symptoms": "Symptoms",
+    "pregnancy": "Pregnancy",
+    "blog": "Blog",
+    "insights": "Insights",
+    "settings": "Settings"
+  },
+
+  "home": {
+    "title": "Welcome",
+    "greeting": "Hello, {{name}}",
+    "cycle_status": "Cycle Status",
+    "days_until_period": "Days until period",
+    "today": "Today",
+    "phase": "Phase",
+    "next_event": "Next Event",
+    "fertility_window": "Fertility Window",
+    "mood_today": "How are you feeling today?",
+    "quick_add": "Quick Add",
+    "view_more": "View More"
+  },
+
+  "cycle": {
+    "title": "My Cycle",
+    "log_period": "Log Period",
+    "log_symptoms": "Log Symptoms",
+    "cycle_length": "Cycle Length",
+    "period_length": "Period Length",
+    "next_period": "Next Period",
+    "last_period": "Last Period",
+    "phases": {
+      "menstrual": "Menstrual",
+      "follicular": "Follicular",
+      "ovulation": "Ovulation",
+      "luteal": "Luteal"
+    },
+    "phase_descriptions": {
+      "menstrual": "Bleeding phase",
+      "follicular": "Energy and renewal",
+      "ovulation": "Peak fertility",
+      "luteal": "Reflection and introspection"
+    },
+    "fertility_status": "Fertility Status",
+    "fertile": "Fertile",
+    "not_fertile": "Not Fertile",
+    "highly_fertile": "Highly Fertile"
+  },
+
+  "symptoms": {
+    "title": "Symptoms",
+    "add_symptom": "Add Symptom",
+    "select_symptoms": "Select your symptoms",
+    "symptom_severity": "Severity",
+    "symptom_notes": "Notes about symptoms",
+    "common_symptoms": "Common Symptoms",
+    "log_history": "Log History",
+    "severity": {
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "severe": "Severe"
+    },
+    "symptom_types": {
+      "cramps": "Cramps",
+      "bloating": "Bloating",
+      "breast_tenderness": "Breast Tenderness",
+      "headache": "Headache",
+      "fatigue": "Fatigue",
+      "mood_swings": "Mood Swings",
+      "acne": "Acne",
+      "back_pain": "Back Pain",
+      "nausea": "Nausea",
+      "other": "Other"
+    }
+  },
+
+  "pregnancy": {
+    "title": "Pregnancy",
+    "start_tracking": "Start Tracking",
+    "weeks_pregnant": "Weeks Pregnant",
+    "due_date": "Due Date",
+    "fetal_development": "Fetal Development",
+    "wellness_tips": "Wellness Tips",
+    "appointments": "Medical Appointments",
+    "weight_tracking": "Weight Tracking",
+    "symptoms": "Pregnancy Symptoms",
+    "edit_due_date": "Edit Due Date",
+    "not_pregnant": "You're not tracking pregnancy",
+    "start_tracking_pregnancy": "Start tracking your pregnancy"
+  },
+
+  "blog": {
+    "title": "Blog",
+    "search_articles": "Search Articles",
+    "featured": "Featured",
+    "latest": "Latest Posts",
+    "categories": {
+      "wellness": "Wellness",
+      "nutrition": "Nutrition",
+      "exercise": "Exercise",
+      "mental_health": "Mental Health",
+      "reproduction": "Reproduction",
+      "pregnancy": "Pregnancy"
+    },
+    "read_more": "Read More",
+    "reading_time": "Reading time: {{minutes}} min"
+  },
+
+  "insights": {
+    "title": "My Insights",
+    "cycle_insights": "Cycle Insights",
+    "patterns": "Patterns",
+    "predictions": "Predictions",
+    "health_overview": "Health Overview",
+    "symptom_trends": "Symptom Trends",
+    "mood_trends": "Mood Trends",
+    "export_data": "Export Data",
+    "view_analysis": "View Analysis"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "language": "Language",
+    "about": "About",
+    "help": "Help",
+    "contact_support": "Contact Support",
+    "logout": "Log Out",
+    "delete_account": "Delete Account",
+    "notification_settings": "Notification Settings",
+    "period_reminder": "Period Reminder",
+    "ovulation_reminder": "Ovulation Reminder",
+    "symptom_reminder": "Symptom Reminder",
+    "daily_tips": "Daily Tips",
+    "tips_time": "Tips Time",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+  },
+
+  "auth": {
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "forgot_password": "Forgot password?",
+    "reset_password": "Reset Password",
+    "create_account": "Create Account",
+    "welcome_back": "Welcome Back",
+    "invalid_email": "Invalid email address",
+    "password_too_short": "Password must be at least 8 characters",
+    "passwords_dont_match": "Passwords don't match",
+    "account_created": "Account created successfully",
+    "sign_in_error": "Error signing in"
+  },
+
+  "errors": {
+    "network_error": "Network error. Please check your internet connection.",
+    "server_error": "Server error. Please try again later.",
+    "not_found": "Not found",
+    "unauthorized": "Unauthorized",
+    "validation_error": "Validation error",
+    "something_went_wrong": "Something went wrong. Please try again."
+  },
+
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+
+  "days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  }
+}

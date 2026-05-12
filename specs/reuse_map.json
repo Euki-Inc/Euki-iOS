@@ -1,0 +1,109 @@
+{
+  "reuse_strategy": "Wrap existing Euki controllers in La Piña branded containers",
+  "reuse": {
+    "cycle": {
+      "controllers": [
+        "EUKBleedingViewController",
+        "EUKDailyLogViewController",
+        "EUKWeekCalendarViewController",
+        "EUKCalendarMonthsViewController",
+        "EUKCalendarTabViewController"
+      ],
+      "managers": [
+        "CalendarManager",
+        "CycleManager",
+        "DateManager"
+      ],
+      "models": [
+        "CalendarItem",
+        "CycleDayItem",
+        "CyclePeriodData",
+        "CyclePeriodItem"
+      ],
+      "action": "Wrap in PinaCycleHomeViewController"
+    },
+    "symptoms": {
+      "controllers": [
+        "EUKEmotionsViewController",
+        "EUKBodyViewController",
+        "EUKNoteViewController",
+        "EUKLogViewController"
+      ],
+      "managers": [],
+      "models": [],
+      "action": "Combine into PinaSymptomsViewController with tabs"
+    },
+    "insights": {
+      "controllers": [
+        "EUKBookmarksViewController"
+      ],
+      "managers": [
+        "BookmarksManager"
+      ],
+      "models": [
+        "Bookmark"
+      ],
+      "action": "Partial reuse in PinaInsightsViewController"
+    },
+    "premium_optional": {
+      "controllers": [
+        "EUKRemindersViewController",
+        "EUKAppointmentsViewController",
+        "EUKFutureAppointmentViewController"
+      ],
+      "managers": [
+        "RemindersManager",
+        "LocalNotificationManager"
+      ],
+      "action": "Hide behind premium paywall, not in MVP tabs"
+    },
+    "settings": {
+      "controllers": [
+        "EUKSettingsViewController"
+      ],
+      "action": "Rebrand to PinaSettingsViewController"
+    }
+  },
+  "exclude": {
+    "abortion_module": {
+      "reason": "Not required for Flo replacement, regulatory risk",
+      "controllers": [
+        "EUKAbortionViewController",
+        "EUKMedicalAbortionViewController",
+        "EUKSurgicalAbortionViewController"
+      ],
+      "action": "Remove from navigation, keep files for potential future use"
+    },
+    "quiz_module": {
+      "reason": "Low priority for MVP",
+      "controllers": [
+        "EUKQuizViewController"
+      ],
+      "action": "Defer to post-MVP"
+    }
+  },
+  "new_modules": {
+    "pregnancy": {
+      "controllers": ["PinaPregnancyViewController"],
+      "data_source": "specs/data_seed.json pregnancy_weeks",
+      "implementation": "New SwiftUI views with static content"
+    },
+    "blog": {
+      "controllers": ["PinaBlogViewController"],
+      "implementation": "WKWebView embedding Next.js app",
+      "fallback": "Show placeholder if BLOG_BASE_URL not configured"
+    },
+    "ai_companion": {
+      "controllers": ["PinaAIChatViewController"],
+      "implementation": "Chat UI with stubbed Claude API",
+      "status": "premium_feature"
+    }
+  },
+  "branding_updates": {
+    "app_name": "Euki → La Piña",
+    "bundle_id": "Keep as-is for now",
+    "theme_colors": "Apply from specs/theme.json",
+    "icons": "Replace with spiral pineapple placeholders",
+    "launch_screen": "Update with La Piña branding"
+  }
+}

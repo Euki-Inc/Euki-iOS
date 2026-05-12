@@ -1,0 +1,40 @@
+Contact: mailto:security@lapina.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, es
+Canonical: https://lapina.com/.well-known/security.txt
+
+# La Piña Security Policy
+
+# If you discover a security vulnerability, please report it to us responsibly.
+# We appreciate your efforts to help keep La Piña and our users safe.
+
+# Reporting Guidelines:
+# - Please do not publicly disclose the vulnerability until we have addressed it
+# - Provide detailed steps to reproduce the vulnerability
+# - Include your name/handle if you would like to be credited
+# - Allow us reasonable time to address the issue before disclosure
+
+# Scope:
+# - This policy applies to lapina.com and all subdomains
+# - Mobile applications (when released)
+# - API endpoints
+
+# Out of Scope:
+# - Social engineering attacks
+# - Physical security issues
+# - Denial of Service (DoS) attacks
+# - Spam or phishing attempts
+
+# Safe Harbor:
+# We will not pursue legal action against security researchers who:
+# - Act in good faith to report vulnerabilities
+# - Avoid privacy violations and data destruction
+# - Do not exploit vulnerabilities beyond what is necessary to demonstrate them
+
+# Acknowledgments:
+# We maintain a hall of fame for researchers who have responsibly disclosed vulnerabilities
+
+Encryption: https://lapina.com/pgp-key.txt
+Acknowledgments: https://lapina.com/security-acknowledgments
+Policy: https://lapina.com/security-policy
+Hiring: https://lapina.com/careers

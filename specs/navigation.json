@@ -1,0 +1,98 @@
+{
+  "tabs": [
+    {
+      "id": "cycle",
+      "label": "Cycle",
+      "icon": "calendar",
+      "color": "#E10098",
+      "ios_controller": "PinaCycleHomeViewController",
+      "web_route": "/cycle",
+      "features": [
+        "Period logging",
+        "Cycle calendar",
+        "Ovulation tracking",
+        "Predictions"
+      ]
+    },
+    {
+      "id": "symptoms",
+      "label": "Symptoms",
+      "icon": "heart-pulse",
+      "color": "#8E44AD",
+      "ios_controller": "PinaSymptomsViewController",
+      "web_route": "/symptoms",
+      "features": [
+        "Mood tracking",
+        "Body symptoms",
+        "Sleep logging",
+        "Journal notes"
+      ]
+    },
+    {
+      "id": "pregnancy",
+      "label": "Pregnancy",
+      "icon": "baby",
+      "color": "#00BFB3",
+      "ios_controller": "PinaPregnancyViewController",
+      "web_route": "/pregnancy",
+      "features": [
+        "Fertility mode",
+        "Fetal development",
+        "Trimester guide",
+        "Pregnancy symptoms"
+      ]
+    },
+    {
+      "id": "insights",
+      "label": "Insights",
+      "icon": "chart-line",
+      "color": "#FFD600",
+      "ios_controller": "PinaInsightsViewController",
+      "web_route": "/insights",
+      "features": [
+        "Health alerts",
+        "Pattern analysis",
+        "Educational content",
+        "AI recommendations"
+      ]
+    },
+    {
+      "id": "blog",
+      "label": "Blog",
+      "icon": "book-open",
+      "color": "#E10098",
+      "ios_controller": "PinaBlogViewController",
+      "web_route": "/blog",
+      "features": [
+        "Luxury wellness articles",
+        "AR flipbook experience",
+        "Affiliate products",
+        "Expert content"
+      ]
+    }
+  ],
+  "modal_screens": [
+    {
+      "id": "paywall",
+      "controller": "PinaPaywallViewController",
+      "web_route": "/premium"
+    },
+    {
+      "id": "settings",
+      "controller": "PinaSettingsViewController",
+      "web_route": "/settings"
+    },
+    {
+      "id": "onboarding",
+      "controller": "PinaOnboardingViewController",
+      "web_route": "/welcome"
+    }
+  ],
+  "tab_bar_config": {
+    "style": "bubble",
+    "background": "blur",
+    "selected_tint": "#E10098",
+    "unselected_tint": "#CCCCCC",
+    "height": 80
+  }
+}

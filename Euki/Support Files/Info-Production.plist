@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Bundle Information -->
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>La Pina</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+
+	<!-- App Transport Security -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<!-- Allow HTTPS connections to your APIs -->
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<!-- Exception domains if needed for specific endpoints -->
+		<key>NSExceptionDomains</key>
+		<dict>
+			<!-- Example: Add your Supabase domain -->
+			<!--
+			<key>supabase.co</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+			</dict>
+			-->
+		</dict>
+	</dict>
+
+	<!-- Export Compliance -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+
+	<!-- Device Requirements -->
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+
+	<!-- UI Configuration -->
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Onboardings</string>
+
+	<!-- Device Capabilities -->
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+
+	<!-- Supported Interface Orientations -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- User Interface Style -->
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+
+	<!-- Privacy - Camera Usage -->
+	<key>NSCameraUsageDescription</key>
+	<string>La Pina necesita acceso a tu cámara para que puedas tomar fotos de tu documentación de salud y crear tu perfil personalizado.</string>
+
+	<!-- Privacy - Photo Library Usage -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>La Pina necesita acceso a tu biblioteca de fotos para que puedas seleccionar y guardar imágenes relacionadas con tu salud.</string>
+
+	<!-- Privacy - Photo Library Add Usage -->
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>La Pina guarda gráficos y reportes de salud en tu biblioteca de fotos para tu referencia personal.</string>
+
+	<!-- Privacy - Calendar Usage -->
+	<key>NSCalendarsUsageDescription</key>
+	<string>La Pina utiliza tu calendario para ayudarte a rastrear tu ciclo menstrual, ovulación y eventos importantes de salud.</string>
+
+	<!-- Privacy - Reminders Usage -->
+	<key>NSRemindersUsageDescription</key>
+	<string>La Pina puede crear recordatorios para tu ciclo, medicamentos y citas médicas.</string>
+
+	<!-- Privacy - Notifications -->
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>La Pina envía notificaciones para recordatorios de ciclo, medicamentos y perspectivas de salud personalizadas.</string>
+
+	<!-- Privacy - Health Share Usage -->
+	<key>NSHealthShareUsageDescription</key>
+	<string>La Pina puede leer datos de salud para proporcionarte análisis y perspectivas personalizadas sobre tu ciclo y bienestar.</string>
+
+	<!-- Privacy - Health Update Usage -->
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>La Pina puede guardar datos de seguimiento de ciclo en la app Salud para mantener tus registros sincronizados.</string>
+
+	<!-- Privacy - Location When In Use Usage (if using location features) -->
+	<!--
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>La Pina utiliza tu ubicación para encontrar clínicas y recursos de salud cercanos.</string>
+	-->
+
+	<!-- Privacy - Face ID Usage (if using biometric authentication) -->
+	<!--
+	<key>NSFaceIDUsageDescription</key>
+	<string>La Pina utiliza Face ID para proteger tu información de salud personal de forma segura.</string>
+	-->
+
+	<!-- URL Schemes (for deep linking, OAuth, etc.) -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.lapina.euki</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>lapina</string>
+			</array>
+		</dict>
+		<!-- Stripe URL Scheme (if using Stripe SDK) -->
+		<!--
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.lapina.stripe</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>lapina-stripe</string>
+			</array>
+		</dict>
+		-->
+	</array>
+
+	<!-- Universal Links (for web-to-app navigation) -->
+	<!--
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:lapina.app</string>
+		<string>applinks:www.lapina.app</string>
+	</array>
+	-->
+
+	<!-- Background Modes (if needed) -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<!-- Enable background fetch for syncing data -->
+		<string>fetch</string>
+		<!-- Enable remote notifications -->
+		<string>remote-notification</string>
+		<!-- Enable background processing for health data sync -->
+		<!--<string>processing</string>-->
+	</array>
+
+	<!-- App Capabilities -->
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+	<!-- Scene Configuration (iOS 13+) -->
+	<!--
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	-->
+
+	<!-- Status Bar Configuration -->
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+
+	<!-- Prevent screenshots in app switcher (for privacy) -->
+	<!--
+	<key>UIApplicationSupportsShakeToEdit</key>
+	<false/>
+	-->
+
+	<!-- Font licenses (if using custom fonts) -->
+	<key>UIAppFonts</key>
+	<array>
+		<!-- Add custom font files here if needed -->
+		<!--<string>Fonts/CustomFont-Regular.ttf</string>-->
+	</array>
+
+	<!-- Localization -->
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>es</string>
+	</array>
+
+	<!-- App Store Configuration -->
+	<key>NSSupportsLiveActivities</key>
+	<false/>
+
+	<!-- Privacy Manifest (iOS 17+) -->
+	<!-- Note: You may need to create a separate PrivacyInfo.xcprivacy file -->
+
+</dict>
+</plist>

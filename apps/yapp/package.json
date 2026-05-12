@@ -1,0 +1,75 @@
+{
+  "name": "la-pina-yapp",
+  "version": "1.0.0",
+  "description": "La Piña - Women's Wellness App",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "dev": "expo start --dev-client",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint app --ext .ts,.tsx",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"app/**/*.{ts,tsx,json}\"",
+    "format:check": "prettier --check \"app/**/*.{ts,tsx,json}\"",
+    "build": "eas build",
+    "build:android": "eas build --platform android",
+    "build:ios": "eas build --platform ios",
+    "submit": "eas submit"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/app/$1"
+    }
+  },
+  "dependencies": {
+    "expo": "^51.0.0",
+    "expo-splash-screen": "^0.27.0",
+    "expo-status-bar": "^1.12.0",
+    "react": "^18.2.0",
+    "react-native": "^0.74.0",
+    "react-native-paper": "^5.12.0",
+    "react-native-gesture-handler": "^2.14.0",
+    "react-native-reanimated": "^3.8.0",
+    "react-native-screens": "^3.27.0",
+    "react-native-blur": "^4.4.0",
+    "@react-navigation/native": "^6.1.0",
+    "@react-navigation/bottom-tabs": "^6.5.0",
+    "@react-navigation/stack": "^6.3.0",
+    "@react-navigation/native-stack": "^6.9.0",
+    "@react-native-async-storage/async-storage": "^1.21.0",
+    "supabase-js": "^2.38.0",
+    "react-native-chart-kit": "^6.12.0",
+    "chart.js": "^4.4.0",
+    "i18n-js": "^4.4.0",
+    "react-native-svg": "^13.14.0",
+    "react-native-safe-area-context": "^4.8.0",
+    "date-fns": "^2.30.0",
+    "lodash.debounce": "^4.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.74.0",
+    "typescript": "^5.3.0",
+    "@babel/core": "^7.23.0",
+    "babel-plugin-reanimated": "^3.8.0",
+    "jest": "^29.7.0",
+    "jest-expo": "^51.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/react-native": "^12.0.0",
+    "eslint": "^8.50.0",
+    "eslint-config-expo": "^7.0.0",
+    "prettier": "^3.0.0",
+    "expo-cli": "^6.3.0"
+  },
+  "private": true
+}

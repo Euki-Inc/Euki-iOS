@@ -45,7 +45,7 @@ extension EUKSettingsViewController: UITableViewDelegate, UITableViewDataSource 
             return 1
         }
         
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,8 +71,10 @@ extension EUKSettingsViewController: UITableViewDelegate, UITableViewDataSource 
             cell.titleLabel.text = "privacy_faq".localized
         }else if indexPath.row == 1{
             cell.titleLabel.text = "Privacy best practices_dropdown".localized
-        }else{
+        }else if indexPath.row == 2{
             cell.titleLabel.text = "privacy_statement".localized
+        } else {
+            cell.titleLabel.text = "admin_dashboard".localized
         }
         
         return cell
@@ -109,8 +111,11 @@ extension EUKSettingsViewController: UITableViewDelegate, UITableViewDataSource 
                 self.pushContentItem(contentItem: PrivacyContentManager.sharedInstance.privacyFAQS())
             } else if indexPath.row == 1 {
                 self.pushContentItem(contentItem: PrivacyContentManager.sharedInstance.privacyBestPractices())
-            } else {
+            } else if indexPath.row == 2 {
                 self.pushContentItem(contentItem: PrivacyContentManager.sharedInstance.privacyStatement())
+            } else {
+                let viewController = EUKAdminDashboardViewController()
+                self.navigationController?.pushViewController(viewController, animated: true)
             }
         }
     }

@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 5.0.0"
+  },
+  "build": {
+    "production": {
+      "node": "18.13.0",
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "YOUR_SUPABASE_URL",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "YOUR_SUPABASE_KEY"
+      }
+    },
+    "preview": {
+      "node": "18.13.0"
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "your-apple-id@example.com",
+        "ascAppId": "123456789",
+        "appleTeamId": "YOUR_TEAM_ID"
+      },
+      "android": {
+        "serviceAccount": "path/to/service-account.json"
+      }
+    }
+  }
+}

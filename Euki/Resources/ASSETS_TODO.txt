@@ -1,0 +1,88 @@
+La Piña iOS Assets - Implementation Checklist
+================================================
+
+REQUIRED ASSETS TO CREATE
+========================
+
+1. Spiral Pineapple Logo (pina_logo_placeholder)
+   - Location: Euki/Resources/Assets.xcassets/pina_logo_placeholder.imageset/
+   - Formats needed:
+     * pina_logo_placeholder.png (1x, ~44x44pt)
+     * pina_logo_placeholder@2x.png (2x, ~88x88pt)
+     * pina_logo_placeholder@3x.png (3x, ~132x132pt)
+   - Design: Spiral pineapple in La Piña brand colors
+   - Usage: App icon placeholder, logo display
+   - Colors reference: #E10098 (primary), #8E44AD (secondary)
+
+2. Tab Bar Icons
+   - Location: Euki/Resources/Assets.xcassets/
+   - Icons needed:
+     * home_tab.imageset (home/dashboard tab)
+     * cycle_tab.imageset (cycle tracking tab)
+     * community_tab.imageset (community/forums tab)
+     * profile_tab.imageset (user profile tab)
+     * settings_tab.imageset (settings tab)
+   - Each icon in 1x, 2x, 3x sizes (~24x24pt base)
+   - Style: Rounded, stroke width 2px
+   - Colors: Use .pinaDarkGray for inactive, .pinaPrimary for active
+
+3. Navigation Icons
+   - back.imageset
+   - close.imageset
+   - menu.imageset
+   - search.imageset
+   - Size: ~24x24pt
+   - Style: Rounded with 2px stroke
+
+4. Status Icons
+   - fertility_low.imageset (use .pinaDarkGray)
+   - fertility_medium.imageset (use .pinaAccent)
+   - fertility_high.imageset (use .pinaPrimary)
+   - Size: ~20x20pt
+
+INTEGRATION NOTES
+=================
+
+- All images should be optimized PNG files
+- Use vector sources (PDF, SVG) and export as raster images
+- Follow Apple's HIG for icon design guidelines
+- Test at all scale factors (1x, 2x, 3x)
+- Ensure high contrast for accessibility (WCAG AA minimum)
+- iOS 12.0+ compatibility
+
+COLOR REFERENCE
+===============
+
+Primary:     #E10098 (Piña Pink)      → UIColor.pinaPrimary
+Secondary:   #8E44AD (Purple)         → UIColor.pinaSecondary
+Accent:      #FFD600 (Sunshine Yellow)→ UIColor.pinaAccent
+Teal:        #00BFB3 (Aqua Spiral)    → UIColor.pinaTeal
+White:       #FFFFFF                  → UIColor.pinaWhite
+Light Gray:  #F5F5F5                  → UIColor.pinaLightGray
+Gray:        #CCCCCC                  → UIColor.pinaGray
+Dark Gray:   #666666                  → UIColor.pinaDarkGray
+Black:       #1A1A1A                  → UIColor.pinaBlack
+
+SWIFT USAGE EXAMPLES
+====================
+
+// Using colors in code:
+let imageView = UIImageView(image: UIImage(named: "home_tab"))
+imageView.tintColor = UIColor.pinaPrimary
+
+// Creating gradients:
+let gradientView = UIView()
+let gradient = UIColor.pinaPrimaryGradient(size: gradientView.bounds.size)
+gradientView.layer.addSublayer(gradient)
+
+// Using hex colors:
+let customColor = UIColor(hex: "#E10098", alpha: 0.8)
+
+NEXT STEPS
+==========
+
+1. Design all required assets (spiral logo, tab icons, navigation icons)
+2. Export assets at 1x, 2x, 3x sizes
+3. Add to Assets.xcassets following the imageset structure
+4. Test in interface builder and on devices
+5. Verify color accuracy and icon visibility

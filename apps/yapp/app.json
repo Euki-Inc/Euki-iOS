@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "La Piña",
+    "slug": "la-pina-app",
+    "version": "1.0.0",
+    "scheme": "lapina",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF5F0"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.lapina.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "La Piña needs access to your calendar to track your cycle",
+        "NSHealthShareUsageDescription": "La Piña needs access to health data for wellness tracking",
+        "NSHealthUpdateUsageDescription": "La Piña needs to update your health data"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFF5F0"
+      },
+      "package": "com.lapina.app",
+      "versionCode": 1,
+      "permissions": [
+        "READ_CALENDAR",
+        "WRITE_CALENDAR"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-blur",
+        {}
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          },
+          "android": {
+            "minSdkVersion": 24
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "la-pina-app"
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "app_name": "La Piña",
+  "version": "1.0.0",
+  "goal": "Replace Flo with an AI-native, luxury wellness tracker for women",
+  "platforms": ["iOS Swift", "Web Preview (Vercel Next.js)", "Android (future)"],
+  "theme": {
+    "primary": "#E10098",
+    "secondary": "#8E44AD",
+    "accent": "#FFD600",
+    "spiral_teal": "#00BFB3",
+    "logo": "metallic slinky spiral pineapple icon",
+    "style": "bubble, soft gradients, spiral transitions"
+  },
+  "modules": {
+    "cycle_tracking": {
+      "features": [
+        "log period start/end",
+        "calendar visualization",
+        "ovulation prediction",
+        "cycle length tracking",
+        "fertility window detection"
+      ],
+      "reuse_controllers": [
+        "EUKBleedingViewController",
+        "EUKDailyLogViewController",
+        "EUKWeekCalendarViewController",
+        "EUKCalendarMonthsViewController"
+      ]
+    },
+    "symptoms": {
+      "features": [
+        "mood logging",
+        "sleep tracking",
+        "body symptoms",
+        "interactive charts",
+        "journal notes"
+      ],
+      "reuse_controllers": [
+        "EUKEmotionsViewController",
+        "EUKBodyViewController",
+        "EUKNoteViewController"
+      ]
+    },
+    "pregnancy": {
+      "features": [
+        "fertility mode",
+        "weekly fetal development",
+        "trimester education",
+        "pregnancy symptoms tracker"
+      ],
+      "reuse_controllers": [],
+      "status": "new_module"
+    },
+    "insights": {
+      "features": [
+        "irregularity detection",
+        "health recommendations",
+        "saved resources",
+        "educational content",
+        "AI-powered alerts"
+      ],
+      "reuse_controllers": ["EUKBookmarksViewController"],
+      "status": "partial_new"
+    },
+    "blog": {
+      "type": "AR flipbook luxury shop",
+      "categories": [
+        "high-end vibrators",
+        "natural wellness products",
+        "mental & spiritual advice",
+        "fitness wellness",
+        "gourmet coffee & tea"
+      ],
+      "status": "new_module",
+      "implementation": "Next.js embedded in WebView"
+    },
+    "premium": {
+      "price": "$9.99/year",
+      "paywall": "Stripe subscription unlock",
+      "features": [
+        "unlimited AI queries",
+        "full blog access",
+        "advanced insights",
+        "export data",
+        "priority support"
+      ]
+    }
+  },
+  "integrations": {
+    "supabase": {
+      "purpose": "auth + database",
+      "status": "stubbed"
+    },
+    "stripe": {
+      "purpose": "subscription + webhooks",
+      "status": "stubbed"
+    },
+    "claude": {
+      "purpose": "AI health companion",
+      "status": "stubbed"
+    },
+    "whisper": {
+      "purpose": "voice input",
+      "status": "stubbed"
+    },
+    "apify": {
+      "purpose": "trend + UGC monitoring",
+      "status": "stubbed"
+    },
+    "cline_mcp": {
+      "purpose": "multi-context personalization",
+      "status": "stubbed"
+    }
+  },
+  "secrets_policy": "ALL KEYS MUST BE STUBBED UNTIL FINAL RELEASE",
+  "localization": ["en", "es"],
+  "privacy_first": true,
+  "offline_capable": true
+}

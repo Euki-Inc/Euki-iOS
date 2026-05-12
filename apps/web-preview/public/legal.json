@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "effectiveDate": "2026-03-09",
+  "lastUpdated": "2026-03-09",
+  "contact": {
+    "email": "support@lapina.app",
+    "privacyEmail": "privacy@lapina.app"
+  },
+  "company": {
+    "name": "La Piña",
+    "jurisdiction": "United States"
+  },
+  "emergencyResources": {
+    "us": {
+      "suicide": {
+        "name": "National Suicide Prevention Lifeline",
+        "phone": "988",
+        "available": "24/7"
+      },
+      "crisis": {
+        "name": "Crisis Text Line",
+        "phone": "Text HOME to 741741",
+        "available": "24/7"
+      },
+      "domesticViolence": {
+        "name": "National Domestic Violence Hotline",
+        "phone": "1-800-799-7233",
+        "available": "24/7"
+      }
+    },
+    "mx": {
+      "suicide": {
+        "name": "SAPTEL",
+        "phone": "55 5259-8121",
+        "available": "24/7"
+      },
+      "domesticViolence": {
+        "name": "Línea Nacional contra la Violencia",
+        "phone": "911 or 800-108-4053",
+        "available": "24/7"
+      }
+    }
+  },
+  "medicalDisclaimer": {
+    "title": "Not Medical Advice",
+    "content": "La Piña is an educational and wellness tracking tool. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.",
+    "urgentCareGuidance": [
+      "Severe abdominal pain or cramping",
+      "Unusually heavy bleeding (soaking through a pad in less than 1 hour)",
+      "Signs of infection (fever over 100.4°F, foul-smelling discharge)",
+      "Sudden severe headache or vision changes",
+      "Chest pain or difficulty breathing",
+      "Signs of ectopic pregnancy or miscarriage",
+      "Severe mood changes or thoughts of self-harm"
+    ]
+  },
+  "subscriptionTerms": {
+    "price": "$9.99",
+    "interval": "year",
+    "processor": "Stripe",
+    "refundPolicy": "30-day money-back guarantee",
+    "cancellation": "Cancel anytime from account settings"
+  },
+  "dataRetention": {
+    "localData": "Stored on device indefinitely until user deletes",
+    "cloudBackup": "Optional; deleted within 30 days of account deletion",
+    "analytics": "Minimal; aggregated and anonymized; retained for 90 days"
+  },
+  "thirdPartyServices": {
+    "stripe": {
+      "purpose": "Payment processing",
+      "dataShared": "Name, email, payment information",
+      "privacyPolicy": "https://stripe.com/privacy"
+    },
+    "supabase": {
+      "purpose": "Optional cloud backup (future feature)",
+      "dataShared": "Health data (encrypted)",
+      "privacyPolicy": "https://supabase.com/privacy"
+    },
+    "amazon": {
+      "purpose": "Affiliate links in blog content",
+      "dataShared": "Click data via referral link",
+      "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496"
+    }
+  },
+  "cookies": {
+    "essential": [
+      {
+        "name": "session",
+        "purpose": "User authentication",
+        "duration": "Session"
+      }
+    ],
+    "optional": []
+  },
+  "userRights": {
+    "gdpr": [
+      "Right to access your data",
+      "Right to rectification",
+      "Right to erasure (right to be forgotten)",
+      "Right to restrict processing",
+      "Right to data portability",
+      "Right to object",
+      "Rights related to automated decision-making"
+    ],
+    "ccpa": [
+      "Right to know what personal information is collected",
+      "Right to know if personal information is sold or disclosed",
+      "Right to say no to the sale of personal information",
+      "Right to access your personal information",
+      "Right to equal service and price",
+      "Right to deletion"
+    ]
+  }
+}

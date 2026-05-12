@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./app/*"],
+      "@/screens": ["./app/screens"],
+      "@/screens/*": ["./app/screens/*"],
+      "@/components": ["./app/components"],
+      "@/components/*": ["./app/components/*"],
+      "@/navigation": ["./app/navigation"],
+      "@/navigation/*": ["./app/navigation/*"],
+      "@/theme": ["./app/theme"],
+      "@/theme/*": ["./app/theme/*"],
+      "@/localization": ["./app/localization"],
+      "@/localization/*": ["./app/localization/*"],
+      "@/services": ["./app/services"],
+      "@/services/*": ["./app/services/*"],
+      "@/hooks": ["./app/hooks"],
+      "@/hooks/*": ["./app/hooks/*"],
+      "@/types": ["./app/types"],
+      "@/types/*": ["./app/types/*"],
+      "@/utils": ["./app/utils"],
+      "@/utils/*": ["./app/utils/*"],
+      "@/assets": ["./assets"],
+      "@/assets/*": ["./assets/*"]
+    },
+    "types": ["jest", "@testing-library/jest-dom", "react-native"]
+  },
+  "include": [
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "index.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ]
+}

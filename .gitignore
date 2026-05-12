@@ -77,3 +77,11 @@ fastlane/test_output
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Configuration files
+Config.plist
+
+# Web Preview App
+apps/web-preview/.env.local
+apps/web-preview/node_modules
+apps/web-preview/.next

@@ -1,0 +1,36 @@
+# Expo
+.expo
+.expo-shared
+dist
+build
+
+# Node
+node_modules
+npm-debug.*
+package-lock.json
+yarn-lock.json
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage
+.jest-cache
+
+# Mobile
+.eas
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride

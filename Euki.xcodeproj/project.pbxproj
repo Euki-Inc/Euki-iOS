@@ -151,6 +151,7 @@
 		77E2799321ACFBE800D44D51 /* EUKSelectableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E2799121ACFBE800D44D51 /* EUKSelectableTableViewCell.xib */; };
 		77E2799621ACFD7F00D44D51 /* EUKSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E2799521ACFD7F00D44D51 /* EUKSettingsViewController.swift */; };
 		77E2799821AD04DC00D44D51 /* EUKTopSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E2799721AD04DC00D44D51 /* EUKTopSettingsViewController.swift */; };
+		F2D2A1B3C4D5E6F708192A3B /* EUKAdminDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2A1B3C4D5E6F708192A3C /* EUKAdminDashboardViewController.swift */; };
 		77E5F5C421000F2C002D7B48 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E5F5C321000F2C002D7B48 /* Settings.storyboard */; };
 		77E9060F218ABD1100CB3FBE /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E9060E218ABD1100CB3FBE /* HomeManager.swift */; };
 		77EBB9C9207DA81E00124199 /* Onboardings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EBB9C8207DA81E00124199 /* Onboardings.storyboard */; };
@@ -359,6 +360,7 @@
 		77E2799121ACFBE800D44D51 /* EUKSelectableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EUKSelectableTableViewCell.xib; sourceTree = "<group>"; };
 		77E2799521ACFD7F00D44D51 /* EUKSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKSettingsViewController.swift; sourceTree = "<group>"; };
 		77E2799721AD04DC00D44D51 /* EUKTopSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKTopSettingsViewController.swift; sourceTree = "<group>"; };
+		F2D2A1B3C4D5E6F708192A3C /* EUKAdminDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUKAdminDashboardViewController.swift; sourceTree = "<group>"; };
 		77E5F5C321000F2C002D7B48 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		77E9060E218ABD1100CB3FBE /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		77EBB9C8207DA81E00124199 /* Onboardings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboardings.storyboard; sourceTree = "<group>"; };
@@ -851,6 +853,7 @@
 		77E2799421ACFD7200D44D51 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				F2D2A1B3C4D5E6F708192A3C /* EUKAdminDashboardViewController.swift */,
 				77E2799521ACFD7F00D44D51 /* EUKSettingsViewController.swift */,
 				77E2799721AD04DC00D44D51 /* EUKTopSettingsViewController.swift */,
 				7787DBEC21F4FDD300F62532 /* EUKSetPinCodeViewController.swift */,
@@ -1242,6 +1245,7 @@
 				77ED361220DF147A00FC9006 /* Euki.xcdatamodeld in Sources */,
 				77B4ED1E206EAEC700F0565A /* String+Attributed.swift in Sources */,
 				77E2799621ACFD7F00D44D51 /* EUKSettingsViewController.swift in Sources */,
+				F2D2A1B3C4D5E6F708192A3B /* EUKAdminDashboardViewController.swift in Sources */,
 				775D35B221BB7933001845A9 /* LocalNotificationManager.swift in Sources */,
 				F165D0C82A3D516100C16D0B /* EUKCycleSumaryDayTableViewCell.swift in Sources */,
 				77A2791A20D3846800E3F4FC /* EUKSexualActivityViewController.swift in Sources */,

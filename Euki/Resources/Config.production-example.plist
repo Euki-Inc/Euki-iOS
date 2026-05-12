@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- ========================================== -->
+	<!-- PRODUCTION CONFIGURATION EXAMPLE           -->
+	<!-- ========================================== -->
+	<!--
+	This file serves as an example/template for production configuration.
+
+	IMPORTANT SECURITY NOTES:
+	1. Copy this file to Config.plist for actual use
+	2. Replace placeholder values with real production credentials
+	3. NEVER commit Config.plist with real credentials to version control
+	4. Add Config.plist to .gitignore
+	5. Store production secrets securely (e.g., 1Password, AWS Secrets Manager)
+	6. Rotate API keys regularly
+	7. Use different keys for development/staging/production
+
+	USAGE:
+	$ cp Euki/Resources/Config.production-example.plist Euki/Resources/Config.plist
+	$ # Edit Config.plist with real values
+	$ # Add to .gitignore if not already present
+
+	Last Updated: March 2026
+	-->
+
+	<!-- ========================================== -->
+	<!-- SUPABASE CONFIGURATION                     -->
+	<!-- ========================================== -->
+	<!--
+	Get these from: https://app.supabase.com/project/_/settings/api
+
+	IMPORTANT:
+	- Use PRODUCTION project credentials (not development)
+	- SUPABASE_ANON_KEY is safe for client-side use (limited permissions)
+	- NEVER expose SUPABASE_SERVICE_ROLE_KEY in mobile apps
+	- Configure Row Level Security (RLS) policies in Supabase
+	-->
+	<key>SUPABASE_URL</key>
+	<string>https://your-project-ref.supabase.co</string>
+
+	<key>SUPABASE_ANON_KEY</key>
+	<string>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.your-production-anon-key-here</string>
+
+	<!-- DO NOT include service role key in mobile apps -->
+	<!-- <key>SUPABASE_SERVICE_ROLE_KEY</key> -->
+	<!-- <string>NEVER_PUT_THIS_IN_MOBILE_APP</string> -->
+
+	<!-- ========================================== -->
+	<!-- STRIPE CONFIGURATION                       -->
+	<!-- ========================================== -->
+	<!--
+	Get these from: https://dashboard.stripe.com/apikeys
+
+	IMPORTANT:
+	- Use PRODUCTION keys (not test keys starting with pk_test_/sk_test_)
+	- pk_live_ is safe for client-side use
+	- NEVER include sk_live_ secret key in mobile apps
+	- Handle subscription logic server-side via Supabase Edge Functions
+	-->
+	<key>STRIPE_PUBLIC_KEY</key>
+	<string>pk_live_51ABC123...your-production-public-key</string>
+
+	<!-- DO NOT include secret key in mobile apps -->
+	<!-- <key>STRIPE_SECRET_KEY</key> -->
+	<!-- <string>sk_live_...NEVER_PUT_THIS_IN_MOBILE_APP</string> -->
+
+	<!--
+	Optional: Stripe Product/Price IDs for subscriptions
+	Get from: https://dashboard.stripe.com/products
+	-->
+	<key>STRIPE_MONTHLY_PRICE_ID</key>
+	<string>price_1ABC123...your-monthly-price-id</string>
+
+	<key>STRIPE_ANNUAL_PRICE_ID</key>
+	<string>price_1XYZ789...your-annual-price-id</string>
+
+	<!-- ========================================== -->
+	<!-- CLAUDE AI CONFIGURATION (OPTIONAL)         -->
+	<!-- ========================================== -->
+	<!--
+	Get from: https://console.anthropic.com/settings/keys
+
+	IMPORTANT:
+	- For production, AI calls should go through your backend (Supabase Edge Functions)
+	- This minimizes API key exposure and allows usage monitoring
+	- Only include if absolutely necessary to call Claude directly from app
+	- Use rate limiting and request validation on backend
+
+	RECOMMENDED: Remove this from mobile app, call AI via backend API
+	-->
+	<key>CLAUDE_API_KEY</key>
+	<string>sk-ant-api...your-production-api-key</string>
+
+	<!-- Alternative: Use backend endpoint instead -->
+	<key>AI_INSIGHTS_ENDPOINT</key>
+	<string>https://your-project-ref.supabase.co/functions/v1/generate-insights</string>
+
+	<!-- ========================================== -->
+	<!-- APIFY CONFIGURATION (OPTIONAL)             -->
+	<!-- ========================================== -->
+	<!--
+	Get from: https://console.apify.com/account/integrations
+
+	USAGE: For web scraping blog content or data collection
+
+	IMPORTANT:
+	- Like Claude, prefer calling Apify from backend
+	- Reduces token exposure and allows centralized monitoring
+	-->
+	<key>APIFY_TOKEN</key>
+	<string>apify_api_...your-production-token</string>
+
+	<!-- ========================================== -->
+	<!-- BLOG CONFIGURATION                         -->
+	<!-- ========================================== -->
+	<!--
+	Production blog URL (Vercel deployment)
+
+	USAGE: Base URL for fetching blog articles and health content
+
+	EXAMPLES:
+	- Vercel: https://lapina-blog.vercel.app
+	- Custom domain: https://blog.lapina.app
+	- Subdomain: https://lapina.app/blog
+	-->
+	<key>BLOG_BASE_URL</key>
+	<string>https://lapina-blog.vercel.app</string>
+
+	<!-- Optional: API endpoint for blog content -->
+	<key>BLOG_API_ENDPOINT</key>
+	<string>https://lapina-blog.vercel.app/api/posts</string>
+
+	<!-- ========================================== -->
+	<!-- FEATURE FLAGS                              -->
+	<!-- ========================================== -->
+	<!--
+	Enable/disable features in production
+	Useful for gradual rollout or A/B testing
+	-->
+	<key>FEATURES</key>
+	<dict>
+		<key>AI_INSIGHTS_ENABLED</key>
+		<true/>
+
+		<key>PREGNANCY_TRACKING_ENABLED</key>
+		<true/>
+
+		<key>BLOG_CONTENT_ENABLED</key>
+		<true/>
+
+		<key>PREMIUM_SUBSCRIPTIONS_ENABLED</key>
+		<true/>
+
+		<key>HEALTH_KIT_SYNC_ENABLED</key>
+		<true/>
+
+		<key>PUSH_NOTIFICATIONS_ENABLED</key>
+		<true/>
+
+		<!-- Disable for initial launch, enable later -->
+		<key>SOCIAL_SHARING_ENABLED</key>
+		<false/>
+
+		<key>COMMUNITY_FEATURES_ENABLED</key>
+		<false/>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- API ENDPOINTS                              -->
+	<!-- ========================================== -->
+	<!--
+	Centralized API endpoint configuration
+	-->
+	<key>API_ENDPOINTS</key>
+	<dict>
+		<!-- Supabase Functions -->
+		<key>USER_PROFILE</key>
+		<string>https://your-project-ref.supabase.co/functions/v1/user-profile</string>
+
+		<key>CYCLE_PREDICTIONS</key>
+		<string>https://your-project-ref.supabase.co/functions/v1/cycle-predictions</string>
+
+		<key>HEALTH_INSIGHTS</key>
+		<string>https://your-project-ref.supabase.co/functions/v1/health-insights</string>
+
+		<key>SUBSCRIPTION_WEBHOOK</key>
+		<string>https://your-project-ref.supabase.co/functions/v1/stripe-webhook</string>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- ANALYTICS & MONITORING                     -->
+	<!-- ========================================== -->
+	<!--
+	Third-party analytics and monitoring services
+	-->
+	<key>ANALYTICS</key>
+	<dict>
+		<!-- Google Analytics (GA4) -->
+		<key>GA_MEASUREMENT_ID</key>
+		<string>G-XXXXXXXXXX</string>
+
+		<!-- Mixpanel -->
+		<key>MIXPANEL_TOKEN</key>
+		<string>your-mixpanel-token-here</string>
+
+		<!-- Amplitude -->
+		<key>AMPLITUDE_API_KEY</key>
+		<string>your-amplitude-api-key</string>
+
+		<!-- Sentry (Error Tracking) -->
+		<key>SENTRY_DSN</key>
+		<string>https://your-sentry-dsn@sentry.io/project-id</string>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- PUSH NOTIFICATIONS                         -->
+	<!-- ========================================== -->
+	<!--
+	Push notification configuration
+	-->
+	<key>PUSH_NOTIFICATIONS</key>
+	<dict>
+		<!-- Firebase Cloud Messaging (if using Firebase) -->
+		<key>FCM_SENDER_ID</key>
+		<string>your-fcm-sender-id</string>
+
+		<!-- OneSignal (alternative) -->
+		<key>ONESIGNAL_APP_ID</key>
+		<string>your-onesignal-app-id</string>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- APP CONFIGURATION                          -->
+	<!-- ========================================== -->
+	<!--
+	General app settings
+	-->
+	<key>APP_CONFIG</key>
+	<dict>
+		<!-- Environment -->
+		<key>ENVIRONMENT</key>
+		<string>production</string>
+
+		<!-- API Version -->
+		<key>API_VERSION</key>
+		<string>v1</string>
+
+		<!-- Enable debug logging (should be false in production) -->
+		<key>DEBUG_MODE</key>
+		<false/>
+
+		<!-- Cache settings -->
+		<key>CACHE_DURATION_SECONDS</key>
+		<integer>3600</integer>
+
+		<!-- Network timeout (seconds) -->
+		<key>NETWORK_TIMEOUT</key>
+		<integer>30</integer>
+
+		<!-- Maximum retries for failed requests -->
+		<key>MAX_RETRIES</key>
+		<integer>3</integer>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- CONTENT DELIVERY                           -->
+	<!-- ========================================== -->
+	<!--
+	CDN and media storage configuration
+	-->
+	<key>CONTENT</key>
+	<dict>
+		<!-- CloudFlare, AWS CloudFront, etc. -->
+		<key>CDN_BASE_URL</key>
+		<string>https://cdn.lapina.app</string>
+
+		<!-- Supabase Storage -->
+		<key>STORAGE_BUCKET_URL</key>
+		<string>https://your-project-ref.supabase.co/storage/v1/object/public/</string>
+
+		<!-- Image bucket -->
+		<key>IMAGES_BUCKET</key>
+		<string>lapina-images</string>
+
+		<!-- User uploads bucket -->
+		<key>UPLOADS_BUCKET</key>
+		<string>user-uploads</string>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- LOCALIZATION                               -->
+	<!-- ========================================== -->
+	<!--
+	Supported languages and regions
+	-->
+	<key>LOCALIZATION</key>
+	<dict>
+		<key>DEFAULT_LANGUAGE</key>
+		<string>en</string>
+
+		<key>SUPPORTED_LANGUAGES</key>
+		<array>
+			<string>en</string>
+			<string>es</string>
+		</array>
+
+		<key>DEFAULT_REGION</key>
+		<string>US</string>
+
+		<key>SUPPORTED_REGIONS</key>
+		<array>
+			<string>US</string>
+			<string>MX</string>
+			<string>ES</string>
+			<string>AR</string>
+			<string>CO</string>
+		</array>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- SUPPORT & LEGAL                            -->
+	<!-- ========================================== -->
+	<!--
+	Support and legal URLs
+	-->
+	<key>URLS</key>
+	<dict>
+		<key>SUPPORT_EMAIL</key>
+		<string>support@lapina.app</string>
+
+		<key>SUPPORT_URL</key>
+		<string>https://lapina.app/support</string>
+
+		<key>PRIVACY_POLICY_URL</key>
+		<string>https://lapina.app/privacy</string>
+
+		<key>TERMS_OF_SERVICE_URL</key>
+		<string>https://lapina.app/terms</string>
+
+		<key>WEBSITE_URL</key>
+		<string>https://lapina.app</string>
+
+		<key>FAQ_URL</key>
+		<string>https://lapina.app/faq</string>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- SUBSCRIPTION CONFIGURATION                 -->
+	<!-- ========================================== -->
+	<!--
+	In-App Purchase product IDs
+	Must match App Store Connect configuration
+	-->
+	<key>SUBSCRIPTIONS</key>
+	<dict>
+		<key>MONTHLY_PRODUCT_ID</key>
+		<string>com.lapina.euki.premium.monthly</string>
+
+		<key>ANNUAL_PRODUCT_ID</key>
+		<string>com.lapina.euki.premium.annual</string>
+
+		<!-- Lifetime purchase (one-time payment) -->
+		<key>LIFETIME_PRODUCT_ID</key>
+		<string>com.lapina.euki.premium.lifetime</string>
+
+		<!-- Free trial duration (in days) -->
+		<key>FREE_TRIAL_DAYS</key>
+		<integer>7</integer>
+	</dict>
+
+	<!-- ========================================== -->
+	<!-- REMOTE CONFIG                              -->
+	<!-- ========================================== -->
+	<!--
+	Values that can be updated remotely without app update
+	Consider using Firebase Remote Config or similar
+	-->
+	<key>REMOTE_CONFIG</key>
+	<dict>
+		<key>MINIMUM_APP_VERSION</key>
+		<string>1.0.0</string>
+
+		<key>FORCE_UPDATE_REQUIRED</key>
+		<false/>
+
+		<key>MAINTENANCE_MODE</key>
+		<false/>
+
+		<key>MAINTENANCE_MESSAGE</key>
+		<string>We're making La Pina even better! We'll be back soon.</string>
+	</dict>
+
+</dict>
+</plist>

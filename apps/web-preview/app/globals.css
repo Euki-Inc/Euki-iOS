@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
+
+/* Custom animations */
+@keyframes spiral {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-spiral {
+  animation: spiral 2s linear infinite;
+}
+
+.animate-bubble {
+  animation: bubble 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #e10098 0%, #8e44ad 100%);
+}
+
+.gradient-sunset {
+  background: linear-gradient(90deg, #ffd600 0%, #e10098 100%);
+}
+
+.gradient-ocean {
+  background: linear-gradient(180deg, #00bfb3 0%, #8e44ad 100%);
+}
+
+/* Soft shadow effects */
+.shadow-soft {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-medium {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.shadow-heavy {
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.16);
+}
+
+/* Button styles */
+.btn {
+  @apply rounded-lg font-medium transition-all duration-200 cursor-pointer;
+  @apply px-6 py-3 inline-flex items-center justify-center;
+}
+
+.btn-primary {
+  @apply btn bg-pina-pink text-white hover:opacity-90;
+}
+
+.btn-secondary {
+  @apply btn bg-pina-purple text-white hover:opacity-90;
+}
+
+.btn-outline {
+  @apply btn border-2 border-pina-pink text-pina-pink bg-white hover:bg-red-50;
+}
+
+.btn-ghost {
+  @apply btn text-pina-pink hover:bg-red-50;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-lg shadow-soft p-6;
+  @apply border border-neutral-50;
+}
+
+.card-gradient {
+  @apply relative overflow-hidden rounded-lg shadow-soft;
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium;
+}
+
+.badge-primary {
+  @apply badge bg-pina-pink bg-opacity-10 text-pina-pink;
+}
+
+.badge-success {
+  @apply badge bg-pina-teal bg-opacity-10 text-pina-teal;
+}
+
+.badge-warning {
+  @apply badge bg-pina-yellow bg-opacity-10 text-gray-900;
+}
+
+/* Input styles */
+input,
+textarea,
+select {
+  @apply w-full px-4 py-3 rounded-lg border border-neutral-200;
+  @apply font-medium transition-all duration-200;
+  @apply focus:outline-none focus:border-pina-pink focus:ring-2 focus:ring-pina-pink focus:ring-opacity-20;
+}
+
+/* Responsive typography */
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+h3 {
+  @apply text-xl font-semibold;
+}
+
+h4 {
+  @apply text-lg font-semibold;
+}
+
+p {
+  @apply text-base;
+  @apply leading-relaxed;
+}
+
+.text-small {
+  @apply text-sm;
+}
+
+.text-tiny {
+  @apply text-xs;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  .btn {
+    @apply px-4 py-2 text-sm;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

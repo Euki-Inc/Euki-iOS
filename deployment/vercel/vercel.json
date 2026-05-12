@@ -1,0 +1,6 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "cd apps/web-preview && npm run build",
+  "outputDirectory": "apps/web-preview/.next",
+  "env": {}
+}
